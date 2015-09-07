@@ -45,31 +45,48 @@ relevant information.
 
 \section{Grading}
 Your program counts as executable if it starts up without having a path to the text file specified on the command line. In that case the program should
-explicitly ask the user to supply one.
+explicitly ask the user to supply one. 
+
+The task is to count words regardless of casing. This means that $ The $ and $ the $ should be treated as the same word. To achieve this, all words should be lowercased before counting them. Notice also that 
+punctuation may influence the counts. Python would count $ Alice $ and $ Alice? $ as different words.
+To avoid this effect, all punctuation should be removed before counting.
 
 \begin{itemize}
 \item[1 point] The program asks the user for the correct path to the file if that path is not supplied as a command line argument.
 \item[1 point] The program gracefully shuts down if the supplied path does not exist. This means that the program prints a message informing the user
 that it will exit because the file was not found. It does not raise an error!
 \item[2 points] The program reads the text file only once and stores all relevant information before showing the user any options. This has to
-be checked analytically by inspecting the code. Depending on your computer this operation can take several seconds.
-\item[2 points] Whenever the user enters an invalid value, the program responds ``Sorry, I do not understand this. Please choose again'' and lets the
+be checked analytically by inspecting the code. Depending on your computer reading a file can take several seconds. This means that if the program was to read the file repeatedly, it might become very slow.
+\item[1 points] Whenever the user enters an invalid value, the program responds ``Sorry, I do not understand this. Please choose again.'' and lets the
 user re-enter the value.
 \item[2 points] When the user asks for a list of most frequent words, the program responds by asking for the number $ n $ of most frequent words to 
 produce. It then outputs the $ n $ most frequent words to the screen as a list in which each line looks as follows:
 $$ word~~~wordFrequency $$
-If there are several words of the same frequency, they are ordered alphabetically.
+If there are several words of the same frequency, they are ordered alphabetically. For better readability
+you should insert a tab in between the word and its frequency.
 \item[2 points] When the user asks for a list of least frequent words, the program responds by asking for the number $ n $ of least frequent words to 
 produce. It then outputs the $ n $ least frequent words to the screen as a list in which each line looks as follows:
 $$ word~~~wordFrequency $$
-If there are several words of the same frequency, they are ordered alphabetically.
+If there are several words of the same frequency, they are ordered alphabetically.  For better readability
+you should insert a tab in between the word and its frequency.
 \item[1 point] The frequency of specific words is printed in the same format. If a word does not occur in the text, the program prints \textit{Sorry, this
 word does not occur in the text}.
-\item[-3 points] If the program crashes at any point while testing.
+\item[-2 points] If the program crashes at any point while testing.
+\item[-1 point] If the counting routine of the program is case-sensitive (e.g. if $ The $ and $ the $ are NOT counted as the same word).
+\item[-1 point] If the program does not remove punctuation before counting. This is easy to check: just
+pick a couple of words out of the text that have punctuations (e.g. $ and, $) attached to them and ask the program for their frequency. The program should tell you that those words do not occur in the text. Important: Those words should still be counted without punctuation (that is $ and, $ should ultimately
+contribute to the count of $ and $).
 \end{itemize}
 
 Notice: for the frequencies, lists of the 1000 most frequent and 1000 least frequent words will be provided to you during the review period. We will also give
-you detailed instructions on how to compare two lists. For the specific words, you can just pick a couple of words from these lists.
+you detailed instructions on how to compare two lists. To test the specific word functionality, you can just pick a couple of words from these lists.
+
+\enlargethispage{1cm}
+\section{Counters}
+For this exercise, it may be helpful to use a Python data structure known as 
+\href{https://pymotw.com/2/collections/counter.html}{Counter}. It is not strictly necessary to use counters
+for this exercise but they might make your life a lot easier. Also make sure to the check the
+\href{https://docs.python.org/2/library/collections.html#collections.Counter}{official documentation}.
 
 
 \end{document}

@@ -48,7 +48,7 @@ If you have any question about the homework or if you need help, do not hesitate
 			\item[(i)] $E[(2 + X)^2]$
 			\item[(ii)] $var(4 + 3X)$
 		\end{itemize}
-	\item[6!] Indicate the maximal number of people you can invite to your party so that the probability of any of them having the same birthday as you is less than $\frac{1}{2}$. Assume that birthdays are uniformly distributed and that we do not care about a persons birth year. 
+	\item[6!] Indicate the maximal number of people you can invite to your party so that the probability of any of them having the same birthday as you is less than $\frac{1}{2}$. Assume that birthdays are uniformly distributed. 
 \end{enumerate}
 
 \paragraph{Type II [2 exercises: 3 points per exercise]}
@@ -60,7 +60,7 @@ If you have any question about the homework or if you need help, do not hesitate
 			\item[(ii)] at least $k$ draws are needed?
 		\end{itemize}
 	\item You make a bet with a friend to the effect that he has to pay you an amount $L$ should an event $M$ happen within a year. If you estimate $M$ to happen with probability $q$ within this period, what should you charge him to enter the bet for an expected profit of $10\%$ percent of $L$?
-	\item Consider a group of $n$ randomly chosen students and let $E_{i,j}$ denote the event that students $i$ and $j$ have the same birthday, $i \neq j$. Under the assumption that the students' birthdays are uniformly distributed throughout the same year, compute
+	\item Consider a group of $n$ randomly chosen students and let $E_{i,j}$ denote the event that students $i$ and $j$ have the same birthday, $i \neq j$. Under the assumption that the students' birthdays are uniformly distributed throughout the year, compute
 		\begin{itemize}
 			\item[(i)] $\mathbb{P}(E_{c,d}|E_{a,b})$
 			\item[(ii)] $\mathbb{P}(E_{a,c}|E_{a,b})$

@@ -1,5 +1,5 @@
 \documentclass[11pt, leqno, a4paper]{article}
-\usepackage{hyperref}
+\usepackage{hyperref, amsmath}
 \hypersetup{colorlinks=true, urlcolor=blue, breaklinks=true}
 
 \title{Programming Assignment 4 -- Basic Probability, Computing and Statistics 2015 \\[2mm]
@@ -13,6 +13,8 @@
 \paragraph{Note:} if the assignment is unclear to you or if you get stuck, do not hesitate to contact \href{mailto:P.Schulz@uva.nl}{Philip}.
 
 \section{Logprobs and sampling}
+
+\subsection{Logprobs}
 When implementing probabilistic computations, one often faces several practical problems. One of those 
 problems is that in realistic applications, the probabilities involved tend to get really small. Since
 a computer has limited memory, it can only represent floating point numbers up to certain degree of precision
@@ -30,9 +32,21 @@ are easier to handle in proofs than multiplications.
 
 Let us recall what a logarithm (with base $ b $) is.
 \begin{equation}
-log_{b}(x) = y \mbox{ such that } b^{y} = x
+log_{b}(x) = y \mbox{ such that } b^{y} = x \ .
 \end{equation}
 
+We can rewrite derive addition of logprobs as follows: let $ p $ and $ q $ be probabilities such that
+$ p \geq q $ and define $ a = log(p) $ and $ b = log(q) $. Then
+\begin{align}
+log(p + q) &= log \left( e^{log(p)} + e^{log(q)} \right) = log \left( e^{a} + e^{b} \right)
+= log \left(e^{b} ( e^{a-b} + 1) \right) \\ 
+&= b + log \left( e^{a-b} + 1 \right) 
+=log(q) + log (\left( e^{log(p)-log(q)} + 1 \right) \nonumber \ .
+\end{align}
+
+You can derive yourselves what this would look like for subtraction.
+
+\subsection{Inverse transform sampling}
 Another problem of probabilistic computations is sampling from a distribution. Many programming languages
 come with build-in functions that allow you to sample from a \textbf{uniform} distribution. However,
 in most interesting cases, you would like to sample from distributions that are non-uniform. This can
@@ -42,8 +56,7 @@ inverse transform sampling is simple. To sample values of a random variable $ X 
 \begin{enumerate}
 \item Sample a threshold value $ t $ uniformly in [0,1] (crucially, this is where the randomness of the 
 sample comes from).
-\item Evaluate the cdf of your distribution at each possible value of $ supp(X) $ in an arbitrary but a 
-priori fixed order (this order has to be the same for each sample).
+\item Evaluate the cdf of your distribution at each possible value of $ supp(X) $.
 \item As soon as the cdf is greater or equal to $ t $ return the value on which you just evaluated the cdf.
 \end{enumerate}
 
@@ -52,12 +65,53 @@ sample in [0,1). In that case, the cdf needs to strictly greater than $ t $ befo
 to justify why this is so).
 
 \section{The task}
-Your task is to implement utility functions that do computations with logprobs. For this purpose, we
-supply you with unit tests. Your implementation is correct if it passes all tests. For details on
-how to the functions should work, see their docstring. \textbf{PHILIP: be more specific here.}
+Your task is to implement utility functions that do computations with logprobs and a class that 
+implements the binomial distribution. For this purpose, we
+supply you with \href{https://docs.python.org/2/library/unittest.html}{unit tests}. 
+Your implementation is correct if it passes all tests. For details on
+what each function should do, see their docstring. Notice also that some functions have comments
+outside their docstrings. These are programming instructions that YOU HAVE to follow. If you do
+not adhere to these instructions, points will be deducted.
 
-Furthermore you will implement the binomial distribution as a class. Given its parameters, your
-class should be able to return the probability and logprob of any bit-sequence of size $ n $. Furthermore,
-it should implement a method \texttt{sample()} that returns a random bit-sequence of size $ n $ 
+Let us explain a bit more about the binomial distribution class. Given its parameters, your
+class should be able to return the probability of any sequence of size $ n $. Furthermore,
+it should implement a method \texttt{sample()} that returns a sequences of size $ n $. For further 
+functionality, check the docstrings.
+
+Notice that both the logarithms utility module and the binomial class may be extremely helpful in your later
+programming career. You should keep them after this course has finished. Since they have been unit-tested,
+you can also be fairly sure that they work correctly.
+
+The log-probs function can be used over and over again. The binomial itself may not be of direct use but
+it gives you a good intuition for how you should implement probability distributions.
+
+The unit test can be downloaded 
+\href{https://github.com/BasicProbability/PythonCode_Fall2015/tree/master/test/week4_debugging_and_testing}{here}. The skeletons of the modules that you need to implement are 
+\href{https://github.com/BasicProbability/PythonCode_Fall2015/tree/master/src/week4_debugging_and_testing}{here}. In order for the unit tests to work correctly, it is important that you maintain the file
+hierarchy as you find it on Github. To this end, it may actually be easier to just clone the entire 
+code folder by typing on one line
+\begin{center}
+\texttt{git clone \url{https://github.com/BasicProbability/PythonCode_Fall2015.git}}
+\end{center}
+and then work in there. This can be done by importing the cloned folder into your eclipse workspace.
+Obviously, cloning will only work if you have git installed.
+
+\section{Grading}
+This time you will be very restricted in that we only allow you to use the imports and methods that
+we have pre-defined for you. You may not define your own functions, methods or classes! Your code
+is correct if it passes all unit tests.
+
+\begin{itemize}
+\item[0.5 points] for each passed ValueError test (3 points in total).
+\item[1 point] if test\_log\_add passes.
+\item[1 point] if test\_log\_difference passes.
+\item[1 point] if test\_compute\_probability passes.
+\item[1 point] if test\_sample\_with\_k\_successes passes.
+\item[1 point] if test\_sample passes.
+\item[1 point] if test\_sample\_list passes.
+\item[1 point] if all the programming instructions (in-line comments) have been followed. Give 0 points here
+if one or more of them have been violated.
+\item[-1 point] for each additional import, class, method or function introduced by the student.
+\end{itemize} 
 
 \end{document}

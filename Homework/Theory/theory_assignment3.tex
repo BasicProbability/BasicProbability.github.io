@@ -12,6 +12,9 @@
 \newcommand{\philip}[1]{ \textcolor{red}{\textbf{Philip:} #1}}
 \newcommand{\chris}[1]{ \textcolor{blue}{\textbf{Chris:} #1}}
 
+\newcommand{\supp}{\operatorname{supp}} 
+\newcommand{\E}{\mathbb{E}}
+
 
 \title{Theory Assignment 3 -- Basic Probability, Computing and Statistics\\[2mm]
 \large{Fall 2015, Master of Logic, University of Amsterdam}}
@@ -40,12 +43,12 @@ If you have any question about the homework or if you need help, do not hesitate
 \paragraph{Type I [2 exercises: 2 points per exercise]}
 \begin{enumerate}
 	\item Assume that 4 balls are randomly picked one after another from an urn of 20 balls, labeled from 1 to 20, without returning them. Let $X$ stand for the largest label selected. What is $P_X(X \geq 16)$?
-	\item Let $X$ be a random variable taking any of the values $0$, $5$ or $-5$ with probabilities $P_X(X = -5) = .3, P_X(X = 0) = .3, P_X(X = 5) = .4$, respectively. What is $E_{P_X}[X^2]$?
+	\item Let $X$ be a random variable taking any of the values $0$, $5$ or $-5$ with probabilities $P_X(X = -5) = .3, P_X(X = 0) = .3, P_X(X = 5) = .4$, respectively. What is $\mathbb{E}[X^2]$?
 	\item Compute the probability mass function of the number of tails for 7 subsequent (fair) coin tosses. 
 	\item A peddler is trying to sell her goods to two different clients. She estimates her first meeting to yield a profit with probability $.4$, and her second, independently, with probability $.7$. Any profit made is equally likely to be either from selling her luxury goods, which bring a profit of \$$1000$, or from her generic goods, for a profit of \$$500$. Compute the probability mass function of $X$, where $X$ is the total value of her profits.
-	\item Let $E[X] = 5$ and $var(X) = 7$, compute
+	\item Let $\mathbb{E}[X] = 5$ and $var(X) = 7$, compute
 		\begin{itemize}
-			\item[(i)] $E[(2 + X)^2]$
+			\item[(i)] $\mathbb{E}[(2 + X)^2]$
 			\item[(ii)] $var(4 + 3X)$
 		\end{itemize}
 	\item[6!] Indicate the maximal number of people you can invite to your party so that the probability of any of them having the same birthday as you is less than $\frac{1}{2}$. Assume that birthdays are uniformly distributed and that we do not care about a persons birth year. 
@@ -53,7 +56,7 @@ If you have any question about the homework or if you need help, do not hesitate
 
 \paragraph{Type II [1 exercise: 3 points per exercise]}
 \begin{enumerate}
-\item Calculate the variance of a loaded 6-sided die that has a probability of $\frac{1}{6}$ for all odd numbered sides, and $\mathbb{P}(2) = .1,  \mathbb{P}(4) = .1, \mathbb{P}(6) = .3$.
+\item Calculate the variance of a loaded 6-sided die that has a probability of $\frac{1}{6}$ for all odd numbered sides, and $\mathbb{P}(\{2\}) = .1,  \mathbb{P}(\{4\}) = .1, \mathbb{P}(\{6\}) = .3$.
 	\item A jar contains $N$ Euro and $M$ GBP coins. Coins are taken out randomly up to the first draw of a GBP coin. If each drawn coin is put back before picking a new one, what is the probability that
 		\begin{itemize}
 			\item[(i)] exactly $n$ draws are needed?
@@ -66,17 +69,23 @@ If you have any question about the homework or if you need help, do not hesitate
 			\item[(ii)] $\mathbb{P}(E_{a,c}|E_{a,b})$
 			\item[(iii)] $\mathbb{P}(E_{b,c}|E_{a,b} \cap E_{a,c})$
 		\end{itemize}
+<<<<<<< Updated upstream
 	\item Let $X$ and $Y$ be two random variables with joint distribution $P_{XY}$. Show that for arbitrary 		$a,b \in \mathbb{R}$ it holds that $E_{XY}[aX + bY] = a E_X[X] + b E_Y[Y].$
 	\item Tall, fat people. Suppose that the average height of people in a room is 1.5m. Suppose that the average weight is 50kg.
 (a) Argue that no more than one third of the population is 4.5m tall.
 (b) Find an upper bound on the fraction of people who are simultanously tall (say, at least 3m) and fat (say, at least 150kg).
 \end{enumerate}
+=======
+	\item Let $X$ and $Y$ be two random variables with joint distribution $P_{XY}$. Show that for arbitrary 		$a,b \in \mathbb{R}$ it holds that $\E_{XY}[aX + bY] = a \E_X[X] + b \E_Y[Y].$
+
+	\end{enumerate}
+>>>>>>> Stashed changes
 
 	\paragraph{Type III [1 exercise: 3 points per exercise]}
 \begin{enumerate}
 \item For a RV $ X \sim binom(n,\theta) $ with $ n \in \mathbb{N}, n > 0 $ and $ \theta \in [0,1] $ calculate
 	\begin{enumerate}
-		\item the expectation $ E[X] $ and
+		\item the expectation $ \E[X] $ and
 		\item the variance $ var(X) $.
 	\end{enumerate}
 	Notice that the computation should be general, i.e. neither $ n $ nor $ \theta $ should be fixed.

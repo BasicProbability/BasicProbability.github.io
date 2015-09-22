@@ -59,4 +59,22 @@ If you have any question about the homework or if you need help, do not hesitate
 	\item For $X$ with variance $\sigma^2$ and mean $\mu$, show that $P(|X-\mu| \geq k\sqrt[+]{\sigma^2}) \leq \frac{1}{k^2}$
 \end{enumerate}
 
+\paragraph{Type III Type II [n exercise: p points per exercise]}
+\begin{enumerate}
+	\item Assume you are given a data sample $ x $ and your model for that sample is a multinomial distribution with parameters $ n $ and 
+	$ \theta_{1}, \ldots, \theta_{n} $. What is the MLE for parameter $ \theta_{i}, 1 \leq i \leq n $? \textbf{Hint:} To solve this exercise you will
+	have to use partial differentiation, i.e. you should use $ \frac{\delta}{\delta\theta_{i}}\mathcal{L}_{x} $.
+	\setcounter{enumi}{\value{enumi}+1}
+	\item[\arabic{enumi}!] This exercise asks you to compute the MAP estimate for the binomial distribution parameter with an arbitrary beta prior. The beta distribution
+	is a standard choice as a prior distribution for the binomial. It looks as follows:
+	\begin{equation*}
+	P(\Theta=\theta) = \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha} \times (1-\theta)^{\beta}
+	\end{equation*}
+	Thus your task is to compute
+	\begin{align*}
+	\underset{\theta}{arg\, \, max}~P(\Theta=\theta|X=x) &= \underset{\theta}{arg\, \, max}~P(X =x |\Theta = \theta) \times P(\Theta = \theta) \\
+	&= \underset{\theta}{arg\, \, max}~\binom{n}{k}\theta^{k}\times (1-\theta)^{n-k} \times \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha} \times (1-\theta)^{\beta}
+	\end{align*}
+\end{enumerate}
+
 \end{document}

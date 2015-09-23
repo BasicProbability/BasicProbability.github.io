@@ -66,12 +66,12 @@ If you have any question about the homework or if you need help, do not hesitate
 	\item[\arabic{enumi}!] This exercise asks you to compute the MAP estimate for the binomial distribution parameter with an arbitrary beta prior. The beta distribution
 	is a standard choice as a prior distribution for the binomial. It looks as follows:
 	\begin{equation*}
-	P(\Theta=\theta) = \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha} \times (1-\theta)^{\beta}
+	P(\Theta=\theta) = \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1} \times (1-\theta)^{\beta-1} \mbox{ where } \alpha, \beta > 0 \ .
 	\end{equation*}
 	Thus your task is to compute
 	\begin{align*}
 	\underset{\theta}{arg\, \, max}~P(\Theta=\theta|X=x) &= \underset{\theta}{arg\, \, max}~P(X =x |\Theta = \theta) \times P(\Theta = \theta) \\
-	&= \underset{\theta}{arg\, \, max}~\binom{n}{k}\theta^{k}\times (1-\theta)^{n-k} \times \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha} \times (1-\theta)^{\beta}
+	&= \underset{\theta}{arg\, \, max}~\binom{n}{k}\theta^{k}\times (1-\theta)^{n-k} \times \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1} \times (1-\theta)^{\beta-1}
 	\end{align*}
 \end{enumerate}
 

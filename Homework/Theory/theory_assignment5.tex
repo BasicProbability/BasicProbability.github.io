@@ -68,7 +68,10 @@ If you have any question about the homework or if you need help, do not hesitate
 	\begin{equation*}
 	P(\Theta=\theta) = \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1} \times (1-\theta)^{\beta-1} \mbox{ where } \alpha, \beta > 0 \ .
 	\end{equation*}
-	Thus your task is to compute
+	
+	The beta distribution uses the \href{https://en.wikipedia.org/wiki/Gamma_function}{gamma function} $ \Gamma(\cdot) $ which is also known a generalised factorial.
+	It agrees with the factorial function on the natural numbers but can also be applied to reals.	
+	For this exercerise, your task is to compute
 	\begin{align*}
 	\underset{\theta}{arg\, \, max}~P(\Theta=\theta|X=x) &= \underset{\theta}{arg\, \, max}~P(X =x |\Theta = \theta) \times P(\Theta = \theta) \\
 	&= \underset{\theta}{arg\, \, max}~\binom{n}{k}\theta^{k}\times (1-\theta)^{n-k} \times \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1} \times (1-\theta)^{\beta-1}

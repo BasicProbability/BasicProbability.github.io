@@ -1,0 +1,28 @@
+\documentclass[11pt, leqno, a4paper]{article}
+\usepackage{hyperref, amsmath}
+\hypersetup{colorlinks=true, urlcolor=blue, breaklinks=true}
+
+\newcommand{\supp}{\operatorname{supp}} 
+\newcommand{\E}{\mathbb{E}}
+
+\title{Programming Assignment 5 -- Basic Probability, Computing and Statistics 2015 \\[2mm]
+\large{Fall 2015, Master of Logic, University of Amsterdam}}
+\author{}
+\date{Submission deadline: Monday, October 5th, 9 a.m.}
+
+\begin{document}
+\maketitle
+
+\paragraph{Note:} if the assignment is unclear to you or if you get stuck, do not hesitate to contact \href{mailto:P.Schulz@uva.nl}{Philip}.
+
+\section{Na\"ive Bayes for Text Classification}
+
+This week you will achieve two of the big goals of this course. You will implement your first machine learning 
+and run it on a real data set. The algorithm will be na\"ive Bayes. You will have to implement parameter
+learning and prediction. 
+
+\paragraph{Data set} The data set is the 20 new groups data set. It consists of roughly 1000 post for each
+of 20 newsgroups. The posts are of varying length but usually do not exceed the size of an e-mail. The
+data set is a classic in text classification and much research had been done with it in the beginning and
+mid 2000s. Nowadays it is considered too small and not very representative (after all, you want to learn
+to classify text beyond what people talk about in the 20 newsgroups.

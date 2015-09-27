@@ -1,0 +1,33 @@
+From tominfernoUUCP Tom Sherwin
+Subject Re XV under MSDOS 
+
+ Hi  Recently I found XV for MSDOS in a subdirectory of GNUCC GNUISH I 
+ use frequently XV on a Sun Spark Station 1 and I never had problems but when I
+ start it on my computer with h option it display the help menu and when I
+ start it with a GIFFile my Hard disk turns 2 or 3 seconds and the prompt come
+ back
+ 
+ My computer is a little 38625 with copro 4 Mega rams Tseng 4000 1M running
+ MSDOS 50 with HIMEMSYS and no EMM386SYS I had the GO32EXE too but no
+ driver who run with it
+ 
+ Do somenone know the solution to run XV  any help would be apprecied
+ 		
+
+You probably need an X server running on top of MS DOS  I use DesqviewX
+but any MSDOS X server should do
+
+ 
+
+       XX           X  Technical documentation is writing 90 of the words
+        XX         X  for 10 of the features that only 1 of the customers
+         XX       X  actually use
+          XX     X  
+  A PC to  XX   X  I dont have opinions I have factual interpretations
+ the power  XX X                                 Me
+    of      X XX  
+           X   XX  uunetrutgersmcdhupinfernotom can be found at
+          X     XX               Periphonics Corporation
+         X       XX  4000 Veterans Memorial Highway  Bohemia NY 11716
+        X         XX  
+       X           XX  They pay me to write not express their opinions

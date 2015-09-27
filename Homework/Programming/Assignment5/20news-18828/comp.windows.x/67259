@@ -1,0 +1,35 @@
+From Gary Keim gk5gandrewcmuedu
+Subject Re X Toolkits
+
+Excerpts from netnewscompwindowsx 23Apr93 X Toolkits Paul
+Prescodundergradm 1132
+
+
+ I am getting Linux so I will have InterViews but I dont know how it
+ will look  I get the impression Andrew is from the FSF but I dont
+ know what it looks like either
+
+If youre on the internet and your site isnt sheltered from external
+tcpip traffic you can use the Remote Andrew Demo to see what the
+Andrew Toolkit looks like
+
+Remote Andrew Demo Service
+
+This network service allows you to run Andrew Toolkit applications
+without the overhead of obtaining or compiling the Andrew software  You
+need a host machine on the Internet and you need to be running the X11
+window system  A simple finger command will allow you to experience
+ATK applications firsthand  Youll be able to compose multimedia
+documents navigate through the interactive Andrew Tour and use the
+Andrew Message System to browse through CMUs three thousand bulletin
+boards and newsgroups
+
+To use the Remote Andrew Demo service simply run the following command
+on your machine
+
+    finger helpatkitccmuedu
+
+The service will give you further instructions   
+
+Gary Keim
+Andrew Consortium

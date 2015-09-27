@@ -1,0 +1,14 @@
+From rmoskalpanixcom Robert Moskal
+Subject Volante Warp 10 board
+
+Ive been troubleshooting the existence of way too many General Protection
+Faults on a 48633 EisaVLB system  At this point I think Ive narrowed
+the problem down to the video drivers for the Volante Warp10 adapter by
+National Design INc
+
+Yet somehow I find this hard to believe  Does anyone else have any
+experiences with this board
+
+Thanx
+Robert Moskal
+Brooklyn USA

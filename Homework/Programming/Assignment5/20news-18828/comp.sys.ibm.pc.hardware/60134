@@ -1,0 +1,32 @@
+From rpaomtsmivjcaus Roger C Pao
+Subject Re 16Mb ISA limit
+
+markaSSDCSDHARRISCOM Mark Ashley writes
+
+In the latest PC Magazine Pentium isssue there 
+is an editorial on the
+advantages of a PC using EISEVESALB rather
+than just plain ISAVESALB Supposedly users
+will eventually want more than 16Mb of RAM
+However since the ISA bus has only 24 bits 
+then anything on the bus can access only 16Mb
+even if I have 32Mb on the motherboard
+So far I agree with the arguments
+
+Then the writer claims that glitches can
+occur in systems with over 16Mb because 
+of that limit That part I dont understand
+because the RAM is right on the motherboard
+So the cpu should have no problems talking
+with the RAM Can anybody explain this 
+
+The problem is with ISA busmasters which
+can only address the first 16MBs of system
+memory  Busmasters do not use the CPU
+nor the system DMA to do the actual data
+transfer but transfer their data directly
+to the system RAM
+
+rp93
+ 
+Roger C Pao  gordiusbagdadpride386mtsrpao rpaomtsmivjcaus

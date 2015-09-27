@@ -1,0 +1,20 @@
+From julianetcomcom Julia Miller
+Subject Posix Message Catalogs
+
+Can someone tell me in 25 words or less how to compile posix
+message catalogs so that I can use them with catgets catopen etc
+I know what the format for the catalogs is but dont know how
+to compile them
+
+Please reply to chasblackwhitecom
+
+Thanks in advance
+
+chas
+
+Black  White Software Inc   	 Leaders in Systems  Software Solutions
+2155 S Bascom Ave Suite 210    Contact Black  White for information on
+Campbell CA 95008   		 X Windows  OSFMotif Software  Support
+408 3697400   		 OSFMotif  MSWindows GUI Builders
+408 3697406   		 Add on Widgets Editors and Help Systems
+infoblackwhitecom   		 C and Ada Motif Bindings

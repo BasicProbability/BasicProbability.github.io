@@ -1,0 +1,31 @@
+From cybermantozbuffalonyus Cyberman
+Subject CRT driver transistors
+
+Device LT1839    IC mA 50
+VBRCEO V 70       CCB pF 25
+VBRCBO V 120      VCE V 15
+IC mA max 300      Polarity NPN
+hFE min 20       Package 7904
+hFE max 60       Material Metal
+fT GHz 1        Price 100
+
+Device LT5839    IC mA 60
+VBRCEO V 65       CCB pF 15
+VBRCBO V 80       VCE V 10
+IC mA max 300      Polarity PNP
+hFE min 15       Package 7904
+hFE max 60       Material Metal
+fT GHz 15      Price 100
+ VCE V 10
+
+Anyone know of a source for these parts other than straight from
+Motorolla  I need 4 Lt1839s and 2 Lt5839 Ive tried standard
+and they said We are out
+
+                Stephen CybermanTozBuffaloNYUS
+             Mangled on Fri  04161993  at 135028
+
+ If theres one thing I cant stand its intolerance
+
+  Blue WaveQWK v212 
+                                                       

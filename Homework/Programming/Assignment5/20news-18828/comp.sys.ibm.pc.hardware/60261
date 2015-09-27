@@ -1,0 +1,25 @@
+From huotcraycom Tom Huot
+Subject Re Soundblaster IRQ and Port settings
+
+The Cybard dudekacsubuffaloedu wrote
+ uzunnetcomcom William Roger Uzun writes
+
+ I have a SoundBlaster board in a 486SX PC and I have it
+ jumpered to IRQ 7 port 220h  Will this conflict with my
+ parallel port  I just have an IDE controller a multiIO board
+ with 2ser 1Par port and a VGA board  Should I choose
+ another IRQ besides 7  Or is IRQ 7 safe to use on 486 Motherboards
+
+ Recently I was adding a modem to my computer and I noticed that LPT1 uses
+ IRQ7 and so does my SB card 220h  Ive never had a problem but Im
+ just wondering why not  I thought this would cause a conflict  
+
+I would also like an explanation of this If anyone can explain
+why the SB Pro and LPT 1 can share an IRQ please do so
+Thanks
+
+
+
+Tom Huot        			       
+huotcraycom 
+

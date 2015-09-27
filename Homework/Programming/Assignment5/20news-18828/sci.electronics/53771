@@ -1,0 +1,21 @@
+From levylevyfnalgov Mark E Levy ext 8056
+Subject Sources for Intel D87C51FB
+
+I am in the midst of designing a project which requires two motors and an LED
+illuminator driven with Pulsewidth modulation  Im using the 8751 and
+I understand that the FB version has a programmable counter array that can
+essentially be set and forgotten to do the PWM  The problems is that variant
+is difficult to come by  I need two or three of the D prefix ceramic window
+version for development and then lots of the P prefix plastic OTP for later
+production  Ive tried Avnet Arrow and Pioneer  They might have them but
+Im looking for samples at this point and theyre not too willing to provide
+them  I would buy them but these vendors have 10000 minimums
+
+Any help is appreciated
+
+
+ Mark E Levy Fermilab                                                      
+ BitNet   LEVYFNAL              Unix is to computing                       
+ Internet LEVYFNALDFNALGOV          as an EtchaSketch is to art       
+ HEPnetSPAN FNALDLEVY VMS                                             
+

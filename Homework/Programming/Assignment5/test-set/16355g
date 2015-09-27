@@ -1,0 +1,38 @@
+From olsonumbcedu Bryan Olson CMSC G
+Subject Advanced one time pad was Re more one time pad stuff
+
+
+OK if youve read this group for a while you know all about the
+onetimepad but heres a question I havent seen
+
+The onetimepad yeilds ideal security but has a wellknown flaw in
+authentication  Suppose you use a random bit stream as the pad and
+exclusiveor as the encryption operation  If an adversary knows the 
+plaintext of a message he can change it into any other message  
+Heres how it works
+
+Alice is sending Bob a plaintext P under a key stream S
+Alice computes the ciphertext C  S xor P  and sends it to Bob
+
+Eve knows the plainext P but wants the message to appear as P
+Eve intercepts C and computes  C  C xor P xor P  S xor P
+Eve sends C to Bob
+
+Bob decrypts C by computing  Cxor S  P  thus receiving the 
+false message which was substituted by Eve
+
+
+Now the question is how can this attack be defeated with information
+theoretic security not just computational security
+Can we define something like ideal authentication which is the
+analog of ideal security  Can we obtain ideal authentication 
+
+If not how much can we limit Eves control over the message 
+
+If we can achieve ideal authentication does the solution use more
+key bits or expand the message   Can we show the solution to be
+optimal in one or more parameters 
+
+Does anyone know if these questions have been aswered before 
+
+olsonumbcedu

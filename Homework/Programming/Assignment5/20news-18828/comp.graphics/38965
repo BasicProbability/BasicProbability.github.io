@@ -1,0 +1,17 @@
+From mneingpuccl Marcelo Neira Eid
+Subject raw2gif 
+
+	Hello
+	can anybody help me to find a program that converts a format named
+	raw also known as img to the gif format or jpeg one
+	Its desirable to be for a unix machine than for a PC
+
+	
+	Raw format of a NN image is a file that contain a tail of 
+	NN characters each one referencing to the kNj pixel of the 
+	monocrome image where k and j lies between 0 and N1
+	
+		
+	
+	Thanxs			mneingpuccL
+

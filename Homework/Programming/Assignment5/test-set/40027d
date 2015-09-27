@@ -1,0 +1,35 @@
+From splpitstopucsdedu Steve Lamont
+Subject Re CGM Files
+
+In article MEYER93May28133222ibsengeomaticno meyergeomaticno Harald Martens Meyer writes
+The only book Ive found on the CGM format is CGM and CGI by DBArnold
+ PRBono from SpringerVerlag ISBN 3540189505 Its not the best
+book Ive read though
+
+Well there is the standards document  From the FAQ
+
+12 How to order standards documents
+
+The American National Standards Institute sells ANSI standards and also
+ISO international standards  Their sales office is at 12126424900
+mailing address is 1430 Broadway NY NY 10018  It helps if you have the
+complete name and number
+
+Some useful numbers to know
+
+CGM Computer Graphics Metafile is ISO 86324 1987  GKS Graphical
+Kernel System is ANSI X31241985 
+
+If you want a viewer try downloading ralcgm from unixhensaacuk
+miscunixralcgmralcgmtarZ
+
+You might also want to look at gplot from the folks at the Pittsburgh
+Supercomputer Center  Fish around at calpepscedu  It is pretty
+nifty
+
+							spl
+ 
+Steve Lamont SciViGuy  619 5347968  splszechuanucsdedu
+San Diego Microscopy and Imaging ResourceUC San DiegoLa Jolla CA 920930608
+A naked lunch is natural to uswe eat reality sandwiches
+But allegories are so much lettuceDont hide the madness Allen Ginsberg

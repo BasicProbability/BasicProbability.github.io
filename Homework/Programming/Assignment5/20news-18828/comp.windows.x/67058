@@ -1,0 +1,13 @@
+From btaylormclbdmcom Brent Taylor
+Subject XDM  DECnet 
+
+Does XDM work with DECnet I have an Ultrix machine running both TCPIP
+and DECnet I have a number of Xterminals hanging off the Ultrix host also
+running TCPIP and DECnet Presently I am using XDM for the login procedure
+on the Xterminals using TCPIP Since XDM is basically just an Xwindows
+client shouldnt I be able to run XDM on the DECnet protocol tower as well
+
+My first inclination is that XDM is not your typical X client It is making
+TCPIP specific socket calls In this case the answer would be no you can
+not run XDM over DECnet Is this right or not Any feedback is appreciated
+Thanks

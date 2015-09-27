@@ -1,0 +1,25 @@
+From kolstadcaewiscedu Joel Kolstad
+Subject Re Wanted A to D hardware for a PC
+
+In 3889ncrmpdFtCollinsCONCRCOM Brad Wright writes
+
+	If you know much about PCs IBM comp you might try the joystick
+port  Though I havent tried this myself Ive been told that the port
+has built in AD converters  This would allow the joystick to be a couple of 
+pots  If you could find the specs this might just work for you
+
+I believe that the AD converters found on a joystick port are really
+timers that tick off how long it takes an RC circuit the R being your
+paddle to charge up to something like 12 Vcc  For games this works
+pretty well but you certainly wouldnt want to try to take lab
+measurements off something as nonlinear as that
+
+Hmm I suppose you could linearize it in software but the real problem
+is that the precision of your measurement is no longer constant higher
+voltages would be more precise
+
+On the other hand I could be wrong and perhaps the game card designers
+splurged for the extra 50 to make a cheap constant current source out of
+an op amp  But I wouldnt expect that
+
+					Joel Kolstad

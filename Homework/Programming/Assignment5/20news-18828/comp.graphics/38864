@@ -1,0 +1,30 @@
+Subject Re Virtual Reality for X on the CHEAP
+From tpotironbark Tim Potter
+
+petergorttrlOZAU Peter K Campbell writes
+ ridoutbinkplkafmil Brian S  Ridout writes
+ 
+ In article 1993Apr1513480221995mfltdcouk stsmfltdcouk Steve Sherwood x5543 writes
+  Has anyone got multiverse to work 
+           Extn 5543 stsmfltdcouk uunetmfocussts
+ 
+ Ive tried compiling it on several SPARCstations with gcc 222  After
+ fixing up a few bugs 3 missing constant definitions plus a couple of
+ other things I got it to compile  link but after starting client
+  server I just get a black window sometimes the client core dumps
+ sometimes the server sometimes I get a broken pipe sometimes it
+ just sits there doing nothing although I occassionally get the
+ cursor to become a crosshair in dogfight but thats it  Ive
+ sent word to the author plus what I did to fix it last week but
+ no reply as yet
+ 
+ Peter K Campbell
+ pcampbelltrlozau
+
+Ive discovered a bug in the librariesparserparserc loadcolour function where it was generating a segmentation fault  It appears the colourList is geting corrupted somehow  I had it return random colours instead and everything worked great except for a few colour problems so I know its the only thing wrong
+
+The colour table somehow gets a couple of nulls placed in it so when the name of the colours are compared it crashes  I havent found the problem yet maybe someone else can
+
+Adrian Turner
+University College of Northern Victoria
+turnerironbarkucnveduau

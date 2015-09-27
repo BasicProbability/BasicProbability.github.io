@@ -1,0 +1,56 @@
+From krouthslee01srlfordcom Kevin Routh
+Subject FYI ImageWriter to Windows
+
+ Article crossposted from compwindowsms 
+ Author was Kevin Routh 
+ Posted on 19 Apr 1993 123555 GMT 
+
+For your information
+
+I hooked up my ImageWriter I to my COM1 serial port and used the CItoh
+8510 driver in Windows 31  The cable I am using is a straightthru
+cable connected to a Null Modem Adapter I got at Radio Shack catalog
+261496a for 495  It seems to work fine with both DOS and Windows
+I used the following command in DOS
+
+	CDOSmode COM19600n81p
+
+and set up the port the same way in the Windows Ports setup
+
+the Null Modem connections are as follows
+
+	1	to	1
+	2	to	3
+	3	to	2
+	4	to	5
+	5	to	4
+	68	to	20
+	20	to	68
+	7	to	7
+
+I printed from several applications and all seems OK  
+
+ 
+Kevin C Routh                     Internet    krouthslee01srlfordcom
+Ford Electronics                   IBMmail PROFS               USFMCTMF
+ELD IC Engineering
+17000 Rotunda Drive B121         Voice mail              313 3375136
+Dearborn MI  481216010           Facsimile               313 2486244
+
+
+
+
+Kevin C Routh                     Internet    krouthslee01srlfordcom
+Ford Electronics                   IBMmail PROFS               USFMCTMF
+ELD IC Engineering
+17000 Rotunda Drive B121         Voice mail              313 3375136
+Dearborn MI  481216010           Facsimile               313 2486244
+
+
+
+Kevin C Routh                     Internet    krouthslee01srlfordcom
+Ford Electronics                   IBMmail PROFS               USFMCTMF
+ELD IC Engineering
+17000 Rotunda Drive B121         Voice mail              313 3375136
+Dearborn MI  481216010           Facsimile               313 2486244
+

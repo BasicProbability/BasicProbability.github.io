@@ -1,0 +1,20 @@
+From earleisolarTujungaCAUS Greg Earle
+Subject Re Blinking Cursor in Xterm
+
+In article 1993May100228068186griffinitcgueduau michaelwitcgueduau writes
+Does anyone have any ideas that may be implemented to help prevent users from
+losing sight of the cursor in an XTerm window under certain circumstances where
+there are many screenbased fields
+
+What I would like to do is make the cursor flash on or off but so far havent
+found a way of doing so  Has anybody else had similar problems or fixes to
+make a cursor stand out more than the standard type
+
+Users cant find the cursor  Run xneko  itll turn the cursor into a
+mouse rodent variety    If your users still cant find it the cat will
+
+ 
+	 Greg Earle
+	  Phone 818 3538695		FAX 818 3531877
+	  Internet earleisolarTujungaCAUS
+	  UUCP isolarearleelroyJPLNASAGOV aka elroyisolarearle

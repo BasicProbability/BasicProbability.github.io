@@ -1,0 +1,8 @@
+From fkkstasysstasuborg Frank Kaefer
+Subject Re xterm build problem in Solaris21
+
+dlase05wg2waiicom Doug Acker writes
+
+continuing on my build problems I got stuck here build xterm
+
+gcc fpccstructreturn o xterm maino inputo charproco cursoro utilo tabso  screeno scrollbaro buttono Tekproco misco  VTPrsTblo TekPrsTblo datao menuo O2   RusrwgepX11R5sos5libLDRUNPATHLDRUNPATH LlibXaw

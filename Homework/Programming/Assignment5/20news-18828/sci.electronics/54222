@@ -1,0 +1,17 @@
+Subject Re what to do with old 256k SIMMs
+From cvafymfavmsbiscsupomonaedu Srikanth Viswanathan
+
+In article 1qkf2hINN65cravelarcnasagov kludgegrissomlarcnasagov Scott Dorsey writes
+In article C5JCH1FrCulowellulowelledu wexcsulowelledu writes
+In article 1993Apr1510045216793csxcciwca u009csxcciwca G Stewart Beal writes
+ 	I was wondering if people had any good uses for old
+ 256k SIMMs  I have a bunch of them for the Apple Mac
+ and I know lots of other people do to  I have tried to
+ sell them but have gotten NO interest
+
+
+Well  if youre willing to spend a little money  you could buy one
+of those IDE caching controllers assuming you have an IDE of course
+and put the 256K SIMMs on them  Hardware cache
+
+Srikanth

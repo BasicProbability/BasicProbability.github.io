@@ -1,0 +1,12 @@
+From dittmanskitzodsegticom Eric Dittman
+Subject Question about IRQ2 and IRQ9
+
+I have an 8bit serial card with two ports  Each port has the option of
+using IRQ 234 or 5  I also have two serial ports on a multiIO card
+and the ports can be set to IRQ 3457 or 9  From other posts Ive read
+I get the impression that IRQ2 on the 8bit card is the same as IRQ9 on
+the multiIO card  Am I right
+ 
+Eric Dittman                  Texas Instruments  Component Test Facility
+dittmanskitzodsegticom    214 4807313
+Disclaimer  Not even my opinions  I found them by the side of the road

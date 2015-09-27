@@ -1,0 +1,226 @@
+From hellesetsolaruscedu Tor Helleseth
+Subject PROGRAM EUROCRYPT93 MAY 2327 LOFTHUS NORWAY
+
+
+PROGRAM EUROCRYPT93 MAY 2327 LOFTHUS NORWAY
+
+General chair  Kaare Presttun 
+                email eurocrypt93alcatelno                
+
+Program chair  Tor Helleseth
+                Department of Informatics 
+                University of Bergen
+                N5020 Bergen
+                NORWAY
+                email torhiiuibno
+
+
+
+                      MONDAY  May 24
+                      
+                 
+              SESSION 1  AUTHENTICATION
+              
+              Chair J Seberry
+
+ 900 930   Welcome and opening remarks
+ 9301000   On the Relation Between Acodes and Codes Correcting Independent 
+              Errors T Johansson B Smeets Lund University Sweden 
+              and G Kabatianskii Institute for Problems of Information 
+              Transmission Russia
+10001020   Optimal Authentication Systems R SafaviNaini and L Tombak 
+              University of Wollongong Australia
+
+10201050   Coffee or tea
+
+
+              SESSION 2  PUBLIC KEY
+              
+              Chair A Odlyzko
+
+10501110   Factoring Integers using SIMD Sieves B Dixon Princeton 
+              University USA and AK Lenstra Bellcore USA
+11101130   A New Elliptic Curve Based Analogue of RSA 
+              N Demytko Telecom Research Laboratories Australia
+11301150   Weaknesses of a PublicKey Cryptosystem Based on Factorization 
+              of Finite Groups J Stern ENS France
+
+11501400   Lunch
+
+
+              SESSION 3  BLOCK CIPHERS
+              
+              Chair A De Santis
+
+14001420   Differentially Uniform Mappings for Cryptography 
+              K Nyberg Technical University of Vienna Austria
+14201440   On Permutations Against Differential Cryptanalysis 
+              T Beth and C Ding EISS University of Karlsruhe Germany
+14401510   Two New Classes of Bent Functions 
+              C Carlet INRIA France
+15101530   Boolean Functions Satisfying a Higher Order Strict Avalanche
+              Condition TW Cusick SUNY Buffalo USA
+
+15301600   Coffee or tea
+
+
+              SESSION 4  SECRET SHARING
+              
+              Chair Y Desmedt
+
+16001630  Size of Shares and Probability of Cheating in Threshold Schemes 
+             M Carpentieri A De Santis and U Vaccaro University of 
+             Salerno Italy
+16301700  Nonperfect Secret Sharing Schemes and Matroids K Kurosawa
+             K Okada K Sakano W Ogata and S Tsujii Tokyo Institute of
+             Technology Japan
+     
+
+                      TUESDAY May 25
+                      
+
+             SESSION 5  STREAMCIPHERS I
+             
+             Chair T Helleseth 
+
+ 9001000 From the Memoars of a Norwegian Cryptolog E Selmer University 
+            of Bergen Norway Invited talk
+10001020 On the Linear Complexity of Products of ShiftRegister Sequences 
+            R Gottfert and H Niderreiter Austrian Academy of Sciences 
+            Vienna Austria
+
+10201050 Coffee or tea
+
+
+             SESSION 6  STREAMCIPHERS II
+             
+             Chair D Gollman
+
+10501120  Resynchronisation Weaknesses in Synchronous Stream Ciphers
+             J Daemen R Govaerts and J Vandewalle ESAT KU Leuven 
+             Belgium
+11201140  Blind Synchronization of mSequences with Even Span
+             R Games and JJ Rushanan MITRE USA
+11401210  On Constructions and Nonlinearity of Correlation Immune Functions
+             J Seberry X Zhang and Y Zheng University of Wollongong 
+             Australia
+
+12101400  Lunch
+
+
+             SESSION 7  DIGITAL SIGNATURES
+             
+             Chair C Schnorr
+
+14001430  Practical and Provable Secure Release of a Secret and Exchange of
+             Signatures IB Damgard Aarhus University Denmark
+14301450  Subliminal Communication is Easy Using the DSA 
+             GJ Simmons
+14501510  Can OSS be Repaired D Naccache Gemplus France
+
+15101540  Coffee or tea
+
+
+             SESSION 8  PROTOCOLS I
+             
+             Chair K Kurosawa
+
+15401600  Limitations of Logical Analysis of Cryptographic Protocols  
+             C Boyd and W Mao University of Manchester United Kingdom
+16001630  Practical Anonymous and Secure Voting Scheme K Itoh C Park 
+             and K Kurosawa Tokyo Institute of Technology Japan
+16301650  Untransferable Rights in a ClientIndependent Server Environment
+             J DomingoFerrer University of Barcelona Spain
+16501720  Interactive Hashing Simplifies ZeroKnowledge Protocol Design
+             R Ostrovsky UC Berkeley USA R Venkatesan Bellcore USA and
+             M Yung IBM T Watson USA
+
+             RUMP SESSION
+             
+             Chair I Ingemarsson     
+
+20002400  Accepted paper 
+             Security in Digital Mobile Communication Systems
+             C Park K Kurosawa T Okamoto and S Tsujii Tokyo
+             Institute of Technology Japan
+
+
+                     WEDNESDAY May 26
+                     
+
+             SESSION 9  HASH FUNCTIONS
+             
+             Chair B Preneel
+
+ 900 920  OneWay Accumulators A Decentralized Alternative to Digital
+             Signatures J Benaloh and M de Mare Clarkson University USA
+ 920 940  Some Attacks on the ARL Hash Function IB Damgard and 
+             LR Knudsen Aarhus University Denmark
+ 9401010  Collisions for the Compression Function of MD5 B den Boer and
+             A Bosselaers ESAT KU Leuven Belgium
+10101030  How to Find and Avoid Collisions for the Knapsack Hash Function 
+             J Patarin Bull CP8 France
+  
+10301100  Coffee or tea
+
+
+             SESSION 10 PAYMENT SYSTEMS
+             
+             Chair IB Damgard
+
+11001120  Single Term OffLine Coins NT Ferguson CWI Amsterdam
+             The Netherlands
+11201140  Improved Privacy in Wallets with Observers
+             RJF Cramer CWI Amsterdam The Netherlands and 
+             TP Pedersen Aarhus University Denmark
+11401210  How to Prevent the Mafia Fraud Using DistanceBounding Protocols
+             S Brands and D Chaum CWI Amsterdam The Netherlands
+           
+12101400 Lunch
+ 
+
+             SESSION 11 CRYPTANALYSIS
+             
+             Chair GJ Simmons
+
+14001420 On the Distribution of Characteristics in Bijective Mappings
+            L OConnor University of Waterloo Canada
+14201440 On the Security of the IDEA Block Cipher 
+            W Meier HTL Switzerland
+14401510 Linear Cryptanalysis Method for DES Cipher
+            M Matsui Mitsubishi Japan
+15101540 New Types of Cryptanalytic Attacks Using Related Keys 
+            E Biham Technion Israel
+
+15401610 Coffee or tea
+ 
+
+             SESSION 12  PROTOCOLS II
+             
+             Chair P Landrock
+
+16101640  Reconciliation on a Secret Key Through Public Discussion
+             G Brassard and L Salvail University of Montreal Canada
+16401710  Global Unpredictable Bit Generation Without Broadcast
+             D Beaver and N So Penn State University USA
+17101740  IACR Business meeting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Keywords 
+

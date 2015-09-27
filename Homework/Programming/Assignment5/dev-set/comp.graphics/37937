@@ -1,0 +1,42 @@
+From d91fadteknhjse DANIEL FALK
+Subject RE VESA on the Speedstar 24
+
+kjbMGLuvesa32zip
+
+This is a universal VESA driver  It supports most video
+boardschipsets include the Speedstar24 and 24X up to
+24 bit color
+
+Terry
+
+PS  Ive tried it on a Speedstar24 and 24X and it works 
+
+Not with all software  For instance it doesnt work at all with
+Animator Pro from Autodesk It cant detect ANY SVGA modes when 
+running UniVESA This is really a problem as we need a VESA driver
+for both AA Pro and some hicolor stuff 
+
+Just out of curiosity Are you using the latest version 32  Versions
+previous to this did not fill in all of the capabilities bits and other
+information correctly  I had problems with a lot of software until I got
+this version  I dont think the author got around to posting an 
+announcementof it or at least I missed it but 32 was available in the 
+directory indicated as of 329
+
+I sure did use version 32 It works fine with most software but NOT
+with Animator Pro and that one is quite important to me Pretty
+useless program without that thing working IMHO
+So I hope the author can fix that
+
+Daniel
+
+
+
+
+
+      Daniel Falk             Dont quote me No comments            
+                                 Ebenezum the Great Wizard    
+      d91fadteknhjse                                               
+      d91fadhjds90hjse      Also known as the megafamous musician  
+      Jkpg Sweeeeeden             Leinad of The Yellow Ones        
+

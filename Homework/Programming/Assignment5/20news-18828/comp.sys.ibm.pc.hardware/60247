@@ -1,0 +1,52 @@
+From bgrubbdantenmsuedu GRUBB
+Subject Re IDE vs SCSI
+
+DXB132psuvmpsuedu writes
+SCSII ranges from 05MBs
+SCSIII ranges from 040MBs
+IDE ranges from 083MBs                                       
+ESDI is always 125MBs although there are some nonstandard versions
+The above does not tell the proper story of SCSI
+SCSII 8bit asynchronous 15MBs ave synchronous 5MBs max transfer 
+base
+SCSI1faster this requires a SCSI2 controller chip and provides
+ SCSI2 8bit to 16bit speeds with SCSI1 controlers
+SCSI2 46MBs with 10MBs burst8bit 812MBs with 20MBs burst 16bit 
+and 1520MBs with 40MBs burst32bitwide and fast  16bit SCSI can be
+wide or fast it depends on how the port is designedThe Quadras will support
+fast SCSI but not wide when the OS SCSI manager is rewritten since the
+Quardas use a SCSI1 nonwide port
+
+The article in PC Mag 4279329 was talking about SCSI1 SCSI2 uses
+TEN 10 devices in it native mode outside its native mode it behaves a
+lot like SCSI1 7 devices slower through put
+
+From your own figures SCSI1 is indeed twice ESDI as the article pointed out
+as for 20 faster then IDE that seems to be 8bit SCSI1 using a SCSI2 
+contoler chip The Mac Quadra uses a SCSI2 controler chip for its SCSI1
+and gets 6MBs through put for asynchronous 8bit SCSI1 far in excess of a
+normal SYNCHRONOUS SCSI1 output 120 of 83 is 996 which is near
+the burst of a SCSI1 machine with a SCSI2 controller chip
+
+The PC world seems to have SCSI1 and SCSI2 mixed up  Fact is SCSI2 
+controler chips allow near SCSI2 speeds through a SCSI1 device
+As shown in the Mac Quadra which skews some of the data of SCSI1 vs
+IDE or ESDI test I agree that the article COULD have stated that the 20
+faster then IDE came off a SCSI1 device with a SCSI2 chip  Maybe it
+was there and the EDITOR killed it because the article was dealing with
+SCSI1 NOT SCSI2 and he did not understand the effect of a SCSI1 device
+with a SCSI2 controller chip
+SCSI1 chips are limited to 5MB max  SCSI1 devices with SCSI2 chips
+becoming common produce up to 10Mbs in 8bit mode and 20MBs in 16bit
+mode the fast version SCSI1 ports cannot use wide SCSI  Of cource
+the prime piece of wierdness is that SCSI1 devices HAVE SCSI2 chips
+or more accurately the machine does This allows the best of BOTH
+worlds high SCSI2 speeds and cheeper SCSI1 costs FULL SCSI2 hardware
+port electronic controller etc is VERY expensive  It ALSO creates
+a logistic NIGHTMARE as to how fast SCSI1 goes
+
+When one knows the FACTS behind the numbers then one realizes that the
+article knows what it is talking about even if it does not tell HOW the
+figures came about while  DXB132psuvmpsuedu is throwing out
+ranges that dont tell SQUAT Since he IGNORES SCSI1 devices with
+SCSI2 chips his ranges tell even LESS then intended 

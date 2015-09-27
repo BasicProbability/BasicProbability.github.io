@@ -1,0 +1,65 @@
+From barnettgrymoirecrdgecom Bruce Barnett
+Subject Re Title for XTerm
+
+In article 1993Apr221735465198geckouucp lanzotekeleccom Mark Lanzo writes
+
+       Hint for Sun OS users  use usr5binecho instead of
+       binecho or Cshs builtin echo  Otherwise youll have
+       to embed literal ESC and BEL characters in the string
+       instead of using convenient octal sequences
+
+Bad idea using usr5binecho is slower than the builtin echo
+This is what I do It does execute hostname once per shell window
+and does read in one extra file But manipluating the titles does not
+require executing extra programs
+
+Oh yes it does execute some programs once per each system 
+But it stores them in a file for the next time
+
+
+if   HOSTNAME  then
+	setenv  HOSTNAME hostname
+endif
+
+ figure how how to generate escape bell 
+ and echo commands without a a line terminator
+ I may have done this before If so the variable E is set
+
+ have I executed this script before on this system
+if  E  then
+	echo already set the echo variablesdevtty
+else if  f echoHOSTNAME  then
+	source echoHOSTNAME
+else if  echo n wc l   0  then
+	echo built in echo is bsd devtty
+	 then berkeley style echo
+	echo set ech  echo n echoHOSTNAME
+	echo set E  echo a  tr a 033  echoHOSTNAME
+	echo set B  echo a  tr a 007  echoHOSTNAME
+	echo set N    echoHOSTNAME
+	source echoHOSTNAME
+else 
+	echo built in echo is sysV devtty
+	echo set ech  echo echoHOSTNAME
+	echo set E  033  echoHOSTNAME
+	echo set B  007  echoHOSTNAME
+	echo set N  c  echoHOSTNAME
+	source echoHOSTNAME
+endif	
+
+
+ Are we using shelltool cmdtool or xterm
+ duplicate these aliases here to avoid problems
+if  term  sun  then
+	 Sun Aliases
+	alias Header ech  El1EN
+	alias IHeader ech  EL1EN
+else if  term  xterm  then
+	alias Header ech  E21BN
+	alias IHeader ech  E11BN
+endif
+
+
+
+
+Bruce Barnett barnettcrdgecom uunetcrdgw1barnett

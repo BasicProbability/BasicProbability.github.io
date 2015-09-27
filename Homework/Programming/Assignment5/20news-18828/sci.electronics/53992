@@ -1,0 +1,85 @@
+From cmhengcamacuk CM Hicks
+Subject Re 8x oversampling CD player
+
+mcmahannetcomcom Dave Mc Mahan writes
+
+ In a previous article kolstadcaewiscedu Joel Kolstad writes
+In article hcbC5un9LDD0netcomcom hcbnetcomcom H C Bowman writes
+
+I just bought a new portable CD player for the office and I notice that
+it proudly proclaims 8 TIMES OVERSAMPLING on the box  Now while I think
+I understand what oversampling is the rate of discrete samples
+exceeds the highest frequency component of interest by some factor
+I dont understand this 8 TIMES business  It seems to me that when
+I bought my first CD player was it REALLY 10 years ago the specs
+said 4 TIMES   Could someone please tell me whether Im getting
+senile  If Im not then what good does it do for the player to take
+samples at a higher rate  
+
+The data is only ever read once barring mistracks and such of course
+and eventually gets turned into 441 KHz 16 bit two channel data
+Oversampling takes two discrete data points and interpolates n1 points
+between them for n times oversampling  When I asked people said that the
+interpolation was not simply linear interpolation but significantly more
+complicated
+
+You are quite correct in your understanding  The filtering is not
+interpolation as that would distort the frequency content of the signal
+
+They do interpolate  its not linear interpolation though You are correct
+that the frequency content is not altered more specifically the baseband
+spectrum is preserved and so is every Nth image spectrum The other
+N1 in N image spectra are removed where N is the oversampling rate
+
+you are listening to  Generally these players run the samples thru an
+allpass filter network  I have done this for ECG waveforms from a persons
+
+Ideally the filter has a gain of 1 from 0Hz to 22050Hz and a gain of 0
+from 22050 to the new Nyquist frequency In practice a finite transition
+band is required and there is also a certain amount of passband ripple
+and stopband leakage With a high order eg 200 taps digital filter
+a very good approximation can be easily achieved
+
+  BIT DELETED ABOUT OBSERVATIONS OF INTERPOLATION FILTER AT WORK 
+
+In case you care the filtering method uses an FIR finite impulse response
+filter  Id guess that CD makers use the same kind of method  Anybody out
+there know the real answer  Id say that they use a tapped delay line with
+resistoropamp weighting to accomplish the filtering  This strikes me as
+the most cost effective method for volume production runs
+
+No they actually use a digital FIR just like yours but built in hardware
+on custom VLSI chips for mainly economic reasons
+
+Anyway then the purpose of oversampling is to move the effective
+sampling rate up to n times 441 KHz in order to use higher frequency
+antialiasing filters  For the same quality filter higher oversampling
+lets you build cheaper filters whereas for the same price filter higher
+oversamplings lets you build better filters  So assuming the quality of
+all other components in a CD player remained the same oversampling should
+allow a manufacturer to produce slightly better sound due to antialias
+filtering
+
+Actually I think the only reason they do this is so that they can say that
+they have a marketting gimic  I would guess that it is acutally cheaper to
+filter an oversampled signal than not  You can use sloppier components and
+give the filter a rolloff that isnt so sharp   Its too bad that they
+charge more for something that I think is actually less costly to build
+
+I guess that the answer is somewhere between the two
+
+As an interesting  aside some of you out there may be aware of a scheme
+used by Pioneer and Wadia which is called by Pioneer at least Legato
+Link I havent heard one of these players but by reading advertising
+blurb and a couple of pseudotechnical articles I deduced that all they
+do is build a lousy digital oversampling filter and let a load of the
+first image ie aliassed spectrum through Talking to Bob Stuart of
+Boothroyd Stuart aka Meridian confirmed my suspicion He said that it
+sounded awful but then he would wouldnt he
+
+Christopher
+
+ 
+  Christopher Hicks          Paradise is a Linear Gaussian World
+  cmhukaccameng        also reported to taste hot and sweaty
+ 

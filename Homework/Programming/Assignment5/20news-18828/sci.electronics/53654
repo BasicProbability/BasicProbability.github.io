@@ -1,0 +1,29 @@
+From mcovingtaisun3aiugaedu Michael Covington
+Subject Re Telephone On HookOff Hok
+
+In article 734953838AA00506insaneapanaorgau peterminsaneapanaorgau Peter Tryndoch writes
+
+MCAye theres the rub  if you draw enough current to light an LED th
+MCequipment at the phone company will think youve gone off hook
+MCIn the onhook state youre not supposed to draw current  
+
+Ok lets have some calculation here Going by Australian standards which I 
+presume might be similar to other countries  If not lets have some 
+input a phone uses 600ohm to loop a 48V line  80mA A standard LED 
+drains 20mA So what is the actual loop current required for an off hook 
+indication do you know
+
+Up to 60 microamperes     on hook
+
+Over something like 10 mA   off hook
+
+In between  defective line and the phone company comes looking
+              for leaky insulation
+
+
+
+ 
+  Michael A Covington Associate Research Scientist            
+  Artificial Intelligence Programs      mcovingtaiugaedu   
+  The University of Georgia              phone 706 5420358        
+  Athens Georgia 306027415 USA     amateur radio N4TMI       

@@ -1,0 +1,30 @@
+From mccoygothamcityjscnasagov Daniel McCoy
+Subject Re compiling on sun4411
+
+In article qfe00WB2QzZ7EZandrewcmuedu Wilson Swee ws8nandrewcmuedu  writes
+    I have a piece of X code that compiles fine on pmaxul4 pmaxmach as
+well as sun4mach but whenever it compiles on sun4411 it gives me 
+undefined ld errors
+sin
+cos
+pow
+floor
+getwmShellWidgetClass
+getapplicationShellWidgetClass
+
+The following libraries that I linked it to are
+lXaw lXmu lXt lXext lX11
+
+The makefile is generated off an imake template
+Can anyone give me pointers as to what Im missing out to compile on
+a sun4411
+
+Well the first 2 are easy  You need the math library  Try adding lm after
+lX11  Dont know if thats the whole problem but its a start
+
+
+Daniel J McCoy            SPACE                     INET Inc
+NASA Mail Code PT4         IS                  TEL 7134830950
+NASAJohnson Space Center  OUR                 FAX 7132445698
+Houston Texas 77058       FUTURE  mccoygothamcityjscnasagov
+

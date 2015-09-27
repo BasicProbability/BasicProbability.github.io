@@ -1,0 +1,22 @@
+From kalebexpolcsmitedu Kaleb Keithley
+Subject Re Blinking Cursor in Xterm
+
+bernwardmoepidoopende Bernward Averwald writes
+
+Yes Dont confuse the mouse cursor with the text cursor in the xterms
+The latter is only controlled by the application
+Back in the days of X111 I did analyse the xterm code The cursor 
+was implemented by drawing a rectangle around the character I doesnt
+seem to be changed til now
+But if you have the sources you could add a blinking cursor via
+XtAppAddTimeOut or similar 
+
+XtAppAddTimeout doesnt work in xterm because despite appearances 
+to the contrary xterm is not really an Xt based application  Other
+sources like timeouts and inputs are never checked in xterms main
+loop So dont be surprised when you try this and it doesnt work
+
+
+
+Kaleb
+

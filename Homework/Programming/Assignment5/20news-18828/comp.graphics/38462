@@ -1,0 +1,138 @@
+From sloancisuabedu Kenneth Sloan
+Subject Re Removing Distortion From Bitmapped Drawings
+
+In article 1993Apr1914103424731sctccom boebertsctccom Earl Boebert writes
+Lets say you have a scanned image of a line drawing in this case a
+boat but it could be anything  On the drawing you have a set of
+reference points whose true xy positions are known  
+
+Now you digitize the drawing manually in this case using Yaron
+Danons excellent Digitize program  That is you use a program which
+converts cursor positions to xy and saves those values when you click
+the mouse
+
+Upon digitizing you notice that the reference point values that come
+out of the digitizing process differ in small but significant ways
+from the known true values  This is understandable because the
+scanned drawing is a reproduction of the original and there are
+successive sources of distortion such as differential expansion and
+contraction of paper errors introduced in the printing process
+scanner errors and what have you
+
+The errors are not uniform over the entire drawing so global
+adjustments such as stretchingcontracting uniformly over x or y or
+rotating the whole drawing are not satisfactory
+
+So the question is does any kind soul know of an algorithm for
+removing such distortion  In particular if I have three sets of
+points 
+
+Referencexy the known true values
+
+DistortedReferencexy the same points with known errors
+
+DistortedDataxy other points with unknown errors
+
+what function of Reference and Distorted could I apply to
+DistortedData to remove the errors
+
+I suspect the problem could be solved by treating the distorted
+reference points as resulting from the projection of a bumpy 3d
+surface solving for the surface and then flattening it to remove
+the errors in the other data points
+
+It helps to have some idea of the source of the distortion  or at least
+a reasonable model of the class of distortion  Below is a very short
+description of the process which we use if you have further questions
+feel free to poke me via email
+
+
+ASSUME locally smooth distortion
+
+0 Compute the Delaunay Triangulation of your xy points  This
+   defines the set of neighbors for each point  If your data are
+   not naturally convex you may have very long edges on the convex hull
+   Consider deleting these edges
+
+1 Now there are two goals
+
+    a move the DistortedDataxy to the Referencexy
+    b keep the Lengthe as measured from the current xys
+       as close as possible to the DigitizedLengthe as measured 
+       using the digitized xys
+
+2 For every point compute a displacement based on a and b  For
+   example
+
+    a For xy points for which you know the Referencexy you
+       can move alpha0Referencexy  Currentxy   This will
+       slowly move the DistortedReferencexy towards the
+       Referencexy 
+    b For all other points examine the current length of each edge
+       For each edge compute a displacement which would make that edge
+       the correct length where correct is the DigitizedLength 
+       Take the vector sum of these edge displacements and move the
+       point alpha1SumOfEdgeDisplacements  This will keep the
+       triangulated mesh consistent with your Digitized mesh
+
+3 Iterate 2 until you are happy for example no point moves very much
+
+alpha0 and alpha1 need to be determined by experimentation   Consider
+how much you believe the Referencexy  ie do you absolutely insist
+on the final points exactly matching the References or do you want to
+balance some error in matching the Reference against changes in length
+of the edges
+
+WARNING there are a couple of geometric invariants which must be
+observed essentially you cant allow the convex hull to change and
+you cant allow triangles to fold over neighboring triangles  Both of
+these can be handled either by special case checks on the motion of
+individual points or by periodically retriangulating the points using 
+the current positions  but still calculating DigitizedLength from the
+original positions  When we first did this the triangulation time was
+prohibitive so we only did it once  If I were motivated to try and
+change code that has been working in production mode for 5 years I
+might go back and retriangulate on every iteration  If you have more
+compute power than you know what to do with you might consider having
+every point interact with every other pointbut first read up on
+linear solutions to the nbody problem
+
+There are lots of papers in the last 10 years of SIGGRAPH proceedings on
+springs constraints  and energy calculations which are relevant  The
+above method is described in more or less detail in
+
+inproceedingsSloan86
+authorSloan Jr Kenneth R and David Meyers and Christine ACurcio
+titleReconstruction and Display of the Retina
+booktitleProceedings Graphics Interface 86 Vision Interface 86
+addressVancouver Canada
+pages385389
+monthMay
+year1986  
+
+techreportCurcio87b
+authorChristine ACurcio and Kenneth RSloan and David Meyers
+titleComputer Methods for Sampling Reconstruction Display and
+Analysis of Retinal Whole Mounts
+numberTR 871203
+institutionDepartment of Computer Science University of Washington
+addressSeattle WA
+monthDecember
+year1987  
+
+articleCurcio89
+authorChristine ACurcio and Kenneth RSloan and David Meyers
+titleComputer Methods for Sampling Reconstruction Display and
+Analysis of Retinal Whole Mounts
+journalVision Research
+volume29
+number5
+pages529540
+year1989  
+ 
+
+ 
+Kenneth Sloan                   Computer and Information Sciences
+sloancisuabedu               University of Alabama at Birmingham
+205 9342213                  115A Campbell Hall UAB Station 
+205 9345473 FAX              Birmingham AL 352941170

@@ -1,0 +1,24 @@
+From kolstadcaewiscedu Joel Kolstad
+Subject Re How to the disks copy protected
+
+In article rcstage1132735807672urctuenl rcstage1urctuenl Guido Klemans writes
+
+stuff about hardware keys
+
+If you put another computer on the port instead of the key you can hack 
+them by reading what happens So Ive been told Ive never seen this done 
+but I think its possible Youd need some hardware knowledge and some 
+software to read the port
+
+True which is why many of the newer keys ship out oh maybe 32 bits or
+so have the key encrypt them and return them to the PC  Making a bunch
+of these 32 bits part of your program code is a good way to make sure
+things wont run without the key   Anyway then this scheme at least
+defeats your approach  Its a little costly though
+
+Personally I dont believe in copy protection and agree with the thought
+that the mass inconvenience that it causes all legal users far outweighs
+the gains from what few pirates wont be able to copy the program
+
+					Joel Kolstad
+

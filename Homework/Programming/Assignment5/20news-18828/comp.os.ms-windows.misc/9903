@@ -1,0 +1,43 @@
+From lourayseasgwuedu Michael Panayiotakis
+Subject help object appears thrice
+
+
+Hey allI got an equation editor and since it didnt automagically
+appear in my object dialog box ie insertobjectequation I
+decided to manually place it there  So I went into winini is there
+another way to do this the embedding section and added 
+
+equationequationequationpathfilenamepicture
+
+didnt work
+quit windows go back  AHA mistake Correct it  It looks fine
+start windowsdoesnt work  play with it for a while at one point
+having two entries to see if one works and thother dont and finally I
+get it to work  The only thing I can see thats different now is that
+its now the first item on the list and it used to be the last  But
+now I end up with three equation entried and all of them working
+and only one entry in winini
+
+so does any netian know whats wrong or rather how to correct this
+ie make equationappear but once
+
+Also all the entries in the embedding appear as above
+Its obvious that pathfilename is the executable or whatever and
+picture has something to do withthe way it appears
+picturedescription
+
+but what are the others
+ie in
+
+soundrecsoundsound
+whates the difference between the 1st sound and the 2nd  
+and what is soundrec I dont think its the name of the executable
+as other entries eg MSWorksChart arent
+
+thanks ia
+Mickey
+ 
+pe   MICHAEL PANAYIOTAKIS lourayseasgwuedu 
+ace                                    uunetseasgwuedulouray
+   how do make a mswindows grp file reflect a HD directory
+     well I aint always right but Ive never been wronggd

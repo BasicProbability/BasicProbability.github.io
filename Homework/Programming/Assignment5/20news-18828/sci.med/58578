@@ -1,0 +1,412 @@
+From Dan Wallach dwallachcsberkeleyedu
+Subject FAQ Typing Injuries 24 General Info monthly posting
+
+Archivename typinginjuryfaqgeneral
+Version Revision 428  Date 19930413 041758 
+
+
+         Answers To Frequently Asked Questions about Typing Injuries
+
+
+The Typing Injury FAQ  sources of information for people with typing
+injuries repetitive stress injuries carpal tunnel syndrome etc
+
+Copyright 19921993 by Dan Wallach dwallachcsberkeleyedu
+
+Many FAQs including this one are available on the archive site
+pitmanagermitedu alias rtfmmitedu 18172127 in the directory
+pubusenetnewsanswers  The name under which a FAQ is archived appears
+in the Archivename line at the top of the article  This FAQ is archived
+as typinginjuryfaqgeneralZ
+
+Theres a mail server also  Just email mailserverpitmanagermitedu
+with the word help on a line by itself in the body
+
+The opinions in here are my own unless otherwise mentioned and do not
+represent the opinions of any organization or vendor  Im not a medical
+doctor so my advice should be taken with many grains of salt
+
+Current distribution scimedoccupational scimed comphumanfactors
+ newsscicompanswers and email to chealthiubvmucsindianaedu
+ sorehandvmucsfedu and cstgLvtvm1ccvtedu
+
+Changes since previously distributed versions are marked with change        
+bars to the right of the text as is this paragraph                        
+
+Table of Contents
+    1 Mailing lists newsgroups etc
+    2 The sodaberkeleyedu archive
+    3 General info on injuries
+    4 Typing posture ergonomics prevention treatment
+    5 Requests for more info
+    6 References
+
+1 Mailing lists newsgroups etc
+
+USENET News
+
+comphumanfactors occasionally has discussion about alternative input devices
+comprisks has an occasional posting relevant to injuries via computers
+scimed and mischandicap also tend to have relevant traffic
+
+Theres a Brand New newsgroup scimedoccupational chartered specifically
+to discuss these things  This would be the recommended place to post
+
+Mailing lists
+
+The RSI Network Available both on paper and via email this publication
+    covers issues relevant to those with repetitive stress injuries  For
+    a sample issue and subscription information send a stamped self
+    addressed business envelope to Caroline Rose 970 Paradise Way Palo
+    Alto CA 94306
+
+    Email to croseapplelinkapplecom
+
+    2 donation requested
+
+    All RSI Network newsletters are available via anonymous ftp from
+    sodaberkeleyedu see below for details
+
+chealth and sorehand are both IBM Listserv things  For those familiar
+    with Listserv heres the quick info
+
+    chealth  subscribe to listserviubvmucsindianaedu
+		post to chealthiubvmucsindianaedu
+
+    sorehand  subscribe to listservvmucsfedu
+		post to sorehandvmucsfedu
+
+Quick tutorial on subscribing to a Listserv
+     mail listservvmucsfedu
+    Subject Total Listserv Mania
+
+    SUBSCRIBE SOREHAND J Random Hacker
+    INFO 
+    
+Thats all there is to it  Youll get bunches of mail back from the Listserv
+including a list of other possible commands you can mail  Cool huh  Whatll
+those BITNET people think of next
+
+2 The sodaberkeleyedu archive
+
+Ive started an archive site for info related to typing injuries  Just
+anonymous ftp to sodaberkeleyedupubtypinginjury  1283214919
+Currently youll find
+
+Informative files
+    typinginjuryfaq
+        general            information about typing injuries
+        keyboards          products to replace your keyboard
+        software           software to watch your keyboard usage
+	changes		   changes since last months edition new	    
+
+    keyboardcommentary    Dans opinions on the keyboard replacements
+    amtadvice		   about Adverse Mechanical Tension
+    caringforwristssithqx  PageMaker4 document about your wrists
+    caringforwristsps	   PostScript converted version of above
+    carpalinfo            info on Carpal Tunnel Syndrome
+    carpalexplained	   very detailed information about CTS
+    carpalsurgery	   JAMA article on CTS surgery
+    carpaltidbits	   TidBITS article on CTS
+    tendonitisinfo        info on Tendonitis
+    rsibiblio		   bibliography of RSIrelated publications
+
+    rsinetwork          archive of the RSI Network newsletter
+			     currently containing issues 1 through 11    
+    
+    rsidetails		   long detailed information about RSI
+    rsiphysical	   study showing RSI isnt just psychological
+
+    Various product literature
+
+    applepress		   press release on the Apple Adjustable Keyboard
+    appletidbits	   extensive info about Apples Adjustable Keybd
+    batinfo		   MacWeek review on the Bat			    
+    comfort		   marketing info on the Comfort Keyboard
+    datahandreview	   detailed opinions of the DataHand
+    datahandreview2	   followup to above
+    datahanddesc	   description of the DataHands appearance
+    kinesisreview	   one users personal opinions
+    maltron		   marketing info on various Maltron products
+    maltronreview	   one users personal opinions
+    verticalinfo	   marketing info on the Vertical new	    
+
+Programs
+    With the exception of accpakexe everything here is distributed as
+     source to be compiled with a Unix system  Some programs take advantage
+     of the X window system also
+
+    hshshar		   a program for onehanded usage of normal keyboards
+    typewatchshar	   tells you when to take a break
+    xdvorakc		   turns your QWERTY keyboard into Dvorak
+    xidleshar		   keeps track of how long youve been typing
+    restremindersh       yet another idle watcher
+    kt15tar  		   generates fake X keyboard events from the
+			     serial port  use a PC keyboard on anything
+			     new improved version
+    accpakexe		   a serial port keyboard spoofer for MS Windows
+
+    Note a2xtar and rktar are both from exportlcsmiteducontrib
+     so they may have a more current version than soda
+
+    a2xtar  		   a more sophisticated X keyboardmouse spoofing
+			     program  Supports DragonDictate
+			     note a new version is now available	    
+    rktar  		   the reactive keyboard  predicts what youll
+			     type next  saves typing
+
+Pictures in the gifs subdirectory
+    howtositgif	   picture of good sitting posture
+			     the caringforwrists document is better for this
+
+    accukey1gif	   fuzzy picture
+    accukey2gif	   fuzzy picture with somebody using it
+    applegif		   the Apple Adjustable Keyboard		    
+    batgif                the InfoGrip Bat
+    comfortgif            the Health Care Comfort Keyboard
+    datahand1gif	   fuzzy picture
+    datahand2gif	   key layout schematic
+    datahand3gif	   a much better picture of the datahand
+    flexprogif		   the Key Tronic FlexPro keyboard		    
+    kinesis1gif           the Kinesis Ergonomic Keyboard
+    kinesis2gif	   multiple views of the Kinesis		    
+    maltron14gif       several pictures of Maltron products
+    mikey1gif             the MIKey
+    mikey2gif             Schematic Picture of the MIKey
+    tonygif		   The Tony Ergonomic Keysystem		    
+    twiddler1gif	   front view
+    twiddler2gif	   side view
+    verticalgif	   the Vertical keyboard			    
+    wavegif		   the Iocomm Wave keyboard
+
+Many files are compressed have a Z ending  If you cant uncompress a file
+locally soda will do it  Just ask for the file without the Z extension
+
+If youre unable to ftp to soda send me email and well see what we
+can arrange
+
+3 General info on injuries
+
+First and foremost of importance if you experience pain at all then
+you absolutely need to go see a doctor  As soon as you possibly can  The
+difference of a day or two can mean the difference between a short recovery
+and a long drawnout ordeal  GO SEE A DOCTOR  Now your gardenvariety
+doctor may not necessarily be familiar with this sort of injury  Generally
+any hospital with an occupational therapy clinic will offer specialists in
+these kinds of problems  DONT WAIT THOUGH  GO SEE A DOCTOR
+
+The remainder of this information is paraphrased without permission from
+a wonderful report by New Zealands Department of Labour Occupational
+Safety and Health Service Occupational Overuse Syndrome Treatment and
+Rehabilitation A Practitioners Guide
+
+First a glossary or fancy names for how you shouldnt have your hands
+note youre likely to hear these terms from doctors and keyboard vendors 
+
+  RSI Repetitive Strain Injury  a general term for many kinds of injuries
+  OOS Occupational Overuse Syndrome  synonym for RSI
+  CTD Cumulative Trauma Disorder  another synonym for RSI
+  WRULD WorkRelated Upper Limb Disorders  yet another synonym for RSI
+  CTS Carpal Tunnel Syndrome see below
+  Hyperextension  Marked bending at a joint
+  Pronation Turning the palm down
+  Wrist extension Bending the wrist up
+  Supination Turning the palm up
+  Wrist flexion Bending the wrist down
+  Pinch grip The grip used for a pencil
+  Ulnar deviation Bending the wrist towards the little finger
+  Power grip The grip used for a hammer
+  Radial Deviation Bending the wrist toward the thumb
+  Abduction Moving away from the body
+  Overspanning Opening the fingers out wide
+
+Now then problems come in two main types Local conditions and diffuse
+conditions  Local problems are what youd expect specific muscles
+tendons tendon sheaths nerves etc being inflamed or otherwise hurt
+Diffuse conditions often mistaken for local problems can involve muscle
+discomfort pain burning andor tingling with identifiable areas of
+tenderness in muscles although theyre not necessarily the problem
+
+ Why does Occupational Overuse Syndrome occur  Heres the theory
+
+Normally your muscles and tendons get blood through capillaries which
+pass among the muscle fibers  When you tense a muscle you restrict
+the blood flow  By the time youre exerting 50 of your full power
+youre completely restricting your blood flow
+
+Without fresh blood your muscles use stored energy until they run out
+then they switch to anaerobic without oxygen metabolism which generates
+nasty byproducts like lactic acid which cause pain
+
+Once one muscle hurts all its neighbors tense up perhaps to relieve the
+load  This makes sense for your normal sort of injury but it only makes
+things worse with repetitive motion  More tension means less blood flow
+and the cycle continues
+
+Another byproduct of the lack of blood flow is tingling and numbness from
+your nerves  They need blood too
+
+Anyway when youre typing too much youre never really giving a change
+for the blood to get back where it belongs because your muscles never
+relax enough to let the blood through  Stress poor posture and poor
+ergonomics only make things worse
+
+ Specific injuries you may have heard of
+
+note most injuries come in two flavors acute and chronic  Acute
+injuries are severely painful and noticable  Chronic conditions have
+less pronounced symptoms but are every bit as real
+
+Tenosynovitis  an inflamation of the tendon sheath  Chronic tenosynovitis
+occurs when the repetitive activity is mild or intermittent not enough to
+cause acute inflamation but enough to exceed the tendon sheaths ability
+to lubricate the tendon  As a result the tendon sheath thickens gets
+inflamed and youve got your problem
+
+Tendonitis  an inflammation of a tendon  Repeated tensing of a tendon
+can cause inflamation  Eventually the fibers of the tendon start separating
+and can even break leaving behind debris which induces more friction more
+swelling and more pain  Subacute tendonitis is more common which entails
+a dull ache over the wrist and forearm some tenderness and it gets worse
+with repetitive activity
+
+Carpal Tunnel Syndrome  the nerves that run through your wrist into your
+fingers get trapped by the inflamed muscles around them  Symptoms include
+feeling pins and needles tingling numbness and even loss of sensation
+CTS is often confused for a diffuse condition
+
+Adverse Mechanical Tension  also known as neural tension this is where
+the nerves running down to your arm have become contracted and possibly
+compressed as a result of muscle spasms in the shoulders and elsewhere
+AMT can often misdiagnosed as or associated with one of the other OOS 
+disorders  It is largely reversible and can be treated with physiotherapy 
+brachial plexus stretches and trigger point therapy
+
+Others for just about every part of your body theres a fancy name for
+a way to injure it  By now you should be getting an idea of how OOS
+conditions occur and why  Just be careful many inexperienced doctors
+misdiagnose problems as Carpal Tunnel Syndrome when in reality you
+may have a completely different problem  Always get a second opinion
+before somebody does something drastic to you like surgery
+
+4 Typing posture ergonomics prevention treatment
+
+The most important element of both prevention and recovery is to reduce
+tension in the muscles and tendons  This requires learning how to relax
+If youre under a load of stress this is doubly important  Tune out
+the world and breath deep and regular  Relaxing should become a guiding
+principle in your work every three minutes take a three second break
+EVERY THREE MINUTES TAKE A THREE SECOND BREAK  Really do it every
+three minutes  Its also helpful to work in comfortable surroundings
+calm down and relax
+
+If you cant sleep you really need to focus on this  Rest sleep and
+relaxation are really a big deal
+
+There are all kinds of other treatments of course  Drugs can reduce
+inflamation and pain  Custommolded splints can forcefully prevent bad
+posture  Surgery can fix some problems  Exercise can help strengthen
+your muscles  Regular stretching can help prevent injury  Good posture
+and a good ergonomic workspace promote reduced tension  Ice or hotcold
+contrast baths also reduce swelling  Only your doctor can say whats best
+for you
+
+ Posture  here are some basic guidelines  I so liked the way this was
+written in the New Zealand book that Im lifting it almost verbatim from
+Appendix 10  dwallach
+
+ Let your shoulders relax
+ Let your elbows swing free
+ Keep your wrists straight
+ Pull your chin in to look down  dont flop your head forward
+ Keep the hollow in the base of your spine
+ Try leaning back in the chair
+ Dont slouch or slump forward
+ Alter your posture from time to time
+ Every 20 minutes get up and bend your spine backward
+
+Set the seat height first  Your feet should be flat on the floor  There 
+should be no undue pressure on the underside of your thighs near the knees
+and your thighs should not slope too much
+
+Now draw yourself up to your desk and see that its height is comfortable
+to work at  If you are short this may be impossible  The beest remedy
+is to raise the seat height and prevent your legs from dangling by using a
+footrest
+
+Now adjust the backrest height so that your buttocks fit into the space
+between the backrest and the seat pan  The backrest should support you in
+the hollow of your back so adjust its tilt to give firm support in this
+area
+
+If you operate a keyboard you will be able to spend more time leaning
+back so experiment with a chair with a taller backrest if available
+
+Now I diverge a little from the text
+
+A good chair makes a big difference  If you dont like your chair go
+find a better one  You really want adjustments for height back angle
+back height and maybe even seat tilt  Most arm rests seem to get in
+the way although some more expensive chairs have height adjustable arm
+rests which you can also rotate out of the way  You should find a good
+store and play with all these chairs  pick one thats right for you
+In the San Francisco Bay Area I highly recommend Just Chairs  The
+name says it all
+
+ Keyboard drawers wrist pads and keyboard replacements
+
+There is a fair amount of controvery on how to get this right  For some
+people wrist pads seem to work wonders  However with good posture you
+shouldnt be resting your wrists on anything  you would prefer your
+keyboard to be right there  If you drop your arms at your side and then
+lift your hands up at the elbow you want your keyboard under your hands
+when your elbows are at about 90 degrees  Of course you want to avoid
+pronation wrist extension and ulnar deviation at all costs  Wrist pads
+may or may not help at this  You should get somebody else to come and
+look at how you work how you sit how you type and how you relax  Its
+often easier for somebody else to notice your hunched shoulders or
+deviated hands
+
+Some argue that the normal flat keyboard is antiquated and poorly
+designed  A number of replacements are available on the market today
+Check out the accompanying typinginjuryfaqkeyboards for much detail
+
+5 Requests for more info
+
+Clearly the above information is incomplete  The typinginjury archive
+is incomplete  Theres always more information out there  If youd like
+to submit something please send me mail and Ill gladly throw it in
+
+If youd like to maintain a list of products or vendors that would be
+wonderful  Id love somebody to make a list of chairdesk vendors  Id
+love somebody to make a list of doctors  Id love somebody to edit the
+above sections looking for places where Ive obviously goofed
+
+6 References
+
+I completely rewrote the information section here using a wonderful
+guide produced in New Zealand by their Occupational Safety  Health
+Service a service of their Department of Labour  Special thanks
+to the authors Wigley Turner Blake Darby McInnes and Harding
+
+Semibibliographic reference
+     Occupational Overuse Syndrome
+     Treatment and Rehabilitation
+      A Practitioners Guide
+    
+    Published by the Occupational Safety and Health Service
+    Department of Labour
+    Wellington
+    New Zealand
+
+    First Edition June 1992
+    ISBN 047734993
+
+    Price 995 New Zealand s of course
+
+Thanks to Richard Donkin richarddhoskynscouk for reviewing this posting
+
+ 
+Dan Wallach               One of the most attractive features of a Connection
+dwallachcsberkeleyedu  Machine is the array of blinking lights on the faces
+Office 5106429585     of its cabinet  CM Paris Ref Manual v60 p48

@@ -1,0 +1,20 @@
+From chucksiplmailorlmmccom Chuck Strickland
+Subject X11R5 on aix 322 using cc
+
+ I have gotten X11R5 pl 23 to compile on AIX 322 using cc
+ but the server will not run it simplys starts and a couple seconds
+ later exits no error are displayed 
+ my defines for compile are
+ DSYSV DAIXV3 DSYSVWAIT   DMALLOC0RETURNSNULL 
+
+ 
+   could somewhere share some light or maybe the ibmcf file 
+
+ thanks
+ 
+
+Malcolm C Strickland                 Martin Marietta Missile Systems
+chuckstricklandorlmmccom          mail point 170    
+Phone 4073567437                   pobox 555837
+Fax   4073565482                   orlando florida 328555837
+

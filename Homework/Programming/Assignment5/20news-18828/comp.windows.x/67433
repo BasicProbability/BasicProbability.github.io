@@ -1,0 +1,100 @@
+From WilfredHansencscmuEDU
+Subject AIX32 version of Andrew 51
+
+                          The Andrew Consortium
+          of the School of Computer Science at Carnegie Mellon 
+                         is pleased to announce
+
+                          AUIS 511 for AIX32
+                                 42693
+
+The Andrew User Interface System version 51 our CDrom version was
+developed for AIX  version 31 on the IBM RS6000 and many other
+platforms  To accomodate AIX version 32 we have created a patch to
+the sources  The patch and accompanying instructions for its
+application can be retrieved at no charge via anonymousftp from the
+internet host emsworthandrewcmuedu 12824540 in the directory
+aixpatch  For those without internet access a 35 diskette can be
+ordered for 10 by sending or faxing a purchase order to the address
+below 
+
+The base 51 system can be ordered from us as a CDrom or ftped from the
+same host
+
+Note that this patch adds no additional functionality but simply allows
+AUIS to compile under AIX32
+
+
+
+The Andrew User Interface System AUIS is a comprehensive environment
+on top of X11 windows in which you can create use and mail multimedia
+applications and documents   A major advantage of AUIS is the
+capability to recursively embed objects  Thus one can edit text that
+not only contains multiple fonts indentation and other typography but
+also  contains embedded raster images spreadsheets drawing editors
+equations simple animations and so on These embedded objects can
+themselves contain other objects including text
+
+AUIS has three components
+
+    The Andrew User Environment is an integrated and extensible set
+    of applications beginning with the ez text editor a help
+    system a system monitoring tool an editorbased shell
+    interface and other editors corresponding to the various
+    available types of objects 
+
+    The Andrew Toolkit ATK is a portable objectoriented
+    userinterface toolkit that provides the architecture wherein
+    objects can be embedded in oneanother  With the toolkit
+    programmers can create new objects that can be embedded as
+    easily as those that come with the system 
+
+    The Andrew Message System AMS provides a multimedia interface
+    to mail and bulletinboards  AMS supports several mail
+    management strategies and implements many advanced  features
+    including authentication return receipts automatic sorting of
+    mail vote collection and tabulation enclosures audit trails
+    of related messages and subscription management It also
+    provides a variety of interfaces that support ttys and
+    lowfunction personal computers in addition to highfunction
+    workstations 
+
+The current public release of Andrew Version 51  includes support for
+the new Internet MIME Multipurpose Internet Mail Extensions standards
+for multipart multimedia mail  A newer release 52 for members of
+the Andrew Consortium has numerous additional features including new
+editors for drawings images fonts and user preferences
+
+
+Remote Andrew Demo Service
+
+You can try out Andrew from your own work station via the Remote Andrew
+Demo Service  You need a host machine on the Internet running the X11
+window system  Youll be able to compose multimedia documents navigate
+through the interactive Andrew Tour and use the Andrew Message System
+to browse through a few of CMUs four thousand bulletin boards and
+newsgroups
+
+To get started with the Remote Andrew Demo service simply run the
+following command on your machine
+
+	finger helpatkitccmuedu
+
+The service will give you further instructions   
+
+
+More information about Andrew is available from
+
+    Information Requests
+    Andrew Consortium
+    Carnegie Mellon University
+    Smith Hall 106
+    5000 Forbes Avenue
+    Pittsburgh PA 152133890
+    USA
+    phone 14122686710
+    fax 14126826938
+    infoandrewrequestandrewcmuedu
+
+Contact infoandrewrequestandrewcmuedu for additional information  
+

@@ -1,0 +1,48 @@
+From xz775327longsLANCEColoStateEdu Xia Zhao
+Subject more on radiosity
+
+
+
+In article 1993Apr1913123911670aragornunibech you write
+
+
+ Lets be serious Im working on a radiosity package written in C
+ I would like to make it public domain  Ill announce it in cg the minute
+ I finished it
+
+ That were the good news The bad news Itll take another 2 months at least
+ to finish it
+
+
+ Are you using the traditional radiosity method progressive refinement or
+  something else in your package
+
+ If you need to project patches on the hemicube surfaces what technique are
+  you using  Do you have hardware to facilitate the projection
+
+
+
+ In the meantime you may have a look at the file
+   RadiositycodetarZ
+ located at
+   compute1ccncsuedu
+
+
+  What are the guest username and password for this ftp site
+
+
+
+ there are some other locations have a look at archie to get the nearest
+
+ Hope thatll help
+
+ Yours
+
+ Stephan
+
+
+
+   Thanks Stephan
+
+
+    Josephine

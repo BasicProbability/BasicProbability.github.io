@@ -1,0 +1,60 @@
+From dujardinnaimainriafr Eric Dujardin
+Subject Re Accented Characters How
+
+
+Ive been able to configure xterm so that I can type in accented characters
+Im using X11R5 with iso8859 fonts my shell is tcsh with the following 
+definitions  
+setenv LCCTYPE iso88591
+stty pass8
+
+Then I add the following in my Xdefaults file
+
+XTermeightBitInput True
+XTermeightBitOutput True
+
+XTermVT100Translations override 
+MetaKey keymapaigu n
+MetaKey keymapgrave n
+MetaKey keymapcirc n
+MetaKey keymapced
+XTermVT100aiguKeymaptranslations  
+Shift Keye string0xe9 keymapNonen
+KeyE string0xc9 keymapNone n
+Shift Keyc  string0xe7 n
+Key C  string0xc7
+XTermVT100graveKeymaptranslations 
+Shift Keye string0xe8 keymapNonen
+KeyE string0xc8 keymapNonen
+Shift Keyu string0xf9 keymapNonen
+KeyU string0xd9 keymapNonen
+Shift Keya string0xe0 keymapNonen
+KeyA string0xc0 keymapNone
+XTermVT100circKeymaptranslations  
+Shift Keye string0xea keymapNonen
+KeyE string0xca keymapNonen
+Shift Keyu string0xfb keymapNonen
+KeyU string0xdb keymapNonen
+Shift Keyi string0xee keymapNonen
+KeyI string0xce keymapNonen
+Shift Keyo  string0xf4 keymapNonen
+KeyO string0xd4 keymapNone
+XTermVT100cedKeymaptranslations 
+Shift Keyc  string0xe7 keymapNonen
+Key C  string0xc7 keymapNone
+
+This makes the Meta keys behave as dead keys
+
+Of course this only works for xterm For emacs my solution is to install the
+Lucid version of GnuEmacs 19 and to load the xcompose library
+
+
+Hope this helps
+
+
+	Eric
+ 
+ Eric Dujardin    EricDujardininriafr
+ INRIA Rocquencourt projet RODIN                           Les bons gongs font
+ BP 105 78153 Le Chesnay Cedex                                 les bonzes amis
+ Tel  33 1 39 63 56 19                                               Gotlib

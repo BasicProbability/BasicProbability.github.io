@@ -1,0 +1,21 @@
+From jhwhit01ulkyvxlouisvilleedu
+Subject Re Whats a good IC for RS232  TTL signals
+
+In article C5nz6099zscrapsuucp frankhscrapsuucp Frank Holden KA3UWW writes
+ In C57zsC9FLnewscsouiucedu rky57514uxacsouiucedu Tall Cool One  writes
+ 
+Im looking for an IC that will convert RS232 voltage levels to TTL voltage 
+levels  Something relatively inexpensive would be nice too  Anyone have
+a suggestion  Thanks
+ 
+ Well it looks as if DigiKey sells a chip with the number ICL232 that does what
+ you want  They are selling it for about 350
+ 
+DigiKey also sells Quad Line Receivers parts DS1489AN 68cents and DS1489N
+48cents  A Quad Line Driver part DS1488 48cents is also sold  I guess
+if you dont wont to supply 12V the chips with the pumpup circuitry might
+be worth the extra cost  But 1488s and 1489s are available at your friendly
+neighborhood RS parts MC1488 2762520 for 129 and MC1489 2762521 for
+129
+ 
+Jeff White          jhwhit01ulkyvxlouisvilleedu

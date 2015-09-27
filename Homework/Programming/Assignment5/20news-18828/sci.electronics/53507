@@ -1,0 +1,40 @@
+From moffattbnrca John Thomson
+Subject Re Telephone on hookoff hok ok circuit 
+
+Tony Kidson tonymorgandemoncouk wrote
+ In article oHZs2B2w164wk5qwblonestarorg lrkk5qwblonestarorg writes
+ 
+ mcovingtaisun3aiugaedu Michael Covington writes
+ 
+  In article 1ptolqp7ewerpleapanaorgau petertzikzakapanaorgau Peter
+  
+  Just a thought of mine here
+  Since an onhook line is aprox 4850V and offhook it usually drops below 1
+  How about an LED in series with a zener say around 30V
+  Onhook  LED on
+  Offhook  LED off
+  Would this work If anyone triestried it please let me know
+ 
+  Aye theres the rub  if you draw enough current to light an LED the
+  equipment at the phone company will think youve gone off hook
+  In the onhook state youre not supposed to draw current
+ 
+ Which means you should just use your Digital VoltMeter You can use an
+ old VOM but the phone company equipment can detect that and might think
+ theres something wrong with the cable
+ 
+ 
+ Look Guys whats the problem here  If you want a light that goes on when 
+ the phone is Off hook all you need it to run it in series with the 
+ line as I mentioned in my previous post  If you want a light that goes on 
+ when the phone is on hook all you need is a voltage threshold detector
+
+If youre going to do the series Diode thing which is the easiest just
+make sure that the LED can take the current I cant recall it offhand but
+its something like 100mA or more
+
+Greggo
+
+Greg Moffatt  moffattbnrca
+BellNorthern Resarch Inc Ottawa Canada
+My opinions not BNRs

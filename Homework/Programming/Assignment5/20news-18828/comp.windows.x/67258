@@ -1,0 +1,18 @@
+From jigangdaleNoSubdomainNoDomain Jigang Yang
+Subject icon pixmap problem
+
+
+
+             I have a problem with icon pixmap My application has to run
+   under openwindow and motif I wrote my program in Motif with pixmap and
+   icons It runs fine under motifmotif window manager and X11R5mwm But 
+   the icon pixmap does not show up under openwinolwm and X11R5olwm
+
+             Has anybody got into this kind of problem Need a clue An 
+   example which works in both X11R5motif and openwindow will be great
+
+ 
+Jigang Yang jigangdalesscgov jyangsscvx1bitnet
+2550 Beckleymeade Ave MS 4011  Tel 2147083498
+Dallas TX 75237                Fax 2147084898 
+ 

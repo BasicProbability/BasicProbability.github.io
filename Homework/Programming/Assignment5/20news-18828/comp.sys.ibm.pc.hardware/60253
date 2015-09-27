@@ -1,0 +1,19 @@
+From scotthpcvcclcvhpcom Scott Linn
+Subject No 32bit box on Gateway
+
+While playing around with my Gateway 2000 localbus machine last
+night it became apparent that Windows 31 didnt give the option
+for 32bit access for virtual memory
+
+I am using a permanent swap file and the disk drive is on the local
+bus interface
+
+Is this expected or should I be investigating further why no 32bit
+option appears
+
+Thanks for any help
+
+
+
+Scott Linn
+scotthpcvcclcvhpcom

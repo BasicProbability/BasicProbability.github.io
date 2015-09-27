@@ -1,0 +1,26 @@
+From mikenetnewslouisvilleedu Mike Harpe
+Subject Re How to drive an array of LEDs
+
+ptorrehardyuwashingtonedu Phil Torre writes
+
+I have a project in mind that requires an array of LEDs that can be addressed
+individually by a microprocessor say 16x16 or so  Is there an LSI that
+is designed to drive an LED array including RAM to hold the array state
+or failing that some way of multiplexing the display so I dont have to
+latch a bit for each LED using a discrete latch  I want to avoid having
+a huge board covered with 373s if possible  Thanks in advance
+
+Maxim makes a chip that does exactly what you want The MAX7219 drives 8
+7 segment LED displays with full decode or drives 64 discrete LEDs with
+a 3 wire serial interface  The chips can also be cascaded to allow very
+large arrays  I am working on a sign display using this part
+
+Ill have to post the contact info for Maxim later its at home  There was
+a series of articles on this chip in the last couple of Circuit Cellar Inks
+
+Mike Harpe
+ 
+Michael Harpe ProgrammerAnalyst      Information Technology Ormsby Bldg
+mikehermeslouisvilleedu             University of Louisville
+5025885542                          Louisville Ky 40292
+Hes not a man hes a remorseless eating machine  The Simpsons

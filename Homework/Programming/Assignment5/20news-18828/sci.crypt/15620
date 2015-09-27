@@ -1,0 +1,65 @@
+From wcsanchorhoattcom Bill Stewart 19089490705
+Subject Re THE CLIPPER CHIP A TECHNICAL SUMMARY
+
+In article 1993Apr191823273420guvaxaccgeorgetownedu denningguvaxaccgeorgetownedu writes
+	Prof Dennings description of SkipJack mostly omitted
+
+	CHIP STRUCTURE
+	The Clipper Chip contains a classified 64bit block encryption
+	algorithm called Skipjack  The algorithm uses 80 bit keys compared
+	with 56 for the DES and has 32 rounds of scrambling compared with 16
+	for the DES  It supports all 4 DES modes of operation  Throughput is
+	16 Mbits a second 
+
+	F an 80bit family key that is common to all chips
+	N a 30bit serial number
+	U an 80bit secret key that unlocks all messages encrypted
+		 with the chip
+	The key K and message stream M ie digitized voice are then
+	fed into the Clipper Chip to produce two values
+
+  	   EM K the encrypted message stream and 
+	   EEK U  N F a law enforcement block  
+
+Three questions
+1 It looks like each 64 bits of input gives you 464 bits of output
+		EMK  64 bits
+		EKU  E 80 bits   128 bits
+		E EKU N  F   E 128  30 bits   192 bits
+   Do you really need to transmit all 256 bits each time
+   or do you only transmit the 192 bits of wiretap block at the beginning   
+   All 256 would be really obnoxious for bandwidthlimited applications
+   like cellular phones or even regular phones over 
+
+2 how do the 4 DES modes interact with the twopart output
+   Do the various feedback modes only apply to the message block
+   or also to the wiretap block  Or if the wiretap block is only
+   transmitted at the beginning does it get incorporated into
+   everything through feedback modes but not during ECB mode
+
+3 Does the Clipper Chip check the wiretap block itself
+   Does the block have to be present at all
+   Since the receiving chip doesnt know the transmitters U
+   it presumably cant check the validity of EKU so its 
+   limited to checking the form of the wiretap block
+   and maybe checking the serial number for reasonableness
+   unless theres some sort of backdoor structure that lets
+   it recognize a valid EKU
+   
+   In that case can you replace the wiretap block with a DIFFERENT
+   wiretap block presumably an old valid one to avoid attracting attention
+   The chip wont do it so you postprocess the output
+   Regular people can do one with their own serial number and a dummy key
+   paranoid people can use someone elses serial number
+
+   On the other hand if I could think of that solution so easily
+   presumably the NSA could too  have they done something to block it
+   like use message encryption thats really EM KUN 
+
+
+	Thanks
+
+				Pray for peace      Bill
+ Bill Stewart 19089490705 wcsanchorattcom ATT Bell Labs 4M312 Holmdel NJ
+	              No Im from New Jersey I only work in cyberspace
+ White House Commect Line 12024561111  fax 12024562461

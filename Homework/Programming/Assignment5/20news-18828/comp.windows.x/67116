@@ -1,0 +1,33 @@
+From badingcstuberlinde Tobias Doping Bading
+Subject Re Forcing a window manager to accept specific coordinates for a window
+
+
+try this after XCreateWindow
+
+
+include X11Xutilh
+
+Display display
+Window window
+
+
+  XSizeHints xsizehints  XAllocSizeHints 
+  xsizehintsflags  USPosition  USSize	 or  PPosition  PSize 
+  xsizehintsx  42
+  xsizehintsy  42
+  xsizehintswidth  100
+  xsizehintsheight  100
+  XSetWMNormalHints display window xsizehints
+  XFree xsizehints
+
+
+These hints tell the window manager that the position and size of the window
+are specified by the users and that the window manager should accept these
+values If you use xsizehintsflags  PPosition  PSize this tells the window
+manager that the values are prefered values of the program not the user
+I dont know a window manager that doesnt place the window like you prefer if
+you specify the position and size like above
+
+Greetings from Berlin
+
+Tobias badingcstuberlinde

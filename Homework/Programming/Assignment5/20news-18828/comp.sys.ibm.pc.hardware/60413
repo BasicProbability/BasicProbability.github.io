@@ -1,0 +1,24 @@
+From vgvolkmarStollmannDE Volkmar Grote
+Subject IBM PS1 vs TEAC FD
+
+Hello
+
+I already tried our national news group without success
+
+I tried to replace a friends original IBM floppy disk in his PS1PC
+with a normal TEAC drive
+I already identified the power supply on pins 3 5V and 6 12V shorted
+pin 6 52535 switch and inserted pullup resistors 2K2 on pins
+8 26 28 30 and 34
+The computer doesnt complain about a missing FD but the FDs light
+stays on all the time The drive spins up ok when I insert a disk
+but I cant access it
+The TEAC works fine in a normal PC
+
+Are there any points I missed
+
+Thank you
+	Volkmar
+
+
+VolkmarGroteStollmannDE

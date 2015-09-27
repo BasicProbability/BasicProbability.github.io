@@ -1,0 +1,35 @@
+From mkilpelamtuedu Mark E Kilpela
+Subject Re A question about 120VAC outlet wiring
+
+In article 1993Apr1417214527458ecsvaxuncecsedu
+crispecsvaxuncecsedu Russ Crisp wrote
+ 
+ Hello
+ Im considering modernizing some old wiring in my home and
+ I need a little advice on outlet wiring  Several outlets
+ are the old two prong type without the ground  Naturally
+ the wire feeding these outlets is 122 WITHOUT the ground
+ wire  I noticed at the fusebox that some circuits have the
+ 122 with ground and that on these circuits the ground
+ wire was tied to the same bus as the neutral white wire
+ 
+ SO  Heres my question  It seems to me that Id have the
+ same electrical circuit if I hooked the neutralDDDDDDDDDDDa jumper from the neutral
+ over to the ground screw on new three prong grounding outlets
+ Whats wrong with my reasoning here  
+
+First it will not pass a National Electrical code inspection
+Secondly The neutral wire is current carrying and the ground wire
+shouldnt be or only during a fault condition
+
+The reason the neutral and ground are tied together in the panel is the
+tranformer on the power pole has a grounded centertap secondary with the
+grounded centertap the neutral  This gives 120v to neutralground from
+each side of the transformer and 240v across the transformer  So in effect
+the neutral and ground should be at the same potential 
+
+
+Mark E Kilpela              email mkilpelamtuedu
+Michigan Technological University
+School of Technology
+

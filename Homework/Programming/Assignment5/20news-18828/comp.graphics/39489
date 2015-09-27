@@ -1,0 +1,95 @@
+From abignetcomcom Access Bus Industry Gp
+Subject ACCESSbus Re ACCESSbus Software Creators Contest
+
+	Intro to ACCESSbus RE the ACCESSbus Software Creators 
+	Contest Announcement
+
+WHAT IS ACCESSbus
+
+ACCESSbus is a new open industry standard for computer 
+peripheral connectivity  ACCESSbus is a serial protocol that 
+uses simple lowcost I2C technology to link multiple devices to 
+a single PC port  Peripheral devices such as keyboards or 
+keypads locators Mice Trackballs Joysticks printers VR 
+gloves digitizers sensors actuators or data transmitters and 
+others can be easily daisy chained to the host PC  Applications 
+such as CADCAM Data Acquisition Simulation Virtual Reality 
+MultiplePlayerSingle PC Games Education and many many more 
+can now take advantage of ACCESSbus the technology that puts 
+Plug and Play on every PC
+
+The ACCESSbus offers advantages to endusers and developers of 
+systems and peripherals  Multiple devices connect to the host 
+computer with only one port  Common communication methods for a 
+number of device types lead to simplified hardware and software 
+development  As an open standard ACCESSbus enables cross
+platform use of the same device
+
+ACCESSbus TECHNOLOGICAL DESCRIPTION
+
+
+ACCESSbus technology is an open specification enabling anyone 
+to implement it on host systems or in peripheral devices without 
+fee or royalty
+ACCESSbus has a bus topology architecture  That is a single 
+host can accommodate up to 125 peripheral devices  ACCESSbus 
+data rate is 100 Kbitssec
+
+ACCESSbus Physical Layer
+
+ACCESSbus is a serial bus architecture based on I2C hardware 
+protocol with one data line and one clock line
+Standard lowcost I2C microcontrollers handle bitlevel 
+handshaking including automatic arbitration and clock 
+synchronization  
+
+ACCESSbus Software Protocols
+
+The ACCESSbus communication protocol is composed of three 
+levels I2C Protocol Base Protocol and Application Protocol
+
+I2C PROTOCOL This simple and efficient protocol defines 
+arbitration among contending masters without losing data  I2C 
+provides for cooperative synchronization of bus partners with 
+different clock rates  Bus transactions include addressing 
+framing of bits into bytes and byte acknowledgment by the 
+receiver  
+
+BASE PROTOCOL Establishes the asymmetrical interconnect between 
+a host computer and multiple peripherals  The host becomes the 
+ACCESSbus manager  The Base Protocol defines the format of an 
+ACCESSbus message envelope which is an I2C bus transaction with 
+additional semantics including checksum
+Unique features of the Base Protocol are autoaddressing and hot 
+plugging  Autoaddressing assigns devices with unique bus 
+addresses without the need for setting jumpers or switches  Hot 
+plugging is the ability to attach and detach devices while the 
+system is running without rebooting
+
+APPLICATION PROTOCOL This is the highest level of the ACCESSbus 
+protocol which defines message semantics specific to particular 
+types of devices  Each type requires a different Application 
+Protocol  Three broad device types have been identified 
+keyboards locators and text devices
+
+ACCESSbus support on the PC
+
+All three levels of the ACCESSbus protocol are supported on the 
+PC  An addon card implements the physical layer and uses the 
+base protocol to communicate with physical ACCESSbus devices  
+An ACCESSbus Manager  TSR under DOS and a DLL under Windows 31 
+ controls the operation of the physical layer and interacts with 
+the ACCESSbus device drivers  Drivers are available for 
+multiple ACCESSbus keyboards locators and printers for DOS and 
+Windows 31  Also available are C language source code examples 
+of the interface from applications to the device drivers
+
+
+To Contact ABIG the ACCESSbus Industry Group
+
+Postal Address
+370 Altair Way Suite 215 Sunnyvale CA 94086
+Internet Email  abignetcomcom
+Fax 408 9913773
+Voice 408 9913517
+

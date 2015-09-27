@@ -1,0 +1,58 @@
+From amathurcescwruedu Alok Mathur
+Subject How to get 24bit color with xview frames 
+
+Hi 
+
+I am using Xview 30 on a Sparc IPX under Openwindows along with a XVideo board
+from Parallax which enables me to use 24 bit color I am having some problems
+utilizing the 24 bit color and would greatly appreciate any help in this matter
+
+I use Xview to create a Frame and then create a canvas pane inside which I use
+to display live video My video input is 24 bit color
+
+The problem is that my top level frame created as
+	frame  Frame xvcreateNULLFRAMENULL
+seems to have a depth of 8 which is propagated to my canvas
+
+I would like to know how I can set the depth of the frame to be 24 bits
+I tried using the following Xlib code 
+
+XVisualInfo visualinfo
+int depth  24
+Colormap colormap
+XSetWindowAttributes attribs
+unsigned long valuemask  0
+Window win
+Xvopaque frame
+
+win  xvgetframeXVXID
+XMatchVisualInfodisplayscreendepthTrueColorvisualinfo
+
+ So far so good 
+
+colormap  XCreateColormapdisplaywinvisualinfoAllocNone
+
+ It dies here with a BadMatch error  
+
+attribscolormap  colormap
+valuemask  CWColormap
+XChangeWindowAttributesdisplaywvaluemaskattribs
+XSetWindowColormapdisplaywincolormap
+
+
+Am I using a completely wrong approach here  Is it possible to set the depth
+and colormap for a window created by Xview  What am I doing wrong 
+
+Thanks in advance for any help that I can get I would prefer a response via
+email although a post on the newsgroup is also okay
+
+Thanks again
+
+
+Alok
+
+ALOK MATHUR
+Computer Science  Engg Case Western Reserve Univ Cleveland OH 44106
+11414 Fairchild Road 2 Cleveland OH 44106
+Off  216 3688871 Res  216 7911261 email  amathuralphacescwruedu
+

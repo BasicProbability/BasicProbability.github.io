@@ -1,0 +1,30 @@
+From ducknuustakcsircoza Paul Ducklin
+Subject Re Do we need the clipper for cheap security
+
+
+gtoalgtoalcom Graham Toal writes
+
+Can someone tell me if hardware compression is or is not needed to run
+digital speech down 144K  I think it is Ive heard its not  Lets
+say 8 bit samples  Would raw data at the corresponding sampling rate
+be usable  If not how fancy does the compression need to be
+
+Its all easy with a DSP The Olivetti Quaderno for example great 1kg
+subnotebookpalmtop PC  sorry for the plug folks but Olivetti dont
+seem to be doing a good job marketing it themselves  includes sound
+digitisation hardware they provide vocoders for their DSP which produce
+varous bitrates Theres one which gives pretty acceptable voice
+quality at 13Kbitsec just right for a V32bis modem
+
+Their DSP can play and record at the same time too  so you wouldnt
+need to play twowayradio You can also download code to the DSP
+subunit though youd need a software development kit for the DSP in 
+question dunno which it is if you wanted to produce your own 
+vocoder for say V32 speeds
+
+Paul
+
+    
+      Paul Ducklin                         ducknuustakcsircoza  
+      CSIR Computer Virus Lab  Box 395  Pretoria  0001 S Africa  
+    

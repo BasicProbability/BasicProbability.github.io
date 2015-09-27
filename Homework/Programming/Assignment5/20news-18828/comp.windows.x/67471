@@ -1,0 +1,66 @@
+From probertucsbedu Dave Probert
+Subject image data format question
+
+ I am posting this for a friend 
+ please respond to vaughnsonatechhubucsbedu 
+
+Im working on an application where we are creating a dither pattern 
+and rendering it in a window by applying it to the stipple pattern 
+of the GC  The following code segment almost works if the window width 
+is an even multiple of 8  If it is not an even multiple it skews the 
+pattern towards the right  Another problem whether it is an even 
+multiple of 8 or not is a series of vertical lines spaced 8 pixels 
+apart
+
+
+extern	Display	       dpy
+extern	Window		xid
+extern	GC		gc
+
+extern	int	MaxX MaxY		 set in resize handler	
+
+ditherpixels
+
+	char	pixels		 dither pattern data		
+
+	
+	char	bm			 bitmap data			
+	char    bmp
+	long	 I arraymax
+
+
+	arraymax  MaxXMaxY
+
+	bm   char mallocarraymax
+	bmp  bm
+
+	for Ij0 Iarraymax I
+		
+		if pixelsI  DITHERBIT
+			bmp    2j		 pixel on		
+		else
+			bmp  2j	 pixel off		
+
+		if j  7
+			
+			bmp
+			j  0
+			
+		
+
+	stipple  XCreateBitmapFromDatadpy xid bm MaxX MaxY
+	freebm
+
+	XClearWindowdpy xid
+
+	XSetStippledpy gc stipple
+	XSetFillStyledpy gc FillStippled
+	XFillRectangledpy xid gc 0 0 MaxX MaxY
+	XSetFillStyledpy gc FillSolid
+	
+
+I suspect the answer is to pad the data
+
+
+Mike Vaughn
+Sonatech

@@ -1,0 +1,45 @@
+From mhallhabub11ingrcom Mark Hall
+Subject Re S3 video card at different address
+
+In article C5MyznpuEaustinibmcom lancehartmannaustinibmcom Lance Hartmann writes
+ In article 1qmrdd70humccumccumichedu jonumccumccumichedu Jon Zeeff writes
+ Id like to add a second S3 based video card to my system  Does anyone
+ know of a company that sells a card that can coexist with another one
+ All I really need is color text on one monitor and fast color graphics
+ on the other
+ 
+ Probably just a configurable address would do it
+ 
+ 
+ For what its worth I havent confirmed it a Diamond techrep told
+ me that ALL S3based video cards use port addresses 0x2E0 and 0x2E8
+ If this is true it appears that you canNOT use more than one S3 card
+ in your system
+ 
+	Actually there is an S3based card on the market that supports
+	multiple adapters in one system Unfortunately It is VLBus
+	only They may have an ISA version by now from a company
+	called Metheus The address and phone number is
+
+			Metheus Corp
+			OGC Science Park
+			1600 NW Compton Dr
+			Beaverton OR  970066905
+			5036901550
+	Be aware this is a very highend card capable of 4MB of VRAM
+	so it does not come CHEAP But I have personally seen TWO of
+	these boards running a dual screen Windows 31
+
+
+ Lance Hartmann lancehartmannaustinibmcomibmpaawdpaibmcom
+                Yes that IS a  percent sign in my network address
+ 
+ All statements comments opinions etc herein reflect those of the author
+ and shall NOT be misconstrued as those of IBM or anyone else for that matter
+
+ 
+Mark Hall
+Intergraph Corporation
+Huntsville AL
+mhallhabub11ingrcom
+205 7306145

@@ -1,0 +1,33 @@
+From Earl D Fife fifecalvinedu
+Subject Re DayStar again 
+
+In article C5Fqno9HHnewsudeledu Bill Johnston johnstonmeudeledu
+writes
+ Im going to buy a DayStar 68040 with 25 MHz for the SE30 Since there
+ were so many mails about problems with this board my questions
+ does the board work with 71 and AUX 30  Does anybody know problems
+ with any kind of software 
+ 
+ Well I havent seen any reports of problems with the Turbo 040
+ but to my knowledge Daystar has not released a version of the 
+ board that works with anything but the IIsi and IIci and they
+ have not finished tweakingtesting for use with AUX  This may
+ not happen until the AUX 302 upgrade is released my guess so 
+ Id recommend waiting or buying the 50 MHz 030 board and upgrade
+ later when AUX compatibility is assured  Turbo 040 interface 
+ cards for the II IIx SE30 IIcx etc will probably be available
+ sooner but if AUX compatibility is a requirement it is probably
+ best to be patient and let someone else be the pioneer  
+
+An added advantate of waiting for the DayStar for the SE30 is that
+just as with the 030 power cache the 040 accelerator will plug into
+the CPU socket leaving the PDS slot free for a video card or ethernet
+card  With DayStars upgrade path its a no lose situation
+
+
+
+Earl D Fife                    Department of Mathematics
+fifecalvinedu                 Calvin College
+6169576403                   Grand Rapids MI 49546
+
+

@@ -1,0 +1,45 @@
+From bnoblecscmuedu Brian Noble
+Subject X Server scanline padding question
+
+
+I am almost done porting XFree86 12 to a new piece of display
+hardware but have run into a snag I think may be somewhat
+commonplace so Im sending a netfeeler
+
+I have a display that is a noninterlaced memory mapped 1bit
+720x280 display  The servers view of the world obtained via xwd 
+xwud seems to be exactly what it should be  However the displayed
+version of the framebuffer gives the impression that the server is
+using scanlines that are too long  After a bit of experimentation it
+seems that the problem was that the server was padding the line out to
+a word boundry but the scanline size in the buffer is 90 bytes which
+isnt exactly divisible by four  Changing the following defines in
+mitserverincludeservermdh
+
+
+
+define BITMAPSCANLINEPAD  32
+define LOG2BITMAPPAD		5
+define LOG2BYTESPERSCANLINEPAD	2
+
+
+
+to
+
+
+
+define BITMAPSCANLINEPAD  16
+define LOG2BITMAPPAD		4
+define LOG2BYTESPERSCANLINEPAD	2
+
+
+
+Was not exactly the right solution  How do I tell the server either
+a dont pad the scan lines at all cause this server is only being
+built to run on this particular display or to pad only to byte
+boundries
+
+Im using a customized version of XFree86v12 under Mach 30
+
+Thanks
+Brian

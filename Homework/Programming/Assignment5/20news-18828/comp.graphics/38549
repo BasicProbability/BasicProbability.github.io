@@ -1,0 +1,22 @@
+From ospreyux4csouiucedu Lucas Adamski
+Subject Re Fast polygon routine needed
+
+In article 7306pdxgateUUCP idrrigelcspdxedu Ian D Romanick writes
+What kind of polygons  Shaded  Texturemapped  Hm  More comes into play with
+fast routines than just polygons  It would be nice to know exaclty what
+system VGA is a start but what processor and a few of the specifics of the
+implementation  You need to give  more info if you want to get any answers P
+
+I dont want texture mapped cause if I did Id asked for them   Just
+a simple and fast routine to do filled polygons  As for the processor itd
+be for a minimum of a 286 maybe 386 if I cant find a good one for 286s
+Ideally I want a polyn function that can clip to a userdefined viewport
+and write to an arbitrary location in memory  Of course the chances of
+finding something like that are pretty remote so I guess Id need the source
+with it  Oh and I guess it would need to be in ASM otherwise itd be too
+slow  Ive seen some polygon routines in C and theyve all been waaay too
+slow  Its for a 3D vector graphics program  Ive been hunting high and low
+for a polyn function in ASM and I cant find one anywhere that I can use
+Ive found one or two polyn functions but my ASM is pretty bad so I wont
+even try to rewrite them 
+		Lucas

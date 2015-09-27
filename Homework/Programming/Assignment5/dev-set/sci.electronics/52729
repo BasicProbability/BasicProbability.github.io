@@ -1,0 +1,42 @@
+From robertdesoniahal9kannarbormius Robert Desonia 
+Subject AD board BUS SPEED probl
+
+
+C Hi
+C I have a 486DX266MHz computer to use with an AD board
+C for data acquisition on an AT busIm having problems
+C The AT bus runs at 125 MHz  correct  So there should
+C be no bus speed conflict But I read somewhere that the
+C new 486DX266 MHz CPU runs on a 33 MHz bus  is that for
+C the local bus or the AT bus also  if so then I have a problem
+C 
+C When I run on nonturbomode the speed goes to 8 MHz and the
+C AD doesnt work  Please mail your views  Thanks
+C Vincent
+C cyl5musicamcgillca
+C 
+
+The STANDARD AT bus ISA runs at 8MHz not 125 MHz but some 
+nonstnadard ISA buses do have higher clock rates but be careful since 
+some boards dont work with faster than standard rates  For instance my 
+486 has adjustable AT bus speeds and my PAS16 audio card chokes when I do 
+AD data acquisition with a bus speed faster than 10MHz
+
+The fact that nonturbomode speed AD doesnt work is weird  You may 
+have a motherboard with a hardware bug  
+
+33 MHz bus on the 486DX2 66 does refer to the local bus  FYI the AT bus 
+operates asynchronously and is linked to the local bus via a bus 
+interface which is one function that your chipset
+
+rdd
+
+
+  WinQwk 20b0  Unregistered Evaluation Copy
+  KMail 295d WNET HQ hal9kannarbormius 1 313 663 4173 or 3959
+                                                     
+
+ HAL 9000 BBS  QWKtoUsenet gateway   Four 14400 v32bis dialins    
+ FREE Usenet mail and 200 newsgroups   PCBoard 145aM  uuPCB  Kmail 
+ Call 1 313 663 4173 or 663 3959      
+ Member of EFF ASP ASAD   1500MB disk  Serving Ann Arbor since 1988 

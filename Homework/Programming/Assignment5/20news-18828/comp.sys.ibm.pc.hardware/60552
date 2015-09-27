@@ -1,0 +1,28 @@
+From dcolemanccwfccutexasedu Daniel M Coleman
+Subject Re Diamond Stealth 24 giving 94 Winmarks
+
+In article westesC5qvApBGJnetcomcom westesnetcomcom Will Estes writes
+I have just installed a Diamond Stealth 24 ISA card in
+a 486DX266 system with 256K cache and 16 megs of memory
+that gets about a 126 SI 60 CPU Benchmark rating  Using
+the 1024x768x16 color driver under Windows I am getting a
+Winbench Winmarks rating of only about 95 Million  Since
+I have heard that others get 15to16 million for this card
+I assume that something is very wrong with my setup
+
+What are some possible causes of the card slowing down like this
+
+Most importantly which Winbench version are you using  On my local bus ATI
+Graphics Ultra Pro Ive gotten various Winbench scores from 158 million to
+31 million winmarks depending on the version  Winbench 25 gives the most
+optimistic scores 311 gives the least  A winmark rating is meaningless
+without a corresponding version number
+
+Dan
+
+ 
+Daniel Matthew Coleman		      Internet dcolemanccwfccutexasedu
+  dcolemanutxvmsccutexasedu
+The University of Texas at Austin  	 DECnet UTXVMSDCOLEMAN
+ElectricalComputer Engineering	   	 BITNET DCOLEMANUTXVMS BITNET
+

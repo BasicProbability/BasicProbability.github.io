@@ -1,0 +1,30 @@
+From pvsemt1smtsceafr Pierre Verpeaux
+Subject Re xdm configuration
+
+In article C6ADruJpFhermeshrzunibielefeldde uphya001odieunibielefeldde Lars KoellerD023125810653750526189607 writes
+ 
+ Hello
+ 
+ We want to configure our X11R5 sytem i486 33Mhz running BSDlike UNIX
+ comming up with a chooser menu with different machines on it works an then
+ connect to them But the only connection works is localhost
+ An X indirect machine works very well
+ The configuration
+ 
+ 		 starting the xdm at boot time with no servers specified
+ 		   in Xservers
+ 		 starting the Xserver at boot time with X indirect localhost
+ 
+            more deleted
+
+
+You need to start the Xserver with indirect itsname
+
+If you start it with indirect localhost it use the loopback adress as
+its adress So when it try to contact another host this one try to answer
+on its loopback adress Not good
+
+Remember that every machine has the adress 127001 on the loopback network
+
+ 
+Pierre Verpeaux 	DMTSEMTLAMS		169086542	

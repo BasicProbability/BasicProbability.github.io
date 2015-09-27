@@ -1,0 +1,45 @@
+From jcmorrismbunixmitreorg Morris
+Subject Re Soundblaster IRQ and Port settings
+
+discussing the use of IRQ 7
+
+In  recent article mspraguesuperiormcwbst311b Mike Sprague writes
+
+I as a number of poeple in this thread have already written
+I cant prove its true but I believe it LPT1 does not
+actually use IRQ7 even though that interrupt is supposed to
+be dedicated to LPT1
+
+To put it a little differently
+
+  IRQ 7 is the de facto standard interrupt assigned to be used by the
+   printer adapter to announce its completion of some activity
+
+  DOS doesnt monitor IRQ 7 it uses other means to determine when its
+   time to send out another byte to the printer
+
+  Most all hardware printer adapters have the ability to disable
+   the use of IRQ 7 usually by merely breaking the connection between
+   the ISA pin and the associated driver  Other adapters control the
+   IRQ line by a tristate driver and by programming just leave it
+   in the highimpedence mode
+
+  Unfortunately there are a lot of adapter cards which use bistate
+   drivers ie either assert high or assert low for the IRQ lines
+   rather than tristate drivers assert high assert low or dont
+   assert anything  The presence of such a card on an IRQ line precludes
+   the use of that IRQ by any other adapter unless it is physically 
+   disconnected by a jumper
+
+   Incidentally note that theres no requirement that a card hold
+   the IRQ line low when no interrupt is desired  If that were true
+   you would have to somehow tie down all unconnected IRQ lines and
+   that certainly isnt a requirement
+
+  NonDOS operating systems OS2 NT  various Unices or whatever the
+   proper plural of Unix might be require the use of IRQ 7 for performance
+   reasons  
+
+And the SB16 alas is one of the cards which uses bistate drivers
+
+Joe Morris  MITRE  jcmorrismitreorg

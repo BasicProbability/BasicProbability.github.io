@@ -1,0 +1,16 @@
+From tw2irzinftudresdende Thomas Wolf
+Subject Q TIFF description
+
+Sorry for wasting your time with a probably simple question but Im not
+an computer graphic expert I want to read TIFFFiles with a PASCALprogram
+The problem is that the files I want to read are in compressed form 
+ code 1 eg Huffman  All books  articles I found describe only the
+plain uncompressed format I dont know where to get the original
+TIFF specification furthermore I havent any access to a realy complete
+library Can anybody direct me to a good book or even better to an 
+specification available via ftp 
+
+Thanks in advance  Thomas Wolf
+
+ps direct mail would be prefered
+

@@ -1,0 +1,48 @@
+From mattcenterlinecom Matt Landau
+Subject Re Asynchronous X Windows
+
+In ellis735675321nova ellisnovagmiedu R Stewart Ellis writes
+Is there anyway to use X Windows over an async line  Clearly you could use
+                                x
+It is X window
+
+No it isnt  It is the X Window System or X11 or X or any of
+a number of other designations accepted by the X Consortium  In fact
+doing man X on pretty much any X11 machine will tell you
+
+     The X Consortium requests that the following names  be  used
+     when referring to this software
+
+                                  X
+                           X Window System
+                             X Version 11
+                     X Window System Version 11
+                                 X11
+
+There is no such thing as X Windows or X Window despite the repeated
+misuse of the forms by the trade rags  This probably tells you something
+about how much to trust the trade rags  if they cant even get the NAME
+of the window system right why should one trust anything else they have 
+to say
+
+With regard to dialup X11 implementations there are several  You can
+buy serial X11 terminals from a couple of companies including both 
+GraphOn and NCD  In fact Im composing this from an NCD running X11
+over serial lines across 144 kbaud connection  
+
+NCD also sells a softwareonly package that provides XRemote which is
+NCDs implementation of serial X11 for PCs  There may be other such 
+software packages available
+
+X11R6 is supposed to include a standardized compression scheme for running
+X11 over lowspeed connections  Its called Low Bandwidth X LBX and 
+is based on improved versions of the techniques used in NCDs XRemote 
+
+It seems likely that once LBX is released as a Consortium standard there
+will be several vendors willing to supply implementations for various 
+sorts of hardware
+
+Followups directed to compwindowsx
+
+ Matt Landau			Waiting for a flash of enlightenment
+ mattcenterlinecom			  in all this blood and thunder

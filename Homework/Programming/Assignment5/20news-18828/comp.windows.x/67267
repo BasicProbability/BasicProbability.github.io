@@ -1,0 +1,48 @@
+From hastynetcomcom Amancio Hasty Jr
+Subject Re X Toolkits
+
+In article C5y8wJ3zEundergradmathuwaterlooca paprescoundergradmathuwaterlooca Paul Prescod writes
+I am considering making a reasonably large application for free
+distribution probably copylefted  I am going to use X  Now Im
+
+The following packages meet your criteria in that they are PD and
+present an aesthetically pleasant graphical interface to the users
+
+If you can use 386bsd
+	there is xview3 OpenLook
+
+	there is Interviews which looks a little like Motif
+
+	there is gopath a very nice C toolkit for Athena Widgets and Motif
+	         which is simpler
+                 and better than interviews and you will enjoy
+                 technical support from Bull via email
+		 It has a nice draw program it uses motif which can be used
+		 to create graphical frontend to programs
+		 The data format is called streams which you can feed
+		 to your programs I ported gopath on an internet machine
+		 which is gone but if you use gcc233 with minimal effort
+		 gopath can be ported to 386bsd
+		 Last but not least gopath interfaces to toolkits via a driver
+		 module They have an MSWindows driver module for instance
+
+	Also many have written extensions to tktcl thus allowing powerful
+	applications For instance tclnm  has snmp extensions for tktcl
+	With ease I  can now combine snmp network operations with graphs
+	photowidget graphical interface file operations database 
+	operationsetc The author of tclnm mail me a simple network 
+	management application which was about 80 lines long  it displayed
+	various environmental parameters from a router I wrote  a simple
+	strip chart script for displaying RealTime ip received
+	packetsseconds
+
+
+	Hope this helps
+	Amancio Hasty
+
+	
+ 
+This message brought to you by the letters X and S and the number 3
+Amancio Hasty             
+Home 415 4953046      ftpsite depository of all my work
+email hastynetcomcom	  sunvisrtpncepagovpub386bsdincoming

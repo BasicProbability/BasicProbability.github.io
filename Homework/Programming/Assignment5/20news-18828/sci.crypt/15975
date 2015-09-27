@@ -1,0 +1,39 @@
+From naglenetcomcom John Nagle
+Subject Re New Encryption Algorithm
+
+artmelwellsfcaus Arthur Melnick writes
+     Ever since Craig Rowland posted his piece New Encryption
+to scicrypt there has been some discussion of our company
+Secured Communications Technologies Inc and on encryption
+algorithm NEA
+
+       The classic comment on new encryption algorithms comes from
+Friedman
+
+	No new cypher is worth considering unless it comes 
+	from someone who has already broken a very hard one
+
+Historically Friedman has been right  Its really hard to develop
+a good cypher  IBMs Lucifer the precursor to DES turns out to have
+been fatally flawed  Most of the DESlike systems other than DES seem
+to be vulnerable to differential cryptanalysis  The first two tries at
+public key encryption remember knapsack cyphers were broken  Most
+if not all of the machine cyphers of the electromechanical era were
+broken eventually  Attempts in the computer era to homebrew encryption
+have been disappointing the classic A survey of data insecurity packages
+in Cryptologia contains analyses and breaking techniques for a few of the
+popular security packages of the late 1980s
+
+        A new proprietary algorithm  No way
+
+        If the US is permitting general export of this thing it has
+to be weak thats how the current regulations work  Currently theres
+a willingness to allow systems with short keys 32 bits appears to be
+no problem the 56 bits of DES are too many or weak algorithms
+I think Word Perfect qualifies under that rule to be exported
+I cant believe these guys shepherded their technique through the 
+PTO and the State Departments Arms Control Division without finding that out
+
+					John Nagle
+
+ps No Im not thrilled with Clipper either but thats a different issue

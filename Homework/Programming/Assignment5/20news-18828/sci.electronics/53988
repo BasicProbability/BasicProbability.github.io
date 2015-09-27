@@ -1,0 +1,17 @@
+From idhnessiemccacuk Ian Hawkins
+Subject Making up odd resistor values required by filters
+
+When constructing active filters  odd values of resistor are often required 
+ie something like a 314 K Ohm resistorIt seems best to choose common 
+capacitor values and cope with the strange resistances then demanded
+
+Is there a PD program out there that will work out how best to make up such
+a resistance given fixed resistors of the standard 12 values per decade1
+1215182233 etc   It is a common enough problem  yet I cant 
+recall seing a program that tells that RxRyRz gives Rq  starting with 
+q and finding prefered values xy and z
+
+
+			Cheers
+				Ian H  
+

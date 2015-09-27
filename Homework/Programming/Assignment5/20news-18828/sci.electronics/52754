@@ -1,0 +1,28 @@
+From whitcarsonuwashingtonedu John Whitmore
+Subject Re Help with ultralong timing
+
+In article 1pqu12pmusunbocsmqeduau johnhmacadammpcemqeduau John Haddy writes
+In article C513wIG5Aathenacsugaedu mcovingtaisun3aiugaedu Michael Covington writes
+ 1 Dont use big capacitors  They are unreliable for timing due to
+ leakage 
+
+	True especially for electrolytic capacitors at high temperature
+
+ Instead use a quartz crystal and divide its frequency by 2 40 times
+ or something like that
+
+ Wouldnt a crystal be affected by cold My gut feeling is that as a
+mechanically resonating device extreme cold is likely to affect the
+compliance terminology of the quartz and hence its resonant frequency
+
+	Low power quartz oscillators are usually 32 kHz and THESE
+have significant temperature drifts which one doesnt often notice
+while wearing the watch on ones wrist  Low temperature sensitivity
+is available in other crystal types which unfortunately
+are larger and higher frequency 1 MHz or so and take more
+battery power  
+
+	Programmable timers might be less accurate but they
+are more powerstingy than suitable crystal oscillators
+
+	John Whitmore

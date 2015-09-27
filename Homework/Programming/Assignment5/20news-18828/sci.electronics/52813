@@ -1,0 +1,69 @@
+From behnkeFNALFFNALGOV ML Broomen Behnke
+Subject Re Peltier Effect Heat Pumps
+
+In article 2745snap pajukcogecmrc Paul Johnson writes
+
+I was having a look through a couple of components catalogues when I
+came across a range of Peltier Effect heat pumps intended for cooling
+components  For those who have not heard of this effect you put a
+current through one of these devices and it pumps heat from one side
+to the other  Reverse the current and you reverse the effect  I
+think a temperature difference can give you an EMF as well
+
+Anyway it struck me that you could make a nice coolhot box for
+picnics with one of these a power regulator a thermostat and a
+couple of heat sinks  The biggest device can shift 60W with an
+efficiency of 8090 which aint bad although it would flatten my
+car battery in about half an hour
+
+ SoCalled CoolHot boxes have been advetised for several years  I recall
+Damark advertising them in a recent catalog  Problem with the units is they do
+a shy job of keeping food coldwarm  The peliter devices used just dont
+seem to have enough punch to keep up  If you want something hot you need to
+heat it up before you put it in the box and end up hours later with food thats
+only moderately warm  Same goes for cold items
+
+Unfortunately the catalogue didnt list anything more than the basic
+specs as a heat pump  I imagine that you would get a backEMF as the
+temperature gradient across the device increases  If so presumably
+its power decreases as the backEMF increases until eventually we
+have a steady state with no current being consumed assuming no
+leakage  If so then the final temperature difference between the
+two sides could be set by the supply voltage and nothing more
+although that would be a lousy way to control it
+
+What I would like to know is
+
+1 Are the above guesses correct
+
+2 What is the opencircuit thermal resistance of a typical device
+   I just want to be sure that my coolbox is not going to get warm
+   too fast when I unplug it
+
+ Youde probably be better off getting a good Colemantm cooler and stocking
+up on blue ice blocks
+
+
+3 How does a Peltier Effect heat pump actually work  It looks like
+   magic
+
+4 Why dont they use these things in domestic fridgesfreezers
+
+ Same as above  Not enough punch in them to keepget things coldhot
+
+Thanks in advance
+
+Paul
+
+Paul Johnson pajgecmrccouk	     Tel 44 245 73331 ext 3245
+
+These ideas and others like them can be had  GECMarconi Research is not
+for 002 each from any reputable idealist  responsible for my opinions
+Mike Behnke              Senior TechAdvisor  Quid est illuidin aqua
+Fermi Nat Accel Lab      Equipment Suuport   
+Batavia Il             Computing Div        PISTRIX  PISTRIX
+BEHNKEFNALFFNALGOV                        
+
+My opinions are my own not of the lab So if you dont like them call
+
+1800UWHINER

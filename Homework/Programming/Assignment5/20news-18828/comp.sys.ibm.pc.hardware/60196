@@ -1,0 +1,47 @@
+From bgrubbdantenmsuedu GRUBB
+Subject Re IDE vs SCSI
+
+wlsmithvalveheartrriuwoca Wayne Smith writes
+What does a 200400 meg 5 megssec SCSI drive cost
+Since the Quadra is the only Mac able to deal with 5MBs and Hard drives START
+at 160MB I have NO idea
+For the Mac I have the following These are ALL external
+ 20MB 299 15MB
+ 52MB 379 73MB
+ 80MB 449 563MB
+120MB 569639 475533MB
+210MB 9791029467490MB
+320MB 14991549 468484MB
+510MB 19992119 392431MB
+etc
+
+So scsi1SCSI2 for the Mac goes down in priceMB as hard drive size goes
+up and I assume the same for the PC world
+
+I wont argue that the SCSI standard makes for a good well implimented
+data highway but I still want to know why it intrinsically better
+than IDE on an ISA bus when it comes to multitasking OSs when
+managing data from a single SCSI hard drive
+Well SCSI is ALSO a FLOPPY drive interface  In the Mac since SCSI is THE
+inteface for any noncard nonmodem notkeyboard device the id 7 is used
+for the floppy drive called CPU in all identifiers  This allows cross
+drive interfacing as fast as the OS program CPU SCSI and drive can handle 
+itthis shows up best in the Quatra line
+In the IBM that uses SCSI for the FLOPPY drive this should happen as well
+Also SCSI is NOT just drives but printers scanners expandsion cards 
+this showed up for the Plus as the NuBus Cage CDROM etc
+IDE seems to be mainly hard drives  As for specs nobody has GIVEN me any
+and I cant find any  Besides the advertizments call IDE the AT interface
+Make of that what you will
+SCSI is a jack of all trades and IDE is a master of ONE
+This alone puts SCSI above IDE  SCSI2 blows IDE out of the water
+Remember SCSI was used in high priced machines until about 18 months ago
+When the Mac prices came down to Earth so the Rule of Scale still played
+and SCSI remained high costcheap seems to mean chezzy in the High end
+computer world at times and THIS more than anything else proably kept SCSI
+off into the statosphere price wise
+SCSI came FROM the high end computer world with multitasking OS were the
+standard for the most part  Of all the interface NeXT could have used it
+choose SCSI  In 16bit and 32bit mode SCSI is a multitasking OS desined
+interface while IDE and 8bit SCSI are braindead run one program interfaces
+at least the way mac use 8bit SCSIUGH

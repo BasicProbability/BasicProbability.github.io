@@ -1,0 +1,25 @@
+From edmwrscom Ed McClanahan
+Subject Re 1280x1024 on ATI Ultra w Nanao 550i
+
+mancussweetpeajscnasagov Keith Mancus writes
+
+ reference to running ATIs Install Program and using
+  its functions to positionsize images at various
+  resolutions
+
+I thought this was a neat feature until I noticed that
+when an image is resized the scanning frequency is
+necessarily changed  This causes digital multiscan
+monitors like my MAG MX17F to get confused as to which
+mode to use if the frequency gets too far from the
+standard selections  For this reason I use the
+factory defaults for positionsize on the ATI card
+and adjust each mode individually only the first time
+at the monitor  The MAG and many other multiscan
+monitors has have the ability to recall these settings
+the next time each mode is detected
+ 
+
+
+
+  Edward McClanahan                    edmwrscom

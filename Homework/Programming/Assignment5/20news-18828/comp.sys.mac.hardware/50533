@@ -1,0 +1,25 @@
+From johnstonmeudeledu Bill Johnston
+Subject Re Apple Tape backup 40SC under System 7x
+
+In article 1pskkt3lnfnnewsfnalgov b91926fnclubfnalgov David Sachs writes
+In article generous734035090nova generousnovastinasagov Curtis Generous writes
+
+ I need to get an Apple 40SC tape backup unit working under
+ Sys 70x but do not have any driverssoftware to access the device 
+
+Retrospect Dantz works nicely with this combination
+
+I also use Retrospect but I noticed that Central Point Softwares
+MacTools Backup also supports the Apple tape drive under 7x 
+The Apple tape drive is quite slow so the advantages of Retrospect
+relative to the simpler MacTools Backup are less significant than 
+might be the case for someone backing up a large server to a DAT drive  
+
+Used Apple tape drives are going for 100 so it might make less
+economic sense to pay an extra 140 for Retrospect when MacTools 
+is cheaper and includes other worthwhile utilities
+
+Retrospect is nice though and Im probably going to upgrade to 20
+ 
+ Bill Johnston johnstonmeudeledu
+ 38 Chambers Street Newark DE 19711 3023681949

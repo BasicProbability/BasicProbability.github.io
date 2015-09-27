@@ -1,0 +1,14 @@
+From sigmarahulnet Kevin Martin
+Subject Re XV under MSDOS 
+
+In 1993Apr20083731260eicnetnach NO EMAIL ADDRESSeicnetnach writes
+Do somenone know the solution to run XV  any help would be apprecied
+
+I would guess that it requires X almost certainly DVX which commonly
+uses the GO32 DJGPP setup for its programs  If you dont have DVX
+running you cant get anything which requires interfacing with X
+
+ 
+Kevin Martin
+sigmarahulnet
+I gotta get me another hat

@@ -1,0 +1,53 @@
+From gvanvughcsuctacza Gerhard van Vught
+Subject Problem with libararies 
+
+I have been trying to compile some source code for a mpeg animation viewer for
+X Windows I got the code from a ftp site I have modified the Makefile as
+they instructed no errors there What happens is that I get the following
+message when everything is going to be linked
+
+
+	cc  utilo videoo parseblocko motionvectoro decoderso  fs2o fs2fasto fs4o hybrido hybriderro 2x2o  gditho grayo monoo maino jrevdcto 24bito util32o orderedo  ordered2o mborderedo liblibX11so liblibXextso lm o mpegplay
+Undefined			first referenced
+ symbol  			    in file
+getnetpath                          liblibX11so
+talloc                             liblibX11so
+tunbind                            liblibX11so
+topen                              liblibX11so
+trcvdis                            liblibX11so
+netdirfree                         liblibX11so
+terror                             liblibX11so
+netdirgetbyname                    liblibX11so
+getnetconfigent                     liblibX11so
+tlook                              liblibX11so
+terrno                             liblibX11so
+tclose                             liblibX11so
+netdirgetbyaddr                    liblibX11so
+tlisten                            liblibX11so
+trcv                               liblibX11so
+setnetpath                          liblibX11so
+tbind                              liblibX11so
+tconnect                           liblibX11so
+taccept                            liblibX11so
+ncperror                           liblibX11so
+inetaddr                           liblibX11so
+ld mpegplay fatal error Symbol referencing errors No output written to mpegplay
+ Error code 1 bu21
+
+make fatal error
+
+Does anyone know where these missing functions are located If you do can you
+help me with it
+
+I posted before to one of the other Unix groups I tried their suggestions but
+always get this error
+
+If you have to know I am using Unix system V The machines here are 486s The
+terminals I want to use are separate and just called Xterminals and they seem
+dedicated to that Im not sure as to what they really are since it is one of
+my first times out with this Xwindows gidget That is first time programming
+for it so to speak I use them alot just for the graphics things
+
+If you can help mail me soon
+
+Gerard

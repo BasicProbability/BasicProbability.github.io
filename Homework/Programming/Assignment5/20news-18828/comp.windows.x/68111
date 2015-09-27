@@ -1,0 +1,28 @@
+From casperfwiuvanl Casper HS Dik
+Subject Re Problems with xdm  under X11R5Solaris
+
+dbsunbimbe Danny Backx writes
+
+Yes that is a bug in the X11r5 port of xterm You sometimes get this when
+you start from XDM I have reported this to Casper but dont know whether
+it made it into his set of patches yet
+
+Basically in mitclientsxtermmainc there is a test at line 1598 which
+checks errno after attempting to open devtty Add the errno  EINVAL
+case to it and you should be fine
+
+Its actually a bug in the Solaris 21 kernel We could add a workaround to
+xterm open should never return EINVAL but it does 
+
+I didnt have time to update the R5SunOS5 patch lately but non
+of the existing problems seem to warrant a new set of patches
+
+Since xsession is a Bourne shell script anyway you might as well add a line
+	 etcTIMEZONE
+as it is done in etcprofile
+
+XDM coulda also keep the XDM environment variable It should have inherited
+it from the environment
+
+
+Casper

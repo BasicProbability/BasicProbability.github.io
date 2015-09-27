@@ -1,0 +1,93 @@
+From mlobbiasdcc13ucsdedu Kaneda
+Subject SUMMARY ZyXEL Strings
+
+
+I write
+I recently got a ZyXEL U1496E modem  Its great but Im still having
+some problems figuring out what strings to use in what applications
+I basically need strings for Zterm FirstClass client and Telefinder
+client  Ive been able to get FirstClass and Zterm working by using 
+another modems settings in FirstClass and copying them for Zterm
+However it still has problems  Zterm for example will list ERROR
+the first time I try dialing after starting the problem  If I cancel and
+try again it works fine  Telefinder is even worse  I cant get it to
+even wake up the modem  So if anyone uses a ZyXEL for any of these
+programs Id greatly appreciate you sending me the setup strings you use
+Thanks in advance
+ 
+yoshioCSUCLAEDU writes
+For zterm I initially did the following
+atz4
+atd0
+atw0
+Then I set my init string to atz0
+Thats it
+ 
+RSMITHPEARLTUFTSEDU Rod Smith writes
+I cant help you with FirstClass or Telefinder but Ive been using ZTerm
+and a
+ZyXEL for close to two weeks now  Heres what I did
+
+Once in ZTerm set hardware handshaking on and the bps rate to 57600
+Youve
+probably already done this  Then I typed
+
+atd0
+atw
+
+The first line sets the modem to ignore the DTR line necessary for
+hardware
+handshaking with most though not all Mac hardware handshaking cables
+The
+second stores this setting in nonvolatile memory in the modem so its the
+default when the modem starts  In the modem preferences dialog I have the
+modem initialization string set to atz0M which just insures that the
+stored setting is used useful if starting ZTerm after using something like
+the
+fax software or MacWoof which change the settings in other ways 
+Alternatively you could leave the factory default the way it is and just
+set
+the ZTerm initialization string to atd0M which would accomplish the
+same
+thing IF the modem is always on before you start ZTerm and IF other
+programs
+dont modify the settings  Or atz0d0M would work even if other
+programs
+modify the modems settings  I do it the way I do because I sometimes
+forget
+to turn on the modem before launching ZTerm and this way Im assured of
+having
+the correct DTR handling when the modems powered up
+ 
+After comparing the above strings with my AT commands reference guide I
+came up with
+ATZ0L2N2X5D0S1150M
+This is entered in the Initialize box on the Modem Preferences in Zterm
+Quick summary of each commmand
+Z0	 Reset modem to User Profile 0
+L2	 Speaker volume at 2 fairly quiet
+N2	 Ring volume at 2 fairly quiet
+X5	 Display connect info according to setting 5 see manual
+D0	 Assume DTR computer is always on
+S1150	 Dial speed at 50 as fast as ZyXEL can handle
+
+In FirstClass I used this same string with the addition of S00 right
+before the S11 command in the setup box  This disables the autoanswer 
+function of the modem for FirstClass  I based my modem setting on the Supra
+144FAX and just changed the above mentioned string
+
+In Telefinder I based my setting on the Zoom V42  HH setting  I changed
+the Modem Initialization string to the same one I used for FirstClass and
+everything seems to work fine
+
+Sorry it took so long to get this summary out  If someone wants to forward
+this to the infomacreports directory at sumexaim it might save other
+newbie ZyXEL users like myself the trouble of setting up their strings and
+also save the net some redundant messages  If anyone else has something
+to add feel free
+
+Marcus
+mlobbiaucsdedu
+ 
+  Marcus Lobbia            
+  mlobbiasdcc13ucsdedu  

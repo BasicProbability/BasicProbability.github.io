@@ -1,0 +1,36 @@
+From servisauthorecnpurdueedu Brian K Servis
+Subject Re How Redirect PRINT MANAGER To FILE
+
+u7911093ccnctuedutw By SWH  writes
+
+Who can tell me which program PD or ShareWare can redirect windows 31s
+output of printer manager to file 
+
+	I want to capture HP Laser Jet IIIs print output
+
+ 	Though PostScript can setup print to filebut HP cant
+
+	I use DOSs redirect programbut they cant work in windows
+
+		Thankx for any help
+
+ Internet Address u7911093ccnctuedutw
+
+    English Name Erik Wang
+    Chinese Name Wang JyhShyang
+
+ National ChiaoTung UniversityTaiwanROC
+
+Try setting up another HPIII printer but when choosing what port to connect it
+to choose FILE instead of like LPT1  This will prompt you for a file name
+everytime you print with that HPIII on FILE printer Good Luck
+
+
+Brian Servis
+
+  servisauthorecnpurdueedu            It Happened This Way     
+ actual quotes from insurance claims
+  What I say may not be what I                                       
+  think What I say may not be     The pedestrian had no idea which 
+  what Purdue thinks               way to go so I ran him over   
+

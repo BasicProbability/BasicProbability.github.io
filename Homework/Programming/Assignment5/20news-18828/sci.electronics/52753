@@ -1,0 +1,20 @@
+From jkeaisucssun1sdsuedu keais j
+Subject Re Pioneer Laser player
+
+In article 1993Apr600515010250eerochesteredu nealeeerochesteredu Reg Neale writes
+Im trying to figure out how to operate a Pioneer Laserdisc LD1000 that I bought at a surplus store It is reputedly from some kind of computerised viewing
+andor ordering system THere is what may be an HPIB connector on the back When
+I power it up the front panel power light comes on but no activity and the
+door doesnt open Anyone have any experience with this unit or any ideas on how
+to obtain documentation
+
+What you have is one of the LD players from a video game Dragons Lair
+Space Ace etc Call Pioneer Technicial Support 2134980300 at least
+thats the number I called them at and ask for the LDV1000 Interface
+Guide It shows how the parallel interface should be wired and the codes
+for the commands play pause reject etc The guide is mainly for hooking
+the player to a computer but with a little work you could build a wired
+controller
+
+
+Jim Keais        jkeaisucssun1sdsuedu

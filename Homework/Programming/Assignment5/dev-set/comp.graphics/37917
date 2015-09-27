@@ -1,0 +1,31 @@
+From andreyccocaltechedu Andre T Yew
+Subject Re 16 million vs 65 thousand colors
+
+d9hhdtekchalmersse Henrik Harmsen writes
+
+14 bits per RGB gives horrible machbanding visible in almost any picture
+
+5 bits per RGB 32768 65000 colors gives visible machbanding
+
+colorgradient picture has almost no machbanding This colorresolution is 
+
+see some small machbanding on the smooth colorgradient picture but all in all
+There ARE situiations where you get visible machbanding even in
+a 24 bit card If
+you create a very smooth color gradient of darkgreenwhiteyellow
+or something and turn
+up the contrast on the monitor you will probably see some machbanding
+
+    While I dont mean to damn Henriks attempt to be helpful here
+hes using a common misconception that should be corrected
+
+    Mach banding will occur for any image  It is not the color
+quantization you see when you dont have enough bits  It is the
+human eyes response to transitions or edges between intensities
+The result is that colors near the transistion look brighter on
+the brighter side and darker on the darker side
+
+Andre
+
+ 
+             Andre Yew andreyccocaltechedu 1312151392

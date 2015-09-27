@@ -1,0 +1,46 @@
+From woutdutentbettudelftnl Wout Serdijn
+Subject Re how can 0022 uF be different from two 0047 in series
+
+In 1993Apr191853269830PrincetonEDU mgcsprincetonedu Michael Golan writes
+
+I was looking at the amps diagram for Sony 10902090 receivers and I
+was amazed to find a difference between the US and Canadian model
+on the capacitors that hangs off the output to the speakers
+
+                          to speaker identical both models
+from amp 
+idnetical both models 
+                          10 
+                        
+                        
+                                               
+                                                   
+        0022                   Canadian model only
+     US model            0047 
+     and worldwide        
+     model only                  Candian model only
+                            0047
+                           
+                        gound
+
+The board itself is also identical with room for all three caps The
+USCan versions is clearly indicated in both places
+
+How does that make sense 00472 is 00235 essentially 0022 for caps
+there are just standard caps no special Wtypeprecision 
+
+Please explain this
+ Michael Golan
+ mgcsprincetonedu
+
+The only explanation I can think of is that two capacitors in series
+can handle twice the output voltage Sometimes two elcos in antiseries
+you know positive sides facing eachother are used to obtain a large
+capacitor that can handle positive and negative voltages as well
+
+So there probably is no designphilosophical reason but a productioncost
+one
+
+Best 73s
+
+Wouter

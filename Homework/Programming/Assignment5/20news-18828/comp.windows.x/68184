@@ -1,0 +1,38 @@
+From rossloralctscom Robert Ross
+Subject DetectingSaving Geometry Changes
+
+Hi
+
+Im trying to get my program to monitor resizeposition events
+so that when the program exits I can save the last known geometry in 
+some sort of preferences file
+
+I am adding an event handler for StructureNotify to the TopLevelShell
+
+ XtAddEventHandlertopLevelStructureNotifyMaskFalseconfigureCBmyData
+
+This works fine and my callback is called whenever the window is resized
+or repositioned using the window manager mwm
+
+However when Im just resizing the window using any resize handle on the
+window manager resize decoration the x and y are set to zero in the
+XEvent passed to the event handler callback  Im accessing the xconfigure
+structure like the X11 manual says  xevxconfigurex xevxconfigurey
+The width and height memebers are correct
+
+When I reposition the window using the window manager the xevents xconfigure
+structure contains all the correct x y width height member settings
+
+Q1 Anybody know why when just resizing the x and y are being set to zero
+
+Q2 Any other way to handle detecting and saving geometry changes
+
+Ive tried using XtGetValues on the topLevel widget when exiting my
+application before destroying any widgets and all I get is garbage values
+for the x y width height resources
+
+Thanks
+
+
+Bob Ross rossliloralcom          Mr Plow thats the name That name
+Loral Instrumentation San Diego CA   again is Mr Plow  Homer Simpson

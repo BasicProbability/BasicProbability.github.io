@@ -1,0 +1,49 @@
+From vinodsommerfeldWPIEDU Vinod K Nair
+Subject using XTERM to display output 
+
+Hello I am writing a program which forks of a number of child processes
+and each of the children printing things on the screen quite messy in
+one window 
+
+The xterm  Sxxd  option seems to be the solution to opening up
+slave windows only to display output and I use the following code to
+open up a pty taken from Stevensand manage to open up an xterm
+successfully 
+
+The problem however is how do I write into this xterm  Please help
+
+
+static char ptyname12
+int ptymaster void 
+
+int ptymaster void 
+
+  int ifd
+  char ptr
+  struct stat statbuff
+  static char ptychar  pqrs
+  static char hexdigit  0123456789abcdef
+  
+  for ptr  ptychar ptr0 ptr  
+    strcpy ptyname devttyXY 
+    ptyname8  ptr
+    ptyname9  0
+    
+    if stat ptyname statbuff  0 
+      break
+
+    for i0 i  16 i  
+      ptyname9  hexdigiti
+      if fd  open ptyname ORDWR   0 
+	return fd 
+    
+  
+  return1
+
+
+  
+
+ 
+Vinod  						   email  vinodeewpiedu
+An eye for an eye makes the whole world blind
+			Mohandas Karamchand Gandhi

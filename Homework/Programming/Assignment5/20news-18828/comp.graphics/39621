@@ -1,0 +1,14 @@
+From ortmannplainsNoDakedu Daniel Ortmann
+Subject Re VGA Graphics Library
+
+In article 2054mwcaUUCP billmwcaUUCP Bill Sheppard writes
+Many highend graphics cards come with C source code for doing basic graphics
+sorts of things change colors draw pointslinespolygonsfills etc  Does
+such a library exist for generic VGA graphics cardschips hopefully in the
+public domain  This would be for the purpose of compiling under a nonDOS
+operating system running on a standard PC
+
+Check the server code for X11R5  or XFree86
+ 
+Daniel unX Ortmann    talmidim  NDSU Electrical Engineering
+ortmannplainsnodakedu   shalom    Fargo North Dakota

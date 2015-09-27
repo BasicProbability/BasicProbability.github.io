@@ -1,0 +1,25 @@
+From orourkesophiasmithedu Joseph ORourke
+Subject Re Delaunay Triangulation
+
+In article lsk1v9INN93ccaspianuscedu zyehcaspianuscedu zhenghao yeh writes
+
+Does anybody know what Delaunay Triangulation is
+Is there any reference to it 
+Is it useful for creating 3D objects If yes whats the advantage
+
+There is a vast literature on Delaunay triangulations literally
+hundreds of papers  A program is even provided with every copy of 
+Mathematica nowadays  You might look at this if you are interested in 
+using it for creating 3D objects
+
+articleBoissonnat5
+  author  JD Boissonnat
+  title  Geometric Structures for ThreeDimensional Shape Representation
+  journal  ACM Transactions on Graphics
+  month  October
+  year  1984
+  volume  3
+  number  4
+  pages  266286
+
+

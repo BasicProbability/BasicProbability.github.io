@@ -1,0 +1,39 @@
+From rtfuhgeimmd8informatikunierlangende Robert Fuhge
+Subject Re Booting from B drive
+
+Hi
+
+I think VGACopy can do what you need 
+If you create a new floppy for your a drive that is the 5 14 turn on
+the modify switch of vgacopy
+When you boot using this diskette a message appears
+
+This is no system disk you can
+1 replace disk with another
+2 boot from Harddisk or
+3 switch drives and reboot that is a becomes b b becomes a
+Type your choice
+
+When you select the third item you can boot from b which is now called a 
+Seems to work very good for example booting drdos6 from the installation disks
+in 35 format was no problem for a friend of mine I have only a 35 a drive
+
+Hope that helps
+Robert
+
+PS VGACopy is shareware so its easy to get Newest Version seems to be 50 
+
+ 
+
+  Robert Fuhge  Haagstrasse 17  8520 Erlangen  Tel privat 09131204103  
+  Email rtfuhgecipinformatikunierlangende  demnaechst 91054 Erlangen 
+
+  Wars are not for to see who is right but who is left                 
+
+
+
+  Robert Fuhge  Haagstrasse 17  8520 Erlangen  Tel privat 09131204103  
+  Email rtfuhgecipinformatikunierlangende  demnaechst 91054 Erlangen 
+
+  Wars are not for to see who is right but who is left                 
+

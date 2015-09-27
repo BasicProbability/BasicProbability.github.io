@@ -1,0 +1,25 @@
+From gtoalgtoalcom Graham Toal
+Subject Re How does it really work was Re text of White House announcement and QAs on clipper chip encryption
+
+	From Marc VanHeyningen mvanheyncsindianaedu
+
+	The majority of the discussion involving this Clipper Chip seems to
+	pertain to the encryption of telephone conversations  Does anyone
+	know if that means this chip is designed to work primarily with analog
+	signals  The language sort of suggests this but its hard to say
+
+Id lay a few bucks that its just dataindataout in parallel  I suspect
+to make it a phone youd need a codec and speech compression  There would
+be a loss of bandwidth on the speech signal which I suspect would scupper
+any of the suggestions Ive seen here about putting a different encryption
+front end on it
+
+Theres no hint of any modulation scheme in the docs  Im sure its purely
+a digital chip  The back end will come later but Im positive it wont
+be left to the manufacturers  they all have to be the same modulation
+scheme to make it easy for the NSA to tap them
+
+The only other possibility is that this is intended only for ISDN phones
+Puts a whole new spin on EFFs obsession about ISDN if true bwahahaha  
+
+G

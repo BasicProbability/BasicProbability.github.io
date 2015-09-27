@@ -1,0 +1,40 @@
+From delmanmipgupennedu Delman Lee
+Subject Tandberg 3600  Future Domain TMC1660  Seagate ST21M problem
+
+I am trying to get my system to work with a Tandberg 3600  Future
+Domain TMC1660  Seagate ST21M MFM controller 
+
+The system boots up if the Tandberg is disconnected from the system
+and of course no SCSI devices found I have no other SCSI devices
+
+The system boots up if the Seagate MFM controller is removed from the
+system The Future Domain card reports finding the Tandberg 3660 on
+the SCSI bus The system then of course stops booting because my MFM
+hard disks cant be found
+
+The system hangs if all three Tandberg Future Domain TMC1660 
+Seagate MFM controller are in the system 
+
+Looks like there is some conflict between the Seagate and Future
+Domain card But the funny thing is that it only hangs if the Tandberg
+is connected
+
+I have checked that there are no conflict in BIOS addresses IRQ  IO
+port Have I missed anything
+
+I am lost here Any suggestions are most welcomed Thanks in advance
+
+Delman
+
+
+
+
+
+
+  Delman Lee                                 Tel 12156626780
+  Medical Image Processing Group            Fax 12158989145
+  University of Pennsylvania
+  4F Blockley Hall 418 Service Drive                         
+  Philadelphia PA 191046021
+  USA                            Internet delmanmipgupennedu
+

@@ -1,0 +1,72 @@
+From lourayseasgwuedu Michael Panayiotakis
+Subject Re Help with changing Startup logo
+
+In article 735952415AA01739f454fidonetorg CDoellep26f3333n106z1fidonetorg C Doelle writes
+Hello Brad
+
+Monday April 26 1993 1724 Brad Smalling wrote to crosspost 1 All
+
+ BS since I dont know your setup
+
+ BS COPY B WINCNFVGALOGOLGOVGALOGORLE WINCOM
+
+ BS I grabbed this from Supercharging Windows by Judd Robbinsgreat book
+ BS This is also how you can put your own logo into the Windows startup
+
+Brad
+    What is the procedure used to specially compress the BMP file  I would
+                                          to a rle file   
+love to use some of my BMP files I have created as a logo screen  Thanks
+
+Chris
+
+
+  Origin chrisdoellef3333n106z1fidonetorg 1106333326
+
+ I thought Id reply to this though I aint brad  AT any case a lot
+of picturefile viewers that will convert say between gifetc to
+bmp will convert to rle  I Know for a fact that PaintShop
+shareware from cica desktop I think filename psVVVzip I think
+where VVV is the ver number  If thats not true let me know and Ill
+post a corection
+
+
+This however will write your rle file with a bmp extension so you
+have to rename it
+
+NOW another thing
+this is from the windows FAQ
+
+your file has to be less than 64 K
+ at least thats what the faq says but Mine wont work for more than
+about 30maybe they mend 32K I dont know
+
+Your file has to fit VGA size 480  860 or whatever standard vga size
+is  If you use a nonvga screen eg Cga ega svga there is also a
+way to do it but I thing instead of vgalogolgo you use another file
+such as cgalogolgo egalogolgo or something  Im not sure about
+this as I have a vga but im sure you could find it in the faq a
+windows help ver of which is available at cica but dont konw the
+filename 
+
+ALSOyour bmp has to be 16 COLOURS Or less
+
+These specs rule out some of the good bmps  I found cartoon drawings
+work quite well as they have the advantage of looking good with little
+memory
+
+Finally REMEMBER TO SAVE YOUR CURRENT WINCOM before and put your
+new wincom in the windows directory  Also dont start windows from a
+directory where another wincom is present as that is used instead of
+the one in the windows dir and win wont start
+
+
+Share this fairly but dont take a slice of my pie PF
+
+Mickey
+
+ 
+pe   MICHAEL PANAYIOTAKIS lourayseasgwuedu 
+ace                                    uunetseasgwuedulouray
+   how do make a mswindows grp file reflect a HD directory
+     well I aint always right but Ive never been wronggd

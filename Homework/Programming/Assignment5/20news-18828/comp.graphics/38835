@@ -1,0 +1,41 @@
+From mekhydroxenetdeccom Mark Klamerus
+Subject re TIFF complexity
+
+
+	Anyone who thinks that TIFF is too complex hasnt dealt with
+	CGM ASN1 CDA DCA SGML or any one of a number of other
+	very successful file format  People seem perfectly capable
+	dealing with these others  Dealing with the format of TIFF
+	is frankly less difficult than dealing with the DCT LZW and
+	FAX encoding of the image data  The majority of the libraries
+	which deal with TIFF are dedicated to these other issues rather
+	than with simply decoding the tags and parameters
+
+	Perhaps people are overwhelmed in comparison with some rather
+	simpleminded formats such as GIF PCX and BMP but to suggest
+	that TIFF is so complex as to be doomed to failure is ludicrous
+
+	That doesnt mean that GIF isnt fine but dont even thing about
+	using it in many instances  GIF is very nice for use in lowend
+	photos applications and for screen grabs and such but it would
+	never do for highvolume or highresolution systems  FAX is nice
+	but it doesnt do color and GIF doesnt do BW all that well
+	JPEG is nice for highresolution color but is slow for lowend
+
+	The advantage TIFF brings to the table is its ability to handle
+	all these situations and then some  Naturally its more complex
+	But Ild rather propose TIFF imaging solutions over imaging
+	systems based on having to deal with 34 file formats anyday
+
+	You may find that TIFF is too complicated for your personal tastes
+	but please dont wrail against its complexity  The complexity
+	it contains is required to provide the functionality it does and
+	doesnt come close to the complexity found in most commercially
+	viable file formats
+
+
+	If were in philosophical arguments against complexity lets all
+	go program in scheme and forth and do imaging with run length
+	encoding
+
+

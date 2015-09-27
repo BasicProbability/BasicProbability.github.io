@@ -1,0 +1,26 @@
+Subject Re ResourceWidget toolkit required for XWindows applications
+From cvadrmesvmsbiscsupomonaedu
+
+In article 1sijn0mi2werpleapanaorgau jamiezikzak Jamie Scuglia writes
+ 
+ Does anyone know of any public domain toolkits for creating XWindows
+ applications  I have used the Xt toolkit but I would like to
+ create popup windowsdialog boxes etc using some sort of drawing editor
+ instead of trying to specify what I want sizes positions etc
+ within actual source code  Basically I am looking for something
+ similar to Borlands WHITEWATER RESOURCE TOOLKIT for MSWINDOWS
+ expect I need one for XWindows instead
+ 
+ Any help would be much appreciated
+
+   
+     I recently found an excellent source for Xwindows programs Ive seen
+quite a few xwindows toolkits up there The place is  
+
+                     exportlcsmitedu
+
+go to the contrib directory Its full of xwindows programs
+
+                                           Hope this Helps
+
+

@@ -1,0 +1,18 @@
+From bcwhitesuneeuwaterlooca Brian C White
+Subject Re SCSI on dos
+
+In article 1993Apr1913274818044julianuwoca wlsmithvalveheartrriuwoca Wayne Smith writes
+It was the Seagate 296N and the ST02 controller  I found that the
+controller couldnt keep up with a 11 interleave so the best I could do
+with the drive was a 21 interleave and a data transfer of about 450 ksec
+
+According to what others have told me the ST296N is difficult to run at
+the 11 interleave even though Seagate claims it  I have a nonpc system
+dont ask what it is you probably havent heard of it that is built
+around SCSI and it cant do 11 either
+
+                                        Brian
+                            bcwhitesuneeuwaterlooca 
+
+
+    In theory theory and practice are the same  In practice theyre not

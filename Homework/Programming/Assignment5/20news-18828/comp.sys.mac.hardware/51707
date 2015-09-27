@@ -1,0 +1,46 @@
+From raynetcomcom Ray Fischer
+Subject Re 68040 Specs
+
+patrickdwpiWPIEDU Lazer writes 
+Id appreciate it greatly if someone could Email me the following
+if you only know one thats fine
+1 Specs for the 68040 esp how it compares to the Pentium
+
+Specs for the 68040 can fill a 500 page book  Some highlights are
+32bit address space w 32bit data width  18 32bit integer registers 
+ 8 80bit floating point registers  8K copyback capable caches
+4way set associative  Typical 12 clocksinteger instruction  5
+clocks for a floating point multiply
+
+interesting aside the 68040 can multiply two 80bit floating point
+numbers in less time than it can multiply two 32bit integers
+
+2 Specs for the 68060 with estimated cost release date etc
+
+More of the same but with multiple instruction dispatching  Figure
+about 08 clocks per instruction typical my guess  But the Motorola
+guys are pretty bright it may be less
+
+Im interested in speeds systems it can run Windows NT RISC or whatever
+costs bus info register info  All the technical info
+
+Call Motorola  Im not typing it all in
+
+I am hoping that the 68040 can win yet another battle against the intel people
+
+Im predicting that both the 680x0 and x86 lines are reaching their
+ends  New experimental processors have 64bit data pathways and can
+schedule up to 8 out of 32 instructions each clock cycle  That sort
+of trick cant really be done with CISC architectures
+
+I finally saw some details on the 586Pentium and was not greatly
+impressed  Theyve finally done some work on the FPU to get it up to
+speed but otherwise its only going to be a 2x speedup  And to get
+that theyre using two integer units larger caches and a branch
+target buffer  Yes I know theyre talking about 100MHz processors
+Big whoop  Designing a 100MHz board is difficult and really
+expensive  Priced 15ns memory chips lately
+
+ 
+Ray Fischer                   Convictions are more dangerous enemies of truth
+raynetcomcom                 than lies   Friedrich Nietzsche

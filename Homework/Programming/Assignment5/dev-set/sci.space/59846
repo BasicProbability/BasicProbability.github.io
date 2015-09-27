@@ -1,0 +1,192 @@
+From leechcsuncedu Jon Leech
+Subject Space FAQ 0615  Constants and Equations
+
+Archivename spaceconstants
+Lastmodified Date 930401 143904 
+
+CONSTANTS AND EQUATIONS FOR CALCULATIONS
+
+    This list was originally compiled by Dale Greer Additions would be
+    appreciated
+
+    Numbers in parentheses are approximations that will serve for most
+    blueskying purposes
+
+    Unix systems provide the units program useful in converting
+    between different systems metricEnglish etc
+
+    NUMBERS
+
+	7726 ms	 8000   Earth orbital velocity at 300 km altitude
+	3075 ms	 3000   Earth orbital velocity at 35786 km geosync
+	6371 km		 6400   Mean radius of Earth
+	6378 km		 6400   Equatorial radius of Earth
+	1738 km		 1700   Mean radius of Moon
+	5974e24 kg	 6e24   Mass of Earth
+	7348e22 kg	 7e22   Mass of Moon
+	1989e30 kg	 2e30   Mass of Sun
+	3986e14 m3s2 4e14   Gravitational constant times mass of Earth
+	4903e12 m3s2 5e12   Gravitational constant times mass of Moon
+	1327e20 m3s2 13e19  Gravitational constant times mass of Sun
+	384401 km	  4e5   Mean EarthMoon distance
+	1496e11 m	 15e10  Mean EarthSun distance Astronomical Unit
+
+	1 megaton MT TNT  about 42e15 J or the energy equivalent of
+	about 05 kg 50 gm of matter Ref JR Williams The Energy Level
+	of Things Air Force Special Weapons Center ARDC Kirtland Air
+	Force Base New Mexico 1963 Also see The Effects of Nuclear
+	Weapons compiled by S Glasstone and PJ Dolan published by the
+	US Department of Defense obtain from the GPO
+
+    EQUATIONS
+
+	Where d is distance v is velocity a is acceleration t is time
+	Additional more specialized equations are available from
+
+	    amesarcnasagovpubSPACEFAQMoreEquations
+
+
+	For constant acceleration
+	    d  d0  vt  5at2
+	    v  v0  at
+	  v2  2ad
+
+	Acceleration on a cylinder space colony etc of radius r and
+	    rotation period t
+
+	    a  4 pi2 r  t2
+
+	For circular Keplerian orbits where
+	    Vc	  velocity of a circular orbit
+	    Vesc  escape velocity
+	    M	  Total mass of orbiting and orbited bodies
+	    G	  Gravitational constant defined below
+	    u	  G  M can be measured much more accurately than G or M
+	    K	  G  M  2  a
+	    r	  radius of orbit measured from center of mass of system
+	    V	  orbital velocity
+	    P	  orbital period
+	    a	  semimajor axis of orbit
+
+	    Vc	  sqrtM  G  r
+	    Vesc  sqrt2  M  G  r  sqrt2  Vc
+	    V2   ua
+	    P	  2 piSqrtua3
+	    K	  12 V2  G  M  r conservation of energy
+
+	    The period of an eccentric orbit is the same as the period
+	       of a circular orbit with the same semimajor axis
+
+	Change in velocity required for a plane change of angle phi in a
+	circular orbit
+
+	    delta V  2 sqrtGMr sin phi2
+
+	Energy to put mass m into a circular orbit ignores rotational
+	velocity which reduces the energy a bit
+
+	    GMm 1Re  12Rcirc
+	    Re  radius of the earth
+	    Rcirc  radius of the circular orbit
+
+	Classical rocket equation where
+	    dv	 change in velocity
+	    Isp  specific impulse of engine
+	    Ve	 exhaust velocity
+	    x	 reaction mass
+	    m1	 rocket mass excluding reaction mass
+	    g	 980665 m  s2
+
+	    Ve	 Isp  g
+	    dv	 Ve  lnm1  x  m1
+		 Ve  lnfinal mass  initial mass
+
+	Relativistic rocket equation constant acceleration
+
+	    t unaccelerated  ca  sinhatc
+	    d  c2a  coshatc  1
+	    v  c  tanhatc
+
+	Relativistic rocket with exhaust velocity Ve and mass ratio MR
+
+	    atc  Vec  lnMR or
+
+	    t unaccelerated  ca  sinhVec  lnMR
+	    d  c2a  coshVeC  lnMR  1
+	    v  c  tanhVeC  lnMR
+
+	Converting from parallax to distance
+
+	    d in parsecs  1  p in arc seconds
+	    d in astronomical units  206265  p
+
+	Miscellaneous
+	    fma     Force is mass times acceleration
+	    wfd     Work energy is force times distance
+
+	Atmospheric density varies as expmgzkT where z is altitude m is
+	molecular weight in kg of air g is local acceleration of gravity T
+	is temperature k is Bolztmanns constant On Earth up to 100 km
+
+	    d  d0expz142e4
+
+	where d is density d0 is density at 0km is approximately true so
+
+	    d12km 40000 ft  d018
+	    d9 km 30000 ft  d027
+	    d6 km 20000 ft  d043
+	    d3 km 10000 ft  d065
+
+		    Atmospheric scale height	Dry lapse rate
+		    in km at emission level	 Kkm
+		    	
+	    Earth	    75			    98
+	    Mars	    11			    44
+	    Venus	    49			    105
+	    Titan	    18			    13
+	    Jupiter	    19			    20
+	    Saturn	    37			    07
+	    Uranus	    24			    07
+	    Neptune	    21			    08
+	    Triton	    8			    1
+
+	TitiusBode Law for approximating planetary distances
+
+	    Rn  04  03  2N Astronomical Units N  infinity for
+	    Mercury 0 for Venus 1 for Earth etc
+
+	    This fits fairly well except for Neptune
+
+    CONSTANTS
+
+	662618e34 Js  7e34  Plancks Constant h
+	1054589e34 Js 1e34  Plancks Constant  2  PI h bar
+	13807e23 JK	14e23  Boltzmanns Constant k
+	56697e8 Wm2K 6e8  StephanBoltzmann Constant sigma
+    6673e11 N m2kg2 7e11  Newtons Gravitational Constant G
+	00029 m K	 3e3   Wiens Constant sigmaW
+	3827e26 W	 4e26   Luminosity of Sun
+	1370 W  m2	 1400   Solar Constant intensity at 1 AU
+	696e8 m	 7e8	  radius of Sun
+	1738 km		 2e3	  radius of Moon
+	299792458 ms	  3e8   speed of light in vacuum c
+	946053e15 m	  1e16  light year
+	206264806 AU	  2e5   
+	32616 light years 3	    parsec
+	30856e16 m	 3e16   
+
+
+Black Hole radius also called Schwarzschild Radius
+
+	2GMc2 where G is Newtons Grav Constant M is mass of BH
+		c is speed of light
+
+    Things to add somebody look them up
+	Basic rocketry numbers  equations
+	Aerodynamical stuff
+	Energy to put a pound into orbit or accelerate to interstellar
+	    velocities
+	Noncircular cases
+
+
+NEXT FAQ 715  Astronomical Mnemonics

@@ -1,0 +1,89 @@
+From andyieutorontoca Andy Sun
+Subject Re Centris 650 to Decstation Enet adapter
+
+pnsf01dwsmucs1umassdedu Dennis J Wilkinson writes
+Not necessarily a thridparty adapter Apple does manufacture transceivers
+for thinWire and 10BaseT twisted pair cable media as well as an AUI
+Attachment Unit Interface transciever They run at 100 each If you use
+thinWire or 10BaseT youll probably also need terminators Apples
+transceivers are selfterminated if I remember correctly but I have no
+idea about DECs 
+
+The thirdparty media adapters are usually cheaper at least in Toronto than
+Apples I bought the adapters from Asante instead of Apple
+
+gurmanumbragsfcnasagov Joseph B Gurman writes
+    The DECstation 5000 Models 200 and 240 come with ThinWire only
+cant say for certain about the Models 125 and 133 so your best bet
+
+Thats not true Only the DECstation 5000200 comes with a Thinwire
+BNC coaxial Ethernet connector The 500025 5000133 and 5000240
+all have a single 15pin AUI Ethernet connector only I distinctly
+remembered this because when got the 5000200 first and I thought all
+of them are going to be Thinwire I eventually had to go back and ordered
+DESTAs DECs oversized version of an AUItoBNC adapter that MUST be used
+with a transciever cable for the rest of the stations
+
+My advise to the very original poster Beverly is
+
+1 If all you want is to create a LAN with two workstations and wont add
+    machines to it EVER go for Thinwire regardless of the media type Going
+    for UTP unshielded twisted pair wiring requires a concentrator which
+    means extra money and I believe these units come with at least 6 ports
+    As for Thicknet its a nightmare and cabling is expensive Avoid it
+    unless you have no choice eg the two machines are two floors parts
+
+2 On the Mac side you will need
+     one Thinwire media adapter from Apple or thirdparty
+     MacX make sure you get version 12 117 wont run on System 71
+     MacTCP which comes with MacX if you get MacX v12 you should be
+      getting MacTCP v111 with it Dont use earlier versions on a Centris
+     you may or may not need a 25ohm terminator depending on the
+      Thinwire media adapter So just ask the sales if the adapter is
+      selfterminated or not
+     configure MacTCP to use Ethernet
+
+3 On the DECstation side you will need
+     for a Model 200 you will only need a Tconnector
+     for Models 25 125 133 240 you will need an AUItoBNC adapter
+      Get one that can be plugged in directly to the AUI port of the
+      DECstation This way you save the cost of a transciever cable
+      a 15pin AUI male to a 15pin AUI female cable
+     get a 25ohm terminator
+
+Your twomachine network will look like this
+
+
+       T
+                                                 
+                                                      
+                                               
+                                                           
+                                                      
+    DECstation                                        Centris
+     5000200                                           650
+                              OR
+
+       T
+                                                     
+                                                 
+                                                    
+                                                    
+                                                      
+    DECstation                                        Centris
+500025125133240                                     650
+         
+        25ohm terminator
+   T      T connector
+       Thinwire RG58 coaxial cable
+       AUItoBNC ie ThicktoThin adapter
+        Thickwire media adapter assuming selfterminated
+   
+   
+
+Andy
+ 
+Andy Sun andyieutorontoca          4 Taddle Creek Road Toronto
+Computing Coordinator                   Ontario Canada M5S 1A4
+Department of Industrial Engineering    Phone 416 9788830
+University of Toronto                   Fax   416 9783453

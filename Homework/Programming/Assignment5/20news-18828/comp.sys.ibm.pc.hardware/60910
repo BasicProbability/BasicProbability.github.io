@@ -1,0 +1,17 @@
+From jhoodsmokemarlborovtus John Hood
+Subject Re Cant set COM4
+
+In article C5rAJn67cbnewshcbattcom k4bnccbnewshcbattcom johnasiegel writes
+I have been unable to get COM 4 to work  diagnostic programs such as msd show
+nothing installed  I think the software options are OK  is there a known
+hardware conflict andor workaround for this problemand CD ROM
+System is a G2K 486DX266 tower with ATI video card
+
+Its the video card  Its 8514A compatible which means it uses the
+same io addresses as com4
+
+  jh
+ 
+John Hood					Cthulhu just imagine it
+jhoodsmokemarlborovtus
+

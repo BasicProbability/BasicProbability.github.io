@@ -1,0 +1,33 @@
+From wpwooddarkwingaustinibmcom
+Subject GCC and Building the HP Widget Set on Linux
+
+
+I am currently attempting to get a copy of the HP Widget set compiled
+under Linux SLS Release with kernel 996 and am running into some
+problems  Actually it seems that this is more of a GCC question
+because I got it to compile without trouble using cc on an RS6000
+	Basically there are a number of functions with prototypes
+set up in lets say CompositePh for instance the composite
+widgets insertchild procedure is set up with the type 
+
+	typedef void XtWidgetProc Widget
+
+but in several places in the HP source code they reference the
+insertchild procedure and pass it multiple arguments instead of just
+one as the prototype suggests  For example
+
+	superclasscompositeclassinsertchildw args pnumargs
+
+Now GCC chokes on this giving an error message that too many arguments
+are passed to the function  So does anyone have any suggestions as to
+how to turn off this checking in GCC or how I can go about changing the
+code to accomodate this call without changing usrincludeX11CompositePh
+or has anyone successfully built the HP widget set and have any suggestions
+	Many thanks in advance for any help
+
+
+
+Bill Woodward         wpwoodaustinibmcom    Try this first
+AIX Software Support  billwaixwizaustinibmcom  
+Graphics Group        5128382834
+I am the terror that flaps in the night

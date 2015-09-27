@@ -1,0 +1,329 @@
+From spldimucsdedu Steve Lamont
+Subject Re Finding equally spaced points on a sphere
+
+In article 4615trdrpiedu deweesetptolemy2rdrcrpiedu Thomas E DeWeese writes
+  Hello I know that this has been discussed before  But at the time
+I didnt need to teselate a sphere  So if any kind soul has the code
+or the alg that was finally decided upon as the best as I recall it
+was a nice iterative subdivision meathod I would be very 
+appreciative
+
+Here is one by Andrew Graphics Gems Glassner that I got from a
+collegue of mine  I think I fiddled with it a little bit to make it
+deal with whatever bizarre problem I was working on at the time but it
+is known to work
+
+							spl
+			          
+ spheres
+    ASG     9 Feb 85
+    spl Thu Mar  8 171740 EST 1990
+
+include stdioh
+include mathh
+
+define PI 3141592654
+
+struct Pointstruct 
+        double x y z
+
+
+static double radius
+static double xorg
+static double yorg
+static double zorg
+
+dosphere r freq x y z 
+
+  double r
+  int freq
+  double x
+  double y
+  double z
+
+  
+
+    int pole
+    double northy southy poley
+    double rtheta rtheta2 ntheta ntheta2 magicangle
+    double theta thetastart thisy den t
+    struct Pointnode pnp
+    struct Pointstruct p1 p2 p3 p4 n1 n2 n3 n4 pt
+
+    radius  r
+    xorg  x
+    yorg  y
+    zorg  z
+
+ north pole 
+
+    magicangle  300PI1800
+    northy  radiussinmagicangle
+    southy  radiussinmagicangle
+    for pole0 pole2 pole 
+
+      if pole0 
+
+        poleyradius   
+        thisynorthy 
+        thetastart00 
+
+      
+      else  
+
+        poley radius 
+        thisysouthy 
+        thetastart360 
+
+      
+      for  theta  thetastart theta  3600 theta  600  
+
+        rtheta  thetaPI1800
+        rtheta2  theta600PI1800
+        p1x  00  
+        p1y  poley  
+        p1z  00  
+        p2x  radiuscosrtheta
+        p2y  thisy
+        p2z  radiussinrtheta
+        p3x  radiuscosrtheta2
+        p3y  thisy
+        p3z  radiussinrtheta2
+
+        if pole0 
+
+ make ring go the other way so normals are right 
+
+          ptx  p3x  
+          pty  p3y  
+          ptz  p3z  
+          p3x  p2x  
+          p3y  p2y  
+          p3z  p2z  
+          p2x  ptx  
+          p2y  pty  
+          p2z  ptz  
+
+        
+
+        den  p1xp1xp1yp1yp1zp1z  
+        den  sqrtden
+
+        if den  00 
+
+          t  radius  den 
+          p1x  t  
+          p1y  t  
+          p1z  t
+
+        
+
+        den  p2xp2xp2yp2yp2zp2z  
+        den  sqrtden
+
+        if den  00 
+
+          t  radius  den 
+          p2x  t  
+          p2y  t  
+          p2z  t
+
+        
+
+        den  p3xp3xp3yp3yp3zp3z  
+        den  sqrtden
+
+        if den  00 
+
+          t  radius  den 
+          p3x  t  
+          p3y  t  
+          p3z  t
+
+        
+
+        subdividetrip1p2p3freq
+
+      
+
+    
+
+ now the body 
+
+    for theta00 theta3600 theta  600 
+
+      rtheta  thetaPI1800  
+      rtheta2  theta600PI1800
+      ntheta  theta360PI1800 
+      ntheta2  theta960PI1800
+      p1x  radiuscosrtheta   
+      p1y  northy  
+      p1z  radiussinrtheta
+      p2x  radiuscosrtheta2  
+      p2y  northy  
+      p2z  radiussinrtheta2
+      p3x  radiuscosntheta   
+      p3y  southy  
+      p3z  radiussinntheta
+      p4x  radiuscosntheta2  
+      p4y  southy  
+      p4z  radiussinntheta2
+
+      den  p1xp1xp1yp1yp1zp1z  
+      den  sqrtden
+
+      if den  00 
+
+        t  radius  den 
+        p1x  t  
+        p1y  t  
+        p1z  t
+
+      
+
+      den  p2xp2xp2yp2yp2zp2z  
+      den  sqrtden
+
+      if den  00 
+
+        t  radius  den 
+        p2x  t  
+        p2y  t  
+        p2z  t
+
+      
+      den  p3xp3xp3yp3yp3zp3z  
+      den  sqrtden
+      if den  00 
+
+        t  radius  den 
+        p3x  t  
+        p3y  t  
+        p3z  t
+
+      
+      den  p4xp4xp4yp4yp4zp4z  
+      den  sqrtden
+      if den  00 
+
+        t  radius  den 
+        p4x  t  
+        p4y  t  
+        p4z  t
+
+      
+
+      subdividetrip1p2p3freq
+      subdividetrip3p2p4freq
+
+    
+
+    return
+
+  
+
+define normptv  register double r  sqrt   v x   v x   
+                                                 v y   v y   
+                                                 v z   v z   
+                      v x  r 
+                      v y  r 
+                      v z  r 
+                    
+
+subdividetrip1p2p3a
+
+  struct Pointstruct p1 p2 p3
+  int a
+
+  
+
+    struct Pointstruct n1 n2 n3
+    struct Pointstruct p12 p13 p23
+    double den t
+
+    if a0 
+
+      p12x  p1xp2x20
+      p12y  p1yp2y20
+      p12z  p1zp2z20
+      den  p12xp12xp12yp12yp12zp12z  
+      den  sqrtden
+      if den  00 
+
+        t  radius  den
+        p12x  t  
+        p12y  t  
+        p12z  t
+
+      
+      p13x  p1xp3x20
+      p13y  p1yp3y20
+      p13z  p1zp3z20
+      den  p13xp13xp13yp13yp13zp13z 
+      den  sqrtden
+      if den  00 
+
+        t  radius  den
+        p13x  t  
+        p13y  t  
+        p13z  t
+
+      
+      p23x  p2xp3x20
+      p23y  p2yp3y20
+      p23z  p2zp3z20
+      den  p23xp23xp23yp23yp23zp23z  
+      den  sqrtden
+      if den  00 
+
+        t  radius  den
+        p23x  t  
+        p23y  t  
+        p23z  t
+
+      
+      subdividetrip1  p12p13a1
+      subdividetrip12 p2 p23a1
+      subdividetrip13p23 p3 a1
+      subdividetrip12p23p13a1
+
+     else 
+
+      n1x  p1x  
+      n1y  p1y  
+      n1z  p1z  
+      normptn1
+      n2x  p2x  
+      n2y  p2y  
+      n2z  p2z  
+      normptn2
+      n3x  p3x  
+      n3y  p3y  
+      n3z  p3z  
+      normptn3
+
+ nothing special about this poly 
+
+      printf f f f  f f fn p1x  xorg
+                                      p1y  yorg
+                                      p1z  zorg
+                                      n1x n1y n1z 
+      printf f f f  f f fn p2x  xorg
+                                      p2y  yorg
+                                      p2z  zorg
+                                      n2x n2y n2z 
+      printf f f f  f f fn p3x  xorg
+                                      p3y  yorg
+                                      p3z  zorg
+                                      n3x n3y n3z 
+
+    
+
+    return
+
+  
+ 
+Steve Lamont SciViGuy  619 5347968  splszechuanucsdedu
+San Diego Microscopy and Imaging ResourceUC San DiegoLa Jolla CA 920930608
+My other car is a car too
+                  Bumper strip seen on I805

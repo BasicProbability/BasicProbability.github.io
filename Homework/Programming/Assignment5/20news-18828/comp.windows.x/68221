@@ -1,0 +1,27 @@
+From rschaoucaredu Bob Campbell
+Subject Motif 12 and OW 30  compiling xcoral
+
+Ive built xcoral on my system SunOS 413 X11R5 Motif 12 OW 30
+and it builds fine but when I run it any child windows that xcoral
+opens
+1 locks the mouse into the window area
+2 doesnt accept any input from the mouse
+
+Needless to say this is a pain in the ass as I have to go find an
+empty terminal to login and kill xcoral
+
+Is this a problem with OpenWindows or Motif  Is there a patch
+
+
+ Bob Campbell                   Crayons can take you where no      
+ System Manager                  Starship can go                  
+ HAO NCAR                                        Guinan           
+ rschaoucaredu                                  STTNG             
+
+DISCLAIMER My views are in no way connected to my employer
+
+A closed mouth gathers no feet       Unknown
+It only requires a little thought and a little work      Don Hicks
+                                                       Managing Editor
+                                                     Amazing Computing
+

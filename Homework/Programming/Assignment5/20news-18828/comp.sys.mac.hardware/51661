@@ -1,0 +1,27 @@
+From bclarknwuedu Brian Clark
+Subject Re High Resolution ADC for Mac II
+
+In article 1qidk1INNhk9iskutucsubcca Rob Douglas
+douglaseccubcca wrote
+ 
+ In article 1qhfmghohlllwinkenllnlgov Charles E Cunningham
+ cecimager writes
+    I would like to buy a 16 bit ADC card for the Mac II with digitization
+ rate of at least 100 kHz preferably 200 kHz  I would prefer one with 
+ good differential and integral linearity and DMA would be a plus  Other
+ than National Instruments do you know of any other vendor who sells such
+ a card
+ 
+ Instrutech Corp has a nice looking 16 bit AD and DA board that can run
+ at the speeds you want The ITC16  doesnt have DMA but it does have
+ a good sized FIFO that can buffer your samples Instrutech can be reached
+ at 516 8295942 or 9290934 FAX
+ 
+
+I dont know about the Instrutech boards though I plan to check them out
+but you need to be very careful checking the monotonicity and SN ratio of
+many of the 16 bit boards out there The NI boards are very clearly
+specified in terms of monotonicity SN ratio accuracy etc and the
+NBA2100 and NBA2150 have all the dyynamic range and freedom from
+distortion that youd expect from a good true 16 bit converter This is
+not true for the Spectral Innovations boards for example

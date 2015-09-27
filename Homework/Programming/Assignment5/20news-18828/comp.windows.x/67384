@@ -1,0 +1,23 @@
+From joelzodiaczcodeCOM Joel Reymont
+Subject Xsun not finding default font Sol21
+
+Hi netters
+
+Ive just built X11R5 pl 21 under Solaris 21 Ive used the multiscreen 
+patch as well as the R5SunOS patch and everything builds great except 
+for that error message Xsun gives me upon startup It says 
+Cannot set default font path stuff deleted and Cannot set default font
+fixed If I supply the fp option it doesnt complain about the font path
+but still complains about the font I have symlinks from usrlib to the 
+place where my distribution lives
+
+Could somebody help me
+
+	joel
+
+ 
+
+Joel Reymont       ZCode Software Corporation     email joelzcodecom 
+
+4340 Redwood Hwy Suit B50 San Rafael CA 94903
+

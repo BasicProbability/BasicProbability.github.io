@@ -1,0 +1,1001 @@
+From dblvisualcom David B Lewis
+Subject compwindowsx Frequently Asked Questions FAQ 35
+
+Archivename xfaqpart3
+Lastmodified 19930404
+
+
+Subject  58 Where can I get patches to X11R5
+
+	The release of new public patches by the MIT X Consortium is announced
+in the compwindowsxannounce newsgroup
+
+	Patches themselves are available via ftp from export and from other
+sites from which X11 is available They are now also distributed through the 
+newsgroup compsourcesx Some source resellers may be including patches in 
+their source distributions of X11
+
+	People without ftp access can use the xstuff mail server It now has 
+23 patches for X11R5 393  Send to xstuffexpolcsmitedu the Subject line
+		send fixes 
+where  is the name of the patch and is usually just the number of the patch
+
+	Here are a few complications
+	1 fix 5 is in four parts you need to request 5a 5b 5c and 
+5d separately
+	2 the file sunGXuu which was part of an earlier patch was 
+rereleased with patch 7 note the file doesnt work with Solaris
+	3 fix 8 is in two parts 8a and 8b
+	4 fix 13 is in three parts 13a 13b and 13c
+	5 fix 16 is in two parts 16a and 16b
+	6 fix 18 replaces the R5fixtest1 for the X Test Suite which 
+previously was optional
+	7 fix 19 also needs PEXlibtarZ which you can obtain from xstuff
+by asking for PEXlibuu1234
+	8 fix 22 is in 9 parts 22a through 22i
+
+
+Subject  59  What is the xstuff mailarchive
+
+	The xstuff server is a mailresponse program That means that you mail 
+it a request and it mails back the response
+	Any of the four possible commands must be the first word on a line The
+xstuff server reads your entire message before it does anything so you can 
+have several different commands in a single message unless you ask for help 
+The xstuff server treats the Subject header line just like any other line 
+of the message
+	The archives are organized into a series of directories and 
+subdirectories  Each directory has an index and each subdirectory has an 
+index The toplevel index gives you an overview of what is in the 
+subdirectories and the index for each subdirectory tells you what is in it
+
+	1 The command help or send help causes the server to send you a 
+more detailed version of this help file
+	2 if your message contains a line whose first word is index then 
+the server will send you the toplevel index of the contents of the archive If
+there are other words on that line that match the name of subdirectories then 
+the indexes for those subdirectories are sent instead of the toplevel index 
+For example you can say send index fixes or index fixes A message that 
+requests an index cannot request data
+	3 if your message contains a line whose first word is send then the
+xstuff server will send you the items named on the rest of the line To name 
+an item you give its directory and its name For example
+                send fixes 1 4 8a 8b 9
+	You may issue multiple send requests The xstuff server contains many 
+safeguards to ensure that it is not monopolized by people asking for large 
+amounts of data The mailer is set up so that it will send no more than a fixed
+amount of data each day If the work queue contains more requests than the 
+days quota then the unsent files will not be processed until the next day 
+Whenever the mailer is run to send its days quota it sends the requests out 
+shortestfirst
+	4 Some mailers produce mail headers that are unusable for extracting 
+return addresses  If you use such a mailer you wont get any response  If 
+you happen to know an explicit path you can include a line like
+        path foobarbitnetmitvmamitedu
+or
+        path barfoofrotz
+in the body of your message and the daemon will use it
+
+	The xstuff server itself can be reached at xstuffexpolcsmitedu If 
+your mailer deals in  notation try sending to 
+someplacemiteddieexpolcsmiteduxstuff
+
+based on information from the MIT X Consortium 889 490
+
+
+Subject  60 Where can I get X11R4 source and binaries
+
+	Integrated Computer Solutions Inc ships X11R4 on halfinch 
+quarterinch and TK50 formats Call 6176210060 for ordering information
+
+	The Free Software Foundation 6178763296 sells X11R4 on halfinch 
+tapes and on QIC24 cartridges  
+
+	Yaser Doleh dolehmathcskentEDU PO Box 1301 Kent OH 44240 is
+making X11R4 available on HP format tapes 16 track and Sun cartridges 290
+
+	European sites can obtain a free X11R4 distribution from Jamie Watson
+who may be reached at chx400panjw or jwpanuuch 1090
+
+	Non Standard Logics 33 1 43 36 77 50 requestsnslfr makes source
+available
+
+	IXI Limited 44 223 462 131 is selling X11R4 source on quarterinch 
+cartridge formats and on 525 and 35 floppy with other formats available on
+request IXI 290
+
+	Virtual Technologies 7034309247 provides the entire X11R4 
+compressed source release on a single QIC24 quarterinch cartridge and also on
+12meg or 144 meg floppies upon request Conor Cahill 
+cpcahilvirtechuunet 290
+
+	Young Minds 7143351350 makes the R4 and GNU distributions available
+on a fulltextindexed CDROM
+
+Note that some distributions are mediaonly and do not include docs
+
+	X11R4 is ftpable from exportlcsmitedu these sites are preferable 
+though and are more direct
+
+                        Machine                  Internet      FTP
+    Location            Name                     Address       Directory
+                                        
+1 West USA            gatekeeperdeccom       16102      pubX11R4
+    Central USA         mordredcspurdueedu    1281022    pubX11R4
+2 Central USA         gizacisohiostateedu  128146861  pubXV11R4
+    Southeast USA       uunetuunet             19248962   XR4
+3 Northeast USA       crldeccom              192582062  pubX11R4
+4 UK Janet            srcdocicacuk         129318136  XV11R4
+    UK niftp            ukacicdocsrc                       XV11R4
+5 Australia           munnariozau            128250121  XV11R4
+
+The gizacisohiostateedu site in particular is known to have much of the
+contrib stuff that can be found on export 
+
+The release is available to DEC Easynet sites as CRLpubX11R4
+
+Sites in Australia may contact this address ftpAdelaideEDUAU 129127403
+and check the directory pubXR4 The machine shadows export and archives
+compsourcesx Mark Prior mrpucsadelaideeduau 590
+
+Note a much more complete list is distributed as part of the introductory 
+postings to compsourcesx
+
+A set of X11R4 binaries built by Tom Roell roellinformatiktumuenchende 
+for the 386ix will available from exportlcsmitedu in contrib and in 
+pubi386X11R4 from 131159835 in Europe Stephen Hite 
+shitesinkholeunfedu can also distribute to folks without ftp facilities 
+via disks sent SASE contact him for USmail and shipping details 1290 In 
+addition the binaries are available via uucp from szebra 14087391520 TB 
+PEP oginnuucp swordnuucp in usr2xbbsbbsx  In addition the source is
+on zok in usrXi386R4server 291 In addition if you are in the US the 
+latest SVR4 binary April 15 patches and fonts are available on 
+piggyucsbedu 1281117250 in the directory pubX386 same filenames as 
+above Please use after 6pm Pacific as these are large files 591
+
+A set of HP 9000800 binaries is available on hpcvaazcvhpcom 152557215
+as ftppubMitX11R4libsx800Z 291
+
+A set of X11R4 binaries for the NeXT 2x have been made available by Howie Kaye
+on cunixfcccolumbiaedu
+
+A set of binaries by John Coolidge coolidgecsuiucedu for the Mac running 
+AUX 20 is available from wuarchivewustledu in the file
+archivesystemsauxX11R4Xupdate2tarZ Also in X11R4diffs is a set of 
+patches for making X11R4 with shared libraries with mkshlib
+
+A complete distribution of SCO X11R4 binaries by Baruch Cochavy 
+bluetechunixtechnionacil can be found on uunet The server is Roells 
+X386 11b compiled for ET4000 based SVGA boards
+
+
+Subject  61  Where can I get OSFMotif
+	
+	You can obtain either OSFMotif source or binaries from a number of 
+vendors 
+	Motif 122 source is now available it is based on X11R5
+	Motif 11 is based on the R418 Intrinsics and is currently 792 at 
+115
+	An OSFMotif source license must be obtained from OSF before source can
+be obtained from the Open Software Foundation or any valueadded vendor for
+any version Call the Direct Channels Desk at OSF at 6176217300 for ordering 
+information
+	Various hardware vendors produce developers toolkits of binaries 
+header files and documentation check your hardware vendor particularly if
+that vendor is an OSF member 
+	In addition independent binary vendors produce Motif toolkits for
+machines for which Motif is not supported by a vendor the kits include varied 
+levels of bugfixing and support for shared libraries and are based on widely
+divergent version of Motif
+	Quest 4089888880 sells kits for Suns as well 
+	IXI 44 223 462 131 offers kits for Sun3 and Sun4 
+	NSL 33 1 43 36 77 50 requestsnslfr offers kits for the Sun 3 
+and Sun 4
+	Bluestone Consulting makes a kit for Sun systems
+	ICS 617620060 makes several binary kits notably for Sun DEC
+	HP and DEC have announced support for Motif on Sun systems
+	Unipalm 44954211797 currently offers for Sun systems a Motif 
+Development Kit including X11R4 and based on Motif 112 The US distributor is
+Expert Object Corp 7089268500
+	BIM ships Motif 11 binaries for Suns Shared library support is 
+included Contact Alain Vermeiren avsunbimbe or Danny Backx dbsunbimbe 
+at 3227595925 Fax  3227594795 Belgium
+	SILOGIC 33 61579595 ships Motif 12 and Motif 11 on Sun 
+machines
+	SI Systems offers Motif 12 for Solaris 21 info 18007558649 in
+USA and Canada
+	Metro Link Inc 3059707353 salesmetrolinkcom in Europe contact
+ADNT 33 1 3956 5333 UniVision UK Ltd 44 628 82 22 81 ships an 
+implementation of X11R4 and Motif 112 including a sharedlibrary 
+implementation of libXma for the 386486 Unix market  Motif 112 is 
+also available for Sun Sparc based workstations It has also announced 
+Motif 12 for Solaris systems
+
+
+Subject  62  Does Motif work with X11R4 X11R5
+
+	Motif 12 is based on X11R5
+	Motif 11 available in source form from OSF as of August 1990 uses 
+the vanilla X11R4 Intrinsics where vanilla means with just a few 
+patches the file fixosf which OSF distributes is obsoleted by MITs patches 
+1517  The file fixosf111 distributed with the 111 version or its 
+subsequent modification needs to be applied after MIT fix18 though
+
+	Motif 111 to 113 will work with X11R5 if X11R5 is compiled with
+DMOTIFBC 114 and later should work with the vanilla R5 although there are 
+some known new geometrymanagement problems
+	
+
+Subject  63  Where can I get toolkits implementing OPEN LOOK
+
+	Suns XView has a SunViewstyle API A version is on the X11R4 tape
+the latest 292 30 sources are on export in contribxview3
+	XView and X binaries for the Sun 386i roadrunner are available for 
+ftp from svin01wintuenl 1311557070 directory pubX11R4386i
+	Supported binaries of XView 20 or 30 include 
+
+XView for nonSun Platforms  domestic and selected international vendors
+Several are also available from Sun contact your local sales office
+
+Amiga		GfxBase Inc		1881 Ellwell Drive
+AmigaDOS	408 2621469		Milpitas CA 95035
+		Fax 408 2628276
+
+SGI
+Sony NEWSOS
+IBM RS6000
+HP 9000
+DECstation	UniPress Software	2025 Lincoln Highway
+Ultrix	908 9858000		Edison NJ 08817
+		Fax 908 2874929
+
+		UniPress Software Ltd		PO Box 70
+		446246618850			Viking House
+		Fax 44624663453		Nelson Street
+						Douglas Isle of Man
+						United Kingdom
+
+DEC VAXstation	TGV			603 Mission Street
+VMS		800 TGV3440		Santa Cruz CA 95060
+		408 4274366
+		Fax 408 4274365
+
+		Unipalm Ltd			145147 St Neots Road
+		440954211797			Hardwick
+		Fax 440954211244		Cambridge CB3 7QJ
+						England
+
+Intel 386	Quarterdeck Office	150 Pico Boulevard
+DOS		Systems			Santa Monica CA 90405
+		213 3929851
+		Fax 213 3993802
+
+Intel 386	SunSoft Corporation	6601 Center Drive West
+Interactive	3103488649		Suite 700
+ UNIX and				Los Angeles CA  90045
+ SCO UNIX	
+
+Stardent	Scripps Institute	Clinic MB5
+Stellix OS	Fax 619 5544485	10666 N Torrey Pines Road
+ and Titan OS	Include mailstop MB5	La Jolla CA 92057
+		By ftp 19242828 in pubbinaryXviewREADMEXViewtarZ
+
+	ATTs OPEN LOOK GUI 30 Xtbased toolkit is now generally available 
+292 contact 1800828UNIX544 for information Binaries are produced
+for SPARC systems by International Quest Corporation 4089888289 A version
+of the toolkit is also produced under the name OLIT by Sun 
+	More recent versions of OLIT have been ported to IBM 6000 and DEC MIPS 
+by both UniPress and ICS OLIT is also available for HP from Melillo Consulting
+9088730075 MJM Somerset NJ makes OLIT 40 for HP 7xx series running
+HPUX 80 DECstations and RS6000s thanks to Joanne Newbauer 
+joattunixattcom 9085226677
+
+	Sun is shipping OpenWindows 30 contact your local sales 
+representative for more details the package includes toolkit binaries and 
+header files
+
+	ParcPlaces formerly Solbournes extensible Cbased Object 
+Interface Library which supports runtime selection between Open Look or 
+Motif is available from 3036784626 592
+
+
+Subject  64 Where can I get other X sources including R5 modifications
+
+	The MIT Software Center ships the X Test Suite on tape
+
+	A multithreaded version of Xlib based on X11R5 patch 12 is now 
+available for anonymous FTP from new version 193
+        DEC on gatekeeperdeccom 16102 in pubX11contribmtxlib11
+        MIT on exportlcsmitedu 1824012 in contribmtxlib11
+
+	HP has made available drivers to permit the building of the X11R5
+sample server on the HP 9000 Series 700 workstations the files are on
+exportlcsmitedu in ftpcontribR5HPSRV 892
+
+	Usercontributed software is distributed through the newsgroup
+compsourcesx moderated by Chris Olson chrisimdsterlingcom also check 
+that group for posting information
+
+	Richard Hesketh rlh2ukcacuk has been creating a list of freely
+available X sources  The list is stored on exportlcsmitedu in contrib as
+xsourcelistZ It lists the main storage locations for the program and 
+international sites from which it may be ftped
+
+	The machine exportlcsmitedu has a great deal of usercontributed
+software in the contrib directory a good deal of it is present in current or 
+earlier versions on the X11R3 X11R4 and X11R5 contrib tapes There are also
+directories for fixes to contrib software  The file on export in
+contrib00indextxt is a quick overall index of the software in that area
+provided by Daniel Lewart dlewartuiucedu
+
+	These sites used to and may still mirror export and are of particular 
+use for Australasia Anonymous ftp ftpAdelaideEDUAU ACSnet Fetchfile 
+siriusuaoz
+
+	The material on gizacisohiostateedu which tends to duplicate 
+the export archives is also available via anonymous UUCP from osucis at TB 
+and V32 speeds  Write to uucpcisohiostateedu same as osucisuucp for 
+instructions the archive is now maintained by Karl Kleinpaste
+
+	A new westcoast UUCP X11 Archive is administered by Mark Snitily 
+markzokuucp and contains the full X11 distribution the XTEST
+distribution an entire archive of compsourcesx and other goodies
+	The machine zok has a TB modem which will connect to 192K 2400 
+1200 baud in that order  The anonymous UUCP account is UXarch with password 
+Xgoodies  The modems phone number is 4089968285
+	A sample Systems or Lsys entry might be
+   		zok Any ACU 19200 4089968285 inin UXarch word Xgoodies
+	To get a current listing of the files that are available download
+the file usrXlslRZ
+	A full subject index of the compsourcesx files is available in the
+file usrXcompsourcesxINDEX
+	The machine has just the one modem so please do not fetch large 
+amounts of data at one sitting
+courtesy Mark Snitily 290
+
+In addition UUNET Source Archives 7038765050 tracks compsourcesx and 
+provides 800MB of compressed programs on 6250 bpi tapes or 14 tapes  It 
+also mirrors exportcontrib in its packagesX directory
+	
+
+Subject  65 Where can I get interesting widgets
+
+	The Free Widget Foundation FWF library sponsored by Brian Totty 
+tottycsuiucedu is now 293 available on acsuiucedu 1281742521 
+in pubfwfv341sharZ The set of widgets there is intended to form the basis
+for future contributions To be added to the discussion list send to
+listservcsuiucedu a message saying subscribe listname yourfullname
+where listname is one of freewidgetsannounce freewidgetsdevelopment or 
+freewidgetsbugs  Version 34 is current look for 40 in 493
+	The Xew widget set contains widgets for data representation  Version 
+12 493 is on export contribXew12tarZ
+	Peter Wares Xo Open Widget set which has Motiflike functionality 
+is on archivecisohiostateedu as pubXoXo21tarZ 892
+	The AthenaTools Plotter Widget Set Version 6beta 792 maintained by
+Peter Klingebiel kliniatunipaderbornde includes many graph and plotting 
+widgets a copy is on export in plotterv6btarZ plotterdoctarZ
+plotterafmtarZ and plotterREADME The latest versions may in fact be on
+ftpunipaderbornde 131234232 in unixtools
+	An advance version of Marc Quintons Motif port of the FWF MultiList 
+widget is in ftpstna7stnadgacfrpubMultiListtarZ 143196931
+	Additional widgets are available on the contrib portion of the X11R4
+tapes these include the Xcu set
+	Paul Johnstons johnstonspc5jplnasagov X Control Panel widget set
+emulates hardware counterparts sources are on exportlcsmitedu in 
+Xc13tarZ
+	OReilly Volume 4 Doug Youngs book the AsenteSwick book and Jerry 
+Smiths Objectoriented Programming with the X Window System Toolkits all 
+include details on writing widgets and include several useful widgets sources 
+are typically on export andor UUNET 
+	The Dirt interface builder includes the libXukc widet set which extends
+the functionality of Xaw 
+	A graph widget and other 2Dplot and 3Dcontour widgets by Sundar 
+Narasimhan sundaraimitedu are available from ftpaimitedu as
+comftppubuserssundargraphtarZ The graph widget has been updated 391
+with documentation and histogram capabilities
+	A graph widget is available from ftpstna7stnadgacfr in
+pubGraphtarZ it uses a segment list for drawing and hence supports a zoom
+operation
+	Ken Lees Xm widget demo that uses Display PostScript to draw labels 
+at a nonhorizontal angle is on export in contribdpslabeltarZ
+	The Table widget works like troff TBL tables is available in several
+flavors one of which is with the Widget Creation Library release
+	Bell Communications Research has developed a Matrix widget for complex
+application layouts its on export in contribXbaewidgets38tarZ 293 
+The distribution also includes a caption widget to associate labels with 
+particular GUI components 792
+	Dan Connollys connollyconvexCOM XcRichText interprets RTF data
+its on export as contribXcRichText11tarZ
+	The XmGraph Motifbased graphing widget is on iworksecnuiowaedu in
+comphpGUIclassicXmGraphtarZ although it may not be stable
+	A TeXstyle Layout widget by Keith Packard is described in the 
+proceedings of the 7th MIT Technical Conference OReilly X Resource volume 5
+source is available on export contribLayouttarZ
+
+	A version of Lee Iversons leeiMcRCIMMcGillEDU imageviewing tool
+is available as contribvimage093tarZ on exportlcsmitedu  The package 
+also includes an ImageViewPort widget and a FileDialog widget 1291592 
+	In addition the PEXt toolkit by Rich Thomson rthomsondsdescom is 
+available on export as PEXttarZ it includes a PEX widget making it easier to
+use PEX in Xtbased programs
+	A Motif port of the Xaw clock widget is in ftpstna7stnadgacfr
+in pubClocktarZ
+	A modification of the Xaw ScrollBar widget which supports the arrowhead
+style of other toolkits is on export in contribXawScrollbarmtaZ
+
+	A beta 03 1192 release of the R5 Xaw widgets with a 3D visual 
+appearance by Kaleb Keithley kalebthymejplnasagov is available on export 
+in contribXaw3dR5Xaw3d03tarZ The library which is binarycompatible 
+with the MIT Xaw implements a 3D subclass which handles the extra drawing
+
+Also
+	The Xmt Motif Tools Dovetail Systemss shareware library of 9 
+widgets and many convenience functions is available from 
+exportlcsmiteducontrib and ftporacompubxbookXmt in xmtREADME and 
+xmt10tarZ
+	The Xtra XWidgets set includes widgets for pie and bar charts XY 
+plots Help spreadsheets data entry forms and line and bar graphs  Contact 
+Graphical Software Technology at 3103289338 infogstcom for information
+	The XRTgraph widget available for Motif XView and OLIT displays
+XY plots bar and pie charts and supports userfeedback fast updates and
+PostScript output Contact KL Group Inc at 4165941026 infoklgcom
+	A set of dataentry widgets for Motif is available from Marlan 
+Software 7134671458 gwgworldstdcom
+	A set of graph widgets is available from Expert Database Systems
+2123706700
+	A set of OSFMotif compound widgets and support routines for 2D
+visualization is available from Ms Quek Lee Hian National Computer Board
+Republic of Singapore Tel  657720435 Fax  657795966 
+leehianitigovsg leehianitivaxbitnet
+	The ICS Widget Databook includes a variety of control widgets and 
+specialpurpose widgets available on a variety of platforms  Information 
+6176210060 infoicscom
+	Information on graphing tools may be obtained from infoTomSawyercom 
+15108480853 fax 15108480854
+
+
+Subject  66  Where can I get a good fileselector widget
+
+	The Free Widget Foundation set offers a FileSelector widget with 
+separate directory path and file listing windows and the FileComplete which
+has emacsstyle file completion and  expansion 
+	Other available filerequestor widgets include the XiFileSelector from 
+Iris Softwares book the xdbx fileselector extracted by David Nedde 
+davenwpiwpiedu and the FileNominator from the aXe distribution
+	The GhostView Xfig and vimage packages also include fileselector 
+widgets
+
+
+Subject  67  What widget is appropriate to use as a drawing canvas
+
+	Some widget sets have a widget particularly for this purpose  a
+WorkSpace or DrawingArea which doesnt display anything but lets your Xt 
+application know when it has been reexposed resized and when it has received
+user key and mouse input 
+	The best thing to do for other widget sets  including the Athena set 
+ is to create or obtain such a widget this is preferable to drawing into a 
+core widget and grabbing events with XtAddEventHandler which loses a number 
+of benefits of Xt and encapsulation of the functionality   
+	At least one version has been posted to compsourcesx name 
+	The publiclyavailable programs xball and xpic include other versions 
+	The Athena Widget manual mitdocXawTemplate in the R5 distribution 
+includes a tutorial and source code to a simple widget which is suitable for 
+use 
+	The Free Widget Foundation set contains a Canvas widget
+
+
+Subject  68  What is the current state of the world in X terminals
+
+Jim Morton jimapplixcom posts quarterly to compwindowsx a list of 
+manufacturers and terminals it includes pricing information 
+
+Notable buyersguide surveys include
+	 the September 1991 issue of Systems Integration
+
+
+Subject  69  Where can I get an X server with a touchscreen or lightpen
+
+	Labtam 61 3 587 1444 fax 61 3 580 5581 offers a 19 Surface 
+Acoustic Wave touchscreen option on its Xengine terminals
+	Tektronix 18002255434 provides an X terminal with the Xtouch 
+touchscreen This terminal may also be resold through Trident Systems
+7032731012
+	Metro Link 3059707353 supports the EloGraphics Serial Touch Screen 
+Controllers
+
+
+Subject  70  Where can I get an X server on a PC DOS or Unix
+
+	MIT X11R5 already provides a server to many 386486 Unixes with 
+support for many of the popular video graphics adapters and for other 
+nonMSDOS PCs you can obtain a server from these sources
+
+	XFree86 formerly X386 12E is an enhanced version of X386 12 which 
+was distributed with X11R5 it includes many bug fixes speed improvements and
+other enhancements Source for version 12 293 is on exportlcsmitedu in 
+pubcontrib ftpphysicssuozau in X386 and ftpwintuenl in pubX386 In
+addition binaries are on ftpphysicssuozau and ftpwintuenl among other 
+systems Info x386physicssuozau
+	Note this package obsoletes Glenn Lais Speedup patches for an 
+enhanced X11R5 server for 386 UNIXes with ET4000 boards SpeedUptarZ on 
+export
+
+
+	Metro Link Inc 3059707353 salesmetrolinkcom in Europe contact
+ADNT 33 1 3956 5333 ships an implementation of X11R4 for the 386486 Unix
+market
+
+	SGCS offers X386 Version 13 based on Thomas Roells X11R5 twoheaded
+server in binary and source form Information 4082559665 infosgcscom
+
+	ISC SCO UHC and other wellknown operatingsystem vendors typically
+offer X servers
+
+	For MSDOS PCs
+
+Daniel J McCoy mccoygothamcityjscnasagov has started posting monthly a 
+list of nonUNIX servers for PCs Macs and Amigas it includes pricing 
+information The current copy is kept on export in contrib as 
+XServersNonUNIXtxtZ 
+
+An article on PC X servers appears in the March 2 1992 Open Systems Today
+
+	Also of possible use
+
+	NetI from Programit 2128091707 enables communication among 
+DOS OS2 and Unix machines and can be used to display PC sessions on your
+Unix X display
+
+
+
+Subject  71  Where can I get an X server on a Macintosh running MacOS
+
+	eXodus from White Pine Software 6038869050 runs on any Mac with
+at least 1MB of memory and runs the X server within a standard Macintosh 
+window  Version 30 691 supports intermixing of X and Mac windows and
+the ADSP protocol The version supports the SHAPE extension and includes
+DECwindows support
+
+	Apples MacX runs on MacPlus or newer machines with  2MB of memory
+and system software 604 or later Version 11 is fully X11R4based  It 
+supports full ICCCMcompatible cut and paste of text AND graphics between the 
+Macintosh and X11 worlds the SHAPE extension including SHAPEd windows on the 
+Macintosh desktop an optional builtin ICCCMcompliant window manager X11R4 
+fonts and colors a builtin BDF font compiler and builtin standard 
+colormaps Upgrades to MacX are available by ftp from auxsupportapplecom 
+Info 4089961010  
+	Note MacX is also the name of a vaxmac xmodem transfer utility
+
+	Also 
+
+	Liken 1800245UNIX or infoqualixcom software enables monochrome
+68000 Mac applications to run on a SPARC system running X 
+	Xport 1800245UNIX 4155720200 or xportqualixcom enables Mac 
+applications to display on an Xbased workstation by turning the Mac into an X 
+client
+	Intercon has a product called PlanetX which enables Mac applications
+to display on an X server
+
+
+Subject  72  Where can I get X for the Amiga
+
+	The new Amiga 3000 machines offer an X server and OPEN LOOK tools and
+libraries on a full SVR4 implementation
+
+        GfxBase Inc provides X11 R41 for the AmigaDos computer it 
+contains X11R4 clients fonts etc and a Release 4 color server An optional 
+programmers toolkit includes the header files libraries and sample programs
+Info from GfxBase 4082621469 Dale Luck 
+uunetcbmvaxpyramidboingdale 291
+
+
+Subject  73  Where can I get a fast X server for a workstation
+
+	The R5 server should be among the fastest available for most machines
+
+	Sun sells a Direct Xlib product which improves rendering for 
+applications running on the same machine as the X server the replacement Xlib
+library accesses graphics hardware directly using Suns Direct Graphics Access 
+DGA technology
+
+	International Quest Corporation 4089888289 has an optimized R4 
+server for Sun34 under SunOS 40
+
+	Unipalm have R4 Servers for Sun3 and Sparc platforms These are 
+optimised to use graphics hardware and will run with Sunview Information
+44 954 211797 or xtechunipalmcouk
+
+	Xgraphs Xtool 4084929031 is an X server implemented in SunView 
+which boasts impressive results on Sun 3 and SPARC systems 690
+
+Several companies are making hardware accellerator boards
+
+	Dupont Pixel Systems 3029926911 for Sun
+
+	Megateks 6194555590 Xcellerator board for the Sun 3 and Sun 4 is 
+based on the TI 34020 the company claims performance improvements of 5x to 
+10x over the sample X11R3 server
+
+
+Subject  74 Where can I get a server for my highend Sun graphics board
+
+        Takahashi Naoto Electrotechnical Laboratory ntakahasetlgojp has 
+modified the MIT X11R5 server to support the Sun CG8 CG9 and CG12 boards  
+The files are on export in contribXsun24301tarZ  Note that both files 
+are necessary to build Xsun2431
+
+	The JPL R5 Xsun Multiscreen server is a general purpose replacement
+for the MIT serverddxsun layer it provides for the screen to be split among
+several monitors and implements several other features above the MIT 
+implementation Available on exportlcsmitedu in the file
+contribR5XsunmultiscreentarZ Kaleb Keithley kalebthymejplnasagov
+1291 the file was updated 24 Mar 1993
+
+
+Subject  75  Where can I get an X terminal server for my lowend Sun 350
+
+	Seth Robertson sethctrcolumbiaedu has written Xkernel the current
+version 14 as of 891 20 expected RSN is on solctrcolumbiaedu 
+128596440 in pubXkernelgamma It turns a Sun 350 into a pseudo X 
+terminal most of the overhead of the operating system is sidestepped so it 
+is fairly fast and needs little disk space
+	A similar approach is to run the regular X server by making etcinit
+a shell script which does the minimal setup and then invokes Xsun like this
+example script from mouselarrymcrcimmcgillEDU
+
+ binsh
+exec devconsole 21
+etcfsck p devnd0
+case  in
+ 	0	
+ 	4	etcreboot q n
+ 		
+ 	8	echo ND fsck failed  get help
+ 		etchalt
+ 		
+ 	12	echo Interrupted
+ 		etcreboot
+ 		
+ 		echo Unknown error in reboot fsck  get help
+ 		etchalt
+ 		
+esac
+bindd iftmpfs ofdevnd2 bs512 count128 devnull 21
+etcmount devnd2 tmp
+etcifconfig le0 netmask 2552552550 broadcast 13220641255
+etcmount o ro apollou2x11lib locallibX11
+etcroute add default 132206411 1 devnull
+set etcifconfig le0
+exec Xsun once multidisp mux query 
+	sh vn locallibX11xdmservers2 21
+
+
+Subject  76  What terminal emulators other than xterm are available
+
+	PCS has rewritten xterm from scratch using a multiwidget approach that
+can be used by applications A version is on the R5 contrib tape and on
+export in contribemutarZ 1091 For more information contact 
+medudepcscom
+
+	mxterm a Motifbased xterm is available from the Paderborner 
+ftpServer ftpunipaderbornde 131234232 file 
+unixX11morecontribmxtermtarZ
+
+	The Color Terminal Widget provides ANSIterminal emulation compatible
+with the VTx00 series a version is on export in contribCTW11tarZ A
+Motif version is on ftpstna7stnadgacfr in pubTerm10tarZ
+	
+	kterm 412 is an X11R4based vt100vt102 and Tektronix 4014 terminal
+emulator that supports display of Chinese Japanese and Korean text in VT 
+mode  Also supported are ANSI color sequences multibyte word selection 
+limited Compound Text support and tab and newline preservation in selections
+kterm 412 is also available from these anonymous ftp sites
+	clrnmsuedupubmisckterm412tarZ  128123114
+	exportlcsmiteducontribkterm412tarZ  1824012
+	kumkaistackrpubunixXstuffskterm412tarZ  13768165
+courtesy of Mark Leisher mleishernmsuedu 
+
+	kterm511tarZ is now on export 1292
+
+	mterm by mouselarryMcRCIMMcGillEDU is an X terminal emulator
+which includes ANSI X364 and DEC emulation modes  mterm can be had by ftp to 
+larrymcrcimmcgilledu 13220611 in Xmtermsrcmtermballowax
+
+	Cxterm is a Chinese xterm which supports both GB23121980 and the 
+socalled Big5 encoding  Hanzi input conversion mechanism is builtin in 
+cxterm  Most input methods are stored in external files that are loaded at run
+time  Users can redefine any existing input methods or create their own ones
+The X11R5 cxterm is the rewritten of cxterm version 1151 based on X11R5 
+xterm it is in the R5 contrib software  thanks to Zhou Ning 
+zhouteleunitno and Steinar Bang uunetidtunitnosteinarb
+
+	XVT is available on exports contrib in xvt10tarZ and 
+xvt10README It is designed to offer xterms functionality with lower swap 
+space and may be of particular use on systems driving many X terminals
+
+	x3270 is in X11R5 contrib
+
+Also
+	IBM sells a 3270 emulator for the RS6000 part 5765011 its based
+on Motif 
+	
+	Century Software 8012683088 sells a VT220 terminal emulator for X 
+VT102 Wyse 50 and SCO Color Console emulation are also available 
+
+	Grafpoints TGRAFX provides emulation of Tektronix 4107 4125 and 
+42xx graphics terminals its available for most major platforms Information
+inc free demo copies 8004262230 Fax 4084460666 uunetgrafpntsales
+
+	IXIs Xdeskterm a package for integrating characterbased 
+applications into an X environment includes a number of terminalemulation
+modules Information 44 0223 462131 590
+
+	Pericom produces TeemX a set of several emulation packages for a
+number of Tek DEC Westward and Data General terminals The software runs on
+Sun 3 Sun 4 Apollo DEC ISC IBMAIX Information US 6098950404 
+UK 44 0908 560022 590
+
+	SCOs SCOterm infoscoCOM part of its Open Desktop environment is
+a Motifcompliant SCO ANSI color console emulator
+
+
+Subject  77 Where can I get an Xbased editor or wordprocessor
+
+	You can ftp a version of GNU Emacs the extensible customizable 
+selfdocumenting realtime display editor including X11 support from
+prepaimitedu 1871038pubgnuemacs1859tarZ or
+informatiktumuenchendepubGNUemacsemacs1859tarZ
+	
+	Epoch is a modified version of Gnu Emacs 18 with additional 
+facilities useful in an X environment Current sources are on csuiucedu 
+1281742521 in ftppubepochfilesepoch the current 392 version is 
+40 In Europe try unidoinformatikunidortmundde  There are two 
+subdirectories  epoch contains the epoch source and gwm contains the source 
+to the programmable window manager GWM with which epoch works well 
+You can get on the Epoch mailing list by sending a request to 
+epochrequestcsuiucedu
+
+	Lucid Emacs is a version of GNU Emacs derived from an early version of
+Emacs version 19  It currently requires X Windows to run  X support is
+greatly enhanced over GNU Emacs version 18 including support for multiple X
+windows input and display of all ISO88591 Latin1 characters ZmacsLispm
+style region highlighting a customizable Motiflike menubar more powerful
+keymap support flexible text attributes support on regional and screenlocal
+basis through X resources andor lisp and support for the X11 selection
+mechanism Lucid Emacs is free the latest version 293 is 194 and is
+available from labreastanfordedu in the pubgnulucid directory
+
+	The Andrew system on the X11 contrib tapes has been described as one of
+the best wordprocessing packages available It supports word processing with 
+multimedia embedded objects rasters tablesspread sheets drawings style 
+editor application builder embedded programming language c Release 51 
+became available 2 June 92  Fred Hansen wjhANDREWCMUEDU
+	You may be able to use the Remote Andrew Demo service to try this 
+software try finger helpatkitccmuedu for help
+
+	The InterViews C toolkit contains a WYSIWIG editor called Doc it 
+saves and loads files in a LaTeXlike format not quite LaTeX  The package 
+can also import idrawPostScript drawings
+
+	A simple editor aXe by JKWightnewcastleacuk is available on 
+export and arjunanewcastleacuk 1282401501 as aXe41tarZ 393 It 
+is based around the Xaw Text widget
+
+	TED is a simple Motifbased text editor it is a wrapper around the 
+Motif text widget which offers searchreplace paragraph formatting and 
+navigation features TED is available from ftpeosncsuedu 1521925 as 
+pubbilltarZ here are also executables there
+
+	Point by crowleyunmvaxcsunmedu Charlie Crowley is TclTkbased
+and offers dyanimic configuration and programming in the Tcl macro language
+The editor is available from unmvaxcsunmedu 12924161 as
+pubPointpoint11tarZ
+
+	asedit by Andrzej Stochniol astochicacuk is on export in 
+contribasedittarZ It is a simple text editor built around the Motif Text 
+widget Version 111 was released 193
+
+Also
+
+	Elan Computer Group Mountain View CA 4159642200 has announced the
+Avalon Publisher 20 an X11OPEN LOOK WYSIWYG electronic publishing system
+
+	FrameMaker and FrameWriter are available as Xbased binary products for
+several machines Frame is at 8008437263 CA 4084333311
+
+	WX2 formerly InDepthEdit is available from Non Standard Logics 
+33 1 43 36 77 50 requestsnslfr
+
+	Buzzwords International Inc has an editor called Professional Edit 
+that runs under XMotif for various platforms  Info 13143346317
+
+	DECwrite is available from DEC for some DEC hardware and SunWrite is
+available from Sun
+
+	IslandWrite will soon be available from Island Graphics 4154911000 
+infoislandcom for some HP  Apollo platforms
+
+	Interleaf is currently available from Interleaf 8002417700 
+MA 6175779800 on all Sun and DEC platforms others are under development
+
+	The Asterx office integration tools from Applix 18008APPLIX 
+MA 5088700300 include a multifont WYSIWG document composer for several 
+systems
+
+	ArborText Inc provides an X11 version of its Electronic Publishing 
+program called The Publisher The Publisher is available on Sun HP and 
+Apollo workstations Contact Arbortext at 3139963566 590
+
+	Iris Computing Laboratories offers the ie editor Info  
+15059882670 or infospectrocom
+
+	BBNSlate from BBN Software Products includes a menudriven word
+processor with multiple fonts and style sheets  It supports X on
+multiple platforms 6178735000 or slateofferbbncom 1190
+
+	The powerful sam editor by Rob Pike is split into a host portion and 
+a frontend graphics portion which now has an X implementation  sam is now 
+available by anonymous ftp from researchattcom in distsambundleZ  Watch 
+that space for updated versions  There is a mailing list for sam users 
+requests to samfansrequesthawkwindutcstorontoedu A set of extensions
+which augment the mouse activity with the keyboard is available from 
+uxccsouiucedu in pubsamsamx10shar
+
+	Innovative Solutions 5058834252 or Brian Zimbelman 
+isbrianbbxbasiscom publishes the userconfigurable Motifbased Xamine 
+editor
+
+	Qualix offers a product Information infoqualixcom or 800245UNIX 
+4155720200
+
+	Typex is a Motifbased editor available for several systems 
+Information Amcad Research 4088675705 fax 6209
+
+	WordPerfect offers an Xbased version of WordPerfect 51 for several
+workstations Information 8012225300 or 8004515151
+
+
+Subject  78  Where can I get an Xbased mailer
+
+	xmh an X interface to mh is distributed with the X11 release
+
+	Xmail is an Xbased window interface to Berkeleystyle mail handlers
+it is styled primarily after the Sunview mailtool application and builds on
+most Unix systems The current release 192 is 14 available in the MIT 
+X11R5 contrib tape and from export and uunet Info Jeff Markham
+markhamcadencecom
+
+	MMH My Mail Handler a motif interface to the MH mail handler is 
+available from ftpeosncsuedu 1521925 in pubbilltarZ it is bundled
+with the TED editor which it uses for composing messages Motif 11 is 
+required if you dont have it look for DEC and SPARC executables in the same 
+place  Information and problems to Erik Scott escotteosncsuedu 192
+
+	The Andrew Toolkit supports the Andrew Message System it is available
+from export and many other X archives and from emsworthandrewcmuedu 
+12823062 or send email to susanandrewcmuedu Release 51 became
+available 2 June 92
+	You may be able to use the Remote Andrew Demo service to try this 
+software try finger helpatkitccmuedu for help
+
+	XMailTool is an Xawbased interface to a BSDstyle mail reader version
+20 was released 992 Information Bob Kierski bobocraycom or 6126835874
+
+	Cem is a Motifbased mailer using standard mailbox formats it is on
+nelsontxncsuedu in pubCem Information Sam Moore SamMoorencsuedu
+
+Also
+
+        Alfalfa Software offers Poste a UNIXbased mailer that has Motif and 
+commandbased interfaces  It includes support for multimedia enclosures and 
+supports both the Internet and X400 mail standards  Information 
+infoalfalfacom 1 6174972922
+
+	ZCode Software offers ZMail for most Unix systems binaries support
+both tty and Motif interfaces The mailer includes a cshlike scripting 
+language for customizing and extending mail capabilities  Information 
+infozcodecom 1 415 4998649
+
+	Several vendors systems include Xbased mailers DEC offers dxmail 
+Sun offers an Xbased mailtool SCO infoscocom includes SCOmail in its Open
+Desktop product
+
+Several integrated officeproductivity tools include mailers
+
+	The Asterx office integration tools from Applix 18008APPLIX 
+MA 5088700300 include a mailer
+
+
+Subject  79 Where can I get an Xbased paintdraw program
+
+	xpic is an objectoriented drawing program It supports multiple font 
+styles and sizes and variable line widths there are no rotations or zooms
+xpic is quite suitable as an interactive frontend to pic though the 
+xpicformat produced can be converted into PostScript The latest version is 
+on the R4 contrib tape in clientsxpic
+
+	xfig by Brian V Smith bvsmithlblgov is an objectoriented 
+drawing program supporting compound objects  The xfig format can be converted 
+to PostScript or other formats Recent versions are on the R5 contrib tape or 
+on export in contribR5fixes version 216 1192
+
+        idraw supports numerous fonts and various line styles and arbitrary 
+rotations It supports zoom and scroll and color draws and fills The file 
+format is a PostScript dialect It can import TIFF files Distributed as a part
+of the InterViews C toolkit current release 31 from 
+interviewsstanfordedu 
+
+	A version of Robert Forsmans thothlightningcisufledu xscribble
+an 8bit paint program for X is now on ftpcisufledu in pubthoth 293
+
+	xpaint is available from ftpeelblgov as xpainttarZ
+	A rewrite Xpaint 20 by David Koblas koblasnetcomcom was released
+293 as xpaint2pl3tarZ xpaint is a bitmappixmap editing tool
+
+	A new OpenWindows PostScriptbased graphical editor named ice is now 
+291 available for anonymous ftp from Internet host lamontldgocolumbiaedu 
+1292361030  ice Image Composition Environment is an imaging tool that
+allows raster images to be combined with a wide variety of PostScript 
+annotations in WYSIWYG fashion via X11 imaging routines and NeWS PostScript 
+rasterizing It may require OpenWindows and Sun C 20
+
+	tgif by William Cheng williamoahucsuclaedu is available from most
+uucp sites and also from export and from csuclaedu It is frequently updated
+version 212patch18 was released 393
+
+	The pixmap program info colassainriafr for creating pixmaps is 
+on the R5 contrib tape it resembles the bitmap client Version 21 is now 
+available 1192
+
+	Although MetaCard is not generally classified as a paint program a 
+full 24bit color image editor is built into the program which can be used for
+light image editing and for producing color icons infometacardcom MetaCard
+is available via anonymous FTP from ftpmetacardcom csnorg or 
+12813821321
+	
+	pixt by J Michael Flanery produces XPM output
+
+Also
+
+	dxpaint is a bitmaporiented drawing program most like MacPaint its 
+good for use by artists but commonly held to be bad for drawing figures or 
+drafting dxpaint is part of DECs Ultrix release
+
+	FrameMaker has some draw capabilities 490
+
+	BBNSlate from BBN Software Products includes a fullfeatured draw and
+paint program with object grouping and multiple patterns multiple X platforms
+6178735000 or slateofferbbncom 1190
+
+	Dux TaDah 18005434999
+
+	IslandGraphics offers IslandDraw IslandPaint IslandPresent
+Info 4154911000
+
+	Corel Draw 6137288200 ported to X by Prior Data Sciences 
+8002672626
+
+	ArtsLetters Composer 2146618960
+
+	Ficor AutoGraph 5137714466
+
+	OpenWindows includes the olpixmap editor
+	SCO ODT includes the SCOpaint editor
+	HP VUE includes the vueicon editor
+
+Several integrated officeproductivity tools include drawpaint capabilities
+
+	The Asterx office integration tools from Applix 18008APPLIX 
+MA 5088700300 include drawpaint capabilities
+
+thanks in part to Stephen J Byers af997cobcs1cumminscom and to 
+J Daniel Smith dsmithannarborappliconslbcom
+	
+
+
+David B Lewis 					faqcraftuunetuunet
+
+		Just the FAQs maam  Joe Friday 
+ 
+David B Lewis		Temporarily at but not speaking for Visual Inc
+day dblvisualcom	evening davidcraftuunetuunet

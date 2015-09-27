@@ -1,0 +1,79 @@
+From w8sdztacomemh1armymil Keith Petersen
+Subject Re Date is stuck
+
+Directory PD1MSDOSSYSUTL
+ Filename   Type Length   Date    Description
+
+CLKDEV14ZIP  B   37122  910729  Keep DOS time in synch with battery clock chip
+
+An index of all files in the WSMRSIMTEL20ArmyMil MSDOS collection
+is available in two formats
+
+Directory PD1MSDOSFILEDOCS
+ Filename   Type  Description
+
+SIMIBMZIP    B   Commadelim list of all MSDOS files wdescrip
+SIMLISTZIP   B   Text format list of all MSDOS files wdescrip
+
+These files are updated every 710 days  See AAAREADME in that
+directory for details 
+
+SIMTEL20 allows only nine ANONYMOUS FTP logins during weekday
+prime time 5am to 3pm Mountain Time GMT7 but 27 otherwise
+
+SIMTEL20 files are also available by anonymous ftp from mirror sites
+OAKOaklandEdu 14121010117 wuarchivewustledu 1282521354
+archiveorstedu 128193213 ftpuunet 1373919 nicfunetfi
+1282146100 srcdocicacuk 14616937 nicswitchch
+13059140 archieau 13913046 NCTUCCCAedutw 140111321
+by email through the BITNETEARN file servers or by uucp from UUNETs
+1900GOTSRCS  See UUNET file uunetinfoarchivehelp for details
+
+OAKOaklandEdu is the primary mirror site for WSMRSIMTEL20ArmyMil
+All other mirrors except wuarchive and all LISTSERV and TRICKLE
+servers get their SIMTEL20 files from OAK instead of SIMTEL20 because
+it is much faster and allows more simultaneous ftp connections  OAK is
+always in sync with SIMTEL20 because I maintain it in addition to my
+duties at SIMTEL20  I run OAKs mirror program whenever new files are
+added at SIMTEL20
+
+MSDOSAnnTACOMEMH1ArmyMil is a ONEWAY moderated mailing list
+which is used by the Internet MSDOS archive managers to announce new
+additions to their collections 
+
+The announcements posted to this mailing list are also posted to Usenet
+newsgroup comparchivesmsdosannounce  If your host has Usenet News
+please do not subscribe to MSDOSAnn
+
+To add yourself to the mailing list send email to
+listservTACOMEMH1ArmyMil with this command in the
+body of the message
+
+    subscribe msdosann
+
+To subscribe something other than the account the mail is coming from
+such as a local redistribution list then add that address to the
+subscribe command for example to subscribe localmsdosann
+
+    subscribe localmsdosannyourdomainnet msdosann
+
+Please do not include a signature because it may confuse the server
+Send mail with the word  help  in the body of the message to get a
+complete list of commands and their syntax
+
+If you later change your mind and wish to unsubscribe send email
+from the same address where you were when you subscribed  Send to
+listservTACOMEMH1ArmyMil with this command in the body of the
+message
+
+unsubscribe msdosann
+
+This server is only for mailing lists and information files  It will
+not send program files 
+
+Keith
+
+Keith Petersen
+Maintainer of the MSDOS archive at WSMRSIMTEL20ArmyMil 1928811020
+Internet w8sdzTACOMEMH1ArmyMil     or      w8sdzVelaACSOaklandEdu
+Uucp uunetumichvelaw8sdz                         BITNET w8sdzOAKLAND

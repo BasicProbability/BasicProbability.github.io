@@ -1,0 +1,40 @@
+From beckirzr17inftudresdende Andre Beck
+Subject Re Animation with XPutImage
+
+
+In article 1993Apr2115462016330infodevcamacuk dcrmailastcamacuk Derek C Richardson writes
+
+ Two years ago I wrote a Sunview application for fast animation
+ of raster files With Sunview becoming rapidly obselete Ive
+ finally decided to rewrite everything from scratch in XView
+ I put together a quick test and Ive found that XPutImage
+ is considerably slower factor of 2 on average than the
+ Sunview command pwrop which moves image data from memory
+ pixrects to a canvas This was on a Sparc IPX It seems that
+ 1 the X protocol communication is slowing things down or
+ 2 XPutImage is inefficientor both My question is what
+
+The protocol has to move the whole image from process memory to server
+memory this is the hog The conversions in the XPutImage are
+fast
+
+ is the fastest way in X11R5 to dump 8 plane image data to
+ a window Can I take advantage of the fact that the client is
+ running on the same machine as the server Or am I stuck with
+
+Yes by utilizing the MITSHM extension that provides an XPutImage
+derivate that uses shared memory Fine fast
+
+ XPutImage in which case I might as well give up now
+ 
+
+No You can still XPutImage all of the frames onto pixmaps thus moving
+them to server memory and then replay them fastest using XCopyArea
+BUT be aware this is a major server memory bummer 
+
+
+oo
+ o                   Brain Inside                         o 
+ o                                                 o 
+ o  Andre Beck ABPSoft mehl AndreBeckIRSInfTUDresdende  o 
+oo

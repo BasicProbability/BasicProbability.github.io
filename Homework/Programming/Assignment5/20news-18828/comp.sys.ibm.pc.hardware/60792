@@ -1,0 +1,43 @@
+From dlousdcc3ucsdedu Dennis Lou
+Subject Re CPU Temperature vs CPU Activity 
+
+
+In article C5uM7F35uxaustinibmcom guydaustinibmcom Guy Dawson writes
+
+In article 1993Apr2106124611363uccsuOZAU montunophysicssuOZAU Lino Montuno writes
+ This may be a very naive question but is there any basis for the
+ claim that a CPU will get hotter when a computationally intensive 
+ job is running My friend claims that there will be little difference
+ in the temperature of an idle CPU and a CPU running a computationally
+ intensive job
+
+It first depends on what an idle cpu is doing
+
+Im not sure about DOS but many multitasking OSs have an loop like this
+
+
+loop
+	is there anything to do
+		YES  do it goto loop
+		NO   goto loop
+
+
+The CPU is not doing any work but it is still processing instructions
+
+Ive done some ASIC and digital design but not any CPU design
+It would seem to me that on a 486 the FPU is not being used most of
+the cache is not being accessed the off chip buffersdrivers are idle
+the multiplier isnt multiplying the barrel shifters arent shifting
+microcode isnt microcoding etc  This means transistors arent
+switching which means less power dissipated in CMOS which means
+less heat
+
+From what I understand the Pentium shuts down those sections of the
+CPU which arent being used in order to cut down on heatpower
+
+
+ 
+Dennis Lou              But Yossarian what if everyone thought that way
+dlouucsdedu           Then Id be crazy to think any other way
+backboneucsddlou   
+dlouucsdBITNET       Steve Jobs and Steve Wozniak went to my high school

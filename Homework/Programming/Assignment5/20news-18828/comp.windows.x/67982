@@ -1,0 +1,30 @@
+From danigatecmolssiuedu Dan Ellison
+Subject Re Scientific graphing  looking for runtime library
+
+In 1993May102121103980servalnetwsuedu d3e758buckypnlgov JE Pelkey writes
+
+
+In article C6IEM616xIhawnewswatsonibmcom artgwatsonibmcom Art Goldberg writes
+X gurus
+I am looking for a scientific graphing runtime X library  I want my code
+to open a window and plot a graph in the window  The library should
+manage plotting scaling of axes labeling etc
+
+Can someone recommend a library to do this  Please respond via email
+
+I would also be interested in this information
+
+Check into the vopl and vogle libraries  I beleive that I still have
+them available on ftpcmolssiuedu but Im not sure  I havent seen
+any new announcements for the software but Im sure its still around
+
+I have used it to do realtime data display and analysis as well as
+just for producing graphs after the fact  It works well and supports
+numerous graphics output formats including X  I tried it and liked
+it  YOu may as well
+
+ 
+
+ Dan Ellison Network Spec 	      	Computing Affairs SIUC 	 
+ Southern Illinois University 	   	Carbondale IL 62901               
+ FAX      618 4533459           	PHONE    618 4536149 	     

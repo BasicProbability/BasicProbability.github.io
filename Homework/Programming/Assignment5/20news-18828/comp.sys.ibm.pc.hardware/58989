@@ -1,0 +1,18 @@
+From towwangstatlerenginumichedu Tow Wang Hui
+Subject Floppy file copying
+
+
+A silly question I frequently edit small files and need to make copies of them
+on several floppy diskettes of the same size and format but my computer is
+only equipped with one 35 HD drive and one 525 HD drive cant I do the
+copying without swapping files temporarily to my hard disk which is 999 full
+using standard MSDOS 50 commands I know
+diskcopy a a
+works but for small selections of files
+xcopy atxt a
+does not
+Maybe Ill have to write my own file copy command in C but the idea does not
+amuse me
+Thanks for your help
+
+Francisco

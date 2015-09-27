@@ -1,0 +1,10 @@
+From ethancscolumbiaedu Ethan Solomita
+Subject Re X protocol packet type
+
+In article 93091144124DEPSLACVMSLACSTANFORDEDU DEPSLACVMSLACSTANFORDEDU writes
+Is there a way to identify an Xprotocol packet under DECNET Under
+TCPIP
+
+	The information in the packets isnt necessarily
+distinctive  you need to know that it is an X11 connection
+	 Ethan

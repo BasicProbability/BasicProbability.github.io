@@ -1,0 +1,57 @@
+From d12751tanusozau Jason Bordujenko
+Subject DAC Circuit
+
+Gday All
+
+I was looking to build a Parallel Port Digital to Analogue Converter the other
+day and came across this schematic which I promptly threw together on a piece
+of VeroBoard
+
+
+     P222k
+     P348k
+     P4100k
+     P5200k
+     P6400k
+     P7800k    10uf electrolytic
+     P81M6  
+     P93M2
+                                      
+            47nF ceramic     
+                          
+                                      
+     P25
+
+
+Please excuse the obvious limits of the Lower ASCII char set 
+
+I have it all constructed here and sitting inside a nice little grey ABS box
+
+Unfortunately I cant get it to work I have a little demo here by the name
+of Cronologia Which the schematic came from and all I can get it to pump
+out of the box is data type hashstatic with a small amount of music signal
+behind it  its even worse than the speaker inside the machine
+
+Does anybody out in netcolourfulcomputerworld have any ideassuggestions
+better designsimprovementswastepaper bin etc
+
+Many thanks for a reply via this conference or email
+
+  
+X  Regards Jason
+
+
+
+ Jason Bordujenko                                    Computer Department 
+ InterNetUseNet d12751tanusozau           Townsville Grammar School 
+ FidoNet Node    3640702 Grammar BBS               45 Paxton Street 
+ Data Phone No  61 77 72 6052 Int       Townsville Queensland 4810 
+                 077 72 6052 Aust                        Australia 
+ Facsimilie      61 77 72 2340 Int                                  
+                 077 72 2340 Aust                                  
+
+                           God made him simple                          
+                           science made him god                          
+                                                                         
+                    Stephen Kings The LawnMower Man                  
+

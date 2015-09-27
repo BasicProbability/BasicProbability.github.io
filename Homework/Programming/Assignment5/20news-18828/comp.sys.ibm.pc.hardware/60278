@@ -1,0 +1,42 @@
+From balogeniacseasupennedu Eric J Balog
+Subject SWITCH 35 TO A
+
+Hi
+
+Id like to switch my floppy drives so that my 35 b drive becomes a while
+my 525 a becomes b Im having a few problems though
+
+I know that the ribbon cable must be switched as well as the CMOS settings 
+to reflect this change and I think that Ive done that correctly However the
+drives do not operate correctly in this configuration From the C prompt if 
+I type a the 525 drive light comes on if I type b both the light for the
+525 and 35 drives come on
+
+There are some jumpers on each drive
+525  Label   Original Pos   Pos I changed it to
+        DS0      ON               OFF
+	DS1	 OFF		  ON
+	DS2	 ON		  ON
+	DS3	 OFF		  OFF
+	IO	 OFF		  OFF
+	MS1	 OFF		  OFF
+	DR	 ON 		  ON
+	MS2	 ON		  ON
+	FG	 OFF		  OFF
+
+35    DS0	 OFF		  ON
+	DS1	 ON		  OFF
+	DS2	 OFF		  OFF
+	DS3	 OFF		  OFF
+	MM	 ON		  ON
+	DC	 ON		  ON
+	MD	 OFF		  OFF
+	TTLCMO8 ON		  ON
+
+
+Any help or suggestions would be greatly appreciated
+
+Thanks in advance
+
+Eric Balog
+balogeniacseasupennedu

@@ -1,0 +1,45 @@
+From gpatapisboydtansucomau George Patapis
+Subject Re DESQviewX on a PC
+
+In article 14595639wlaeclca harrispwlaeclca  writes
+I use DESQviewX and I think it is great Where it really shines IMHO is
+to let unix users log into a pc and run dos and windows applications with
+the display going to their screens
+Youll need to get
+DESQviewX v 11
+DESQviewX v 11                           275 suggested retail
+DESQviewX to Other X Systems v 11        200 suggested retail
+
+You also must be running a supported network FTP softwares PCTCP
+Novell Lan workplace for dos Sun Microsystems PCNFS Beame and WHiteside
+Wollongong pathway TCPIp or HP Microsoft Lan Manager
+
+if you dont have any of this network stuff Quarterdeck will give you a
+copy of Novell TCPIP transprot for dos with the Network manager
+
+You can get more info by sending email to appropriately infoqdeckcom
+
+In my opinion if you want to have other people logging in and running
+applications at your pc youll want to have a 486 33 with 16 Megs of RAM
+Also the Xwindows software in DESQviewX really seems to like an ET 4000
+TSENG Labs chipset based graphics card Personally I found that things
+ran better with a SCSI drive in the pc than with ESDI drives but that is
+my experience only
+
+                                Good Luck and Best Wishes
+                                                Phil
+
+What sort of traffic is generated with the Xcalls  I am curious to find
+out the required bandwidth that a link must have  if one machine running
+DVX is supporting multiple users clients and we require adequate response
+time  Anyone have any ideas   
+
+
+
+
+  George Patapis PAN METRON ARISTON  
+  CSSC Lane Coveemailgpatapiscsscsydtansucomau  
+  POBox A792 Sydney South fax  02 911 3 199  
+  NSW 2000 Australiavoice02 911 3 121  
+
+

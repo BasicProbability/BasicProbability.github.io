@@ -1,0 +1,24 @@
+From barmarthinkcom Barry Margolin
+Subject Re TWM
+
+In article 1993May1216185729950sambaoituncedu naoumovphysicsuncedu Sergei Naoumov writes
+I run twm and would like to execute some program before leaving twm In other
+words I would like to run some program before I do fquit Is it possible
+to make a menu section which would contain these two parts
+
+In your menu definition put
+
+    Quit TWM ffunction Execute and Quit
+
+Then define
+
+Function Execute and Quit 
+    someprogram
+    fquit
+
+
+ 
+Barry Margolin
+System Manager Thinking Machines Corp
+
+barmarthinkcom          uunetharvardthinkbarmar

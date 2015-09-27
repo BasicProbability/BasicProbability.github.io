@@ -1,0 +1,25 @@
+From burgeqdeckcom Bill Burge
+Subject Re DOS 60
+
+In article 4903eastmanUUCP lrxi00icts01KodakCOM James Nonnemacher writes
+Is there enough experience out in netland with DOS 60 that anyone could make some comments on whether
+or not its a worthwhile upgrade Any problems with hardware compatibility or any bugs been found
+
+One thing I wonder about is the disk doubler included with DOS 60 Is there any possiblity that if
+the disk double exe file gets corrupted your disk would be unreadable How would one recover from
+such an event
+
+The file that would be a problem is DBLSPACEBIN not EXE
+
+                                      ARF
+                                   0 0
+oOOOOo
+ Bill Burge  burgeqdeckcom            and his dog Spot            
+ Problem Resolution  Prevention     BBS  310 3143227 N81         
+ Quarterdeck Office Systems          FAX  310 3143217                 
+                                     QFAX 310 3143214                 
+ Tech Support  supportqdeckcom     This is an automated request      
+ Genl Info  infoqdeckcom            FAX system call it from the     
+ CompuServe  GO QUARTERDECK            handset on your FAX              
+
+

@@ -1,0 +1,102 @@
+From dugganecsumassedu
+Subject Creating Your own ColorMap ie Lookup Table in X11 R4
+
+Hello
+
+Below I have the copy of some source I am using to setup a userspecified color
+map for X R11 V4 I am attempting to create user defined colors in terms of
+RGB color ranges The calls to XAllocColor prove ineffective 
+
+Variables are defined are as follows
+
+    int                 i j k lutindex
+    colortype          minimage maximage
+    colortype          image PixelValueRange lastimage start end jump
+                        lut  512 
+    unsigned long       pixel
+    double              red green blue
+
+
+  Data structure used by color operations
+ 
+typedef struct 
+        unsigned long pixel
+        unsigned short red green blue
+        char flags   dored dogreen doblue 
+        char pad
+ XColor
+
+    XColor              rgbcolor hardwarecolor
+
+
+With colortype defined as  double red double green double blue 
+
+What I need to know is how to set is it possible the values in hardwarecolor
+to work within the call to XAllocColor
+
+    startred  int 255  minimagered	 0255 
+    endred    int 255  maximagered	 0255 
+    jumpred   int  endred  startred   7
+
+    startgreen  int 255  minimagegreen   0255 
+    endgreen    int 255  maximagegreen   0255 
+    jumpgreen   int  endgreen  startgreen   7
+
+    startblue  int 255  minimageblue     0255 
+    endblue    int 255  maximageblue     0255 
+    jumpblue   int  endblue  startblue   7
+
+    lutindex  0
+    for i0 i8 i
+        for j0 j8 j
+            for k0 k8 k
+                
+                if  i  0  jumpred  1 
+                    lut  lutindex red  startred
+                else
+                    lut  lutindex red  jumpred  i  1
+
+                if  j  0  jumpgreen  1 
+                    lut  lutindex green  startgreen
+                else
+                    lut  lutindex green  jumpgreen  j  1
+
+                if  k  0  jumpblue  1 
+                    lut  lutindex blue  startblue
+                else
+                    lut  lutindex blue  jumpblue k  1
+
+                hardwarecolorred    short lut  lutindex red
+                hardwarecolorgreen  short lut  lutindex green
+                hardwarecolorblue   short lut  lutindex blue
+                hardwarecolorpixel  lutindex
+
+printfHW1 i  d   d d d pixel  d n lutindex hardwarecolorred
+                hardwarecolorgreen hardwarecolorblue hardwarecolorpixel 
+
+                status  XAllocColor  dpy colormap hardwarecolor 
+printfHW2 i  d d d d pixel  d n lutindex hardwarecolorred
+                hardwarecolorgreen hardwarecolorblue hardwarecolorpixel 
+                if  status  0 
+                    
+                    XSetForeground  dpy gc hardwarecolorpixel 
+                    XFillRectangle  dpy win gc 1 1 MAXCOLUMN MAXROW 
+                    XFlush  dpy 
+                    sleep 10
+                printfd f f f at d n lutindex lut  lutindex re
+                            lut  lutindex green lut  lutindex blue
+                            hardwarecolorpixel 
+                    
+                lutindex  lutindex  1
+                
+
+Thanks in advance to anyone who can help me with this problem
+
+Sincerely
+
+	John F Duggan
+
+
+John F Duggan                               alias    Genghis Khan
+Engineering Computer Services               internet  DUGGANecsumassedu  
+Univ of Massachusetts Amherst MA 01003    Bitnet      DUGGANumaecs

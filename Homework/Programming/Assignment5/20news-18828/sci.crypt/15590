@@ -1,0 +1,533 @@
+From marcmathunisbde Marc Conrad
+Subject Re List of large integer arithmetic packages
+
+mrrscss3clmsuedu Mark Riordan writes
+
+not very comprehensive list deleted
+
+There is a very comprehensive list in scimathsymbolic 
+which detailed descriptions of many packages 
+Especially you Mark should update your list  
+Here it is 
+
+
+			Available    Systems
+
+This is the  list of  currently  developed  and   distributed  software  for 
+symbolic math applications No informations is supplied on systems no longer 
+being supported like SAINT FORMAC ALPAK ALTRAN MATHLAB SIN SAC CAMAL 
+ScratchPad MuMath SHEEP TRIGMAN ANALITIK SMP or CCALC
+
+For more detailed info on any of the systems below  look into the directory
+pubSymbolicMath in the anonymous FTP of mathberkeleyedu No particular 
+recommendation is made for any of these      If you want prices contact the 
+company Programs are listed by aprox the reverse order of the number  of 
+machines they run on in each class general purpose systems first
+
+If you have any information to add to this list we know we are missing
+MuPAD  FELIX please send it to 
+
+			camathberkeleyedu
+Paulo Ney de Souza
+Department of Mathematics
+University of California
+Berkeley CA 94720 				desouzamathberkeleyedu
+
+GENERAL PURPOSE
+
+ 
+Maple 
+	Type      commercial
+	Machines  Most impressive list of machines I seen for a program
+                   workstations DEC HP IBM MIPS Sun SGI Apollo 
+                   386 PCs Mac Amiga Atari ATT 3B2 Gould Convex
+                   NCR Pyramid Sequent Unisys and Crays
+	Contact   mapledaisywaterlooedu
+		   Waterloo Maple Software 160 Columbia Street West
+        	   Waterloo Ontario Canada     N2L 3L3
+        	   Phone 519 7472373
+	Version   5 Release 1
+	Comments  General purpose  source available for most routines 
+		   graphics support in 50 A demo of the program for PCDOS
+		   can be obtained from anonymous FTP at
+		   wuarchivewustleduedumathmsdosmodernalgebramaplevzip
+
+Mathematica
+	Type 	   commercial
+	Machines  Cray YMP down to Macs and PCs
+	Contact   infowricom Phone 1800441MATH
+		   Wolfram Research Inc
+ 	           100 Trade Center Drive Champaign IL 618207237
+	Version   21
+	Comments  General purpose Notebook interface on Next Mac 
+	           nice graphics 
+
+Macsyma 
+   	Type      commercial
+    	Machines  Sun3 Sun4 SPARC VAX UNIX and VMS Apollo 
+		   HP 9000 DEC RISC PC386DOS Symbolics computers 
+		   368387 and 486 no SXs PCs
+    	Contact   macsymaservicemacsymacom Phone 800MACSYMA
+		   Macsyma Inc  20 Academy St Arlington MA 021746436
+    	Version   depends on machine 417100 is the latest for Sun4 HP 
+		   and DEC RISC 417125 for PCs
+   	Comments  General purpose many diverse capabilities one of the 
+		   oldest around Includes propietary improvements from 
+		   Symbolics and Macsyma Inc Descendant of MITs Macsyma
+
+DOEMacsyma
+	Type      distribution fee only
+	Machines  GigaMos Symbolics and TI Explorer Lisp machines  The NIL 
+                   version runs on Vaxes using the VMS system  The public 
+                   domain Franz Lisp version runs on Unix machines including 
+                   Suns and Vaxes using Unix
+	Contact   ESTSC  Energy Science  Technology Software Center 
+		   P O Box 1020 Oak Ridge TN 378311020
+		   Phone 615 5762606
+	Comments  Help with DOEMacsyma general and help with issues such as
+	           obtaining support new versions etc lphparadigmcom
+                   Leon Harten from Paradigm Assoc Paradigm Associates Inc 
+                   29 Putnam Avenue Suite 6 Cambridge MA 02139 617 4926079
+
+Maxima
+	Type	   Licence for a fee Get licence from ESTC before download
+	Machines  Unix workstations Sun MIPS HP PCs and PCDOS beta
+        Contact   wfsrascalutexasedu Bill Schelter
+	Version   4155
+	Comments  General purpose   MIT Macsyma family Common Lisp 
+                   implementation by William F Schelter based on Kyoto
+		   Common Lisp Modified version of DOEMacsyma available
+		   to ESTSC DOE sites Get the licence from ESTSC phone
+		   6155762606 and then dowload the software from 
+		   DOS mathutexasedupubbetamaxzip   or
+		   UNIX rascalicsutexasedupubmaxima4155tarZ
+		   Currently their charge for 1 machine license is 165 to
+		   universities Site licenses are also available
+
+Aljabr
+	Type      commercial
+	Machines  Macs with 4Meg of RAM 
+	Contact   aljabrfprcom  Phone 508 2639692 Fort Pond Research
+                   15 Fort Pond Road Acton MA  01720 US
+	Version   10
+	Comments  MIT Macsyma family descendant uses Franz LISP
+
+Paramacs
+	Type      commercial 
+	Machines  VAXVMS Sun3 Sun4 SGI and Macs on the works
+	Contact   lphparadigmcom
+	Version   
+	Comments  
+
+Vaxima
+	Type	   distribution fee only
+	Machines  VAXUnix
+        Contact   ESTSC see DOEMacsyma above
+	Version   
+	Comments  General purpose   MIT Macsyma family descendant
+		   Includes source and binaries with assembler for Macsyma 
+		   and Franz Lisp Opus 38
+
+Reduce
+	Type      commercial
+	Machines  All Unix workstations a variety of mainframes 
+ 	           MSDOS3864Mbyte and Atari ST 
+	Contact   reducenetlibrandorg
+	Version   334 
+	Comments  General purpose 
+
+FORM
+	Type      Public domain verison 1  Version 2 commercial
+	Machines  Msdos AtariSt  Mac Sun3 Sun4sparc Apollo NeXT
+ 		   VAXVMS VAXUltrix  DECStation  and others
+	Contact   t68nikhefnl Jos Vermaseren
+		   Binary versions of version 1 are available
+ 		   by anonymous ftp from nikhefnikhefnl 192161991
+	Version   1 and 2
+	Comments  General purpose  designed for BIG problems  batchlike
+ 		   interface 
+
+Axiom
+	Type      commercial
+	Machines  IBM RS 6000s and other IBM plataforms
+	Contact   ryannagcom  Phone 708 9712337 FAX 708 9712706
+                   NAG  Numerical Algorithms Group Inc
+		   1400 Opus Place Suite 200 Downers Grove Il 605155702
+	Version   
+	Comments  General purpose
+
+SIMATH
+	Type      anonymous ftp 
+	Machines  Suns Apollo DN and Siemens workstations
+	Contact   simathmathunisbde
+	Version   35
+	Comments  General purpose
+
+Derive
+	Type      commercial 
+	Machines  Runs on PCs and HP 95s
+	Contact   8087345801 
+ 		   Soft Warehouse Inc 3615 Harding Ave Suite 505
+                   Honolulu Hawaii 968163735
+        Version   201
+	Comments  Said to be very robust gets problems that other larger
+ 		   programs fail on Low cost 
+
+Theorist
+	Type      commercial
+	Machines  Macs
+        Contact   prescienwellsfcaus phone4155432252 fax4158820530
+		   Prescience Corp 939 Howard St 333 San Francisco CA 94103
+	Version   111
+	Comments  General purpose  Graphics  If you like the mac interface
+ 		   youll love this  fixed precision  19 digits  runs on
+ 		   smaller macs than MMA
+
+MAS
+	Type      Anonymous FTP
+	Machines  Atari ST TDI and SPC Modula2 compilers IBM PCAT 
+		   M2SDS and Topspeed Modula2 compilers and Commodore 
+		   Amiga M2AMIGA compiler  
+	Contact   H Kredel Computer Algebra Group
+		   University of Passau Germany
+        Version   060
+	Comments  MAS is an experimental computer algebra system combining 
+		   imperative programming facilities with algebraic 
+		   specification capabilities for design and study of algebraic
+		   algorithms MAS is available via anonymous ftp from 
+    		   alicefmiunipassaude  123231101 
+
+MockMma
+	Type      anonymous FTP from peoplesparcberkeleyedu
+	Machines  Anywhere running Common LISP
+	Contact   fatemancsberkeleyedu
+        Version   
+	Comments  It does Matematica or I mispelled that
+
+Weyl
+	Type      anonymous FTP from ftpcscornelledu pubWeyl
+	Contact   rzcscornelledu
+        Version   4240
+	Comments  Intended to be incorporated in larger more specialized
+		   systems
+
+FLAC
+	Type      
+	Machines  IBM PCs DOS
+	Contact   Victor L Kistlerov Institute for Control Sciences 
+		   Profsoyuznaya 65 Moscow USSR
+	Version   
+	Comments  Functional language
+
+
+GROUP THEORY
+
+
+Cayley
+	Type      Cost recovery
+	Machines  SUN 3 SUN 4 IBM AIX and VM machines Apollo DEC
+	           VAXVMS Mac running AUX 201 or higher and Convex
+	Contact   cayleymathssuozau 
+		   Phone 61 02 692 3338 Fax 61 02 692 4534
+		   Computational Algebra Group
+                   University of Sydney
+                   NSW 2006 Australia
+	Version   383
+	Comments  Designed for fast computation with algebraic and
+ 		   combinatorial structures such as groups rings
+ 		   fields modules and graphs Although it began as a
+ 		   group theory system it has recently evolved into a
+ 		   general abstract algebra system
+
+GAP
+	Type      anonymous ftp free but not PD basically GNU copyleft
+	Machines  All Unix workstations ATARI ST IBM PC and MAC 
+        Contact   gapsamsonmathrwthaachende
+	FTP site  samsonmathrwthaachende 1372261526  mathuclaedu
+	Version   31 32 to be released Dec 92
+	Comments  group theory calculations
+
+
+ALGEBRA  NUMBER THEORY
+
+
+PARI
+	Type      anonymous ftp  
+	Machines  Most workstations Mac and NeXT
+	Contact   parimizargrecoprogfr
+                   anonymous ftp to mathuclaedu 128976416
+	           in the directory pubpari
+	Version   135
+	Comments  Number theoretical computations source available key 
+		   routines are in assembler ascii and Xwindows graphics 
+		   PCDOS version available from anonymous FTP at 
+		   wuarchivewustleduedumathmsdosmodernalgebrapari386
+
+Macaulay
+	Type      anonymous ftp
+	Machines  Complete source available Binary Mac versions available
+	Contact   anonymous ftp to zariskiharvardedu 1281031107
+	Version   
+	Comments  focused on Algebra type computations  polynomial rings
+ 		   over finite fields  things like that
+
+Kant
+	Type      
+	Machines  
+	Contact   KANT Group
+		   Prof Dr M E Pohst  Dr Johannes Graf v Schmettow 
+		   Mathematisches Institut HeinrichHeineUniversitat 
+		   Universitatsstr 1 D4000 Dusseldorf 1 
+		   pohstdd0rud81bitnet or schmettodd0rud81bitnet
+        Version   1  2
+	Comments  Kant Computational  Algebraic  Number  Theory is 
+		   subroutine  package for algorithms  from geometry of 
+		   numbers and  algebraic number theory There are  two 
+		   versions of  Kant  Kant  V1 is written  in AnsiFortran 77
+		   while Kant V2 is built on the Cayley Platform and written in 
+		   AnsiC
+
+LiE
+	Type      commercial 
+	Machines  Unix workstations SUN DEC SGI IBM NeXT PCs
+                   Atari and Macs
+	Contact   liecannl Phone 31 20 5926050  FAX 31 20 5924199
+                   CAN Expertise Centre Kruislaan 413 
+                   1098 SJ Amsterdam The Netherlands
+	Version   2
+	Comments  Lie group computations
+
+UBASIC
+	Type	   anonymous FTP ubas830zip
+	Machines  Mac and IBM PCs
+	Contact   malmargoacsoaklandedu Phone 313 3703425
+	 	   Donald E G Malm Department of Mathematical Sciences
+                   Oakland University Rochester MI 483094401
+	Version   830
+	Comments  BASIClike environment for number theory In the collection
+		   of programs written for it one can find 
+		   MALM Collection of UBASIC Number Theory Programs malmzip
+		   by Donald E G Malm and copyrighted by him including 
+		   BaillieWagstaff Lucas pseudoprime test Algorithm for 
+  		   Chinese remaindering Elliptic curve method to factorize n 
+		   Fermats method of factoring General periodic continued 
+		   fraction to quadratic routine Evaluates Carmichaels 
+		   function  D H Lehmers method of solving x2  q mod p
+		   UBMPQS Prime factorization program for numbers over 80 
+		   digits ubmpqs32zip that can be found in the WURST 
+		   Archives wuarchivewustledu
+
+Numbers
+	Type      Free but not Public Domain registration required
+	Machines  PCDOS
+	Contact   Ivo Dntsch                   Phone    49 541969 2346
+	           Rechenzentrum                 Fax     49 541969 2470
+          	   Universitt Osnabrck         Bitnet   duentschdosuni1
+          	   Postfach 4469
+          	   W 4500 Osnabrck GERMANY
+        Version   202c
+	Comments  Numbers is a calculator for number theory It performs 
+	   	   various routines in elementary number theory some of  
+		   which are also usable in algebra or combinatorics
+	  	   Available in the anonymous FTP in ftprzUniOsnabrueckde  
+		   in the directory pubmsdosmath
+
+CoCoA
+	Type      
+	Machines  Macs
+	Contact   cocoaigecunivbitnet
+	Version   
+	Comments  Computations in commutative algebra
+
+Galois
+	Type      Commercial
+	Machines  IBMPC DOS
+	Contact   CIFEG Inc Kalkgruberweg 26 A4040 Linz Austria
+        Version   
+	Comments  Algebra and number theory microcomputer  written by
+   		   R Lidl R W Matthews and R Wells from the U Tasmania 
+		   in Turbo Pascal v30
+
+GANITH
+	Type      Anonymous FTP
+	Machines  Any system with vanilla Common Lisp X 11 and has at least 
+		   a rudimentary LispC interface
+	Contact   Chanderjit Bajaj  Andrew Royappa 
+                   Department of Computer Science Purdue University
+                   West Lafayette IN 47907
+		   bajaj and royappacspurdueedu
+        Version   
+	Comments  GANITH is an algebraic geometry toolkit for computing 
+		   and visualising solutions to systems of algebraic equations
+                   It is written in Common Lisp and C and runs under version
+  		   11 of the X window system
+  		   GANITH is available from the anonymous FTP at 
+		   cspurdueedu in the file pubavrganithsrctarZ
+
+
+TENSOR ANALYSIS
+
+
+SchoonShip
+	Type      
+	Machines  
+	Contact   mentioned in  CompPhys Comm 8 1 1974
+	Version   
+	Comments  I have heard this program mentioned  supposely its designed
+ 		   for large problems ie thousands of terms in series 
+ 		   expansions  Developed at CERN for CDC7600  
+
+STENSOR
+	Type	   
+	Machines  VAX SUN Apollos Orion Atari  Amiga
+	Contact   lhvandphystose 
+		   Lars Hornfeldt Physics Department University of Stockholm
+                   Vanadisv9 S113 46 Stockholm Sweden
+        Version   
+	Comments  System for tensor calculus and noncommutative algebra
+
+
+LISP CALCULATORS
+
+
+JACAL 
+	Type      Gnu CopyLeft
+	Machines  Needs a Lisp either Common or Scheme 
+	Contact   Available by anon ftp to altdorfaimitedu 18430246
+	Version   
+	Comments  An IBM PC version on floppy for 50 is available from 
+ 		   Aubrey Jaffer 84 Pleasant St Wakefield MA 01880 USA
+
+GNUcalc
+	Type      GNU copyleft
+	Machines  Where Emacs runs
+	Contact   Free Software Foundation
+        Version   
+	Comments  It runs inside GNU Emacs and is written entirely in Emacs
+		   Lisp It does the usual things arbitrary precision integer
+		   real and complex arithmetic all written in Lisp 
+		   scientific functions symbolic algebra and calculus 
+		   matrices graphics etc and can display expressions with 
+		   square root signs and integrals by drawing them on the 
+		   screen with ascii characters It comes with well written 
+		   600 page online manual You can FTP it from any GNU site
+
+
+DIFFERENTIAL EQUATIONS
+
+
+DELiA
+	Type      Informal distribution
+	Machines  IBM PCs DOS
+	Contact   A V Bocharov Program Systems Institute 
+		   USSR Academy of Science Pereslavl 
+                   PO Box 11 152140 USSR Tlx 412531 BOAT
+	Version   
+	Comments  Differetial equation computations
+
+
+PC SHAREWARE
+
+
+SymbMath
+	Type      shareware student and advanced versions
+	Machines  IBM PC
+	Contact   chendeakinOZAU
+	Version   211
+	Comments  Runs on plain 640k DOS machines The shareware version
+		   is available in the file sm211azip on the Wurst Archives
+		   More capable versions are available by mailorder from the 
+	           author  
+
+CLA
+	Type      anonymous FTP
+	Machines  PCDOS
+	Contact   
+        Version   20
+	Comments  A linear or matrix algebra package which computes
+		   rank determinant rworeduced echelon form Jordan 
+		   canonical form characteristic equation eigenvalues 
+	 	   etc of a matrix File cla20zip on the Wurst Archives
+
+XPL
+	Type      anonymous FTP
+	Machines  PCDOS
+	Contact   David Meredith Department of Mathematics
+                   San Francisco State University
+                   San Francisco CA 94132
+                   meredithsfsuvax1sfsuedu
+        Version   40
+	Comments  Formerly called CCALC Wellintegrated graphics and some
+		   numerical matrix manipulation routines Intended for 
+		   calculus students Prentice Hall sells this with a book 
+		   ISBN 013117441Xor by calling 2017675937 but it 
+		   is also available without the manual but with a 
+		   comprehensive help system by anonymous FTP from 
+		   wuarchivewustledu edumathmsdoscalculuscc49206zip
+
+AMP
+	Type      Commercial evaluation copy available by anonymous FTP
+	Machines  PCDOS
+	Contact   Mark Garber 715712006compuservecom Ph 404 4521129
+     		   Cerebral Software PO Box 80332 Chamblee GA 30366
+        Version   30
+	Comments  The Algebraic Manipulation Program AMP is written in 
+		   Modula2 and is a symbolic calculation tool AMP functions 
+		   in an interpreter mode and program mode It  has tensor 
+		   manipulation using index notation  The evaluation copy is
+		   available in the anonymous FTP at
+		   ftprzUniOsnabrueckdepubmsdosmathamp30zip
+
+Mercury
+	Type      Shareware
+	Machines  PCDOS
+	Contact   
+        Version   206
+	Comments  Limited in symbolic capabilities but is extremely adept 
+		   at numerically solving equations and produces publication
+		   quality graphical output This used to be Borlands Eureka 
+		   but when Borland abandoned it its original author started 
+		   selling it as shareware under the name Mercury Available
+		   from anonymous FTP at 
+		   wuarchivewustleduedumathmsdoscalculusmrcry206zip
+
+PFSA
+	Type      Public Domain
+	Machines  PCDOS
+	Contact   
+        Version   546
+	Comments  Available from the anonymous FTP at 
+		   wuarchivewustleduedumathmsdosmodernalgebravol546zip
+
+LIE
+	Type      Public Domain
+	Machines  PCDOS
+	Contact   HEADRIVETTMSTCSIROAU A K Head
+		   CSIRO Division of Materials Science and Technology
+		   Melbourne Australia   or
+		   Locked Bag 33 Clayton Vic 3168 Australia
+		   Phone 03 542 2861 Telex AA 32945 Fax 03 544 1128
+        Version   33
+	Comments  LIE is a program written in the MuMath language not a 
+		   package for Lie analysis of differential equations 
+		   Available from anonymous FTP at 
+		   wuarchivewustledu edumathmsdosadvdiffequationslie33
+
+Calculus
+	Type      Shareware
+	Machines  PCDOS with EGA
+	Contact   Byoung Keum Dept of Mathematics
+		   University of IL  Urbana IL 61801
+        Version   90
+	Comments  Program for Calculus and Differential Equations It has
+     		   symbolic diff  integration simple functions graphs
+		   Very unstable program  no reason to use it except for
+		   price suggested registration fee is  3000
+		   Available from anonymous FTP at 
+		   wuarchivewustledu edumathmsdoscalculuscalcarc 
+
+
+                              Marc Conrad Universitaet des Saarlandes 
+       Luxemburg               marcmathunisbde   
+France    Germany             these opinions are not necessarily these   
+        x  you are here  of the SIMATHgroup and maybe even not mine

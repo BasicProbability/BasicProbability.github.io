@@ -1,0 +1,11 @@
+From paladinworldstdcom Thomas G Schlatter
+Subject Re Hhy wont my DOS apps run in a window
+
+In article 735417915snzsigmademoncouk jasonsigmademoncouk writes
+Can somebody help me out there I have just purchased Win 31 and I just
+cant get DOS apps text mode apps to run in a window on their own Ive
+tried mucking around with the PIF settings etc but to no avail What am
+I doing wrong I didnt get this problem under v30
+
+Are you sure youre running in 386enhanced mode Windows 31
+takes more memory

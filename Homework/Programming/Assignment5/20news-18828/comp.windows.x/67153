@@ -1,0 +1,18 @@
+From m91nentdbuuse Nils Engstrom
+Subject Re compiling on sun4411
+
+In article Yfoqfe00WB2QzZ7EZandrewcmuedu Wilson Swee ws8nandrewcmuedu writes
+sin
+cos
+pow
+floor
+
+Link with lm math library
+
+getwmShellWidgetClass
+getapplicationShellWidgetClass
+
+This is a bug in Suns shared libraries Linking with
+assert nodefinitions should do the trick
+
+	n

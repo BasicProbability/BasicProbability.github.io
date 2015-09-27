@@ -1,0 +1,23 @@
+From drgbiomathmdauthtmcedu David Gutierrez
+Subject Re LC II Slowdowns
+
+In article L3sB3B4w165wtfsquadmnorg doucetfsquadmnorg Andrew
+Geweke writes
+        I am currently managing among many other labs a lab with three 
+LC IIs a Mac Plus with 45 MB external HD and a LaserWriter II NTX My 
+problem The LC IIs seem to intermittently slow to a snails pace
+
+
+This happens intermittently to Macs in our department ranging from IIsis
+to a Quadra 950
+
+I can end the slowdown immediately by unplugging the Ethernet cable from
+the Mac It seems that something on the network puts out these packet
+storms every few days These storms have the effect of making our Macs
+slow down to a crawl
+
+David Gutierrez
+drgbiomathmdauthtmcedu
+
+Only fools are positive  Moe Howard
+

@@ -1,0 +1,33 @@
+From huubcwinl Huub Bakker
+Subject waiting for a specific eventcallback
+
+Hello world
+
+I want to write my Xtapplication code like this
+
+
+    dosomework
+     now I need some user input 
+    XmCreateDialog
+    waitforuserinputinput
+    if input  OK 
+       morework
+     else 
+       otherwork
+    
+
+
+So morework and otherwork are not in callback functions but the
+application simply waits for the user to answer the question
+
+How can I code this in my XtMotifapplication
+
+Thanks very much in advance
+
+Greetings Huub
+
+ 
+CWI PO Box 4079 			Huub Bakker huubcwinl
+1009 AB Amsterdam
+The Netherlands
+Tel 31 20 5924080

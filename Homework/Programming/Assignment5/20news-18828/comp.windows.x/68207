@@ -1,0 +1,20 @@
+From jvsjacksapanaorgau Jack Strangio
+Subject SVR4 xclients wont work under SVR42 repost
+
+When I changed from SVR4 to SVR42 on my Intel box I discovered that
+some of my SVR4 xclients such as xload etc would no longer work
+
+
+They bomb out with the message
+
+error cant open display unix00
+
+Is this because they cant find the correct shared libraries they need
+to be recompiled or have I not used the correct options
+
+Both systems use X11R5
+
+Thanks
+
+Jack
+

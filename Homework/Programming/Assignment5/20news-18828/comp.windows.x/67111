@@ -1,0 +1,10 @@
+From rgaschnloraclecom Robert Gasch
+Subject Program argument geometry
+
+I have a question regarding the processing of program arguments
+such as the geometry option Since this is a standard X option 
+Im wondering wether I have to parse it manually or whether there
+is some predefined function that will do this for me
+
+Thanks for any info
+ Robret

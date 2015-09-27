@@ -1,0 +1,34 @@
+From jkaidorsynopticscom Jerome Kaidor
+Subject Re electronic odometers was Used BMW Qu
+
+
+    Just a few comments about the feasability of zipping up a bunch of miles
+on your electronic odometer with an oscillator
+
+    I wouldnt expect to be able to do this  Not because the engineers at BMW are
+putting in antifraud logic but just because an automobile is a noisy hostile
+environment for electronics and I would expect the software to be conservative
+
+   If I were to design a microprocessorbased odometerspeedometer program
+it would have the following features  just off the top of my head 
+
+          Debouncingdeglitching   Is this a real pulse or just a glitch 
+          Smoothing  The rateofchange of speed cannot be too high
+                                This is a car not an electron
+           Top speed limit  Anything above 200MPH is ridiculous must be
+                                        electrical noise or contact bounce
+
+    As for getting in and presetting the pins  if this is the circuit board out of
+a BMW dashboard I seem to remember a single big chip with lotsa pins in the
+middle of the card  Good luck getting at the counter 
+
+    I wouldnt expect a high input frequency to damage the meter  remember its
+probably damped so it cant move too fast and is probably protected  After all
+a car is an extremely hostile place for delicate electronics  there used to be an
+app note in the National Semiconductor Linear Databook that went into this
+in good detail
+
+                                Jerry Kaidor  tr2jerrydragomancom jkaidorsynopticscom 
+
+
+                                   Jerry Kaidor

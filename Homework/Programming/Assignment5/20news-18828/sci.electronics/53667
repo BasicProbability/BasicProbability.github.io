@@ -1,0 +1,24 @@
+From cs000rdwselwayumtedu Richard D Warner
+Subject UARTCPUROMRAM subsystem
+
+	This is a followup post to something Ive written previously  Several
+people responded with good information but I dont think I communicated 
+exactly what I am looking for
+	Im working on a custom IO device that will communicate with a host
+via RS232  My custom circuitry will use an 80C186EB or EC CPU and require
+about 64K of RAM preferably FLASH RAM  In looking around I see that lots
+of people have engineered UARTCPUROMRAM subsystems that are ready to be
+interfaced to your custom IO devices  Its been done so much that it 
+would be best if I can avoid reinventing a system  It just needs to use
+an 80C186 or 188 CPU and be able to load a program from the host then 
+transfer control to that program  Well theres one other thing the ROM
+needs to know how to do  It should have routines to send and receive bytes
+tofrom the host that utilize the hardware control lines DTRRTSDTSCTS
+Everything Ive seen is in the 20000 and up range  Thats too much for
+this application  I need something around 10000  The CPU has the UART
+builtin so youre only looking at a few chips  Does anyone know a 
+company that markets a good board in this range or some public domain 
+circuitry I can use  Thanks in advance for the info
+
+Rich
+

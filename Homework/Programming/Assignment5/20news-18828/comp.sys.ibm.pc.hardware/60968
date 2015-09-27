@@ -1,0 +1,109 @@
+From darrylosrgenprpsrhpcom Darryl Okahata
+Subject Re Help adding a SCSI Drive Can it coexist with an IDE
+
+Eric Bosco eboscousoraclecom wrote
+
+ First of all please edit your postings  Wading through 50 lines of
+  quoted crud which people have already read makes people much less
+  likely to help you  Of course if you dont want to be helped thats
+  your problem   
+
+ Is this true I was under the impression that people on the net had both  
+ SCSI and IDE working together
+
+     No its not true  You can get SCSI and IDE to work together but
+there are restrictions at least with the Adaptec 1542
+
+ You MUST boot from the IDE drive  There is no way to boot from the
+  SCSI drive if you have both IDE and SCSI drives
+
+ You MUST disable the SCSI ROM BIOS Im not sure about this though
+  and so you must also use some special drivers to access the SCSI
+  drive  Hmm  I know that you have to disable something related to
+  the SCSI BIOS but Im not sure if it is the ROM itself
+
+     Back in February someone asked about IDE and SCSI this question
+gets asked again and again  At the end of this message Ive included
+an edited copy of my reply  You might find it interesting
+
+      Darryl Okahata
+	Internet darrylosrhpcom
+
+DISCLAIMER this message is the authors personal opinion and does not
+constitute the support opinion or policy of HewlettPackard or of the
+little green men that have been following him all day
+
+
+ 1  Is it worth it to get SCSI over IDE   Will there be a noticable
+     decrease in access timeincrease in Xfer rate
+
+     For MSDOS applications ISAbased SCSI and IDE controllers
+generally have comparable throughput  You might get slightly higher
+throughput with a SCSI disk but youll also pay more for the disk
+30100 and up in some cases  Youll also pay much much more for a
+good SCSI controller
+
+     Note that good SCSI controllers really show their power if theyre
+used with a good multitasking operating system like a PC Unix
+Unfortunately neither MSDOS nor Windows 31 is a good multitasking
+operating system  The performance advantage of SCSI controllers is
+mostly wasted with these which leaves the advantage of being able to
+connect multiple devices to the SCSI bus as the only advantage
+However note that you can expect to pay a premium for SCSI devices
+
+     If youre only going to be using MSDOS stick with IDE  Its
+cheaper and youll have less headaches
+
+ 4  Will virtually any SCSI device chain into the controller for my
+     harddrive bernoulli box CDrom Tape Drive etc
+
+ Note the following is true for MSDOSWindows only  Who knows what
+  the future holds for Windows NT and Unix 
+
+     No  Generally you have to find drivers for each SCSI device
+which probably dont exist unless youre using one of the betterhigh
+performance SCSI controllers  These are typically busmastering SCSI
+controllers that cost around 180400 street prices and up and
+drivers that allow you to connect these controllers to popular
+namebrand SCSI devices either come with the card or can be purchased
+for under 100 list price  Examples of such driver kits are
+
+ Adaptecs EZ SCSI kit list 75  This works only with Adaptec SCSI
+  controllers
+
+ CorelSCSI from the same people who make CorelDRAW list 99 
+  This driver kit will supposedly work with any SCSI controller card
+  that has an ASPI driver like the Adaptec
+
+     Central Points PC Tools for DOS 80 supports a number of SCSI tape
+drives the documentation lists 40 tape drives  Unfortunately it
+works only with Adaptec controllers
+
+ 5  Are there likely to be other problemsincompatibilities with a
+     SCSI controller and  sound cardsvideo acceleratorsand similar
+     equipment
+
+     Yes you will run into problems if youre using a
+highperformance busmastering SCSI controller  This doesnt sound
+right doesnt it  Its true though  With one of these controllers
+youll probably have to tweak your system to get it to work with sound
+cards floppycontrollerbased tape drives like the CMS Jumbo 250 and
+Windows 31  I know  Ive been to hll and back getting my SCSI
+controller to work with various hardwaresoftware thank God for tape
+backups  If you want a copy of my Adaptec 1542 hints and tips file
+send email
+
+     These problems arent really the fault of the SCSI controller card
+the problems are really with the general hardware and software design of
+the PC eg no standards  However adding a busmastering SCSI card
+is what brings these problems to the surface and makes them visible
+
+     SCSI holds a lot of promise but you can run into a lot of PC
+compatibility problems  If youre planning on using only MSDOSWindows
+31 stick with IDE  If you want to use Windows NT or a PC Unix youll
+have to make some hard decisions a good SCSI controller and more than
+one SCSI hard disk will probably give you excellent performance at the
+possible cost of MSDOS compatibility   I say probably because
+while I know this to be true with a PC Unix I dont know if this really
+will be true of Windows NT  I suspect that it will but I dont know
+for sure  

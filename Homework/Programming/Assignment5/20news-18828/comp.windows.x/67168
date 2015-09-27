@@ -1,0 +1,41 @@
+From rcb5wsinfo03wintuenl Richard Verhoeven
+Subject Re Forcing a window manager to accept specific coordinates for a window
+
+badingcstuberlinde Tobias Doping Bading writes
+ 
+ try this after XCreateWindow
+ 
+ 
+
+   xsizehintsflags  USPosition  USSize	 or  PPosition  PSize 
+   
+   XSetWMNormalHints display window xsizehints
+   
+
+ These hints tell the window manager that the position and size of the window
+ are specified by the users and that the window manager should accept these
+ values If you use xsizehintsflags  PPosition  PSize this tells the window
+ manager that the values are prefered values of the program not the user
+ I dont know a window manager that doesnt place the window like you prefer
+ if you specify the position and size like above
+
+Sorry but olwm and tvtwm dont do it They place the title at that position
+and the window at a position below it
+
+This becomes a problem when you want a program to be able to save its current
+configuration and restore is later
+
+Currently my solution is
+
+	XCreateWindow
+	XSetWMProperties
+	XMapWindow
+	XFlush
+	XMoveWindow
+
+
+It works with olwm but is less than elegant All this leaves me wondering
+if Im overlooking something obvious
+
+Richard
+

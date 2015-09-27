@@ -1,0 +1,57 @@
+From hlulukeeecswsuedu HJ Lu
+Subject Re Debugging possible hardware problems
+
+In article 1r0rslINNnv2senatorbedfellowMITEDU jfcathenamitedu John F Carr writes
+
+Im running Linux on an 80486 EISA system and Im having what I think are
+hardware problems  It could be software but I dont see why Id be the
+only one having trouble  Id like some advice on how best to debug this
+
+The symptom when I try to build gcc I get unpredictable and unrepeatable
+results  Sometimes a o file is not in valid aout format  Recompiling the
+file gives me a valid binary  Sometimes the compiler aborts or dumps core
+but works fine when run again with the same input  Compiling the same
+source files with the same arguments gives slight differences in a few
+object files  Note that Linux unlike many other systems does not put
+timestamps in object files so compiling twice should give bitidentical
+results
+
+I also have occasional filesystem corruption on my SCSI drive but that
+could be caused by using development software  It could also be related to
+my problems compiling  The compile problems are not caused by disk
+problems I get the same results whether I do my work on an IDE or SCSI
+disk
+
+Ive set the memory speed and cache write speed to the recommended values
+
+Recommended for what DOS That is a junk
+
+
+I suspect the external cache but I have no real evidence for this
+
+The motherboard is a NICE SuperEISA with 256 KB writeback cache and a DX2
+66 Mhz processor
+
+What Im looking for
+
+	 A system test program to run under DOS or Linux
+
+	Linux  gcc Fire up gcc to compile libc and kernel at the
+	same time running X11R5
+
+
+	 Suggestions about the cause of the problem
+
+	Bad memory bad motherboard bad cache
+
+
+	 Suggestions about how to debug the problem
+
+
+	change wait state of RAM
+	turn off turbo
+	change bus speed
+	swap RAM
+
+
+HJ

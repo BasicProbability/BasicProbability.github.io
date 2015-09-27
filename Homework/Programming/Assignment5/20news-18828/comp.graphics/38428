@@ -1,0 +1,55 @@
+From ldowaikatoacnz Lawrence DOliveiro Waikato University
+Subject Re Rumours about 3DO 
+
+In article 1993Apr1621244134125rchlandibmcom ricardorchlandvnetibmcom Ricardo Hernandez Muchado writes
+ In article 1993Apr1516494011632mercuryuntedu Sean McMains mcmainsuntedu writes
+
+ 
+  Ricardo the animation playback to which Lawrence was referring in an
+  earlier post is plain old Quicktime 15 with the Compact Video codec
+  Ive seen digitized video some of Apples early commercials to be
+  precise running on a Centris 650 at about 30fps very nicely 16bit
+  color depth I would expect that using the same algorithm a RISC
+  processor should be able to approach fullscreen fullmotion animation
+  though as youve implied the processor will be taxed more with highly
+  dynamic material
+
+
+    Sean I dont want to get into a miniwar by what I am going to say
+ but I have to be a little bit skeptic about the performance you are
+ claiming on the Centris youll see why please noflames I reserve
+ those for csma  
+
+    I was in Chicago in the last consumer electronics show and Apple had a
+ booth there  I walked by and they were showing realtime video capture
+ using a Radious or SuperMac card to digitize and make right on the spot
+ quicktime movies  I think the quicktime they were using was the old one
+ 15
+
+That is in fact the current version it only came out in December
+
+    They digitized a guy talking there in 160x2xx something  It played back quite
+ nicely and in real time  The guy then expanded the window resized to 25x by
+ 3xx 320 in y I think and the frame rate decreased enough to notice that it
+ wasnt 30fps or about 30fps anymore  It dropped to like 15 fps  Then he
+ increased it just a bit more and it dropped to 1012 fps
+
+    Then I asked him what Mac he was using He was using a Quadra dont know
+ what model 900 to do it and he was telling the guys there that the Quicktime
+ could play back at the same speed even on an LCII
+
+    Well I spoiled his claim so to say since a 68040 Quadra Mac was having
+ a little bit of trouble  And this wasnt even from the hardisk  This was
+ from memory
+
+My test movie was created at 320240 resolution it wasnt being scaled up
+Scaling was a very CPUintensive operation with the original QuickTime 10
+the current version has optimizations for ratios like 41 160120  320240
+but even so Im prepared to believe that the performance isnt as good as
+with playing back an actual 320240 movie I havent done any numerical
+measurements for scaled playback
+
+Lawrence DOliveiro                       fone 6478562889
+Computer Services Dept                     fax 6478384066
+University of Waikato            electric mail ldowaikatoacnz
+Hamilton New Zealand    37 47 26 S 175 19 7 E GMT1200

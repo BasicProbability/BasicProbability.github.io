@@ -1,0 +1,21 @@
+From MarkkuSavelatelvttfi Markku Savela
+Subject Raster and Text Widgets View only Xew13 version
+
+
+Version 13 of Xew widgets is available at
+
+	exportlcsmitedu contribXew13tarZ
+	exportlcsmitedu contribXew13README
+
+For better details check the README For extensive details you have
+to with Xew11psZ still havent had time to update this one
+
+No new functionality has been added since 12 version Raster widget
+handles now expose events slightly more intelligently than before
+really had to do this when I added a simple program that uses X11R5
+Athena Porthole and Panner widgets The program demoviewerc is
+very simple demonstration of pannerporthole usage copied
+fromeditres actually 
+
+Markku Savela savelatelvttfi Technical Research Centre of Finland
+Telecommunications Laboratory Otakaari 7 B SF02150 ESPOO Finland

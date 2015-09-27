@@ -1,0 +1,100 @@
+From HKMLRforsythestanfordedu Mark Rogowsky
+Subject Re PowerPC ruminations was Re LCIIIPowerPC
+
+In article 1993Apr1621430012920acdalca
+seanmcdacdalca writes
+In article 186177pyramidpyramidcom andrempyrtechmispyramidcom Andre Molyneux writes
+ In article 1qksuq1tt8halgnuaimitedu mirskyhalgnuaimitedu
+ David Joshua Mirsky writes
+  Hi I own an LCIII and I recently heard an interesting rumor
+  I heard that the LCIII has a built in slot for a PowerPC chip
+  Is this true I heard that the slot is not the same as the PDS
+  slot  Is that true
+ 
+  Thanks
+  David Mirsky
+  mirskygnuaimitedu
+
+ Well I also have an LC III  Popping the top revealed
+
+       One socket for an additional VRAM SIMM
+
+       One socket for a 72pin RAM SIMM
+
+       One socket for a flatpack FPU
+
+       A processordirect slot PDS identical to the LCLC II but with
+       an additional set of connetions to one side for the full 32bit
+       data path that the LCLC II lacked
+
+ Thats it  I guess a board with a PowerPC chip could be made that would fit
+ in the PDS but thats the only place
+
+So will it be possible to have a NuBus or PDS PowerPC upgrade or will it
+require a logic board swap It would be interesting for Apple to come out with
+a NuBus PowerPC that allowed use of the CPUs 680x0 like RocketShare But I
+guess thats getting a bit fantastic
+
+I was wondering since MacWeek reported that developers were seeded with
+PowerPCs on a NuBus card
+
+Also any word on machine arrivals or estimated speed Last I heard the
+estimates were around 34 times the speed of a Quadra in native RISC mode I
+heard an Apple employee mumble something about the arrival of PowerPC machines
+at a much earlier date that Q1 94 but I doubt its true
+
+Finally is the PowerPC developers CD minicourse available I saw it
+advertised in the developers university calendar and Id like to know if its
+at all interesting
+
+Sean
+
+seanmcdacdalca
+
+Radius speculated publicly that they could provide a PowerPCbased
+Rocket for existing Macs It would have the plus of RocketShare and
+the minus of NuBus accelerators  no true boot off the accelerator
+NuBus bottleneck to video and other IO
+
+Apple it seems will not compete with third parties here  except
+perhaps for notyetavailable Macs like Cyclone where a PowerPC
+slot might be advertised Look for Daystar and such to make PowerPC
+accelerators
+
+One potential problem with any accelerator though is that it will
+need a ROM companion and Apple has licensed only Radius with
+Rocketshare to use any of its proprietary code
+
+Apple is between the lines trying to let us know that PowerPC Macs
+will have simplified logic boards due to the magical nature of RISC
+and that these boards should be much cheaper to build than those in
+existing 68040 Macs Perhaps then well see groundbreaking
+prices in Maclogic board upgrades much the same way weve seen
+much cheaper highperformance CPUs this year
+
+First generation PowerPCs 98601s will also hopefully have socketed
+CPUs so that theyll be chip upgradeable to 98604s a year later
+This should be possible in much the same way that 486s can be pulled
+for clock doublers If there is too much technical   baggage which
+I doubt since the external busses are the same sizewidth to do
+this perhaps we can have CPU daughterboard a la Powerbook as
+standard to facilitate better CPU upgrades This is an area where
+Apple has fallen far behing the Intelbased world Perhaps catchup
+is in order
+
+By the way last weeks PC week had an excellent story on PowerPC
+Pentium MIPS R4000 DEC Alpha the big four on the microprocessor
+front for the forseeable future Worth reading for technojunkies
+Also the latest PC has a cover story on Pentium Read it and all
+the other stories about how Intel is unstoppable and preeminent
+right now
+
+Once anyone is this secure they are due to fall Intels market
+position will never again be as dominant as it is today especially
+if AMD gets the go ahead to sell its 486s this week as it appears it
+might The competition from all fronts is gearing up for an awesome
+battle Apple users should be excited that PowerPC while not
+guaranteed dominance is a guaranteed winner even if its one of
+several
+
+Mark

@@ -1,0 +1,92 @@
+From earleisolarTujungaCAUS Greg Earle
+Subject Re tvtwm  xsetroot X11R5 and SPARCstation 10 keyboard
+
+In article 1r1q5gcv4genesisaitpsuedu barrpoppsuedu David Barr writes
+In article MAILQUEUE101930420145015384oakshuacuk DHaywoodsheffieldhallamacuk writes
+  Environment Sun SPARC 10 SunOs 413  X11R5 patch level 23  My X
+process is started by xdm
+
+Okay thats good  Im typing this from exactly the same setup
+USUNIX layout keyboard  I did install the sunkbd patch though
+
+ ii When I open an Xterm on the Sparc 10 not all of the keys are recognised
+     and some keys on the keyboard are not sending the correct characters
+
+Did you install the sunkbd patch  Its in the contrib directory on export
+All the keys on my keyboard send events properly except the following
+The End PageUp PageDown on the 6key cluster arent recognized
+Even the compose key works  Though I cant seem to get the composed
+characters in an xterm to get passed
+
+Anyone have a fix for the last two
+
+I dont know anything about a sunkbd patch but I use the following
+Xmodmap file run from xinitrc via xmodmap HOMEXmodmap of course for
+my Type5 UNIX keyboard  Its a bit brute force however
+
+
+
+ Sun Type5 UNIX keyboard remappings 
+
+ This remaps the arrow keys properly
+
+ By default the arrow keys on the keypad Shift8  Up Shift4  Left
+ Shift6  Right and Shift2  Down work but the arrow keys are not
+ assigned to any keysym
+
+keycode 27  Up
+keycode 31  Left
+keycode 34  Down
+keycode 35  Right
+
+
+ Now we want the Back Space key to emit the Delete keysym
+
+keycode 50  Delete
+
+
+ Other random mappings that arent on by default
+
+ SysRqPrint Screen key
+keycode 29  SunSysReq Print
+ BreakPause key
+keycode 28  Break Pause
+ Alt Graph key
+keycode 20  Modeswitch
+ PageUp key
+keycode 103  Prior
+ PageDown key
+keycode 130  Next
+ Insert key
+keycode 51  Insert
+
+ Home End keys  
+
+ Open Look Functions
+
+ Stop key SunStop keysym  Cancel
+keycode 8  SunStop
+ Again key SunAgain  Redo
+keycode 10  SunAgain
+ Props key 
+keycode 32  SunProps
+ Undo key SunUndo  Undo
+keycode 33  SunUndo
+ Front key
+keycode 56  SunFront
+ Copy key
+keycode 58  SunCopy
+ Open key
+keycode 79  SunOpen
+ Paste key
+keycode 80  SunPaste
+ Find key SunFind  Find
+keycode 102  SunFind
+ Cut key
+keycode 104  SunCut
+
+ 
+	 Greg Earle
+	  Phone 818 3538695		FAX 818 3531877
+	  Internet earleisolarTujungaCAUS
+	  UUCP isolarearleelroyJPLNASAGOV aka elroyisolarearle

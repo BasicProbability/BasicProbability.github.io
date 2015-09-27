@@ -1,0 +1,43 @@
+From mnemonicefforg Mike Godwin
+Subject Re Dorothy Denning opposes Clipper Capstone wiretap chips
+
+In article allen735873202wellsfcaus allenwellsfcaus Allen Barrett Ethridge writes
+In 1993Apr2606353210120efforg mnemonicefforg Mike Godwin writes
+
+In article C614BJBK6agoraraincom jhartagoraraincom Jim Hart writes
+The security of the system should depend only on the secrecy of
+the keys and not on the secrecy of the algorithms  Dorothy Denning
+
+Cite source please
+
+Cryptography and Data Security page 8 perhaps
+
+Thanks Got that from two other sources as well The full quote is as
+follows
+
+From Dorothy Denning CRYPTOGRAPHY AND DATA SECURITY AddisonWesley
+19821983 page 8
+
+Cryptosystems must satisfy three general requirements
+
+1 The enciphering and deciphering transformations must be efficient for
+all keys
+
+2 The system must be easy to use
+
+3 The security of the system should depend only on the secrecy of the
+keys and not on the secrecy of algorithms E enciphering or D
+deciphering
+
+
+
+Mike
+
+
+
+
+ 
+Mike Godwin        Ariel Rose Godwin
+mnemonicefforg    Born 41593 at 434 pm in Cambridge 
+617 5764510      7 pounds 15 ounces 1975 inches long 
+EFF Cambridge      A new citizen of the Electronic Frontier 

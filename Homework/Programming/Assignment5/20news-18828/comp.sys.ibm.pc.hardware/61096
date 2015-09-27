@@ -1,0 +1,30 @@
+From kmr4poCWRUedu Keith M Ryan
+Subject Re DOS 60
+
+In article 1993Apr2303554325060ucsuColoradoEDU kobergspotColoradoEDU Allen Koberg writes
+
+  With Stacker any changes to your configsys
+or autoexecbat meant rebooting twice so it could update those
+
+	This is not necessary All you have to do is modify the configsys
+on d   or the real boot up partitiondisk  Then you can manually
+copy it to c or allow stacker to do it on boot up 
+
+	Likewise with the autoexecbat
+
+
+
+
+Private note to Jennifer Fakult
+
+        This post may contain one or more of the following
+         sarcasm cycnicism irony or humor Please be aware 
+         of this possibility and do not allow yourself to be 
+         confused andor thrown for a loop If in doubt assume
+         all of the above
+         
+         The owners of this account do not take any responsiblity
+         for your own confusion which may result from your inability
+         to recognize any of the above Read at your own risk Jennifer
+
+

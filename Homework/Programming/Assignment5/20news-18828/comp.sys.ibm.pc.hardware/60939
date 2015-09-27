@@ -1,0 +1,48 @@
+From bgrubbdantenmsuedu GRUBB
+Subject Re IDE vs SCSI
+
+davidccatUUCP Dave write
+are we talking about a SCSI1 device eg HD on a SCSI2 Controller
+or          
+are we talking about a SCSI1 Controller that had a chip upgrade
+using the same chip that is on a SCSI2 controller board
+we are talking about a SCSI1 device eg HD on a SCSI2 Controller
+
+Here is a rewrite of my Mac  Info sheet SCSI section
+SCSI only external device expansion interface common to both Mac and IBM
+ Allows the use of any device hard drive printer scanner Nubus card 
+ expansion Mac Plus only some monitors and CDROM  Normal asynchronous
+ SCSI is 5 Mhz  fast synchronous SCSI is 10 Mhz  Difference between these
+ modes is mainly in the software drivers
+ Main problem  there are a lot of external devices which are internal 
+ terminated which causes problems for more then two devises off the SCSI port 
+ A SCSI chain is supposed to be terminated ONLY at the begining and end 
+ Any other set up causes problems for either Mac or IBM 
+SCSI1  8bit 7 devices per SCSI controller  asynchronous 15MBs ave
+ and synchronous 5MBs max transfers  8bit SCSI2 is often mistaken for
+ a fast version of SCSI1 see SCSI2 for details
+SCSI2 fully SCSI1 compliant SCSI2 mode  10 devices per SCSI controller
+ 8bit SCSI2 is implimented as a very fast SCSI1 since it can run using
+ SCSI1 hardware and software drivers which limits it to 7 devices which
+ results in it sometimes being mistakenly consitered part of SCSI1  16bit
+ and 32bit SCSI2 require different ports electronics and SCSI software
+ drivers from SCSI1 Which makes them more expensive than other SCSI
+ interfaces  32bit SCSI seems to run only in synchronous mode hence term
+ wide and fast SCSI Transfer speeds are 46MBs with 10MBs burst 8bit
+ 812MBs with 20MBs burst 16bit and 1520MBs with 40MBs burst
+ 32bit
+
+8bit SCSI2 is the BIGGEST headache due to the fact that it is the ONLY SCSI2 
+that I know of that can pump SCSI2 speeds through SCSI1 devices and software
+controlers  Its MAIN implimentation is on the Mac though you do see adds
+for SCSI2 at 10MBs maximum throughput for PCs  Since 8bit SCSI2 does NOT
+NEED all the hardware including electonics and software of 16bit and 32bit
+SCSI2 it is the CHEEPEST of the SCSI2 interfaces  Just pop out the SCSI1
+electornics and pop in 8bit SCSI2 electronics  Some people consider
+16bit where SCSI2 REALLY starts I USED to be one of them but
+46MBs average though put with a theoretical burst of 10MBs is NOT SCSI1
+but is 8bit SCSI2
+Rule of thumb if it is SCSIn and OVER 5MBs then it is SOME type of SCSI2
+
+8bit SCSI CAN use part of SCSI1 electronics which further reduces its cost
+compared to 16 and 32bit SCSI2

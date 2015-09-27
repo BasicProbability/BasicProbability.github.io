@@ -1,0 +1,297 @@
+Subject Diffs to scispacesciastro Frequently Asked Questions
+From leechcsuncedu Jon Leech
+
+Archivename spacediff
+
+DIFFS SINCE LAST FAQ POSTING IN POSTING ORDER
+
+These are handedited context diffs do not attempt to use them to patch
+old copies of the FAQ
+
+
+diff t c r118 FAQintro
+ tmpRCSt1a06400	Thu Apr  1 144722 1993
+ FAQintro	Thu Apr  1 144655 1993
+
+ 101107 
+		  NASA Langley Technical Reports
+		  NASA Spacelink
+		  National Space Science Data Center
+		  Space And Planetary Image Facility
+		  Space Telescope Science Institute Electronic Info Service
+		  Starcat
+		  Astronomical Databases
+ 101106 
+
+ 130135 
+ 129135 
+	      LLNL great exploration
+	      Lunar Prospector
+	      Lunar science and activities
+	      Orbiting Earth satellite histories
+	      Spacecraft models
+	      Rocket propulsion
+	      Spacecraft design
+
+
+diff t c r118 FAQnet
+ tmpRCSt1a06405	Thu Apr  1 144724 1993
+ FAQnet	Thu Apr  1 144657 1993
+
+ 5863 
+ 5867 
+      elements are sent out on the list from Dr Kelso JSC and other sources
+      as they are released Email to elementsrequesttelesoftcom to join
+
+     GPS Digest is a moderated list for discussion of the Global Positioning
+     System and other satellite navigation positioning systems Email to
+     gpsrequestesseyesicom to join
+
+      Spaceinvestors is a list for information relevant to investing in
+      spacerelated companies Email Vincent Cate vaccscmuedu to join
+
+
+ 223227 
+ 227241 
+      1030 If in fact you should should learn of unauthorized access contact
+      NASA personnel
+
+     Claims have been made on this news group about fraud and waste None
+     have ever been substantiated to any significant degree Readers
+     detecting Fraud Waste Abuse or Mismanagement should contact the NASA
+     Inspector General 24hours at 8004249183 can be anonymous or write
+
+	  NASA
+	  Inspector General
+	  PO Box 23089
+	  Lenfant Plaza Station
+	  Washington DC 20024
+
+  NEXT FAQ 315  Online and some offline sources of images data etc
+
+
+diff t c r118 FAQdata
+ tmpRCSt1a06410	Thu Apr  1 144726 1993
+ FAQdata	Thu Apr  1 144654 1993
+
+ 216237 
+	  Telephone 301 2866695
+
+	  Email address   requestnssdcagsfcnasagov
+
+
+     SPACE AND PLANETARY IMAGE FACILITY
+
+     Available 24 hours a day via anonymous FTP from pioneerunmedu Has
+     approximately 150 CDROMs full of imagery raw and tabular data To
+     start get the file
+
+	  pioneerunmedupubinfobeginnerinfo
+
+     This will hopefully give you all of the information you need to get data
+     from their machine beginnerinfo has been translated to other
+     languages you should look inside pubinfo for the particular language
+     that meets your needs
+
+     Contact helppioneerunmedu
+
+
+      SPACE TELESCOPE SCIENCE INSTITUTE ELECTRONIC INFORMATION SERVICE
+ 216221 
+
+
+diff t c r118 FAQmath
+ tmpRCSt1a06415	Thu Apr  1 144728 1993
+ FAQmath	Thu Apr  1 144656 1993
+
+ 6065 
+ 6071 
+	  Gives series to compute positions accurate to 1 arc minute for a
+	  period  or  300 years from now Pluto is included but stated to
+	  have an accuracy of only about 15 arc minutes
+
+     Multiyear Interactive Computer Almanac MICA produced by the US
+     Naval Observatory Valid for years 19901999 55 80 outside US
+     Available for IBM order PB93500163HDV or Macintosh order
+     PB93500155HDV From the NTIS sales desk 7034874650 I believe
+     this is intended to replace the USNOs Interactive Computer Ephemeris
+
+      Interactive Computer Ephemeris from the US Naval Observatory
+      distributed on IBMPC floppy disks 35 WillmannBell Covers dates
+
+
+diff t c r118 FAQreferences
+ tmpRCSt1a06420	Thu Apr  1 144730 1993
+ FAQreferences	Thu Apr  1 144659 1993
+
+ 93100 
+      US Naval Observatory
+	  2026531079 USNO Bulletin Board via modem
+	  2026531507 General
+	  2026531545 Nautical Almanac Office info on the Interactive
+	      Computer Ephemeris
+
+      WillmannBell
+      PO Box 35025
+ 9398 
+
+ 138151 
+      SDIs SSRT Single Stage Rocket Technology project has funded a
+      suborbital technology demonstrator called DCX that should fly in
+      mid1993 Further development towards an operational singlestage to
+     orbit vehicle is uncertain at present for considerably more detail on
+     the SSRT program get the document
+
+	  amesarcnasagovpubSPACEFAQDeltaClipper
+
+     by anonymous FTP or through the email server
+
+
+      HOW TO NAME A STAR AFTER A PERSON
+
+      Official names are decided by committees of the International
+ 136151 
+      SDIs SSRT Single Stage Rocket Technology project has funded a
+      suborbital technology demonstrator called DCX that should fly in
+      mid1993 Further development towards an operational singlestage to
+     orbit vehicle called Delta Clipper is uncertain at present
+
+     An collection of pictures and files relating to DCX is available by
+     anonymous FTP or email server in the directory
+
+	  bongoccutexasedupubdeltaclipper
+
+     Chris W Johnson chrisjemxccutexasedu maintains the archive
+
+
+      HOW TO NAME A STAR AFTER A PERSON
+
+      Official names are decided by committees of the International
+
+ 223228 
+ 223236 
+      University Press 1970 Information about the Lunar Orbiter missions
+      including maps of the coverage of the lunar nearside and farside by
+      various Orbiters
+
+
+     ORBITING EARTH SATELLITE HISTORIES
+
+     A list of Earth orbiting satellites that are still in orbit is
+     available by anonymous FTP in
+
+	  amesarcnasagovpubSPACEFAQSatellites
+
+
+      SPACECRAFT MODELS
+
+
+diff t c r118 FAQaddresses
+ tmpRCSt1a06435	Thu Apr  1 144734 1993
+ FAQaddresses	Thu Apr  1 144651 1993
+
+ 7580 
+ 7585 
+	  the latter an SF 171 is useless Employees are Caltech employees
+	  contractors and for the most part have similar responsibilities
+	  They offer an alternative to funding after other NASA Centers
+
+	  A fact sheet and description of JPL is available by anonymous
+	  FTP in
+
+	      amesarcnasagovpubSPACEFAQJPLDescription
+
+      NASA Johnson Manned Space Center JSC
+      Houston TX 77058
+
+
+diff t c r118 FAQnewprobes
+ tmpRCSt1a06450	Thu Apr  1 144738 1993
+ FAQnewprobes	Thu Apr  1 144658 1993
+
+ 813 
+ 819 
+      team ISASNASDA launch schedules press kits
+
+
+     ASUKA ASTROD  ISAS Japan Xray astronomy satellite launched into
+     Earth orbit on 22093 Equipped with largearea widewavelength 120
+     Angstrom Xray telescope Xray CCD cameras and imaging gas
+     scintillation proportional counters
+
+
+      CASSINI  Saturn orbiter and Titan atmosphere probe Cassini is a joint
+      NASAESA project designed to accomplish an exploration of the Saturnian
+      system with its Cassini Saturn Orbiter and Huygens Titan Probe Cassini
+
+ 98115 
+
+
+      MAGELLAN  Venus radar mapping mission Has mapped almost the entire
+     surface at high resolution Currently 1192 in mapping cycle 4
+     collecting a global gravity map
+
+
+      MARS OBSERVER  Mars orbiter including 15 mpixel resolution camera
+     Launched 92492 on a Titan IIITOS booster MO is currently 393 in
+      transit to Mars arriving on 82493 Operations will start 1193 for
+      one martian year 687 days
+
+
+     TOPEXPoseidon  Joint USFrench Earth observing satellite launched in
+     August 1992 on an Ariane 4 booster The primary objective of the
+      TOPEXPOSEIDON project is to make precise and accurate global
+      observations of the sea level for several years substantially
+      increasing understanding of global ocean dynamics The satellite also
+ 104121 
+
+
+      MAGELLAN  Venus radar mapping mission Has mapped almost the entire
+     surface at high resolution Currently 493 collecting a global gravity
+     map
+
+
+      MARS OBSERVER  Mars orbiter including 15 mpixel resolution camera
+     Launched 92592 on a Titan IIITOS booster MO is currently 493 in
+      transit to Mars arriving on 82493 Operations will start 1193 for
+      one martian year 687 days
+
+
+     TOPEXPoseidon  Joint USFrench Earth observing satellite launched
+     81092 on an Ariane 4 booster The primary objective of the
+      TOPEXPOSEIDON project is to make precise and accurate global
+      observations of the sea level for several years substantially
+      increasing understanding of global ocean dynamics The satellite also
+
+
+diff t c r118 FAQastronaut
+ tmpRCSt1a06465	Thu Apr  1 144743 1993
+ FAQastronaut	Thu Apr  1 144652 1993
+
+ 162174 
+      specific standards
+
+	   Distant visual acuity
+		20100 or better uncorrected
+		correctable to 2020 each eye
+
+	   Blood pressure
+		14090 measured in sitting position
+
+     3 Height between 60 and 76 inches
+
+      Pilot Astronaut Candidate
+
+ 162174 
+      specific standards
+
+	   Distant visual acuity
+		20150 or better uncorrected
+		correctable to 2020 each eye
+
+	   Blood pressure
+		14090 measured in sitting position
+
+     3 Height between 585 and 76 inches
+
+      Pilot Astronaut Candidate

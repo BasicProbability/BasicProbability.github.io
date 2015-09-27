@@ -1,0 +1,31 @@
+From davidccatUUCP Dave
+Subject Re IDE vs SCSI
+
+bgrubbdantenmsuedu GRUBB writes
+
+ 
+ SCSI1 SCSI2 controller chip also called SCSI2 8bit 46MBs with 
+ 10MBs burst  This is advertised as SCSI2 in BYTE 493159 FOR the
+  PC and AT THESE SPEEDSNOT the Mac the PC
+ 
+
+I have been following this mess for a while excuse my need for
+clarification  Iam thinking seriously IDE vs SCSI and this thread
+could not have come at a better time
+
+the above quote SCSI1 SCSI2 controller chip
+
+are we talking about a SCSI1 device eg HD on a SCSI2 Controller
+or 
+are we talking about a SCSI1 Controller that had a chip upgrade
+using the same chip that is on a SCSI2 controller board
+
+thanks 
+
+                                                       David
+
+
+
+China Cat BBS                               ccatdavidsedcsccom
+3016045976 120014400 8N1               uunetmimsyanagldccatdavid 
+

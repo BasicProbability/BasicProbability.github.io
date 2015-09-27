@@ -1,0 +1,111 @@
+From bgrubbdantenmsuedu GRUBB
+Subject Re IDE vs SCSI
+
+wlsmithvalveheartrriuwoca Wayne Smith write
+
+In article 1qpu0uINNbt1dns1NMSUEdu bgrubbdantenmsuedu GRUBB writes
+wlsmithvalveheartrriuwoca Wayne Smith writes
+Since the Mac uses ONLY SCSI1 for hard drives YES the figure includes a
+hundred  for SCSI drivers  This is sloppy people and DUMB
+What group is this  This is not a MAC group
+Nice of you to DELETE BOTH YOUR responce and the item that prompted it
+to whit
+I just bought at Quantum 240 for my mac at home  I paid 369 for it  I
+                                      
+havent seen IDE drives cheaper
+To which YOU responded
+A friend of mine just got a Maxtor 245 meg IDE drive for 320  thats 245
+million bytes or 234 megabytes  With the basic 20 interface he gets
+close to 1 megsec transfer on his 28620  Does your figure include a few
+hundred  for SCSI drivers
+To which I correctly pointed out the following                         
+Since the Mac uses ONLY SCSI1 for hard drives YES the figure includes a
+hundred  for SCSI drivers  This is sloppy people and DUMB
+As I said this is sloppy and DUMB YOU should resounded by DISCOUNTING the Mac
+NOT giving Maxtor 245 meg IDE drive for 320 example  By giving an
+example you give the IMPLIED consent that for MAC info to be INCLUDED
+in the SCSI discusion
+
+Ok once again with the SCSI spec list
+Why the spec list again  We are talking SCSI on a PC not on a MAC or
+a UNIX box  And we are talking ISA bus or possibly EISA or VLB
+Ok I will do this V E R Y  S L O W L Y so you can understand
+REGUARDLESS of whether it is a Mac or a PC SCSI1 and SCSI2 are DIFFERENT
+from each other as is asynchronous and synchronous SCSI1  All of these
+have DIFFERENT SPEEDS and COSTS Lumping them all together as SCSI is
+dumb and sloppy  Take again the quote later on as an example of the problem 
+in the PC world The spec list was so that you knew where the numbers were
+coming from in the article  It shows the article is CORRECT in it
+staments about SCSI but not CONSITANT
+
+This isint compperiphsSCSI
+With the way this thread has gone how do you tell 
+Tell me what the performance figures are with a single SCSI drive on a PC
+with an ISA or EISA or VLB bus
+Already GAVE them  YOU keep deleting them So here are the Specs
+on everybody AGAIN With some added info
+
+SCSI1 SCSI1 controler chip asynchronous range 03MBs
+ synchronous range 05MBs  Both common to the PC world difference is
+ mainly in software not hardware
+
+SCSI1 SCSI2 controller chip also called SCSI2 8bit 46MBs with 
+10MBs burst  This is advertised as SCSI2 in BYTE 493159 FOR the
+ PC and AT THESE SPEEDSNOT the Mac the PC
+
+I have not seen the following for EITHER the Mac or the PC
+SCSI2 16bitwide or fast mode  812MBs with 20MBs burst
+SCSI2 32bitwide AND fast     1520MBs with 40MBs burst
+
+On the other interfaces let DXB132psuvmpsuedu speak
+IDE ranges from 083MBs                          
+ asynchronous range 05MBs infered from BYTE 493159
+ synchronous range 083MBs
+ESDI is always 125MBs although there are some nonstandard versions
+
+wlsmithvalveheartrriuwoca Wayne Smith writes
+Theoretical performance figures are not relevant to this group or this
+debate  Im sure that there are some platforms out there that can
+handle the 40 megssec of SCSI xyz widenfast but the PC isint one of
+them
+Note that I ALSO give the AVERAGE through put for SCSI2 which holds true
+a Mac OR IBMPC clone with the correct hardware and software
+And since PC ADVERSIZEMENTS are using Theoretical performance figures WHY 
+CANNOT WE
+
+If we are to continue this thread STATE CLEARLY WHICH SCSI you are talking 
+about SCSI1 or SCSI2 or SCSI over all SCSI1 AND SCSI2
+IT DOES MAKE A DIFFERENCE
+
+Well maybe if the SCSI design people had their act together than maybe
+all PCs would have built in SCSI ports by now
+With PC articles like the following it is obvious that the problem is NOT with
+SCSI but with the PEOPLE WHO REPORT IT Like YOU
+Look at the inconsitant use of SCSI in the below quote 
+My comments in 
+Although SCSI is twice as fast as ESDIThis is asynchronous SCSI1 with
+a SCSI1 chip 20 faster than IDE this is BOTH asynchronous SCSI1 with 
+a SCSI2 chip AND 8bit SCSI2 PC Magazine April 27 199329
+The ARTICLE is confused NOT SCSI  The TERM is a mess from inconsitant use
+NOT because the interface itself is a mess
+
+SCSI means The set of SCSI interfaces composed of SCSI1 AND SCSI2
+NOT SCSI1 as some people want to use it
+
+To read CONSITANTLY the quote SHOULD read
+asynchronous SCSI1 with a SCSI1 chip
+Although asynchronous SCSI1 is twice as fast as ESDI one third the 
+speed of IDE
+or asynchronous SCSI1 with a SCSI2 chip or 8bit SCSI2
+Although SCSI1 with a SCSI2 chip and 8bit SCSI2 are eight times as fast as
+ESDI 20 faster than IDE
+
+NOTE the NONUSE of SCSI by itself  This eliminates ambaguity
+
+If we are to continue this thread STATE CLEARLY WHICH SCSI you are talking 
+about SCSI1 or SCSI2 or SCSI over all SCSI1 AND SCSI2  Lumping
+everything into SCSI as SCSI1 is SLOPPY WRONG and DUMB  Inconsitant
+SCSI1 and SCSI2 usage is also a problem  Clean it up now or have
+a mess like SVGA was several years ago because everybody and his Uncle
+slapped SCSA an their own monitor inteface SCSI IS standarized unlike
+SVGA was years ago EXCEPT in terminaology

@@ -1,0 +1,33 @@
+From driskoicscom Jason Drisko
+Subject Re appdefaults files
+
+Hello
+
+   When starting bx if you recieve an error message saying
+cannot load appdefaults file check your XAPPLRESDIR
+environment variable and then put the file BuilderXcessory 
+ this is the appdefaults file for BX  in the directory
+specified by the XUSERFILESEARCHPATH environment variable
+
+   If you dont have an XUSERFILESEARCHPATH environment variable
+then set XUSERFILESEARCHPATH to be the directory where the
+BuilderXcessory file is You can do this using the setenv
+command under csh Note that the name ends in ad so you will
+have to set XUSERFILESEARCHPATH to BXNad to get the
+appdefaults to load correctly
+
+   To make sure the the appdefaults file can be read by all
+the users make sure that a copy of or a link to the appdefaults
+file exists in usrlibX11appdefaults or 
+usropenwinlibappdefaults depending on how your system is
+set up
+
+   Once you have taken care of this set the systemDirectory
+resource to be the directory in which you have installed BX 
+For example lets say Ive installed BX in t then my system
+directory resource should be set like this 
+
+systemDirectory tbuilderXcessory
+
+    Thanks
+      ICS Tech Support

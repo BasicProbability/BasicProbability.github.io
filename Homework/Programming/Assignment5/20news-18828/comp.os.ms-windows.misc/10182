@@ -1,0 +1,36 @@
+From erictgmCAMORG Eric Trepanier
+Subject Why Im not using Dos 6 anymore
+
+
+In article 1993Apr301334256693hubcapclemsonedu charleaengclemsonedu writes
+
+  
+  Regarding the horror stories about DOS6DOUBLEDISK and STACKER 2
+  killing hard drives
+  
+  I was wondering if the dos 6 MIRROR command works on the doubled
+  drive info as well as the normal fat table and partition table
+  If it records the vital DoubleDisk info then using it daily
+  should go a long way toward protecting yourself against the
+  type of catastrophic failure discussed  If it doesnt then
+  shame on Microsoft
+  
+
+ MIRROR is one of those DOS commands that didnt survive the change 
+ from DOS 50  Its been dropped along with BACKUP JOIN EDLIN  
+ and a couple other crummy old DOS commands  You can still use the
+ 50 commands if you absolutely have to but they are not included
+ on the 60 distribution disks
+
+ However in MIRRORs case Im 999 certain that it does not know
+ anything about DoubleSpaced drives
+
+
+Eric
+
+
+ Eric Trepanier          Internet erictgmCAMORG  CI 710423207  
+ 55 Grenon O           
+ Laval Quebec H7N 5M3  Everybody has a right to believe in something 
+ Canada  5146636929  I believe Ill have another beer             
+

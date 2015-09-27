@@ -1,0 +1,27 @@
+From walsteynfysruunl Fred Walsteijn
+Subject Re builtin video problems on Mac IIsi 
+
+In 1993Apr191646111018fysruunl walsteynfysruunl Fred Walsteijn writes
+
+Ive seen the following problem om three Mac IIsi machines
+all with 17 Mb RAM installed 70 or 80 ns SIMMs
+
+If the contents of a window are being calculated and updated
+a lot of strange horizontal lines are temporarily generated
+on the screen  The lines translate to the top of the screen and
+have a slightly lower brightness than their surroundings they
+are a few millimeters apart
+I admit that they are vague but they can still be distinguished clearly
+especially if the environment ie the rest of the room is a bit dark
+Applications which produce this effect are
+ the previewer of DirectTeX 12 ie DVIReader 12
+ Kaleidagraph 211FPU
+
+Another program which produces this effect is
+ SpyGlass Transform 21 while contouring a big 257257 array
+
+Thanks for any information about this problem
+
+Fred Walsteijn                                 Internet walsteynfysruunl
+Institute for Marine and Atmospheric Research  FAX      3130543163
+Utrecht University The Netherlands            Phone    3130533169

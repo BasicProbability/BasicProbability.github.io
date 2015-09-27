@@ -1,0 +1,195 @@
+From trollsugorg A Newman
+Subject Re Trouble compiling X11R5 on SunOS413
+
+In article 1993Apr608160512977fwiuvanl casperfwiuvanl Casper HS Dik writes
+epsteintrwacsfptrwcom Jeremy Epstein writes
+
+dmmheadcfaharvardedu David Meleedy writes
+Theres a bug in SunOS 413 which is alluded to in the FAQ although
+there its talking about X11R4 as being affected  You need to force
+libXmu to be linked statically rather than dynamically which works
+around the linker error  The simplest thing to do is edit each of
+the Makefiles where theres a failure and change the line which reads
+	XMULIB  LXMUSRC lXmu
+to
+	XMULIB  LXMUSRC Bstatic lXmu Bdynamic
+
+No This is only relevant for OpenWindows 3x as shipped with SunOS
+It is not relevant for MIT R5 MIT R5 should compile without problems
+
+Casper
+
+I dont know how many hours youve spent on this but the Sun User
+Group makes X11R5 available on CDROM to its members The 19921 disk
+has both sources and binaries and it sells for 50  Ive tagged a
+table of contents and an orderform on below if anyones interested
+
+Alex Newman
+
+
+Alex Newman	617 2320514 voice	My life may be stressful
+trollsugorg	617 2321347 fax	but at least its not boring
+Sun User Group  1330 Beacon St 315  Brookline MA 02146
+
+
+
+
+
+SUG CD 19921 is X11R5 and GNU on a CDROM priced at 50 to SUG
+members including a caddy
+
+SUGs emphasis has always been on supplying the greatest possible
+service and valueadded to our members  Last year the SUG 1991 disk
+contained plugandplay X11R4 20MB of additional essential binaries
+almost 200MB of Sun patches fullyindexed archives of Sunrelated net
+postings priced at only 250
+
+Our aim this year has been to reduce the price for disks which can be
+produced inexpensively but to continue to supply as much valueadded
+as possible  To accomplish this we will be putting out a two disk
+set the first containing whats ready and needed now the second
+available later in 92 containing more SPARC binaries and other
+useful material not found on previous disks
+
+The SUG 19921 disk which was assembled by Robert A Bruce contains
+a lot of essential source code and we decided it would be a great
+service to make it available right away to our members and this
+pricing makes this a good opportunity to become a member for 50 per
+disk including one of those hardtofind caddies  If you are not a
+SUG member you can become one for an additional 40 if you live
+within the US or 55 outside
+
+The SUG 19921 CDROM is an ISO 9660 disk which means it can be used
+by PC Macintosh and other workstations as well and contains a
+total of 543MB of material including
+
+X11R5 SOURCES AND CORE BINARIES for SPARC as of several weeks after
+the initial distribution thus four fixes and the the MIT contrib0
+distribution are included 109MB of material  Binaries for X Xsun
+XsunMono appres atobm autobox bdftopcf beachball bitmap bmtoa
+constype editres fs fsinfo fslsfonts fstobdf ico imake kbdmode
+listres lndir makedepend maze mkdirhier mkfontdir oclock plbpex puzzle
+resize showfont showrgb startx twm viewres x11perf x11perfcomp xauth
+xbiff xcalc xclipboard xclock xcmsdb xcmstest xconsole xcutsel
+xditview xdm xdpr xdpyinfo xedit xev xeyes xfd xfontsel xgas xgc xhost
+xinit xkill xload xlogo xlsatoms xlsclients xlsfonts xmag xman xmh
+xmkmf xmodmap xon xpr xprop xrdb xrefresh xset xsetroot xstdcmap xterm
+xwd xwininfo xwud
+
+COPIES OF CONTRIBUTED X SOURCES from exportlcsmiteducontrib
+which were then uncompresseduntarred into source directories 212MB
+These are sources only and some of them were after the date of
+production of this disk included in the MIT contrib2 and contrib3
+distributions
+
+GNU SOURCES WHICH WERE uncompresseduntarred into source directories
+88MB
+
+SPARC BINARIES and needed libraries for these GNU programs a2p ar
+as basename bash bison cat cc1 cc1plus chgrp chmod chown ci cmp co
+comm compress cp cpio cpp ctags cut cvs date dd df diff diff3 dir
+dirname du egrep elvis emacs env etags expand expr fgrep find
+find2perl flex fold g gdep gfilt gawk gcc gdb ginstall gnuchess
+gnuchessn gnuchessr gnugo gnuplot gnuplotx11 gprof grep h2ph head id
+ident indent ispell ld ld less ln locate logname ls m4 make merge
+mkdir mkfifo mkmodules mknod mt mv nice nm oleo paste pathchk perl pr
+printenv printf ranlib rcs rcsdiff rcsinfo rcsmerge rcstest ref refont
+rlog rm rmdir rmt s2p screen sed size sleep split strip stty sum tac
+tail taintperl tar tee test time touch tput tty uname unexpand uniq
+vdir virec whoami xargs xchess yes zmore
+
+AN ARCHIVE OF COMPSOURCEX postings volume 0 through volume14
+58MB  Parts are supplied just as posted  You get to put together
+the pieces compile install etc
+
+Cost SUG members 50 Nonmembers additional 40 within the US 55
+	elsewhere 
+Shipping  Handling 10 inside the USA 25 elsewhere
+
+Mail to Sun User Group Inc
+	 Suite 315
+	 1330 Beacon Street
+	 Brookline MA  02146
+	 USA
+
+	617 2320514	voice
+	617 2321347	fax
+
+
+The Sun User Group also accepts Visa and MasterCard via telephone or
+electronically
+
+
+ cut here and return completed form 
+
+                                 The SUGCD 19921
+                                     ORDER FORM
+
+The price of the CD is 50
+
+Shipping and handling Add 10 USA or 25 Intl
+
+If you are not a member of the Sun User Group add 40 USA or 55
+International to the above sums for membership  You must be a SUG
+member to purchase the CDROM  I enclose a US  check for
+
+                     60 SUG member in the USA
+                     75 SUG member outside the USA
+                    100 Includes membership inside the USA
+                    130 Includes international membership
+
+
+ Name Signature
+
+ Company Name
+
+ SUG Membership if known
+
+ Electronic Mail Address
+
+ Telephone Number
+
+ Check Enclosed             Mastercard  Visa
+
+ Credit Card   Exp date
+
+ Card Holder Signature
+
+ Ship to                                Bill to
+
+   
+
+   
+
+   
+
+   
+
+
+
+     I hereby authorize the Sun User Group to renew my membership
+        and charge my credit card automatically on an annual basis
+
+     I do not wish my name to be included in nonSun User
+        Group mailings
+
+     I do not wish my name to be published in the Sun User
+        Group member directory
+
+     I wish to be added to the Sun User Group electronic
+	mailinglist members only
+
+
+                  OUTSIDE THE US ONLY
+
+Individuals outside of the USA may find using their credit cards easier
+than purchasing US checks as this eliminates bank charges
+
+
+                   Sun User Group
+                   1330 Beacon Street Suite 315
+                   Brookline MA  02146
+
+		   Voice 1 617 2320514
+		   Fax   1 617 2321347
+		   Email officesugorg

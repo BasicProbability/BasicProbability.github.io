@@ -1,0 +1,16 @@
+From butzerdmaumeeengohiostateedu Dane C Butzer
+Subject How large are commercial keys
+
+What are the typical sizes for keys for commercial secret key algorithms
+I know DES is 56 bits tripple DES is 112 bits and IDEA is 128 bits  Is
+there anything made in the US that has 128 bit keys  Anything anywhere
+that has larger keys  Ive heard that RC2 can be scaled to arbitrarily
+large keys but is this actually implemented anywhere
+
+Finally can anyone even concieve of a timeplace where 128 bit keys arent
+sufficient  I certainly cant  even at a trillion keys a second it
+would take about 10 billion years to search just one billionth of that keys
+space
+
+Thanks
+Dane

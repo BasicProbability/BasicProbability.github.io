@@ -1,0 +1,19 @@
+From sivapscsbuffaloedu S Suresh
+Subject Re screen problem in unixxwindowssolaris
+
+SHONKWILER R W ma201rsprismgatechEDU wrote
+ Experiment From a Sun openwindows 413 xterm window log into a
+ Solaris 2x machine using rlogin now do an ls and get the first
+ character of each line display in the last column of the display
+ with the rest of the line wrapped to the next line of the display
+
+ Log out and the condition persists  Check stty all try reset
+ with no effect
+
+The condition happens  when the TAB is not  set  to 8 spaces  set and
+then check out
+
+ 
+Suresh Sivaprakasam                    
+Department of Computer Science    SUNY Buffalo    Amherst   NY  142600001
+Internet sivapscsBuffaloEDU               Bitnet  sivapsSUNYBCSBITNET

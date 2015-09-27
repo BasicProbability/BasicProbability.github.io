@@ -1,0 +1,26 @@
+From etxmesaeosericssonse Michael Salmon
+Subject Re Help building X11R5 with gcc
+
+In article 1993Apr60242578480etrogsecitrieduau
+timkimbacattcitrieduau Tim Liddelow writes
+ Can people please send me any hints on building X11R5 with gcc 233   Is
+ there any pitfalls to be avoided   Any hints   I would appreciate hearing other
+ peoples stories on this
+
+I have been building X11 with gcc since 21 and the only time I had
+trouble was when the position independant code option broke so I
+couldnt use gcc to build Sun shared libraries The important thing to
+do is to follow the tips given in the gcc release Gcc generates code
+that requires libgcc2 and you should take that into account when
+deciding which compiler to use for the libraries
+
+ 
+
+Michael Salmon
+
+include	standarddisclaimer
+include	wittysaying
+include	fancypseudographics
+
+Ericsson Telecom AB
+Stockholm

@@ -1,0 +1,37 @@
+From dpalmermcncorg W Dev Palmer
+Subject Re Wanted A to D hardware for a PC
+
+In article 1993Apr605373623113dougcaewiscedu kolstadcaewiscedu Joel Kolstad writes
+In 3889ncrmpdFtCollinsCONCRCOM Brad Wright writes
+
+	If you know much about PCs IBM comp you might try the joystick
+port  Though I havent tried this myself Ive been told that the port
+
+I believe that the AD converters found on a joystick port are really
+timers that tick off how long it takes an RC circuit the R being your
+paddle to charge up to something like 12 Vcc  For games this works
+pretty well but you certainly wouldnt want to try to take lab
+measurements off something as nonlinear as that
+
+The best info I have seen so far is the article Joystick Metrics
+Measuring physical properties through the PCs joystick port by
+Michael Covington in the May 1985 issue of PC Tech Journal  It talks
+about how to read all kinds of things voltage current resistance in
+BASIC and even includes code for a simple oscilloscope display
+
+Its possible to read the joystick port directly if you dont want to
+use BASIC  The detailed information for this is in the PC Technical
+Reference under Options and Adapters  You have to provide some
+millisecond resolution timing functions but thats a subject which has
+appeared many times in articles from Dr Dobbs Circuit Cellar Ink
+etc  Look for the public domain ztimer package on wuarchive
+
+Good Luck
+
+Dev Palmer
+dpalmermcncorg
+MCNC Room 212
+PO Box 12889
+RTP NC  277092889
+919 2481837
+919 2481455 FAX

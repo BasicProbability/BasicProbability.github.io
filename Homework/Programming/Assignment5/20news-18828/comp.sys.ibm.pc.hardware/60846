@@ -1,0 +1,31 @@
+From chriscraytonozoneholecom Chris Crayton 
+Subject Gateway 2000  booting fr
+
+ On 042093  2156 Tim King had the unmitigated gall to say this
+
+ TK accidentally discovered that if a have a floppy from ONE particular
+ TK box of diskettets in the A drive when I boot up rather than getting
+ TK the Nonsystem diskette message the machine hangs and the CMOS
+ TK gets overwritten luckily Gateway sends a print of the standard
+
+Just a wild thought here but how about this there is a small boot program
+on every formatted diskette whether or not it contains system files  It is
+this small program that prints the NonSystem Disk error not DOS  If
+this program tries to transfer control to a BIOS location that is
+nonstandard on the Gateway then it could clear the BIOS
+
+I dont think that the BIOS is overwritten there is usually a small routine
+to clear the CMOS area in case an invalid configuration prevents the
+machine from booting  I think that the boot code on the Fuji disks may
+inadvertantly call this routine
+
+Just a thought
+
+ Dont hit me Mr Moderator Ill go back on topic I swear
+ Blue WaveQWK v210
+                                                                             
+
+The Ozone Hole BBS  A Private Bulletin Board Service  5048913142
+3 Full Service Nodes  USRobotics 168K bps  10 Gigs  100000 Files
+SKYDIVE New Orleans  RIME Network Mail HUB  500 Usenet Newsgroups
+Please route all questions or inquiries to  postmasterozoneholecom

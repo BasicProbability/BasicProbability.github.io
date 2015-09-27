@@ -1,0 +1,37 @@
+Subject Re Fractal terrain generator
+From pdbourkeccu1aukuniacnz Paul David Bourke
+
+deb47099uxacsouiucedu Daniel E Bradley writes
+
+	Does anyone know of a fractal terrain generator for Mac something
+	I could hopefully import into a 3D program like Swivel or Stratavision
+	I know InfiniD has built in capabilities but I dont have access to
+	InfiniD I downloaded two programs from Umich in graphicsfractals
+	but both were from 199091 and crashed under System 7 I think they
+	were Black and white anyway Please email me if you know of anything
+	as I dont check the newsgroups very often
+		Thanks in advance
+			Dan Bradley deb47099uxacsouiucedu
+
+Yes I have written something that creates meshed fractal terrain
+surfaces for exactly the purpose you require importing into 3D
+modelling packages Be warned the data content is high and brings
+many packages to their knees We use it primarily for MicroStation
+but it exports DXF as well as other formats so you should be OK
+You can get it from my FTP mirror site in the US
+It is
+   wuarchivewustledu
+my stuff is located in the
+   mirrorsarchitec
+directory Please FTP the README file first
+
+ 
+Paul D Bourke                       School of Architecture Property Planning
+pdbourkeccu1aucklandacnz        The University of Auckland
+Ph   64 9 373 7999 x7367         Private Bag 92019
+Fax  64 9 373 7410               Auckland New Zealand
+ 
+Paul D Bourke                       School of Architecture Property Planning
+pdbourkeccu1aucklandacnz        The University of Auckland
+Ph   64 9 373 7999 x7367         Private Bag 92019
+Fax  64 9 373 7410               Auckland New Zealand

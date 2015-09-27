@@ -1,0 +1,111 @@
+From cryptcommentsmathncsuedu
+Subject Cryptography FAQ 0610  Public Key Cryptography
+
+Archivename cryptographyfaqpart06
+Lastmodified 1993415
+
+
+FAQ for scicrypt part 6 PublicKey Cryptography
+
+This is the sixth of ten parts of the scicrypt FAQ The parts are
+mostly independent but you should read the first part before the rest
+We dont have the time to send out missing parts by mail so dont ask
+Notes such as KAH67 refer to the reference list in the last part
+
+The sections of this FAQ are available via anonymous FTP to rtfmmitedu 
+as pubusenetnewsanswerscryptographyfaqpartxx  The Cryptography 
+FAQ is posted to the newsgroups scicrypt scianswers and newsanswers 
+every 21 days
+
+
+Contents
+
+ What is publickey cryptography
+ Whats RSA
+ Is RSA secure
+ How fast can people factor numbers
+ What about other publickey cryptosystems
+
+
+ What is publickey cryptography
+
+  In a classic cryptosystem we have encryption functions EK and
+  decryption functions DK such that DKEKP  P for any plaintext
+  P In a publickey cryptosystem EK can be easily computed from some
+  public key X which in turn is computed from K X is published so
+  that anyone can encrypt messages If DK cannot be easily computed
+  from X then only the person who generated K can decrypt messages
+  Thats the essence of publickey cryptography published by Diffie
+  and Hellman in 1976
+
+  In a classic cryptosystem if you want your friends to be able to
+  send secret messages to you you have to make sure nobody other than
+  them sees the key K In a publickey cryptosystem you just publish X
+  and you dont have to worry about spies
+
+  This is only the beginning of publickey cryptography There is an
+  extensive literature on security models for publickey cryptography
+  applications of publickey cryptography other applications of the
+  mathematical technology behind publickey cryptography and so on
+
+ Whats RSA
+
+  RSA is a publickey cryptosystem defined by Rivest Shamir and
+  Adleman  For full details there is a FAQ available by ftp at
+  RSACOM Heres a small example
+
+  Plaintexts are positive integers up to 2512 Keys are quadruples
+  pqed with p a 256bit prime number q a 258bit prime number
+  and d and e large numbers with de  1 divisible by p1q1 We
+  define EKP  Pe mod pq DKC  Cd mod pq
+
+  Now EK is easily computed from the pair pqebut as far as
+  anyone knows there is no easy way to compute DK from the pair
+  pqe So whoever generates K can publish pqe Anyone can send a
+  secret message to him he is the only one who can read the messages
+
+ Is RSA secure
+
+  Nobody knows An obvious attack on RSA is to factor pq into p and q
+  See below for comments on how fast stateoftheart factorization
+  algorithms run Unfortunately nobody has the slightest idea how to
+  prove that factorizationor any realistic problem at all for that
+  matteris inherently slow It is easy to formalize what we mean by
+  RSA isisnt strong but as Hendrik W Lenstra Jr says
+  Exact definitions appear to be necessary only when one wishes to
+  prove that algorithms with certain properties do not exist and
+  theoretical computer science is notoriously lacking in such negative
+  results
+
+ How fast can people factor numbers
+
+  It depends on the size of the numbers In October 1992 Arjen Lenstra
+  and Dan Bernstein factored 2523  1 into primes using about three
+  weeks of MasPar time The MasPar is a 16384processor SIMD machine
+  each processor can add about 200000 integers per second The
+  algorithm there is called the number field sieve it is quite a
+  bit faster for special numbers like 2523  1 than for general numbers
+  n but it takes time only about expOlog13 n log23 log n in
+  any case
+
+  An older and more popular method for smaller numbers is the multiple
+  polynomial quadratic sieve which takes time expOlog12 n
+  log12 log nfaster than the number field sieve for small n
+  but slower for large n The breakeven point is somewhere between 100
+  and 150 digits depending on the implementations
+
+  Factorization is a fastmoving fieldthe state of the art just a few
+  years ago was nowhere near as good as it is now If no new methods are
+  developed then 2048bit RSA keys will always be safe from
+  factorization but one cant predict the future Before the number
+  field sieve was found many people conjectured that the quadratic
+  sieve was asymptotically as fast as any factoring method could be
+
+ What about other publickey cryptosystems
+
+  Weve talked about RSA because its well known and easy to describe
+  But there are lots of other publickey systems around many of which
+  are faster than RSA or depend on problems more widely believed to be
+  difficult This has been just a brief introduction if you really want
+  to learn about the many facets of publickey cryptography consult the
+  books and journal articles listed in part 10

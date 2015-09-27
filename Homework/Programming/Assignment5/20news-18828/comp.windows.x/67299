@@ -1,0 +1,21 @@
+From timhsscscarolinaedu Tim White
+Subject Re X11 load on the Network
+
+bklineoccsnlmnihgov Bob Kline writes
+
+Can someone point me in the direction of any papers not necessarily
+formally conducted studies discussing how much traffic X apps generate
+for the network particularly in comparison with cursesbases apps 
+over telnet  Also does an X server typically buffer up user keyboard
+input a line at a time  Can the X client control this asking for
+keystrokes immediately  Thanks in advance for any feedback
+
+
+   Ncd has an excellent document titled Host Loading Considerations in the X 
+  environment I received my copy by emailing supportncdcom This may
+  help out
+
+
+Tim White				 University of South Carolina
+timotishsscscarolinaedu	   Humanities and Social Sciences Laboratory
+8037777840 		  		     Columbia SC 29208

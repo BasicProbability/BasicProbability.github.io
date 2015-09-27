@@ -1,0 +1,18 @@
+From bontchevfbihhinformatikunihamburgde Vesselin Bontchev
+Subject Re How large are commercial keys
+
+butzerdmaumeeengohiostateedu Dane C Butzer writes
+
+ Finally can anyone even concieve of a timeplace where 128 bit keys arent
+ sufficient  
+
+It depends on the algorithm used 128bit secret keys for RSA are
+definitively not secure enough
+
+Regards
+Vesselin
+ 
+Vesselin Vladimirov Bontchev          Virus Test Center University of Hamburg
+Tel494054715224 Fax 494054715226      Fachbereich Informatik  AGN
+ PGP 22 public key available on request  VogtKoellnStrasse 30 rm 107 C
+email bontchevfbihhinformatikunihamburgde    D2000 Hamburg 54 Germany

@@ -1,0 +1,16 @@
+From henryzootorontoedu Henry Spencer
+Subject Re how can 0022 uF be different from two 0047 in series
+
+In article 1993Apr191853269830PrincetonEDU mgcsprincetonedu Michael Golan writes
+The board itself is also identical with room for all three caps The
+USCan versions is clearly indicated in both places
+
+How does that make sense 00472 is 00235 essentially 0022 for caps
+there are just standard caps no special Wtypeprecision 
+
+This may be a safety issue the CSA is more paranoid in certain areas than
+UL and such  Two caps in series means that you dont have a short if one
+of them shorts
+ 
+All work is one mans work              Henry Spencer  U of Toronto Zoology
+                     Kipling             henryzootorontoedu  utzoohenry

@@ -1,0 +1,20 @@
+From hstevecarinaunmedu 
+Subject Re Changing dpymaxrequestsize 
+
+In article C55zLo7wAworldstdcom ojworldstdcom Oliver Jones writes
+In article 118590netnewsupennedu mcclennedingdongcisupennedu nennelccM nodroG writes
+
+Does anyone out there know how to change the maximum request size for
+a server 
+
+It is ordinarily set to the highest value the underlying OS can
+
+Yes and you dont want to change this value if youre running Image type
+applications  
+
+
+ 
+         Steve  
+    o o     hstevehydraunmedu hstevecarinaunmedu
+       
+              Just say NO to VMS

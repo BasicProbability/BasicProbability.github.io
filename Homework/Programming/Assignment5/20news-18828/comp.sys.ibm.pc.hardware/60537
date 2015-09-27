@@ -1,0 +1,32 @@
+From gjpseicmuedu George Pandelios
+Subject Re HELP Need DIAGNOSTIC DISK for my COMPAQ DESKPRO 286
+
+
+In article Apr11201621199326848clamrutgersedu steuerclamrutgersedu robert Steuer writes
+ My emergency management group was given about 30 COMPAQ DESKPRO 286s
+ from a local company as they were outdated  Problem is though it
+ seems that the CMOS settings cannot be set without this Diagnostic
+ Disk
+ We get this error msg on boot up
+ 162System Options Not SetRun Setup
+     Insert DIAGNOSTIC diskette in Drive A
+ 
+ If someone has this disk please email me  Thank You
+ 
+  Robert M Steuer               Amateur Radio KF2EKN3FOAEPAPAUSANA    
+  Rutgers University             Internet steuerclamrutgersedu            
+  VHF Repeater System            Cherry Hill NJ  KF2EK Repeater 145370MHz  
+  Computer Operating System      OS2 20  Why settle for less              
+ 
+
+Robert
+
+You have probably solved your problem by now  Anyway if you can get your
+hands on QA Plus version 421 maybe others as well it will let you write
+the COMPAQ CMOS settings  I know because I just did it 
+
+I was just about to search for such a diagnostic disk when my brotherinlaw 
+fixed an old DESKPRO with it  You might try the simtel mirror FTP sites
+
+George
+

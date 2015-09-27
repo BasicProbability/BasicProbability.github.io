@@ -1,0 +1,20 @@
+From ceswsccnewcastleeduau
+Subject patches for SUNGKS41 
+
+
+
+
+Due to a number of bugs in GKS41 under SUNOS 413 I installed
+patches 10053315 and 10075501 Patch 10053315 appears to
+work fine and has fixed a number of problems Patch 10075501
+however which is required to fix a number of other annoying
+bugs breaks with our applications
+
+Is there a more recent revision of patch 10075
+
+Any other ideas
+
+Scott Sloan                      email   ceswsccnewcastleeduau
+University of Newcastle          fax     61 49 216991
+NSW
+Australia

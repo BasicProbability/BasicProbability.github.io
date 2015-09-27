@@ -1,0 +1,145 @@
+From lusardicsbuffaloedu Christopher Lusardi
+Subject Program Included 2 Edge Detection Algorithms
+
+
+
+This program doesnt detect edges with compass operators and a laplacian
+operator It should output 2 raw greyscale images with edges The output
+doesnt look like edges at all
+
+In novicee terms how do I correct the errors Any improvements are welcome
+Ill even accept your corrected code
+
+If I convolve the INPUTIMAGE with a digital gaussian 7 by 7 to remove
+noise will I get an improvement with the laplacian
+
+2 types of edge detection
+include stdioh 
+include mathh 
+
+define IMAGEWIDTH 300
+define IMAGEHEIGHT 300
+
+unsigned char InputImage IMAGEHEIGHTIMAGEWIDTH
+
+unsigned char AnglesWanted IMAGEHEIGHTIMAGEWIDTH
+unsigned char MagnitudeImage IMAGEHEIGHTIMAGEWIDTH
+
+int LaplaceOp1 33   01 0 141  01 0
+
+int CompassOp1 33   1 1 1  00 0 111
+int CompassOp2 33   1 1 0  101  011
+int CompassOp3 33   1 01  101  1 01
+int CompassOp4 33   011  101  1 1 0
+int CompassOp5 33  111  00 0  1 1 1
+int CompassOp6 33  11 0 10 1  0 1 1
+int CompassOp7 33  1 0 1 10 1 1 0 1
+int CompassOp8 33   0 1 1 10 1 11 0
+
+void Compass rowcol
+int rowcol
+
+  int value
+  int oprows opcols
+  int Compass1Compass2Compass3Compass4
+  int Compass5Compass6Compass7Compass8
+  
+  Compass1  Compass2  Compass3  Compass4  0
+  Compass5  Compass6  Compass7  Compass8  0
+  
+  for oprows  1 oprows  2 oprows
+    for opcols  1 opcols  2 opcols
+      
+	if row  oprows  0  col  opcols  0
+	  
+	    
+	    Compass1  int InputImage row  oprowscol  opcols  
+	                       CompassOp1 oprows  1opcols  1
+	    Compass2  int InputImage row  oprowscol  opcols  
+	                       CompassOp2 oprows  1opcols  1
+	    Compass3  int InputImage row  oprowscol  opcols  
+	                       CompassOp3 oprows  1opcols  1
+	    Compass4  int InputImage row  oprowscol  opcols  
+	                       CompassOp4 oprows  1opcols  1
+	    Compass5  int InputImage row  oprowscol  opcols  
+	                       CompassOp5 oprows  1opcols  1
+	    Compass6  int InputImage row  oprowscol  opcols  
+	                       CompassOp6 oprows  1opcols  1
+	    Compass7  int InputImage row  oprowscol  opcols  
+	                       CompassOp7 oprows  1opcols  1
+	    Compass8  int InputImage row  oprowscol  opcols  
+	                       CompassOp8 oprows  1opcols  1
+	    
+	  
+      
+  if Compass1  Compass2
+    value  Compass2
+  else 
+    value  Compass1      
+  if value  Compass3
+    value  Compass3
+  if value  Compass4
+    value  Compass4
+  if value  Compass5
+    value  Compass5
+  if value  Compass6
+    value  Compass6
+  if value  Compass7
+    value  Compass7
+  if value  Compass8
+    value  Compass8
+
+  MagnitudeImage rowcol  char value
+
+
+void Laplace1 rowcol
+int rowcol
+
+  int oprows opcols
+
+  MagnitudeImage rowcol  0
+  for oprows  1 oprows  2 oprows
+    for opcols  1 opcols  2 opcols
+      if row  oprows  0  col  opcols  0
+	MagnitudeImage rowcol  
+	  char intMagnitudeImage rowcol 
+		  int InputImage row  oprowscol  opcols  
+		   LaplaceOp1 oprows  1opcols  1
+
+
+main  
+
+  FILE OriginalImagefp
+  FILE Laplace1magfpLaplace2magfpLaplace3magfp
+  FILE Compassmagfp
+
+  int row col AlgoCount
+
+  OriginalImagefp  fopen INPUTIMAGErb
+
+  Laplace1magfp  fopen Laplace1Magnitudewb
+  Compassmagfp  fopen CompassMagnitudewb
+
+  fread unsigned char  InputImagesizeofunsigned charIMAGEHEIGHT  IMAGEWIDTHOriginalImagefp
+  for AlgoCount  0 AlgoCount  2AlgoCount 
+    
+      for row  0 row  IMAGEHEIGHT row 
+	for col  0 col  IMAGEWIDTH col 
+	  if AlgoCount
+	    Laplace1 rowcol
+	  else 
+	    Compass rowcol
+      
+      if AlgoCount
+	fwriteMagnitudeImagesizeofcharIMAGEHEIGHT  IMAGEWIDTHLaplace1magfp
+      else 
+	fwriteMagnitudeImagesizeofcharIMAGEHEIGHT  IMAGEWIDTHCompassmagfp
+    
+
+
+  
+ 
+                  For a lot of au music ftp soundssdsuedu
+               then cat fileau  devaudio
+        UB library catalogtelnet bisonacsubuffaloedu
+                14261 When in doubt ask xarchie xgopher or xwais

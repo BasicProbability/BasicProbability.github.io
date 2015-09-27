@@ -1,0 +1,35 @@
+From jicscolumbiaedu John Ioannidis
+Subject Re Source of random bits on a Unix workstation
+
+In article 899pivotsbicom betsbicom Bennett Todd  Salomon Brothers Inc NY  writes
+
+I heard about this solution and it sounded good Then I heard that folks
+were experiencing times of 3060 seconds to run this on
+reasonablyconfigured workstations Im not willing to add that much delay
+to someones login process My approach etherfindcompress skip 10K takes
+a second or two to run Im considering writing the beall and endall of
+solutions that launches the MD5 and simultaneously tries to suck bits off
+the net and if the net should be sitting SO idle that it cant get 10K
+after compression before MD5 finishes use the MD5 This way I could have
+guaranteed good bits and a deterministic upper bound on login time and
+still have the common case of login take only a couple of extra seconds
+
+
+53 seconds to hash 20M of core I bet I know who the source of your
+information is No its not acceptable if its part of your login
+process But if you are going to use network traffic as the source of
+pseudorandom information do the right thing and pass it through a
+cryptographic hash function not a compressor Aside from the fact
+that it will run faster it will give better results think of a
+cryptographic hash as a function that distills randomness
+Something along the lines of 
+	etherfind t x n   dd bs1k count10 2devnull  md5
+should do the trick t gives you timestamps and the lack of u makes
+sure that dd does not get ten lines as opposed to ten K The above
+takes a couple of seconds on a lightlyloaded ethernet
+
+Bennett
+betsbicom
+
+ji
+

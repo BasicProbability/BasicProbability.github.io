@@ -1,0 +1,33 @@
+From yeenimiosengmcmasterca Paul Yee
+Subject Re Booting from B drive
+
+In article khan0095735001731nova khan0095novagmiedu Mohammad Razi Khan writes
+glangslee01srlfordcom Gordon Lang writes
+
+David Weisberger djweisbeunixamherstedu wrote
+ I have a 5 14 drive as drive A  How can I make the system boot from
+ my 3 12 B drive 
+
+intermediate reply suggesting cable switch deleted
+
+
+I have AMI bios I have poked around the bios but havent tried this but somewhere it says BOOT AC
+I would assume that you could probably slip in a b
+althoug a I havent tried it and
+b dont mess with your CMOS unless you know what your doing
+
+I hate to burst your bubble but you cannot slip in a B to that
+particular AMI BIOS setting That setting only allows you to set
+the boot order of the floppy A with respect to the primary HD C
+ie check A first then C or check C then A
+
+
+
+Gordon Lang
+
+Mohammad R Khan                    khan0095novagmiedu
+After July 93 please send mail to  mkhannyxcsduedu
+
+Regards
+Paul Yee
+yeenimiosengmcmasterca

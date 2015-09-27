@@ -1,0 +1,6 @@
+From malikalvserv2dfkiuniklde Thomas Malik
+Subject Re Overriding default WM Behaviour
+
+specify RamdomPlacement or RandomPlace  
+in your tvtwmrc This places the windows notinteractively
+in pseudo  random positions on your screens

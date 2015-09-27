@@ -1,0 +1,21 @@
+From tkelsoafitafmil TS Kelso
+Subject TwoLine Orbital Element Set  Space Shuttle
+
+The most current orbital elements from the NORAD twoline element sets are
+carried on the Celestial BBS 513 4270674 and are updated daily when
+possible  Documentation and tracking software are also available on this
+system  As a service to the satellite user community the most current
+elements for the current shuttle mission are provided below  The Celestial
+BBS may be accessed 24 hoursday at 300 1200 2400 4800 or 9600 bps using
+8 data bits 1 stop bit no parity
+
+Element sets also updated daily shuttle elements and some documentation
+and software are also available via anonymous ftp from archiveafitafmil
+12992166 in the directory pubspace
+
+STS 55     
+1 22640U 93 27  A 9311791666666  00044808  000000  134893 0    63
+2 22640  284614 2593429 0005169 2596342  618074 1590673799   201
+ 
+Dr TS Kelso                           Assistant Professor of Space Operations
+tkelsoafitafmil                    Air Force Institute of Technology

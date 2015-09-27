@@ -1,0 +1,17 @@
+From rlmhelensurfctycom Robert L McMillin
+Subject Re How do I find my AppContext
+
+On 19 Apr 1993 230015 GMT masc0442ucsnewssdsuedu Todd Greene said
+
+ Is there an Xt call to give me my application context
+ I am fixing up an XMotif program and am trying to use XtAppAddTimeOut
+ whose first argument is the appcontext  What call can I use
+ to give me this value
+
+I believe its XtVaAppInitialize or something like that
+
+
+
+Robert L McMillin  Surf City Software  rlmhelensurfctycom  Dude
+include stddisclaimerh
+

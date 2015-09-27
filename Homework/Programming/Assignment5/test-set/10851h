@@ -1,0 +1,17 @@
+From wildaccessdigexnet wildstrom
+Subject Re MAC DISKS IN WINDOWS
+
+gelbinkleycsmcgillca Gilles KHOUZAM writes
+
+Macseezip on ftpcicaindianaedu is supposed to read and write Mac disks  
+Ive never tried it though  Good luck
+
+I just tried it but I cant say that it works cause it doesnt read 800K
+disks it only reads 144Mb If there a program that does read 800K disks
+please let me know
+
+
+The easiest way to do this is if you can send the files accross the network 
+This is much easier going from a Mac to a PC because you dont have to worry
+about losing the resource fork of the file often a problem when sending binary
+files from a PC to a Mac

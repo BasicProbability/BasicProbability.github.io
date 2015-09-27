@@ -1,0 +1,62 @@
+From bgrubbdantenmsuedu GRUBB
+Subject Re IDE vs SCSI
+
+wlsmithvalveheartrriuwoca Wayne Smith writes
+I just bought at Quantum 240 for my mac at home  I paid 369 for it  I
+havent seen IDE drives cheaper
+
+A friend of mine just got a Maxtor 245 meg IDE drive for 320  thats 245
+million bytes or 234 megabytes  With the basic 20 interface he gets
+close to 1 megsec transfer on his 28620  Does your figure include a few
+hundred  for SCSI drivers
+Since the Mac uses ONLY SCSI1 for hard drives YES the figure includes a
+hundred  for SCSI drivers  This is sloppy people and DUMB
+
+But on that point is it faster  This is what all this is about  Do you
+get more performance for the money
+Ok once again with the SCSI spec list
+SCSI1 with a SCSI1 controler chip synchronous range is indeed 05MBs
+ asynchronous range is slower at 03MBs
+SCSI1 With a SCSI2 controller chip 46MBs with 10MBs burst 8bit
+ Note the INCREASE in SPEED the Mac Quadra uses this version of SCSI1
+ so it DOES exist Some PCs use this set up too
+
+SCSI2 8bitSCSI1 mode          46MBs with 10MBs burst
+for those who want SCSI2 but dont want to pay for the 16bit or 32bit
+ hardware or mess with the SCSI2 software controllers  Usable by SCSI1
+ devices with close to 8bit SCSI2 speeds
+SCSI2 16bitwide or fast mode  812MBs with 20MBs burst
+SCSI2 32bitwide AND fast     1520MBs with 40MBs burst
+
+On the other interfaces let DXB132psuvmpsuedu speak
+IDE ranges from 083MBs                          
+Again synchronous and asynchronous modes with asynchronous much slower
+ Range 05MBs
+ESDI is always 125MBs although there are some nonstandard versions
+
+One problem is the inconsitant use of the term SCSI in articles and by
+people  Its PROPER meaning is The set of SCSI interfaces composed of
+SCSI1 AND SCSI2
+Look at the inconsitant use of SCSI in the below quote
+My comments in 
+
+PC Magazine April 27 199329 Although SCSI is twice as fast as ESDI
+This is asynchronous SCSI1 with a SCSI1 chip 20 faster than IDE
+this is BOTH asynchronous SCSI1 with a SCSI2 chip AND 8bit SCSI2
+To read CONSITANTLY the quote SHOULD read
+asynchronous SCSI1 with a SCSI1 chip
+Although asynchronous SCSI1 is twice as fast as ESDI one third the 
+speed of IDE
+or asynchronous SCSI1 with a SCSI2 chip or 8bit SCSI2
+Although SCSI1 with a SCSI2 chip and 8bit SCSI2 are eight times as fast as
+ESDI 20 faster than IDE
+
+NOTE the NONUSE of SCSI by itself  This eliminates ambaguity
+
+SCSI1 drivers are somewhat reasonable while 16bit and 32bit SCSI2 drivers 
+are VERY expansive 8bit SCSI2 can use SCSI1 drivers with little speed
+degridationthe Mac Quadra does EXACTLY this
+
+If we are to continue this thread STATE CLEARLY WHICH SCSI you are talking 
+about SCSI1 or SCSI2 or SCSI over all SCSI1 AND SCSI2
+IT DOES MAKE A DIFFERENCE

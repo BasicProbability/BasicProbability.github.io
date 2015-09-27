@@ -1,0 +1,26 @@
+From phgmdde Peter Hendricks
+Subject Re Wanted A to D hardware for a PC
+
+In 3889ncrmpdFtCollinsCONCRCOM Brad Wright writes
+
+	If you know much about PCs IBM comp you might try the joystick
+port  Though I havent tried this myself Ive been told that the port
+has built in AD converters  This would allow the joystick to be a couple of 
+pots  If you could find the specs this might just work for you
+
+I guess 100k connecting pins 13 1x 16 1y 911 2x and 913 2y
+
+Or Get an 8bit DAConverter merely a couple of transistors and
+Resistors and an OpAmp to compare its output to the voltage you want to
+measure connect them to a spared printer port if you have one and do
+the rest by software stepwise refinement The port addresses for your
+printer ports are probably H378 LPT1 H278 LPT2 This should work
+well enough for your purposes
+
+Hope this helps
+
+
+GMD  Schloss Birlinghoven  Postfach 1316  D5205 St Augustin 1  FRG
+
+email  PeterHendricksgmdde			phzigmddbpde
+	 phgmdde

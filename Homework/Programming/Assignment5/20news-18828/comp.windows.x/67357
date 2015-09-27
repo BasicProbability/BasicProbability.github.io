@@ -1,0 +1,27 @@
+From hedrickgenevarutgersedu Charles Hedrick
+Subject Re Xsun not running on SPARCclassic
+
+herzogdogwalkEngSunCOM Brian Herzog  SunSoft Product Engineering writes
+
+Im just guessing here but Id guess that X11R5 expects the CG3 to have
+1152x900 resolution and the version of the CG3 in the SPARCclassic is 
+1024x768
+
+Ive used X11R5 with classics set for both 1024x768 and 1152x900 you
+can choose which resolution you want in the PROM monitor before
+booting  One person had trouble with X11R5 that was fixed by
+using the multiscreen version  Heres how our version was built
+You can just copy usrlocalX11R5binXsun from farsiderutgersedu
+if you just want to see whether this version will work
+
+  R5 distribution installed
+        from pubR5mit14 and contrib13 on exportlcsmitedu
+  patches 1  23 installed
+	from pubR5fixes on export
+  R5 Xsun Multiscreen patches installed 
+	from contribR5Xsunmultiscreen on export 22Mar93
+  Solaris 21 patches installed release 1update 2
+	from contribR5SunOS5patch on export 22Mar93
+
+Compilation is with gcc 233  Configuration is standard except that
+the root is usrlocalX11R5 per Rutgers conventions

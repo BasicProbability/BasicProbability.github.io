@@ -1,0 +1,22 @@
+From bendbsmozau Benjamin Stephen Kelley
+Subject Problems with color Xterm
+
+We have recently obtained a copy of colorxterm from exportlcsmitedu after
+seeing it mentioned in a previous article On compilation it reports the
+following undefined symbols
+	getwmShellWidgetClass
+	getapplicationShellWidgetClass
+
+	but still runs When sending escape sequences to set the colour
+any colour comes out as black text on a black background Any Ideas
+
+Has anyone used this program in colour successfully
+
+Can anyone point me to any other colour terminal emulators
+
+We are running OpenWindows 3 on Sun Sparcs running SunOS 413
+
+				advaTHANKSnce  Ben Kelley
+
+						benthordbsmozau
+

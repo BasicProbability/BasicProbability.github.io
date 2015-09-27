@@ -1,0 +1,63 @@
+From bgrubbdantenmsuedu GRUBB
+Subject Re IDE vs SCSI
+
+wlsmithvalveheartrriuwoca Wayne Smith writes
+This doesnt answer the original question  IS OS2 a multiuser OS
+And no mention was made of an ether card either  But from a diskdata
+point of view why does SCSI have an advantage when it comes to multi
+tasking  Data is data and it could be anywhere on the drive  Can
+SCSI find it faster  can it get it off the drive and into the computer
+faster  Does it have a better cache system  I thought SCSI was good at
+managing a data bus when multiple devices are attached  If we are
+only talking about a single drive explain why SCSI is inherently
+faster at managing data from a hard drive
+You are making the same mistake I did you are confusing the DRIVE
+interface to the DATA THROUGHPUT interface  Again from my Mac  IBM info
+sheet available by FTP on sumexaimstanfordedu 364406 in the
+infomacreport as macibmcompare173txt
+Expansion
+Both Mac  IBM
+SCSI only external device expansion interface common to both Mac and IBM
+ Allows the use of any device hard drive printer scanner Nubus card 
+ expansion Mac Plus only some monitors and CDROM  Apple developed some 
+ specifications for SCSI controlers while IBM has no exact controller 
+ specifications which results in added incompatibilities on IBM machines  
+ Main problem  there are a lot of external devices which are internal 
+ terminated which causes problems for more then two devises off the SCSI port 
+ A SCSI chain is supposed to be terminated ONLY at the begining and at the 
+ end  Any other set up causes problems for either Mac or IBM 
+SCSI1  7 devices per SCSI controller  8bit asynchronous 15MBs ave
+ and synchronous 5MBs max transfer base  16bit SCSI1 requires a
+ SCSI2 controler chip and can provide only fast SCSI2 not wide SCSI2
+ which are both 16bit interfaces see SCSI2
+SCSI2 10 devices per SCSI controller in SCSI2 mode  SCSI2 is fully
+ SCSI1 complient and tends to be implimented as a very fast SCSI1 since it 
+ needs a different controller interface in both hardware which tends to be 
+ very expendsive and software  Transfer speeds are 46MBs with 10MBs burst 
+ 8bit 812MBs with 20MBs burst 16bit and 1520MBs with 40MBs burst
+ 32bitwide and fast  SCSI2 in SCSI1 mode is limited to 7 devices and
+ reduced 8bit or 16bit fast only throughput due to the difference between
+ SCSI1 and wide SCSI2 ports
+
+IBM
+HD Interfaces limited to hard drives by design or lack of development
+
+IDE  Integrated Device Electronics 
+ currently the most common standard and is mainly used for medium sized 
+ drives Can have more than one hard drive Asynchronous Transfer 5MBs max
+
+So at its LOWEST setting SCSI2 interface in Asynchronous SCSI1 mode AVERAGES 
+the through put MAXIMUM of IDE in asynchronous mode  In full SCSI2 mode
+it blows poor IDE out the window down the street and into the garbage can
+The problem becomes can the drive mechanisim keep up with those through put
+rates and THAT is where the bottleneck and cost of SCSI2 comes from  NOT
+the interface itself but more and more from drive mechanisims to use the
+SCSI2 through put  The cost of SCSI interface is a self fulliling
+prophisy few people buy SCSI because it is so expencive for the PC which
+in turn convices makes that mass producing SCSI which would reduce its
+cost is unwarented and so SCSI is expencive That is the effect of the
+Rule of Scale the more items sold the less EACH item has to bare the brunt
+the cost of manufacture and so the less each item has to cost
+
+SCSI2 allows a drive mechanisims through put to be limited by the DRIVE while
+IDE itself limits the through put

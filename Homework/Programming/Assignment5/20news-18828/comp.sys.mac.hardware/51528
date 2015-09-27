@@ -1,0 +1,28 @@
+From lreiterjadetuftsedu Lowell B Reiter
+Subject HP LaserJet III printingnonAppletalk with Duo
+
+How does one print to a nonappletalk printer  using DMM LaserWriter Stuff
+
+Im using the Serial driverand does nothig Ivetried saving a postscriptfile and then tried sending with SendPS20 and it says cantopen LaserWriter Driver
+then some appletalk messagethatprinter not specified  Im using and imagewritwrite one cable   Should I use a nullmodem adapter  Help
+
+Lowell
+
+
+ Lowell Reiter			  I need a Vacation Now       
+ Tufts University                                                    
+ Internet Account lreiterjadetuftsedu                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+

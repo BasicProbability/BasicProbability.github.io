@@ -1,0 +1,74 @@
+From gpatapisboydtansucomau George Patapis
+Subject Re DESQviewX on a PC and network Traffic
+
+
+In article 1369qdeckcom supportqdeckcom Technical Support writes
+In article 1qtk84rn5picassocsscsydtansucomau gpatapisboydtansucomau writes
+
+What sort of traffic is generated with the Xcalls  I am curious to find
+out the required bandwidth that a link must have  if one machine running
+DVX is supporting multiple users clients and we require adequate response
+time  Anyone have any ideas   
+
+I expect the limiting factor will be your server machine not the network
+itself To give you a realworld example here at Quarterdeck we have
+roughly 100 people using DVX to talk to a bunch of unix boxes novell
+file servers and each other Its not too much of a load on our
+Ethernet with maybe 4 concentrators so you have 2030 people on each
+segment If you had a badly loaded net or the apps you wanted to run
+were very network intensive you could run into some slowdowns
+
+But the biggest problem would be the machine itself Say you have a 486
+33 with plenty of ram and a fast hard disk and network card If you have
+10 people running programs off it youre going to see some slowdowns
+because youre now on effectively a 33 MHz 486 Of course DVX will
+attempt to see if tasks are idle and make sure they give up their time
+slice but if you have 10 working programs running youll know it
+
+
+Well I can buy a bigger and more powerful server machine because of the 
+significant drop in price year after year  The link I want to use 
+though ISDN 64K is costly and the bandwidth limited  Thats why my
+interest lies in seeing if such a link can be used and see what traffic 
+goes through it
+
+
+Having said that if you can tweak the programs being run by adding
+in calls to give up time slices when idle and that sort of
+thing you could probably run 1520 people on a given machine before
+you started seeing slowdowns again this time from network bandwidth
+
+Hmmm  Has anyone at your centre monitored the traffic at all  Are you
+running any standard MSWindows programs like Word   What sort of 
+packets go blazing through What size link do you have 2Mb or 10Mb 
+What is the average traffic flow going through your network or do you
+have few high peaks and then many low points
+
+
+It all really depends on what the programs are doing ie youre going
+to see a slowdown from Xbandwidth a lot sooner if your apps are all
+doing network things also
+ 
+
+What do you mean by network things  I vision using MS Windows and other
+Windows applications over the network were the processes are running on
+the server and all I am getting are the displays  I am wondering how 
+good is the X and subsequently DVX protocol in transferring these 
+images with Xcalls and displaying them on a clients machine
+
+
+       Quarterdeck Office Systems  Internet Support  Tom Bortels
+ PricingOrdering  infoqdeckcom    Tech Questions  supportqdeckcom
+  BBS 310 3143227  FAX 310 3143217  Compuserve GO QUARTERDECK
+   QFax 310 3143214 from touchtone phone for Technotes On Demand
+
+
+
+
+
+  George Patapis PAN METRON ARISTON  
+  Telecom CSSC Lane Coveemailgpatapiscsscsydtansucomau  
+  POBox A792 Sydney South fax  02 911 3 199  
+  NSW 2000 Australiavoice02 911 3 121  
+
+

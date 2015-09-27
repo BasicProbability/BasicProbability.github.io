@@ -1,0 +1,47 @@
+From ab245clevelandFreenetEdu Sam Latonia
+Subject Re HELP LED connectors for motherboard
+
+
+
+
+
+Article 61153 61302 is last
+Newsgroups compsysibmpchardware
+From nstassenmagnusacsohiostateedu Nicki A Stassen Lantz
+Subject HELP LED connectors for motherboard
+Date Thu Apr 22 090248 1993
+
+
+I bought a 386DX40 motherboard for 50 no documentation at all Everything
+appears to work except Im having trouble getting a few of the LED connectors
+working Ive looked at the manuals for 4 other motherboards but the pin
+configuration doesnt look anything like what is on this board Does this
+pin arrangement look familiar to anyone out there Any hints on where I
+can find this information
+
+                 1                 10
+      speaker           
+      keylock           
+                 11               20
+                       J23   
+                             The board came with a jumper vertically across
+                              these two pins
+
+I can get the powerkeylock to work across pins 1115 reset across pins 9 and
+Shown 82 press SPACE for more q to quit or h for help
+                                                                                
+19 but would prefer not to blow something up by further experimentation
+The date on the board itself is 692 opti chips
+
+I would really appreciate any help and thank you in advance
+
+N A Stassen Lantz
+End of File Press RETURN to quit
+
+Nicji
+It would realy realy help if you said what chipset and if the board
+was an upgradable or not board and how old it and the bios is
+Sam
+ 
+GoshI think I just installed a virusIt was called MS DOS6
+Dont copy that floppyBURN ITI just love WindowsCRASH

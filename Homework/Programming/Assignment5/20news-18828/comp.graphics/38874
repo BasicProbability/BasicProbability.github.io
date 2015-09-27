@@ -1,0 +1,13 @@
+From graemelabtamlabtamozau Graeme Gill
+Subject Re HELP Need 24 bits viewer
+
+In article 5713setiinriafr deniaudcartooninriafr Gilles Deniaud writes
+ Hi
+ 
+ Im looking for a program which is able to display 24 bits
+ images We are using a Sun Sparc equipped with Parallax
+ graphics board running X11
+
+	xli xloadimage or ImageMagick  exportlcsmitedu 1824012 contrib
+
+	Graeme Gill

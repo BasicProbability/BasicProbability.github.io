@@ -1,0 +1,39 @@
+From alfstnepeanuwseduau Andrew Leahy
+Subject Running dxterms onto Apollo from DEC 5000240
+
+
+Help
+
+Im trying to run dxterms DECs xterm on a DECstation 5000240
+Ultrix 43 X11R4 Motif 113 with the DISPLAY variable set to an
+Apollo DN2500 DomainOS 103 X11R4 Motif 
+
+I get these errors appearing on the DECstation
+
+ dxterm
+X Toolkit Warning Cannot convert string KeyapCharDel         to type VirtualBinding
+X Toolkit Warning Cannot convert string KeyapCopy    to type VirtualBinding
+X Toolkit Warning Cannot convert string KeyapCut     to type VirtualBinding
+X Toolkit Warning Cannot convert string KeyapPaste   to type VirtualBinding
+X Toolkit Warning Cannot convert string KeyapUpBox   to type VirtualBinding
+X Toolkit Warning Cannot convert string KeyapDownBox         to type VirtualBinding
+X Toolkit Warning Cannot convert string KeyapRightBar        to type VirtualBinding
+X Toolkit Warning Cannot convert string KeyapLeftBar         to type VirtualBinding
+Segmentation fault
+
+
+Any ideas Is it a Motif problemare the DEC and Apollo versions of Motif
+incompatible Or something to do with XKeysymDB
+
+xterms run fine on DEC displaying on Apolloarggh
+
+I need to run dxterm because the package we are using on the DECs Oracle Case
+uses dxterm by default and we have a lab of Apollo workstations we would like
+to run Oracle from
+
+Andrew Alf Leahy alfstnepeanuwseduau
+
+
+Andrew Alf Leahy                  phone 047 360771 W irc pepsialf
+Uni Western Sydney Nepean        Remoteemail alfstnepeanuwseduau
+Sydney Australia                  Localemail alf

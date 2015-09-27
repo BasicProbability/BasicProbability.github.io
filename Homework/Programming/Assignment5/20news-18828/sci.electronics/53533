@@ -1,0 +1,29 @@
+From adlernetcomcom Bruce Adler
+Subject Re IBMPC XT switch settings
+
+In article 1qk158kcpbigbirdhricom obrienbigbirdhricom writes
+I just got an IBMPC XT with no documents Its a true
+IBM and I was wondering if anyone had the definitions
+of the 2 8 position dip switches 
+
+SW8SW7	number of 525 drives
+00	1 drive
+01	2 drives
+10	3 drives
+11	4 drives
+
+SW6SW5	type of display
+00	reserved
+01	40x25 color mono mode
+10	80x25 color mono mode
+11	mono 80x25
+
+SW4SW3	amount of memory on system board
+	64k chips	256k chips
+00	64k		256k
+01	128k		512k
+10	192k		576k
+11	256k		640k
+
+SW2	coprocessor installed
+SW1	loop on POST

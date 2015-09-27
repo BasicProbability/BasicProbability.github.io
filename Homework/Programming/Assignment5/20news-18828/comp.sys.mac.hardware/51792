@@ -1,0 +1,38 @@
+From hardwickpanixcom Paul Hardwick
+Subject Re PC Syquest on a Mac
+
+In 1qsk6ud8lusenetINSCWRUEdu rcs8poCWRUEdu Robert C Sprecher writes
+
+
+Is it possible ie via creative cable splicing or whatever to
+hook a Syquest 44MB removable drive to a Mac
+
+Is there any difference with the guts of the drive or is it
+just cable differences
+
+Thanks
+
+Their should be no difference in the drive itself between IBMPC and Mac
+The two main differences are the formatting of the disk itself but with
+the correct software each can read the others and maybe the cable
+depends on your SCSI board on IBMPC
+
+If you get some Mac softawre to allow mounting of ANY IBMformatted disk
+and the correct cable you should br able to mount and read your IBMPC
+syquest
+
+good luck
+
+Paul
+
+ 
+  
+   Paul Hardwick    Technical Consulting    InterNet hardwickpanixcom 
+   PO Box 1482    for MVS SPXAESA     Voice    212 5350998     
+   NY NY 10274     and 3rd party addons    Fax      212 Pending      
+  
+ 
+  
+   Paul Hardwick    Technical Consulting    InterNet hardwickpanixcom 
+   PO Box 1482    for MVS SPXAESA     Voice    212 5350998     
+   NY NY 10274     and 3rd party addons    Fax      212 Pending      

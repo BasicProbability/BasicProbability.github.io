@@ -1,0 +1,55 @@
+From dogbowldogboxacmegennz Kennelmeister
+Subject Re Atari Mono and VGA
+
+arosbornoregonuoregonedu Alan Osborn writes
+
+ In article 1993Apr190907073686tdbuuse m88maxtdbuuse Max Brante w
+ Have anybody succeded in converting a atari monomchrome monitor into a
+ mono VGA monitor If so please let me know exactly how you did and what
+ graphics card you used
+
+ I wish I could help  I posted a similar question about two weeks ago
+ I got no response at all  Ive asked locally at my friendly Atari store
+ I was told that it should be possible but that they had no idea how
+ it might be done  Nor did they particularly care to investigate
+
+OK heres my results so far
+
+1 You have to define the monitor as LCD  it doesnt really support
+   Analogue video input It works but isnt very linear
+
+2 The incoming sync pulses need inverting This is best achieved
+   with either a cmos XOR package or a transistor inverter
+   If you dont know how to do it dont even contemplate it 
+
+3 Itll only work in standard VGA mode
+
+OK having said that Im trying to either find a circuit or IC
+which will act as a universal sync decoder
+
+I want somethikng which basically only detects the leading sync
+pulse edge and doesnt care about the polarity outputting
+the ve going pulses that the atari monitor requires
+
+There are 2 reasons for doing this
+
+1 VGA cards change their sync polarity depending which mode theyre
+   in  herc emulation is  while MVGA is  for example
+
+2 It means I dont have to put a toggle switch on the back of the
+   monitor in order to be able to run it off both the atari and my
+   IBM Currently I have 3 Yes 3 monitors sitting on my desk
+   and I want to get that number down as much as possible
+   Being able to use the atari monitor as a paperwhite VGA
+   will cut things down to 2 If I forget about Atari colour
+   I can get down to 1
+
+Ultimately the best course of action is to get a multisync monitor
+but Im as pressed for cash as anyone else so itll have to wait
+
+
+
+
+Alan Brown
+dogbowldogboxacmegennz
+

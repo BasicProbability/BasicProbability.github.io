@@ -1,0 +1,32 @@
+From Dave Watson watsonmathsuwaeduau
+Subject Re Delaunay Triangulation
+
+zyehcaspianuscedu zhenghao yeh writes
+
+Does anybody know what Delaunay Triangulation is
+Is there any reference to it 
+
+The Delaunay triangulation is the geometrical dual of the 
+Voronoi tessellation and both constructions are derived from
+natural neighbor order
+
+Aurenhammer F 1991 Voronoi Diagrams  A Survey of a 
+Fundamental Geometric Data Structure
+ACM Computing Surveys 233 p 345405 
+
+Okabe A Boots B and Sugihara K 1992 Spatial 
+tessellations  concepts and applications of Voronoi diagrams 
+Wiley  Sons New York ISBN 0 471 93430 5 532p
+
+Watson DF 1981 Computing the ndimensional Delaunay 
+tessellation with application to Voronoi polytopes 
+The Computer J 242 p 167172
+
+Watson DF 1985 Natural neighbour sorting The Australian 
+Computer J 174 p 189193 
+
+
+Dave Watson                          Internet watsonmathsuwaeduau
+Department of Mathematics            
+The University of Western Australia               Tel 61 9 380 3359
+Nedlands WA 6009  Australia                     FAX 61 9 380 1028

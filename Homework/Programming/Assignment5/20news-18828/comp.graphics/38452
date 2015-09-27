@@ -1,0 +1,86 @@
+From Sean McMains mcmainsuntedu
+Subject Re Rumours about 3DO 
+
+First off Thanks to all who have filled me in on the existence of the
+68070 I assumed rashly that the particular number would be reserved for
+further enhancements to the Motorola line rather than meted out to
+another company Ah well I guess thats what I get when I assume the
+computer industry will operate in a logical manner 
+
+In article 1993Apr1621244134125rchlandibmcom Ricardo Hernandez
+Muchado ricardorchlandvnetibmcom writes
+   Sean I dont want to get into a miniwar by what I am going to say
+but I have to be a little bit skeptic about the performance you are
+claiming on the Centris youll see why please noflames I reserve
+those for csma  
+
+   I was in Chicago in the last consumer electronics show and Apple had
+a
+booth there  I walked by and they were showing realtime video capture
+using a Radious or SuperMac card to digitize and make right on the
+spot
+quicktime movies  I think the quicktime they were using was the old one
+15
+
+Version 15 of Quicktime is as has been stated the current version of
+the software The older version is 10 and 16 is on the horizon in the
+not too distant future
+
+   They digitized a guy talking there in 160x2xx something  It played
+back quite
+nicely and in real time  The guy then expanded the window resized to
+25x by
+3xx 320 in y I think and the frame rate decreased enough to notice
+that it
+wasnt 30fps or about 30fps anymore  It dropped to like 15 fps  Then
+he
+increased it just a bit more and it dropped to 1012 fps 
+
+Quicktime does a much better job of playing back movies at size than it
+does playing back resized movies Apparently the process of expanding
+each frames image and dithering the resultant bitmap to the appropriate
+bit depth is pretty processorintensive There are optimizers that work
+pretty well for showing movies at double size but if you drop to 19x
+size or increase to 21x size performance suffers dramatically
+
+   Then I asked him what Mac he was using He was using a Quadra
+dont know
+what model 900 to do it and he was telling the guys there that the
+Quicktime
+could play back at the same speed even on an LCII
+
+He lied  Quicktime is very CPU dependent He was probably confused by
+the fact that QT is locked to an internal timecode and will play in the
+same amount of time on any machine However an LC will drop frames in
+order to keep the sound and video synced up
+
+The Centris and Quadras have similar CPUs and will thus boast similar
+performance though the Quadras will be a bit faster due to marginally
+faster clock speeds and somewhat different architecture
+
+   Well I spoiled his claim so to say since a 68040 Quadra Mac was
+having
+a little bit of trouble  And this wasnt even from the hardisk  This
+was
+from memory
+
+   Could it be that you saw either a newer version of quicktime or some
+hardware assisted Centris or another software product running the 
+animation like supposedly MacroMinds Accelerator
+
+I expect that the version of the Quicktime software you saw was 10  I
+was using was 15 One of the new codecs in v15 allows video at nearly
+twice the size and the same frame rate as what version 10 could handle
+The Centris 650 I saw was a plainvanilla with the exception of the nice
+speakers that were playing the sound and the software was Movie Player
+the QT player Apple includes with the software
+
+   Dont misunderstand me I just want to clarify this
+
+No problem  it still surprises me that Quicktime is able to do the
+things it does as well as it can
+
+Sean McMains               Check out the Gopher     Phone8175652039
+University of North Texas  New Bands Info server    Fax  8175654060
+PO Box 13495             at seanmacacsuntedu   EMail
+Denton TX 76203                                      McMainsuntedu

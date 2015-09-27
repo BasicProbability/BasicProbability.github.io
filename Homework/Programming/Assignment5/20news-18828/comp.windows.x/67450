@@ -1,0 +1,31 @@
+From dcrmailastcamacuk Derek C Richardson
+Subject XView 30 window positioning problems
+
+I dont seem to be able to get window positions reliably through
+the XView xvget function
+
+   x  int xvgetmyframe XVX
+   y  int xvgetmyframe XVY
+
+For example if I set XVX  XVY to 5050 the frame comes up
+in the correct position with the top left corner the size
+handle at 5050 xvget returns 5050 as well But later on
+xvget returns 525 without any intervening xvsetmyframe
+XV My frame is fitted around a canvas and it turns out
+by measuring on the screen that 525 is the position of the
+first pixel in my canvas relative to the frames origin What
+gives Any help most appreciated
+
+Derek
+
+PS On a related subject is there any way of querying the
+window manager as to the thickness of borders it puts around
+frames etc
+
+
+ Derek C Richardson     Tel 0223 337548 x 37501     
+ Institute of Astronomy  Fax 0223 337523             
+ Cambridge UK                                        
+ CB3 0HA                 Email dcrmailastcamacuk 
+
+

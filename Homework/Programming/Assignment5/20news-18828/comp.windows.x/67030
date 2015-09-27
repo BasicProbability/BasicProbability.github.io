@@ -1,0 +1,43 @@
+From tommchpcvusjcvhpcom Tom McFarland
+Subject Re Mysterious beeping
+
+In article C5qtKKwpcuphpcom defariacuphpcom Andy DeFaria writes
+  Article crossposted from hpwindows 
+  Author was Andy DeFaria 
+  Posted on Mon 19 Apr 1993 180838 GMT 
+ 
+ For some reason the following code causes my X application to beep whenever I
+ intercept a keystroke and change its meaning  The intent of this code it to
+ allow date fields the following special keys
+ 
+ 	Tt	Insert todays date
+ 		Bump day up by one
+ 		Bump day down by one
+ 
+ I hardcoded some dates for this example  Perhaps I shouldnt be using an
+ XmText field for this
+ 
+  
+  
+  For some reason the following code beeps whenever any of the special keys
+  of Tt are hit  Why  The idea of this code is to interpret these
+  keys having the special meaning implied by the code  I would like to get
+  rid of the beeping but as far as I can tell Im not doing the beep and 
+  am at a lose as to understanding who and why the beeping is occuring
+  
+  
+
+code deleted
+
+From the XmTextField man page during discussion of resources
+
+   XmNverifyBell
+
+      Specifies whether a bell will sound when an action is reversed
+      during a verification callback
+
+You are setting doit to false in the callback and TextField is beeping
+as it should  To turn off this behavior set this boolean resource to false
+
+Tom McFarland
+tommccvhpcom

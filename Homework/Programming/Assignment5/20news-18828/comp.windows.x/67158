@@ -1,0 +1,30 @@
+From agallaghslateminescoloradoedu GALLAGHER ANDREA J 
+Subject Detecting readonly colorcells
+
+again poseted for a friend
+
+Okay I got such great response from my last question thanks everyone 
+lets try again
+
+How can I tell if a colorcell is readonly
+
+I want to use any readonly cells that are already in my colormap
+once I start running out of allocatable cells using some arbitrary
+nearest color matching scheme to get those cells that come closest to
+a requested color
+
+Once I determine if a cell is readonly I assume I can then just request
+an XAllocColor with the exact same color specifications and it will 
+then be flagged as used by my application so that it doesnt later get
+freed by someone else and allocated again as readwrite to another
+application
+
+So far the only way Ive figured out to do this is to write my own
+error handler and just go ahead and request the cells colors once my
+colormap is all full up  It should error out if the cell is nonshareable
+But life would be much easier if I could just detect the
+readonlyshareable stuff directly
+
+Any ideas
+
+Noel ngorelicspeclabcrusgsgov

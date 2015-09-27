@@ -1,0 +1,22 @@
+From epwongnyxcsduedu Elliott Wong
+Subject Help KA9QEthernet
+
+Dear All
+
+	I am trying to get my standard connection going with KA9Q PA0GRI113016
+and a GVC NIC2000 ethernet card I know that my router and modem is
+working because I am able to ping finger and even telnetd with it
+
+	However after a time it crashes randomly Help would be
+greatly appreciated
+
+	I suspect that there is a hardware conflict in the PC  I am
+running with a 386SX33 2 MB Ram  The Ethernet card is configured
+for IRQ 5 ports 0x3600x37F 
+
+	Thanks in advance I know that its not much to go on but I
+dont even know what the questions to ask are sorry
+
+Please send mail
+
+Elliott

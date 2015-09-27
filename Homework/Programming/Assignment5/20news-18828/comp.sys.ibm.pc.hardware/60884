@@ -1,0 +1,91 @@
+From penevrockefelleredu Penio Penev
+Subject Re 66DX2 ISAVLB xor 50DX EISA   Advice wanted
+
+On Thu 22 Apr 1993 002231 GMT Ross Mitchell rmitchirusrriuwoca wrote
+
+ I want to use this proposed beast for basically four things  
+
+      	Editing documents using WordPerfect 51 under dos
+
+      	Creating graphsanalyzing data using Sigmaplot V50 under dos
+
+      	Editingplaying with images using Aldus PhotoStyler running under 
+ 	Windows 31  these images can be large say 2k x 2k 24bitspixel
+
+      	Using the PC as an Xterminal running DesqViewX 11 and Sun PCNFS 
+ 	talking to our network of Sparcstations  this is where a lot of
+ 	the imagesdata come from and is the most demanding of these tasks
+
+ Ive read read read PC magazines performed benchmarks read this newsgroup
+ and decided that a nice system priceperformance would be
+
+ 	486DX50 256k cache ISA VLB 16meg ram
+ 	ATI Graphics Ultra Pro 2 meg ram local bus
+ 	15 monitor 1280x1024 NI
+ 	3Com Etherlink III 16bit
+ 	Maxtor 240MB IDE hard drive
+
+ However the parts dont fit  Our local retailer apparently put one of these
+ together only to discover that the ATI card wouldnt run at 50MHz  surprise
+ surprise  Actually after reading this group Im surprised that they even
+ have a 50MHz local bus running
+
+ I have a choice now between basically the above system but with a
+ 486DX266 with ISA and VLB  or   a 486DX50 with EISA and no VLB and thus
+ the nonlocal bus version of the ATI card  Which is better keeping in mind
+ that Im primarily interested in the last two tasks  
+
+Having in mind the size of the images my opinion is to go with VLB
+It has much more bandwith that EISA which in fact can be utilized
+by the craphics card I have not made measures so someone else may
+share experience on that
+
+Also the DX266 is faster in the operations that run off internal
+cache slightly slower off the external and about the same off memory
+So my advice is the 66VLB
+
+ Were quite happy with the ATI card  very fast ONCE the data gets to it
+ Slow repainting images under PhotoStyler that have moved off screen or
+ been uncovered  
+
+ There doesnt seem to be enough raw cpu when running DesqViewX  Its sluggish
+ running the local window manager  Also many functions under PhotoStyler take
+ a long time even when the images fit entirely in ram
+
+ Theres not enough memory in the system  DesqViewX and a 1 meg SmartDrive
+ dont leave much room for other apps  Photostyler will page to disk with
+ medium size images
+
+Have You tried running Photostyler without the cache No need to have
+paging and cache both Well you might argue that the paging is
+cached My belief no measurements is that apps left with more
+memory will manage it better than smartdrvexesys
+
+ I have performed a number of benchmarks on the ethernet transfer rates  This
+ machine sustains only 120ksec over ethernet while our Sparcs sustain 600ksec 
+ on the same network  Going to the 16 bit version of the SMC card increases
+ transfer rates to 160ksec  still very slow especially when moving large 
+ images  Is there such a thing as a localbus ethernet card coming  Will it
+ make a difference  Im hoping so and leaning towards the 486DX266 choice 
+ above for that reason
+
+The bandwidth theoretical of ISA is over 5MBs which is far from
+015MBs I tried my ISA IDE hard drive Maxtor 213MB and got the
+same results  065MBs  regardless of the ISA bus speed
+55825MHz So I guess that just the carddrivers combination is
+lousy
+
+ Also are there DX2100s on the horizon  What about DX399s  DX3150s 
+
+The rumors are that DX399 if any is the most likely chip to come
+out But note that IBM is closest to the technology an it will only
+sell whole motherboards so youll have to upgrade the MB
+
+ Any information is greatly appreciated
+
+Just some view not much figures
+
+
+Penio Penev  x7423 2123277423 w Internet penevveneziarockefelleredu
+
+Disclaimer All oppinions are mine

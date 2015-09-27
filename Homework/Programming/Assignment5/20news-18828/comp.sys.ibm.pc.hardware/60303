@@ -1,0 +1,15 @@
+From Greg Spath GKS101psuvmpsuedu
+Subject Re Soundblaster IRQ and Port settings
+
+In article s106275734980377eetutfi s106275eetutfi Anssi Saari says
+
+In 1993Apr1610580922218waltercraycom huotcraycom Tom Huot writes
+
+I would also like an explanation of this If anyone can explain
+why the SB Pro and LPT 1 can share an IRQ please do so
+
+I think its simply because DOS doesnt use the IRQ for anything OS2 does
+so with that you cant share the IRQ
+
+That is correct  in DOS you can use IRQ 7 for your SBYou cant do
+that under OS2 because it uses IRQ 7 for the printer

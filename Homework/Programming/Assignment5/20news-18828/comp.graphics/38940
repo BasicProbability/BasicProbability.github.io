@@ -1,0 +1,28 @@
+From beckirzr17inftudresdende Andre Beck
+Subject Re NTSC data to RGB   For Video Capture
+
+
+
+Usually you apply
+
+R     1     0        1402   Y
+G    1  034414   071414 U
+B     1    1772     0       V
+
+
+after unlevelshifting U and V subtracting 128 from them
+
+This matrix multiplication may give results out of RGB space so you
+have to clamp the resulting bytes to 0255
+The conversion should be done with arbitrary big integers not floats 
+
+This applies to YUV data whereas NTSC may have YIQ where a 33 degree
+rotation to UV is buid in
+
+
+
+oo
+ o                   Brain Inside                         o 
+ o                                                 o 
+ o  Andre Beck ABPSoft mehl AndreBeckIRSInfTUDresdende  o 
+oo

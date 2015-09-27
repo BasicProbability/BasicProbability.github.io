@@ -1,0 +1,41 @@
+From uliizfmunistuttgartde Uli Allgeier
+Subject Re PADS Question  How do I go from a schematic  PCB
+
+Hi
+In article C5svupI4Inewscsouiucedu rky57514uxacsouiucedu Tall Cool One  writes
+
+After I have produced a schematic with PADSLOGIC how do I import it into 
+PADSPCB to create a PCB pattern  The only way Ive gotten it to work is
+to output a FutureNet netlist and then import this into PADSPCB  Is there
+another way of doing this  I didnt see any information in the instructions
+provided but I might have missed something  Any suggestions would be 
+greatly appreciated  Thanks
+
+Sorry its german but I hope you understand it
+
+
+Uebertragung der SchaltplanDaten SCH in die BoardDaten
+JOB
+
+PADSLOGIC
+         InOut
+         Reports
+         Net List
+         Select      PADSPCB
+Net List Output file name
+          filename angeben
+
+PADSPCB
+         InOut
+         Ascii In
+Ascii input file name
+          filename angeben
+Errors aoutput file name
+          filename angeben nicht CR
+
+Jetzt sind alle Bauteile auf einem Haufen und muessen mit Move
+verteilt werden
+
+Viele Gruesse
+
+Uli

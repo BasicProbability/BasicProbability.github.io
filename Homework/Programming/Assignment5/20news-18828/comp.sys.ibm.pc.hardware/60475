@@ -1,0 +1,33 @@
+From goyalutdallasedu MOHIT K GOYAL
+Subject Re IDE vs SCSI
+
+How do you do busmastering on the ISA bus
+
+By initiating a DMA xfer  
+
+Seriously busmastering adapter have their own DMA ability they dont use
+the motherboards onboard DMAwhich is MUCH slower
+
+ISA has no bus arbitration so if two busmastering cards in 1 ISA system
+try to do DMA xfers on the same DMA channel the system will lock or 
+crashI forget
+
+Their are 8 DMA channels in an ISA system 07 03 are 8bit  47 are
+16bit
+
+The system uses DMA 0 a SoundBlaster uses DMA 1
+
+I could buy a busmastering XGA2 video card  a busmastering SCSI HA
+
+In order for them to work properly I would have to find out what DMA
+channel the XGA2 card uses and then simply configure the SCSI HA to
+use a different DMA channel for its DMA xfers
+
+I dont know if multiple DMA xfers can go on at the same time on ISA
+Im not sure if they can on EISA systems either
+
+I do know that on EISAMCA systems you can allow BM cards to use the
+same DMA channel
+
+Thanks
+

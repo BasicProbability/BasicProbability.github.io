@@ -1,0 +1,25 @@
+From C445585mizzou1missouriedu John Kelsey
+Subject Competing standard
+
+   Perhaps one way of getting away from this cripple chip that the US
+government seems to be pushing would be to come up with a good alternative
+For example how about a scheme using RSA and some hybrid of DESCFB and
+another strong stream cipher Maybe IDEACFB  This could be substantially
+the same as the cripple chip except that instead of keyregistration the
+police could demand that you give up your secret key to them with a court
+issued warrant  Then they could read the last few months of wiretapped
+messages youve sent and assuming youve committed no crimes you could
+generate a new key pair and go about your business  I find that Id be
+willing to pay RSA for the right to use such a system especially given the
+alternative  If you were unwilling to give up your secret key then youd
+probably stay in jail has anyone got a real legal precedent for this
+   This would allow courtissued warrants to be used to gather information
+on suspected criminals but it couldnt be done in secrecy and there
+would be enormously less likelihood of corruption or theft of escrowed keys
+Maybe someone from the lawenforcement or intelligent community will correct
+me but this doesnt seem like such a big loss in terms of lawenforcement
+capabilities
+ 
+   Any comments
+ 
+   John Kelsey

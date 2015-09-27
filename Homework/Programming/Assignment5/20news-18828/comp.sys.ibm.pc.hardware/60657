@@ -1,0 +1,26 @@
+From michaeljesterGUNde Michael Gerhards
+Subject Re Whats the diffbetween mousesyscom
+
+x90sansongwwmichedu wrote
+ Whats the difference between loading mousecom in autoexecbat and
+ doing devicemousesys in configsys
+
+The only difference is the time the driver gets loaded mousesys will be
+loaded during the configsys and therefor before the commandcom mousecom
+will be loaded during autoexecbat and so after the commandcom
+
+ which one is better
+
+mousecom could be started from the commandline after the booting and it
+could  perhaps  be unloaded if no other driver is loaded after it
+The working of both drivers is totally the same
+
+When I ran dos I preferred loading most of the drivers in autoexecbat
+because some programs wont run with some drivers and I could choose the
+ones I needed during startup But with DRDOS6 this advantage is gone
+because DRDOS lets you choose in configsys which drivers should be loaded
+
+Michael
+
+  michaeljestergunde     Michael Gerhards      Preussenstrasse 59  
+                            Germany 4040 Neuss    Voice 49 2131 82238 

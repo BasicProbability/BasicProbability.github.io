@@ -1,0 +1,37 @@
+From smbresearchattcom Steven Bellovin
+Subject Re Clipper considered harmful
+
+In article WCS93Apr21204048rainierATTCOM wcsanchorhoattcom Bill Stewart 19089490705 writes
+ On the other hand I can easily see them recording the traffic for
+ interesting people such as dissidents suspected criminals
+ foreign telephone calls and anybody noticed using encryption
+ As Ken Shiriff speculates recording encrypted traffic will probably
+ be judged not to be an invasion of privacy pretty soon 
+
+As I read the current wiretap law it would not be legal now  On the
+other hand assuming a legislative change recording but not decrypting
+Clipper conversations would probably be found constitutional by the Supreme
+Court using the same reasoning or the lack thereof by which they
+permit random roadblocks to check for drunk drivers
+
+Incidentally if we use that as our model the Court will likely not
+uphold selective recording  On the other hand I dont think theyve
+thrown out drug courier profiles yet  Must be that exception to
+the Fourth Amendment that I can never find in my copy of the Bill of
+Rights
+
+A lot  and I mean a lot  will depend on exactly how Clippertaps
+or Tipperclaps for encrypted music are used  Don Alvarez showed in
+the latest RISKS digest that its possible to prevent the cops from
+reading traffic after their warrant expires
+
+That is  the cops send the LEF to the Fholder  The Fholder strips
+off F and sends UKN to the escrow agents  They send either U or K
+to the cops  Don says U I say K  The cops cant use U in the
+future because they cant strip off F  The Fholder never sees U  In
+Dons model the escrow agents cant read the traffic because they
+dont have K in my model they have K but not the message itself
+And I trust that more because I think the cops and the FBI the
+Fholder are more likely to collaborate on breaking the rules  The
+net result is that by involving the Fholder and the escrow agents on
+every tap we can avoid extending permission to tap

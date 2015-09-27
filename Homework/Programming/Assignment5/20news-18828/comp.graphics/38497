@@ -1,0 +1,36 @@
+From markusoctaviaanueduau Markus Buchhorn
+Subject HDF readersviewers
+
+
+
+Gday all
+
+Can anybody point me at a utility which will readconvertcropwhatnot
+display HDF image files  Ive had a look at the HDF stuff under NCSA 
+and it must take an award for odd directory structure strange storage
+approaches and minimalist documentation 
+
+Part of the problem is that I want to look at large 5MB HDF files and
+crop out a section Ideally I would like a hdftoppm type of utility from
+which I can then use the PBMplus stuff quite merrily I can convert the cropped
+part into another format for viewinganimation
+
+Otherwise can someone please explain how to set up the NCSA Visualisation SW
+for HDF 32r5 or 33beta and do the above croppingetc This is for
+Suns with SunOS 412
+
+Any help GREATLY appreciated Ta muchly 
+
+Cheers
+	Markus
+
+ 
+Markus Buchhorn Parallel Computing Research Facility
+email  markusoctaviaanueduau
+Australian National University Canberra 0200  Australia
+International  61 6 Australia  06 Phone  2492930 Fax  2490747
+ 
+Markus Buchhorn Parallel Computing Research Facility
+email  markusoctaviaanueduau
+Australian National University Canberra 0200  Australia
+International  61 6 Australia  06 Phone  2492930 Fax  2490747

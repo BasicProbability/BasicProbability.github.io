@@ -1,0 +1,19 @@
+From richbjticom Rich Braun
+Subject Re Can I have 2 printers on a PC LAN 
+
+mac1IsisMsStateEdu Mubashir Cheema writes
+ Trying to establish a network LAN here that could use 2 different printers
+ Panasonic KXP2124 for printing receipts and Okidata OL400 for letters etc
+ Is it at all possible in this world 
+
+This is a fundamental aspect of Novells business they wouldnt be
+where they are if they didnt live up to their Novell Does Printing
+slogan  We run 6 printers of varying types off our Novell network
+Im sure there are places with hundreds
+
+RTFM on the CAPTURE command PRINTCON PSERVER and the sections of
+the Windows 31 manual which cover network printing  If you havent bought
+Novells products yet rephrase your question and look for information about
+how well various competitors do printing
+
+rich

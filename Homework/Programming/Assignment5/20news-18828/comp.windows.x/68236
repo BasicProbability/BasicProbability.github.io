@@ -1,0 +1,19 @@
+From robertswaneeeeuwaeduau Roberto Togneri
+Subject Querying XDM to manage a remote display  How under Linuxxfree86
+
+We have Suns running SunOS 413 and Openwindows 30 X11R4 We have
+used Xvision on a PC setup to broadcast query to the UNIX xdm servers and
+allow a user to choose a UNIX client in which to login xdm will then
+manage that display I would like to do the same thing with xfree86
+running under Linux but I dont know how I dont want to hardwire the UNIX
+xdm to manage the PC displays as the PCs are not always running Linux 
+let alone xfree86 I would like the same setup as provided by Xvision
+
+Can anybody help
+Thanks
+
+Dr Roberto Togneri                        Phone 6193802535     
+Centre for Intelligent Information Processing Systems                      
+Dept of Electrical  Electronic Engineering                        
+The University of Western Australia        Fax   6193801101          v 
+NEDLANDS WA 6009 Australia                 Email robertswaneeeeuwaeduau

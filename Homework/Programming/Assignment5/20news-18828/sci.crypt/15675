@@ -1,0 +1,24 @@
+From mrrscss3clmsuedu Mark Riordan
+Subject DOS 60 compression API partial answer
+
+For those of you looking for information on MSDOS 60s
+file system compression API
+
+Today I called Microsofts DOS 60 hotline at 8002287007
+They told me that the DOS 60 Resource Kit had the specifications
+for the compression interface  The Resource Kit costs 1995
+plus tax and 5 shipping
+
+I ordered a copy and will post further when I get it and know more
+about it  I am posting now because the order turnaround is 15 
+working days  
+
+If anyone knows for sure wheres theres a good
+source of info on this API please speak up  I am 
+slightly skeptical about the Resource Kits likelihood
+of having detailed programming info
+
+Mark R  mrrripemmsuedu
+
+posted also to scicrypt since the API could presumably also
+be used for file system encryption

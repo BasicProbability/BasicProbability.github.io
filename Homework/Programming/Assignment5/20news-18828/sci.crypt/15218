@@ -1,0 +1,20 @@
+From karnservoqualcommcom Phil Karn
+Subject Re Reinventing Crypto Policy  An EFF Statement
+
+In article 1qna0tINNf5prodanUUNET avgrodanUUNET Vadim Antonov writes
+ I somehow started to doubt technical competence of the
+ people who designed the system  Why on the Earth split the
+ 80bit key in 40bit parts to keep them in escrow separately
+ having 40 bit and large volumes of data voice links produce
+ it should be relatively easy to break it when they simply
+ could keep 80bit sequences in N N2 independent places
+ and then XOR all the partial keys to get the actual key N1
+ sequences should obviously be selected randomly and Nth is the
+ actual key XORed with the random sequences
+
+Without real technical details its hard to answer this question But
+suppose they already are XORing the two 40bit parts to produce only
+40 bits of real key material Maybe theyre using the exportable version
+of RC2 
+
+PHil

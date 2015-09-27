@@ -1,0 +1,36 @@
+From wlsmithvalveheartrriuwoca Wayne Smith
+Subject Re Recommendations for a Local BUS Cached IDE Controller
+
+In article 1993Apr160748366819solctrcolumbiaedu penevveneziarockefelleredu writes
+ I would like to hear the netwisdom and netopinions on IDE Controllers
+ I would liek to get a IDE controller card for my VLB DX2 66 Motherboard
+ What are good options for this preferably under 200 It MUST also work
+ under OS2 and be compatible with Stacker and other Disk Compression SW
+
+I have a Maxtor 212MB on an ISA IDE controller although my machine is
+DX266 VLB I has the save transfer rate of 0647 MBs regardless of
+the variations of the ISA bus speed I tested it with speed between
+55MHz and 833MHz Not any difference The problem is not the
+interface between the controller and the memory
+
+My advice Buy 4Megs of RAM save 70 and enjoy performance
+
+Computer 28625 mhz
+Bus ISA 125 mhz
+Drive Maxtor 7213A 213 mb
+
+                                    configsys  autoexecbat
+
+                     MS DOS 5             no           WIN 31
+                     smartdrvsys        cache         smartdrvexe
+
+CORE V 27         6950 ksec          1390 ksec     1395 ksec
+Norton SI V 50     730 ksec           980 ksec      982 ksec
+
+Id still like to here from people with VLBIDE
+I still want to know what VLB bus speed is used with IDE drives
+I still want to know if some most  IDE drives can handle bus speeds  8 mhz
+
+PS A friend with a 28620 and a new Maxtor 7245 245 meg IDE drive gets
+between 800  1000 ksec cant remember exactly  I think the bus is running
+at 8 mhz in this case  

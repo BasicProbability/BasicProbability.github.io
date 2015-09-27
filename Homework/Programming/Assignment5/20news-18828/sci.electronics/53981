@@ -1,0 +1,24 @@
+From schaererisiethzch Thomas Schaerer
+Subject Re Voltage regulation and current limiting
+
+Andy Collins acollinsuclinkberkeleyedu wrote
+ One notsoquick question to throw out there for you guys
+
+ For our class project we need to design and build a power supply
+ to the following specs
+
+ Voltatge  adjustable from 112V
+ Current   limited at 1A
+
+ Voltage must stay within 2 of designated value for I from 01A
+ AC ripple less than 5 mV rms
+
+To decide which kind of circuit you must know the initialprecission of
+the limitercurrent and the allowed tempdrift
+
+In the first case you can use a Ube of a transistor as a voltagereference
+of about 07 VDC with a tempdrift of 2mVK In the second case its better
+you use a bandgapref and a opampcircuit to detect the maximumcurrent
+The output of this opamp controlls the outputstage to limit the current
+
+Bye Thomas

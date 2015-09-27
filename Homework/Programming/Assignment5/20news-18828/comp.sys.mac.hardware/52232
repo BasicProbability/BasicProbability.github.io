@@ -1,0 +1,30 @@
+From cjonesphysciuclaedu Chad Jones
+Subject Re Help identifying this card
+
+In article C5xpzKF46imagfr Ibaa Oueichek oueichekimagfr writes
+	I have an Ethernet card that i took out off an old LC The card
+	is manufactured by Asante On it i can read
+	Asante Tech inc Copyright 1991 MACCON  LC REVB
+	The card has an fpu socket on it It provides thin Ethernet connector
+	and theres another connector on it which resembels to phone connectors
+
+	My questions are
+	 Will this card work on any other model than LCserie  given that
+	its a PDS card will it work with the IIsi PDS slot  I think there
+	may be a probleme because the LC has 16 bit wide slots
+It probably wont work with any other LC  The ones I have for the LC II
+are Rev D  No it wont work in the IIsis PDS slot since its a 68030
+PDS while the LC has the 68020 PDS  The IIsi and SE30 share the same
+kind of card
+
+
+	 Whats that other conncetor on the card 
+Thats the 10BaseT ethernet connector
+
+
+Chad E Jones               These are the days you might fill with 
+Network Manager             laughter until you break  These days you 
+UCLA Physiological Science  might feel a shaft of light make its way 
+cjonesphysciuclaedu      across your face  And when you do youll 
+310 8256528  voice     know how it was meant to be  See the signs 
+310 2069184  fax       and know their meaning    10000 Maniacs

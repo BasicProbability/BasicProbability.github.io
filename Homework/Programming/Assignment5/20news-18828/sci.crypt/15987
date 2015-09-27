@@ -1,0 +1,232 @@
+From GregOnuferEngSunCOM Greg Onufer
+Subject Re Lets build software cryptophones for over the internet
+
+In C622A17t6demoncouk Graham Toal gtoalgtoalcom writes
+In article 1regq0INNn7ugapcaltechedu halccocaltechedu Hal Finney writes
+I tried this code yesterday  On my Sparcstation ELC it takes over
+300 seconds to compress 22 seconds worth of speech  This means that it
+needs to be optimized by over a factor of 10 before it will be usable
+in even a halfduplex mode
+
+Ouch  Thanks for trying it
+
+The following program is a very quick hack I created a few months
+ago to determine whether a Sun Sparcstation IPC could perform
+realtime fullduplex encrypted audio with resulting data rates
+sustainable by todays modems
+
+This test program reads linearlyencoded audio from the audio device
+compresses it with GSM 0610 compresses frames of 160 13bit samples
+recorded at 8kHz into 260 bits resulting in a 50 Hz frame rate encrypts
+it with DES then reverses the process and sends the reconstructed audio
+back to the audio device  The compressed encrypted audio stream
+is 13 kbitss 
+
+My Sparcstation IPC not exactly a very fast machine these days
+certainly slower than an ELC would just barely sustain this activity
+audio underruns would occcur but the speech was very intelligible  I
+ran it as a realtime process to get the best results  Remember
+though that this program is a quick hack and the performance can
+certainly be improved
+
+The audio compression routines can be ftpd from tubcstuberlinde
+I believe look for gsm or toast  I used Eric Youngs DES
+implementation but I no longer know where I got it from
+
+Cheersgreg
+
+ CUT HERE 
+
+  Test program to see how much CPU it takes for secure digital audio
+  Written by G Onufer gregcheersBungiCOM
+ 
+  Written on a Sun IPC running Solaris 22 with a Sun ISDN SBus card
+  and a SpeakerBox
+ 
+include stdlibh
+include unistdh
+include fcntlh
+include stdioh
+include systypesh
+include sysaudioioh
+include stroptsh
+
+include gsmh
+include desh
+
+booleant
+svsaudioinitint fd audioinfot previnfo
+
+	audioinfot info
+
+	if previnfo  NULL 
+		if ioctlfd AUDIOGETINFO previnfo  0 
+			perrorAUDIOGETINFO
+			return BFALSE
+		
+	
+
+	AUDIOINITINFOinfo
+
+	inforecordpause  BTRUE
+	infoplaypause  BTRUE
+
+	infoplaysamplerate  8000
+	infoplayencoding  AUDIOENCODINGLINEAR
+	infoplaychannels  1
+	infoplayprecision  16
+	inforecordsamplerate  8000
+	inforecordencoding  AUDIOENCODINGLINEAR
+	inforecordchannels  1
+	inforecordprecision  16
+
+	inforecordbuffersize  320  4
+
+	if ioctlfd AUDIOSETINFO info  0 
+		perrorAUDIOSETINFO
+		return BFALSE
+	
+
+	if ioctlfd IFLUSH FLUSHRW  0 
+		perrorIFLUSH
+		return BFALSE
+	
+
+	
+	AUDIOINITINFOinfo
+
+	inforecordpause  BFALSE
+	infoplaypause  BFALSE
+
+	if ioctlfd AUDIOSETINFO info  0 
+		perrorAUDIOSETINFO
+		return BFALSE
+	
+
+	return BTRUE
+
+
+
+booleant
+svsinint ifd gsm handle gsmbyte buf
+
+	gsmsignal sample160
+
+	if readifd sample sizeof sample  sizeof sample 
+		fprintfstderr svsin short readn
+		return BFALSE
+	
+
+	gsmencodehandle sample buf
+
+	return BTRUE
+
+
+
+booleant
+svsoutint ofd gsm handle gsmbyte buf
+
+	gsmsignal sample160
+
+	if gsmdecodehandle buf sample  0 
+		fprintfstderr svsout gsmdecode failedn
+		return BFALSE
+	
+
+	if writeofd sample sizeof sample  sizeof sample 
+		fprintfstderr svsout short writen
+		return BFALSE
+	
+
+	return BTRUE
+
+
+
+main
+
+	gsm handle
+	gsmframe frame
+	int audiofd
+	int option
+	descblock key ivecin ivecout
+	deskeyschedule ksin ksout
+	descblock cbufin4 cbufout4 cbufbuf4
+
+	audiofd  opendevaudio ORDWR
+	if audiofd  0 
+		perroropen
+		exit4
+	
+
+	
+	  Initialize GSM compression code
+	 
+	if handle  gsmcreate  NULL 
+		fprintfstderr svs gsmcreate failedn
+		exit4
+	
+
+	option  BTRUE
+	if gsmoptionhandle GSMOPTFAST option  0 
+		fprintfstderr svs gsmoption FAST failedn
+		exit4
+	
+
+	
+	  Initialize DES code
+	 
+	desrandomkeykey
+
+	if dessetkeykey ksin  0 
+		fprintfstderr svs dessetkey failedn
+		exit4
+	
+	if dessetkeykey ksout  0 
+		fprintfstderr svs dessetkey failedn
+		exit4
+	
+	memsetivecin 0 sizeof ivecin
+	memsetivecout 0 sizeof ivecout
+
+	
+	  Open audio device and configure it
+	 
+	if svsaudioinitaudiofd NULL
+		exit3
+
+	for  
+		
+		  Get 160 samples 16bit linear 8000Hz and
+		  convert to a 33 byte frame
+		 
+		if svsinaudiofd handle frame
+			exit1
+
+		
+		  EncryptDecrypt block
+		 
+		descbcencryptframe cbufout long32 ksin ivecin
+		    DESENCRYPT
+		descbcencryptcbufout cbufbuf long32 ksout ivecout
+		    DESDECRYPT
+
+		memmoveframe cbufbuf 32
+
+if 0
+		if memcmpcbufin cbufbuf 32  0 
+			fprintfstderr svs memcmp failedn
+			exit4
+		
+endif
+
+		
+		  Take 33 byte frame and convert to 160 samples
+		  and play
+		 
+		if svsoutaudiofd handle frame
+			exit2
+	
+
+	gsmdestroyhandle
+
+ CUT HERE 

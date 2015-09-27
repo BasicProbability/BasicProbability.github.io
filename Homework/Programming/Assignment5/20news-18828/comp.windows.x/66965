@@ -1,0 +1,27 @@
+From dickaholdnl Dick Heijne
+Subject Re xterm build problem in Solaris21
+
+dlase05wg2waiicom Doug Acker writes
+ continuing on my build problems I got stuck here build xterm
+ 
+ gcc fpccstructreturn o xterm maino inputo charproco cursoro utilo tabso  screeno scrollbaro buttono Tekproco misco  VTPrsTblo TekPrsTblo datao menuo O2   RusrwgepX11R5sos5libLDRUNPATHLDRUNPATH LlibXaw lXaw LlibXmu lXmu LlibXt lXt Lextensionslib lXext LlibX lX11 LusrwgepX11R5sos5lib  lsocket lnsl ltermcap
+ Undefined                       first referenced
+  symbol                             in file
+ index                               usrucbliblibtermcapatermcapo
+ rindex                              usrucbliblibtermcapatermcapo
+ ld fatal Symbol referencing errors No output written to xterm
+  Error code 1
+ make Fatal error Command failed for target xterm
+ 
+ Any clues for help
+
+Either
+	 Add lucb lelf to the list
+    or
+	 define index and rindex to strchr and strrchr respectively
+	  Both use same args Former are bsd latter are SysV
+ 
+Ahold NV
+ Room 146  Ankersmidplein 2 1506 CK Zaandam  The Netherlands EEC 
+ DickHeijneccsdsaholdnl  Tel 31 75 592151 Fax 31 75 313030 
+

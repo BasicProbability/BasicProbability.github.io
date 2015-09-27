@@ -1,0 +1,80 @@
+From plasktbdemoncouk Paul L Allen
+Subject Re Secret algorithm Re Clipper Chip and crypto keyescrow
+
+BEGIN PGP SIGNED MESSAGE
+
+In article PMETZGER93Apr18141006snarkshearsoncom pmetzgersnarkshearsoncom Perry E Metzger writes
+
+ In article 1qnupdjpmnewsinterconcom amandainterconcom Amanda Walker writes
+ 
+    From amandainterconcom Amanda Walker
+ 
+    jhessenetcomcom John Hesse writes
+     Oh great Wonderful news Nobody can listen inexcept the feds 
+ 
+    Hey its better than the status quo
+ 
+    I am far less worried about the feds tapping my phone than high school 
+    scanner surfers who get their kicks out of eavesdropping on cellular and 
+    cordless phone calls
+ 
+ Im a political dissident Im scared shitless of the feds listening
+ in on my calls My opinions are the sort that would get me
+ disappeared in a slightly less free society  and who knows what
+ sort of society we will be in in five or ten years I have friends who
+ have had their phones tapped  none of this is theoretical to me
+ 
+ As for its better than the status quo well first of all you can
+ get a cryptophone from companies like Cylink today  and they work
+ well In addition a number of groups are now working on building
+ software to turn any PC into a privacy enhanced phone right now  and
+ they are all working in overdrive mode
+ 
+    And yes Id rather just see all crypto restrictions lifted but this is at 
+    least an incrememental improvement for certain applications
+ 
+ There ARE no crypto restrictions yet You can use anything you want
+ RIGHT NOW The point is to maintain that right
+
+The point you all seem to have missed was covered when the UK cellphone
+scrambling system was discussed  Incidentally my MP has responded to
+my questions on that issue and it appears that the UK and other approved
+countries will get the secure A5 encryption and dodgy countries will
+get A5X  Existing mobile equipment will drop to clear mode when used with
+A5X systems but newer equipment will use A5A5Xclear depending on the
+capabilities of the base station
+
+The copsfeds do not need to be able to get hold of your private key to
+listen in to cellular conversations  Encryption is not endtoend but 
+cellphone to basestation  it has to be this way so that cellular users
+and fixed installations can talk to each other  For cellular to cellular
+calls the transmission is decrypted at the basestation passed to another
+basestation and reencrypted  The copsfeds can listen to the unscrambled
+call provided they get a warrant to tap into the cellular providers
+equipment  The only reason for wanting a crackable system is so they can
+listen without having to obtain a warrant
+
+But maybe the Clipper system is secure and they really do need a warrant
+to get the key out of escrow before they can listen in using a scanner see
+above  they dont have to go down this route anyway  I have my doubts
+but even if true once they have the key they will never again need a
+warrant to tap into that particular phone whenever they want  Well Judge
+it appears he wasnt a drugdealer after all so naturally well stop
+listening in
+
+You have every reason to be scared shitless  Take a look at the records
+of McCarthy Hoover J Edgar not the cleaner  though they both excelled at
+sucking and Nixon
+
+ Paul
+
+BEGIN PGP SIGNATURE
+Version 22
+
+iQCVAgUBK9IAl2v14aSAK9PNAQEvxgQAoXrviAggvpVRDLWzCHbNQo6yHuNuj8my
+cvPx2zVkhHjzkfs5lUW6z63rRwejvHxegV79EX4xzsssWVUzbLvyQUkGS08SZ2Eq
+bLSuij9aFXalv5gJ4jBhU40qvU6I7gKKrVgtLxEYpkvXFdtFC4n9HovumvNRUc
+ve5ZY8988pY
+NOcG
+END PGP SIGNATURE
+

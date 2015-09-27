@@ -1,0 +1,35 @@
+From lourayseasgwuedu Michael Panayiotakis
+Subject realizing colourswinini setting changes to y automatically
+
+Mornin all  I was wonderin
+I got screenpeace the screensaver which I think is very
+good and I got a problem with it
+There is an option there realize colour table and if its
+switched on some wallpapers colours will get ucked up with
+some screensavers eg the flashlight one  If I turn it off
+however it works well and its faster so I have it off  Alls
+nice and well  However If I turn it off then it will be on
+again next time I start windows  All the setting are set in the
+winini file and I do have save settings on exit selected
+
+also I tried manually changing the setting in the winini file
+to n for norealize colour table and started windows  It
+will be fine for that session but the next session will again
+turn the option on
+
+I tried adding a R readonly attribute to my winini file and
+it worked but my bitmap wallpaper saver didnt work then
+Actually its the same application  Anywya it didnt work
+since it must change the setting at the winini file
+
+so anyone out there got any answerssuggesionscomments for me
+
+thanks ia
+
+Mickey
+aka mp
+ 
+pe   MICHAEL PANAYIOTAKIS lourayseasgwuedu 
+ace                                    uunetseasgwuedulouray
+   how do make a mswindows grp file reflect a HD directory
+     well I aint always right but Ive never been wronggd

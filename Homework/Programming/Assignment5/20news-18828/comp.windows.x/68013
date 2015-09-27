@@ -1,0 +1,19 @@
+From jswicfhrbcom Jeffrey S Weber
+Subject XView SUN XGL performance problem
+
+
+Ive written an application for SparcStation 2 GX under OpenWindows 30
+
+The application uses XView stuff to create my window and the SUN XGL
+graphics library for rendering into the Canvas
+
+The application does realtime 2D animation but it does not update the
+the display fast enough
+Im using notifysetitimer XView call to periodically kick off my
+update routine and its not happening fast enough I want it to
+update 25 times  second Its only doing about 11 Also it appears to
+be compute bound because if I run anything else while my appplication is
+up the update rate slows down even more
+
+Any ideas 
+Thanks

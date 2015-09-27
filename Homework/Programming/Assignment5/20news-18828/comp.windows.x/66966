@@ -1,0 +1,25 @@
+From Wilson Swee ws8nandrewcmuedu
+Subject compiling on sun4411
+
+Hi
+    I have a piece of X code that compiles fine on pmaxul4 pmaxmach as
+well as sun4mach but whenever it compiles on sun4411 it gives me 
+undefined ld errors
+sin
+cos
+pow
+floor
+getwmShellWidgetClass
+getapplicationShellWidgetClass
+
+The following libraries that I linked it to are
+lXaw lXmu lXt lXext lX11
+
+The makefile is generated off an imake template
+Can anyone give me pointers as to what Im missing out to compile on
+a sun4411
+
+Thanx
+Wilson
+
+

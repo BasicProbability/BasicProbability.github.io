@@ -1,0 +1,14 @@
+From brwyobbotuscozau Brian Wallis
+Subject DFI Handy Scanner How to talk to it
+
+I have a DFI Handy Scanner Model HS3000Plus and a little bit of
+software running under dos to use it Id like to make more extensive
+use of this device in particular write a driver for it on unix
+
+So can anyone give me a description of how to talk to this device It
+connects to the system via its own interface card
+
+Any info would help it cant be too difficult to talk to 
+
+thanks brian wallis
+TUSC Computer Systems Pty Ltd

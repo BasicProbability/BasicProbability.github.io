@@ -1,0 +1,24 @@
+From rlmhelensurfctycom Robert L McMillin
+Subject Re Mix GL with X XlibXtmwm
+
+On 19 Apr 1993 165912 0400 grahamsparc1ottawajadeCOM Jay Graham said
+
+ I am developing an X XtXm application that will include a graphics window
+ of some sort with moving symbols among other things  A pure X application
+ could be implemented with Motif widgets one of which would be an 
+ XmDrawingArea for drawing with Xlib  But I would like to take advantage of
+ the Graphics Library GL available on our IBM RS6000 SGIs GL i believe
+
+ Is it possible to mix X and GL in one application program
+ Can I use GL subroutines in an XmDrawingArea or in an X window opened by me
+ with XOpenWindow
+
+In SGIs distribution with their Indigo line others as well possibly
+they include source code for a GL widget that fits on top of Motif and
+one thats Xt based as well  You may wish to ask IBM whether they
+support this
+
+
+Robert L McMillin  Surf City Software  rlmhelensurfctycom  Dude
+include stddisclaimerh
+

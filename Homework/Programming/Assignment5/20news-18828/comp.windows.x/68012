@@ -1,0 +1,1838 @@
+From pm860605longsLANCEColoStateEdu Peter J McKinney
+Subject Re Looking for X windows on a PC long list of known servers
+
+markwpspmf3gpsemicom Mark Wilkinson  Ext 3443 writes
+
+Hi All
+       This is the first time Ive posted to the net so I hope this is
+going to the right people
+  Im looking for software packages that run on an IBM PC clone that
+allows me to display Openlook and motif windows on the PC 
+  The idea is to use the PC as a cheap X windows terminal for use by
+process Engineers at work 
+
+   Heres a listing that I came accross a while ago  This question seems to 
+come up often enough that I figured this would be of interest  Note that 
+the server X Appeal for DOS is available in demo form on the internet via 
+anonymous ftp  This is one way of quickly checking out the feasability of 
+using your system as an X server  Enjoy
+
+ Pete
+
+ Begin Enclosure 
+From mccoygothamcityjscnasagov Daniel J McCoy
+Newsgroups compwindowsxnewsanswers
+Subject X Servers for DOS Microsoft Windows OS2 Macs Amigas Atari
+FollowupTo compwindowsx
+ReplyTo mccoygothamcityjscnasagov Daniel J McCoy
+Organization INET Inc
+Summary This is a guide or list of X servers that can be used on nonUNIX sic networked machines to display X clients running on UNIX machines
+
+Archivename XServersNonUNIX
+Lastmodified 19930401
+Version 120
+
+
+     X Servers for DOS Microsoft Windows OS2 Macs Amigas Atari
+
+                      April 1 1993  Volume 120
+
+AUTHOR         Daniel J McCoy
+                INET Inc
+                Software Technology Branch
+                Information Systems Directorate
+                NASAJohnson Space Center
+
+POST MAIL      NASA Mail Code PT4
+                NASAJohnson Space Center
+                Houston Texas 77058
+
+EMAIL         mccoygothamcityjscnasagov
+
+This is a monthly guide of X servers that can be used on nonUNIX
+networked machines to display X clients running on UNIX machines  I
+use the name UNIX loosely here  I know others can run X
+
+The sources for this information come from many places  the FAQ for
+compwindowsx blurbs and info packets from the vendors user manuals
+for the products themselves conversations with sales representatives
+personal experience compwindowsx articles etc
+
+Please forward any corrections or updates to the above address
+
+This file is also available by anonymous ftp at
+        exportlcsmitedu1824012 in contribXServersNonUNIXtxtZ
+        ftpuwpedu13121014 in pubmiscXServersNonUNIXtxt
+        msdosarchiveumichedu141211164153 in
+                msdosinfoXServersNonUNIXtxt and msdosinfoxnonunixzip
+
+
+X Servers for DOS
+        DESQviewX
+        IBM XWindows
+        Micro XDOS
+        Micro Xlite
+        PC DECWindows Motif V30
+        PC XWindows
+        PC Xsight
+        PCXView
+        SAGE 1280 Adapter and X Windows Display Server
+        TeemTalkX
+        VistaeXceed
+        X Appeal
+        Xinet XStation
+        Xnth
+        XoftWare for DOS
+        XoftWare for TIGADOS
+
+X Servers Microsoft Windows
+        DESQviewX
+        eXcursion for Windows
+        eXodus for MS Windows
+        HCLeXceedW
+        MicroX
+        MultiViewX
+        PCXView
+        VistaeXceed
+        XOne
+        X11AT
+        XoftWare
+        XVision
+
+X Servers OS2
+        IBM XWindows for OS2
+
+X Servers Macintosh
+        eXodus
+        MacX
+
+X Servers Amiga
+        UNKNOWN
+        X Window System Version 11 Release for the Amiga Computer
+
+X Servers Atari
+        XTOSwindowserver and XTOSwindowservercolor
+XServersXServersXServersXServersXServersXServersXServers
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+DESQviewX
+
+Vendor
+        Melinda
+        Quarterdeck Office Systems Inc
+        150 Pico Boulevard
+        Santa Monica CA 90405
+        TEL 3103929851
+        FAX 3103993802
+Price
+        275
+Latest Version
+        10
+CPU
+        386SX or higher 286 version available
+Memory
+        4 Mbytes
+Operating System
+        DOS 30 or higher
+        DR DOS 6 or higher
+Mouse
+        optional  MS compatible pointing device
+Graphics
+        EGA VGA Super VGA 8514A or 256 color DGIS
+Ethernet Card
+
+Network Software
+
+Disk Space
+        40 Mbyte hard drive
+Features
+        incorporates X into the DESQview multitasking DOS environment
+        adds a graphical 3D look and feel to DESQview
+        gives users a choice of window managers look and feels
+        provides a growth path from character mode DOS to industry standard
+                graphical user interfaces
+        runs most regular DOS applications
+        runs DOS Extended applications up to 4Gbytes
+        can display DOS applications within graphical windows
+        multitasks DOS applications and X Clients either locally or remotely
+        provides a simple port of applications from other X systems to
+                DESQviewX and vice versa
+        gives developers a choice of application appearances based on toolkit
+                chosen
+        supports toolkits that provide features required by developers such as
+                push buttons scrollbars pop up dialogue boxes etc
+        Adobe Type Manager for scalable fonts and scalable DOS windows
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+IBM XWindows
+
+Vendor
+        IBM
+        part 5765025
+Price
+
+Latest Version
+        21
+CPU
+
+Memory
+
+Operating System
+        DOS
+Mouse
+
+Graphics
+
+Ethernet Card
+
+Network Software
+
+Disk Space
+
+Features
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+Micro XDOS
+
+Vendor
+        StarNet Communications Corporation
+        3073 Lawrence Expressway
+        Santa Clara CA 95051
+        TEL 4087390881
+        FAX 4087390936
+        microxstarnetcom
+Prices
+        34500 1 unit
+        22500 ea 5 pack greater discount for larger quantities
+        upgrades at 25 of original price
+        educational discount of 10
+Latest Version
+        161
+CPU
+        386 486
+Memory
+        2 Mbytes
+Operating System
+        DOS 31 or higher
+Mouse
+        2 or 3 button mouse with MS compatible driver
+Graphics
+        AheadV5000
+        ATI18800
+        EverexVP VGA
+        Genoa6400
+        Paradise900C001130
+        STBEM16
+        Trident8800CS
+        Tseng LabsET30004000
+        Video7HT208 V7VGA
+        Western Digital900C001130
+        ZyMOSPoach51
+        VESA
+        and others
+Ethernet Card
+        3Com3C501503505523
+        3Com EtherLinkMC
+        Cabletron 123000
+        MicomInterlan NI50105210
+        Western Digital WD80003E
+        Novell NE10002000
+        National Semiconductor
+        boards that have their own packet driver from manufacturer
+Network Software Included
+        StarNet TCPIP integrated
+        NCSA Telnet ftp lpr etc
+        Packet Drivers ClarksonCrynwr
+Network Software Supported
+        Beame  Whiteside  BWTCP
+        FTP Software  PCTCP
+        Sun  PCNFS
+Disk Space
+        3 Mbytes 9 Mbytes for all fonts
+        514 12 Mbyte or 312 144 Mbyte needed
+Features
+        X11R4
+        Intelligent installation program
+        TCPIP builtin
+        Support Motif OPEN LOOK and DEC
+        Supports Clarkson Crynwr packet drivers
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+Micro Xlite
+
+Vendor
+        StarNet Communications Corporation
+        3073 Lawrence Expressway
+        Santa Clara CA 95051
+        TEL 4087390881
+        FAX 4087390936
+        microxstarnetcom
+Prices
+        7500
+Latest Version
+        153
+CPU
+        286 386 486
+Memory
+        640 Kbytes
+Operating System
+        DOS 31 or higher
+Mouse
+        2 or 3 button mouse with MS compatible driver
+Graphics
+        AheadV5000
+        ATI18800
+        EverexVP VGA
+        Genoa6400
+        Paradise900C001130
+        STBEM16
+        Trident8800CS
+        Tseng LabsET30004000
+        Video7HT208 V7VGA
+        Western Digital900C001130
+        ZyMOSPoach51
+        VESA 
+        and others
+Ethernet Card
+        3Com3C501503505523
+        3Com EtherLinkMC
+        Cabletron 123000
+        MicomInterlan NI50105210
+        Western Digital WD80003E
+        Novell NE10002000
+        National Semiconductor
+        boards that have their own packet driver from manufacturer
+Network Software Included
+        StarNet TCPIP integrated
+        NCSA Telnet ftp lpr 
+        Packet Drivers ClarksonCrynwr
+Network Software Supported
+        Beame  Whiteside  BWTCP
+        FTP Software  PCTCP
+        Sun  PCNFS
+Disk Space
+        2 Mbytes
+        514 12 Mbyte or 312 144 Mbyte needed
+Features
+        X11R4
+        Intelligent installation program
+        TCPIP builtin
+        8 clients on screen at time
+	Fixed font oriented variable fonts available
+        Support Motif OPEN LOOK and DEC
+        Supports Clarkson Crynwr packet drivers
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+PC DECWindows Motif V30
+
+Vendor
+        Dennis Giokas
+        PC DECWindows Development
+        Digital Equipment Corporation
+        30 Porter Rd
+        Littleton MA 01460
+Price
+
+Latest Version
+        V30
+CPU
+        286 386
+Memory
+        up to 15 Mbytes
+Operating System
+        MSDOS
+Mouse
+        any pointing device with MS Mouse V60 or later interface
+Graphics
+        EGA 16 color and mono
+        MCGA
+        VGA 16 color and mono
+        enhanced VGA 800x600 16 color and mono
+        8514A 1024x768 16256 color
+        pseudo color visual
+Ethernet Card
+
+Network Software
+        TCPIP and DECnet
+Disk Space
+
+Features
+        X11 Release 4 server
+        integrated virtual memory manager
+        standard IBMcompatible keyboards and Digitals LK250
+        Session manager client integrated into the server
+        suspend session feature to run DOS commands
+        Font Compiler for Adobe Bitmap Distribution files
+        KEYSYM compiler to customize the keyboard for default KEYCODE to KEYSYM
+                mappings over 70 predefined keyboard mapping files
+        Configuration utility to define hardware environment and user
+                preferences
+        supports DECnet and TCPIP  Available from DEC
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+PCXView
+
+Vendor
+        Network Computing Devices Inc
+        PCXdivision
+        9590 SW Gemini Drive
+        Beaverton OR  97005
+        TEL 8008009599 5036412200
+        FAX 5036438642
+
+        There are also 15 NCD technical and sales offices around the United
+                States and other international offices
+Price
+        PCXview for DOS      44500 for 1  178000 for 5
+        Annual Maintenance    15000 for 1   45000 for 5
+        Update                12500 for 1   37500 for 5
+Latest Version
+        PCXview for DOS     Version 40
+CPU
+        286 386 386 recommended
+Memory
+        1 Mbyte 2 Mbytes recommended
+Operating System
+        DOS 32 or higher
+Mouse
+
+Graphics
+        CGA EGA VGA SVGA XGA TIGA
+        8514A Video Standard supported with extended memory
+        Japanese Graphics Mode
+        high resolution graphics boards  Compac Dell HP NEC
+                Spectragraphics Squeegee and over 50 other DGISbased
+Ethernet Card
+        over 35 Ethernet communications boards supported
+Network Software Needed
+        TCPIP
+        DECnet
+Disk Space
+        5 Mbytes 7 Mbytes recommended
+Features
+        UNIX application support for traditional applications and
+                window managers such as Motif and OPEN LOOK
+        offloads the graphics processing of UNIX hosts
+        hotkey to DOS
+        access to local peripherals and DOS utilities
+        easy and welldocumented installation procedures
+        popup control panel
+        Motif compliant Local Window Manager
+        ability to run in Windows PIF window
+        hotkey between X and DOS no longer have to exit a TSR
+        DPMI compatibility
+        enhanced protocol tracing
+        Support XRemote protocol
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+PC XWindows
+
+Vendor
+        Intelligent Decisions Inc
+        536 Weddell Dr Suite 2C
+        Sunnyvale CA 94089
+        TEL 4087343730
+        FAX 4087343634
+Price
+        295
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        1 Mbyte more recommended for hires or lots of pixmaps
+Operating System
+        DOS 31 of higher
+Mouse
+        MS compatible mouse
+Graphics
+        VGA some SVGA
+Ethernet Card
+
+Network Software
+        FTP Softwares PCTCP
+        Wollongongs WINTCP
+Disk Space
+        4 Mbytes on hard disk
+Features
+        Port of MIT X11R4 server
+        Shape extension
+        MITMAGICCOOKIE
+        XDMCP
+        font compiler
+        fonts supplied
+        Motif Open Look DECWindows VMS and Ultrix demonstrated to work with
+                this server at InterOp last year
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+PC Xsight
+
+Vendor
+        PC XSight
+        Locus Computing Corporation
+        9800 La Cienega Blvd
+        Inglewood CA 90301
+        TEL 8009556287
+        CA 2136706500
+        UK 44 296 89911
+Price
+
+Latest Version
+
+CPU
+        8088 8086 286 386
+Memory
+        640 Kbytes base memory with 512 Kbytes available
+        896 Kbytes extended memory
+Operating System
+        MSPC DOS 31 or later
+Mouse
+        2 or 3 button mouse and driver 3 button mouse recommend
+Graphics
+        EGA VGA Hercules or ATT 6300
+Ethernet Card
+        Excelan EXOS 205 or 205T
+        3COM 3C501
+        Western Digital WD8003E
+        Micom NI5210
+        Acer Multitech 5220
+Network Software
+
+Disk Space
+        514inch highdensity or 312inch diskette drive
+        1 Mbyte
+Features
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+SAGE 1280 Adapter and X Windows Display Server
+
+Vendor
+        Sigma Designs Inc
+        46501 Landing Parkway
+        Fremont CA 94538
+        TEL 4157700100
+        FAX 4157700110
+        TELEX 17124
+Price
+
+Latest Version
+
+CPU
+        286 386 486
+Memory
+
+Operating System
+        DOS 30 or higher or UNIX System V386
+Mouse
+
+Graphics
+        high end multiscanning or fixed frequency 64 kHz monitors
+Ethernet Card
+
+Network Software
+
+Disk Space
+
+Features
+        menudriven installation and configuration program
+        1280x1024 resolution
+        TIGA340 8514A AI Emulation
+        CGA MDA Hercules VGA passthrough emulation modes
+        256 colors displayable simultaneously from a palette of 167 million
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+TeemTalkX
+
+Vendor
+        Pericom
+        TEL 44 0908 560022
+Price
+
+Latest Version
+
+CPU
+
+Memory
+
+Operating System
+
+Mouse
+
+Graphics
+
+Ethernet Card
+
+Network Software
+
+Disk Space
+
+Features
+        for IBM clones allows toggling between X and DOS
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+VistaeXceed
+
+Vendor
+        Control Data Corporation
+        Vista Distributing Computing
+        9315 Largo Drive West
+        Suite 250
+        Landover MD 20785
+        TEL 3018084270
+Price
+        VistaeXceed
+        VistaeXceed Plus
+        VistaeXceed Plus8514A
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        640 Kbytes to 1 Mbyte for DOS server
+        164 Mbytes for VistaeXceed Plus and VistaeXceed Plus8514A
+Operating System
+        MSDOS or PCDOS 30 or higher
+Mouse
+        2 or 3 button MS compatible mouse
+Graphics
+        EGA VGA or SVGA
+        color or analog monochrome monitor
+Ethernet Card
+        any supported by TCPIP transports listed below
+Network Software
+        PCTCP Network Software for DOS by FTP Software Inc
+        PCNFS by Sun Microsystems Inc
+        WINTCP for DOS by The Wallongong Group Inc
+        Pathway Access for DOS by The Wallongong Group Inc
+        LAN WorkPlace TCPIP Transport System by NovellExcelan
+        3Open TCP by 3COM Corporation
+        HP ARPA Services by Hewlett Packard Corporation
+        NetOne TCP BNSPC by UngermannBass Inc
+        BWNFS or Telnet Package by Beame  Whiteside Software Ltd
+Disk Space
+        hard disk
+Features
+        can may up to 16 Mbytes available for client processing
+        emulates a 3button mouse with a 2button mouse
+        full interactive support for X font names and alias schemes
+        locally modify keyboard mapping
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+X Appeal
+
+Vendor
+        Giovanni Novelli
+        Xtreme sas  Livorno Italy
+        FAX 39586502310
+        xappealxtremesublinkorg before 1193
+        xappealxtremeit          after  1193
+Price
+        350    with quantity discounts
+                23 off for 20 copies
+                39 off for 50 copies
+                51 off for 100 copies
+        additional 30 discount for educational institutions
+        demo copies available through anonymous ftp at garbouwasafi
+                pcdemoxap13exezip    README and executables
+                pcdemoxap10fonzip    local server fonts
+                pcconnectdriverszip  packet drivers
+Latest Version
+        13
+CPU
+        386SX or higher
+Memory
+        2 Mbytes 4 Mbytes recommended
+Operating System
+        MSDOS 330 or later
+Mouse
+        any pointing device with MS Mouse compatible driver
+Graphics
+        most SVGA boards in 256 color mode
+        Ahead V5000B
+        ATI 18800
+        Chips  Technologies 82C452
+        Genoa 6400
+        NCR 77C22E
+        Oak Technologies OTI067
+        Paradise WD90C00
+        Trident 8900 8900C
+        Tseng Labs ET3000 ET4000
+        Western Digital WD90C00
+Ethernet Card
+        any model compatible with packet drivers
+Network Software
+        TCPIP included
+Disk Space
+        at least 2 Mbytes
+Features
+        full X11R5 Server implementation including PEX and font server support
+        screen painting exceeds 6000 Xstones in 1024x768 resolution 256 colors
+                on a 38633 without 387
+        support for all color classes StaticGray GrayScale StaticColor
+                PseudoColor TrueColor and DirectColor
+        runtime resolution switch and panning on a virtual screen
+        emulates a 3button mouse with a 2button mouse
+        fast cursor tracking
+        full support for European keyboard layouts
+        no memory limitation through use of virtual memory
+        32 bit protected mode DOSextended application
+        builtin TCPIP support using the packet driver for the Ethernet
+                board free packet driver collection included
+        interactive configuration utility
+        X Display Manager Control Protocol support for hosts running xdm
+        XAuthorization MITMAGICCOOKIE1
+        shape Extension for nonrectangular windows
+        font compiler and RGB database utilities
+        X11 fonts provided including fonts for Sun Open Windows and DECWindows
+        UNIX application support for traditional applications and
+                window managers such as Motif and OPEN LOOK
+        builtin rcprsh server to allow file transfers and the execution
+                of useful DOS functions without leaving the X environment
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+Xinet XStation
+
+Vendor
+        Xinetron
+        CA
+        TEL 4087275509
+Price
+
+Latest Version
+
+CPU
+        286 386
+Memory
+
+Operating System
+
+Mouse
+
+Graphics
+
+Ethernet Card
+
+Network Software
+
+Disk Space
+
+Features
+        up to 8 clients
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+Xnth
+
+Vendor
+        Jerry Norman
+        Nth Graphics Ltd
+        TEL 8006247552
+        this X server project has been abandoned
+Price
+
+CPU
+        286 386
+Memory
+
+Operating System
+        DOS 33 or higher
+Mouse
+
+Graphics
+
+Ethernet Card
+
+Network Software
+        TCPIP
+Disk Space
+
+Features
+        supports 1280X1024 or 1024X768 resolution monitors at 256 colors out
+        of 16M with hardware acceleration for graphics and text
+        operations
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+XoftWare for DOS
+
+Vendor
+        AGE Logic Inc
+        9985 Pacific Heights Blvd
+        San Diego CA 92121
+        TEL 6194558600 6195657373
+        FAX 6195976030
+        email salesagecom
+
+        Bert Shure
+        TEL 6194558600ext104
+        email bertagecom agebertucsdedu
+Price
+        39500
+        with TCPIP 49500
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        2 Mbytes extended
+Operating System
+        DOS 31 or higher
+Mouse
+        2 or 3 button mouse with MS compatible driver
+Graphics
+        EGA VGA SVGA or 8514
+Ethernet Card
+        compatible with network software
+Network Software
+        3Com 3 Open TCP12 of higher
+        DEC Pathworks TCPIP 11 of higher
+        ftp PCTCP 205 of higher
+        Novell LAN WorkPlace 401 of higher
+        Sun PCNFS 35 or higher
+        Wollongong Pathway Access 205 or higher
+Disk Space
+        2 Mbytes
+        514 12 Mbyte or 312 144 Mbyte floppy needed
+Features
+        MIT compliant with AGE extensions
+        Hotkeys to DOS and MS Windows
+        Passive telnet rsh rexec or XDMCP startup modes
+        Motif OpenLook and DECWindows support
+        Virtual screen Support
+        International keyboard support
+        Full font library in SNF format
+        BDF to SNF font compiler
+        Complete documentation
+        Support and update service
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+XoftWare for TIGADOS
+
+Vendor
+        AGE Logic Inc
+        9985 Pacific Heights Blvd
+        San Diego CA 92121
+        TEL 6194558600 6195657373
+        FAX 6195976030
+        email salesagecom
+
+        Bert Shure
+        TEL 6194558600ext104
+        email bertagecom agebertucsdedu
+Price
+        49500
+        with TCPIP 59500
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        512 Kbytes
+Operating System
+        DOS 30 or higher
+Mouse
+        2 or 3 button mouse with MS compatible driver
+Graphics
+        Texas Instruments TMS340based graphics accelerator with TIGA 20 or
+                higher whith 1Mbyte DRAM
+Ethernet Card
+        compatible with network software
+Network Software
+        3Com 3 Open TCP12 of higher
+        DEC Pathworks TCPIP 11 of higher
+        ftp PCTCP 205 of higher
+        Novell LAN WorkPlace 401 of higher
+        Sun PCNFS 35 or higher
+        Wollongong Pathway Access 205 or higher
+Disk Space
+        2 Mbytes
+        514 12 Mbyte or 312 144 Mbyte floppy needed
+Features
+        MIT compliant with AGE extensions
+        Hotkeys to DOS and MS Windows
+        Passive telnet rsh rexec or XDMCP startup modes
+        Motif OpenLook and DECWindows support
+        Virtual screen Support
+        International keyboard support
+        Full font library in SNF format
+        BDF to SNF font compiler
+        Complete documentation
+        Support and update service
+        Optimized for TIGA graphics accelerators
+DOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOSDOS
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+DESQviewX
+
+Vendor
+        Melinda
+        Quarterdeck Office Systems Inc
+        150 Pico Boulevard
+        Santa Monica CA 90405
+        TEL 3103929851
+        FAX 3103993802
+Price
+        275
+Latest Version
+        10
+CPU
+        386SX or higher 286 version available
+Memory
+        4 Mbytes recommended
+Operating System
+        PC or MS DOS 30 or higher
+        DR DOS 6 or higher
+Mouse
+        MS compatible pointing device
+Graphics
+        EGA
+        VGA
+        Super VGA
+        8514A
+        256color DGIS
+        ATI 1880028800800x600
+        CT 82c452720x540
+        CT 82c4531024x768
+        Tseng ET3000800x600
+        Tseng ET40001024x768
+        Genoa 6400800x600
+        WD PVGA1a640x480
+        WD90C00640x480
+        WD90C11800x600
+        some revisions of Headland VEGA800x800 and Headland V7VGA1024x768
+Ethernet Card
+
+Network Software
+
+Disk Space
+        40 Mbyte hard drive
+Features
+        incorporates X into the DESQview multitasking DOS environment
+        adds a graphical 3D look and feel to DESQview
+        gives users a choice of window managers look and feels
+        provides a growth path from character mode DOS to industry standard
+                graphical user interfaces
+        runs most regular DOS applications
+        runs DOS Extended applications up to 4Gbytes
+        can display DOS applications within graphical windows
+        multitasks DOS applications and X Clients either locally or remotely
+        provides a simple port of applications from other X systems to
+                DESQviewX and vice versa
+        gives developers a choice of application appearances based on toolkit
+                chosen
+        supports toolkits that provide features required by developers such as
+                push buttons scrollbars pop up dialogue boxes etc
+        can run DOS text and MS Windows graphics programs locally and remotely
+        Adobe Type Manager for scalable fonts and scalable DOS windows
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+eXcursion for Windows
+
+Vendor
+        Digital Equipment Corporation
+        Maynard Massachusetts
+Price
+
+Latest Version
+        10
+CPU
+        286 386 486
+Memory
+        2 Mbytes
+Operating System
+        DOS
+        MS Windows 30 or later
+Mouse
+        MS Windows supported mouse
+Graphics
+        MS Windows supported card
+Ethernet Card
+        
+Network Software
+        Decnet with PATHWORKS for DOS
+        TCPIP with PATHWORKS for DOS TCPIP
+        TCPIP with PCTCP from FTP Software Inc
+        TCPIP with 3Com TCP with Demand Protocol Architecture
+Disk Space
+        715 Mbytes hard desk
+        35720 Kbyte or 52512 Mbyte floppy drive
+Features
+        Seperate application windows for each X applicatioon displayed by the X
+                server 
+        EXcursion Setup utility for installing eXcursion under MS Windows
+        Control Panes provides an easy way to start X applications and
+                customize environment
+        Online Help
+        Ability to cut and paste text or graphics between X and MS Windows
+        Ability to compile new fonts
+        Ability to redefine keys on the keyboard
+        Personal password security access to eXcursion
+        Three button mouse emulation
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+eXodus for MS Windows
+
+Vendor
+        White Pine Software Inc
+        40 Simon Street Suite 201
+        Nashua HN 030603043
+        TEL 6038869050
+        FAX 6038869051
+        email sdarlingwpinecom
+        AppleLink WHITEPINE
+Price
+        449
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        2 Mbytes 4 Mbytes recommended
+Operating System
+        DOS
+        MS Windows 30 or higher
+Mouse
+        recommended
+Graphics
+        EGA VGA SVGA DGIS
+Ethernet Card
+        most cards
+Network Software
+
+Disk Space
+
+Features
+        X11R4
+        color and monochrome X screen support including 24bit TrueColor
+        backing store and save under options
+        full XDMCP support
+        access control support
+        online help
+        3 button mouse emulation
+        text and graphics transfers between MS Windows and Macintosh clipboards
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+HCLeXceedW
+
+Vendor
+        Hummingbird Communications Ltd
+        2900 John Street Unit 4
+        Markham Ontario Canada L3R 5G3
+        TEL 4164701203
+        FAX 4164701207
+Price
+        595    1 copy
+        536    24 copies
+        476    59 copies
+        417    10 or more copies
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        2 Mbytes or more recommended
+Operating System
+        DOS
+        MS Windows version 3 Standard and 386 Enhanced Modes
+Mouse
+        MS compatible pointing device
+Graphics
+        EGA VGA or VGA
+Ethernet Card
+        any compatible with the networking product you choose
+Network Software
+
+Disk Space
+
+Features
+        makes full use of 8514 and other high resolution graphics cards
+        redesigned for MS Windows not an implementation of MIT X
+        copy  paste between XWindows and MS Windows
+        interactive configuration utility
+        full interactive support for font naming  alias schemes
+        font compiler
+        log file of hostgenerated messages
+        Backing Store and Save Unders
+        virtual screen support
+        seven startup methods
+        full support for European keyboards
+        font host access  RGB databases loading
+        X protocol trace  dissassembly functionality
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+Micro XWIN
+
+Vendor
+        StarNet Communications
+        3073 Lawrence Expressway
+        Santa Clara CA 95051
+        TEL 4087390881
+        FAX 4087390936
+        microxstarnetcom
+Prices
+        Micro XWIN 42500 1 unit
+                    30000 ea 5pack greater discount for larger quantities
+        upgrades at 25 of original price
+        educational discount of 10
+Latest Version
+        221 for X11 Release 5
+CPU
+        386 486
+Memory
+        4 Mbytes
+Operating System
+        MSDOS 31 or higher
+        MS Windows 31 or higher
+Mouse
+        2 or 3 button with MS compatible driver
+Graphics
+        MS Windows supported cards
+Ethernet Card
+        3Com3C501503505523
+        3Com EtherLinkMC
+        Cabletron 123000
+        MicomInterlan NI50105210
+        Western Digital WD80003E
+        Novell NE10002000
+        National Semiconductor
+        boards that have their own packet driver from manufacturer
+Network Software Included
+        Lanera TCPOpen WinSock compatible
+Network Software Supported
+        FTP Software  PCTCP
+        Lanera  TCPOpen
+        Sun  PCNFS
+        WinSock compatible TCPIP stacks
+Disk Space
+        5 Mbytes
+        514 12 Mbyte or 312 144 Mbyte needed
+Features
+        X11R5
+        Integrated rshrexec with displayed results
+        Auto startup with XDMCP or rshrexec
+        Easy additional session startup
+        Panning
+        Supports Motif OPEN LOOK and DECWindows
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+MultiViewX
+
+Vendor
+        JSB Computer Systems Ltd
+        Cheshire House Castle Street Macclesfield
+        Cheshire England SK11 6AF
+        TEL 0625 433618
+
+        JSB Corporation
+        108 Whispering Pines Drive Suite 115
+        Scotts Valley California 95066
+        TEL 4084388300 8003593408
+        FAX 4084388360
+Price
+
+Latest Version
+
+CPU
+
+Memory
+
+Operating System
+        DOS
+        MS Windows
+Mouse
+
+Graphics
+
+Ethernet Card
+
+Network Software
+        RS 232 direct connections RS 232 modem connections Atlantix Axcess
+        Beame  Whiteside TCPIP DLink TCPIP for DOS FTP PCTCP
+        HP ARPA Services for DOS IBM AIX Access for DOS users
+        ICL Oslan int 5b Locus PCI Locus TCPIP for DOS
+        MS LAN Manager for UNIX MS LAN Manager for UNIX V21 NCR Token Ring
+        Novell LAN WorkPlace for DOS SCO XenixNet Sun PCNFS
+        UngermannBass NetOne UngermannBassNetOne NETCI int6b
+        Wollongong PathWay Access DOS Wollongong WINTCP for DOS
+        3 Com 3Open TCP
+Disk Space
+
+Features
+        provides a Character Server for character applications
+        emulation for DEC VT100 DEC VT220 DEC VT241 SCO UNIXXenix Console
+                XOpen ANSI INTERACTIVE UNIX Console ATT UNIX Console
+        automatically invokes the X server when an X client is selected
+        passive telnet rsh rexec and XDMCP startup modes supported
+        full X11R4 font library provided in standard Windows format
+        BDF to Windows compiler
+        copy and paste of text available
+        single iconic desktop
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+PCXView
+
+Vendor
+        Network Computing Devices Inc
+        PCXdivision
+        9590 SW Gemini Drive
+        Beaverton OR  97005
+        TEL 8008009599 5036412200
+        FAX 5036438642
+
+        There are also 15 NCD technical and sales offices around the United
+                States and other international offices
+Price
+        PCXview for Windows  44500 for 1  178000 for 5
+        Annual Maintenance    15000 for 1   45000 for 5
+        Update                12500 for 1   37500 for 5
+Latest Version
+        31
+CPU
+        286 386 386 recommended
+Memory
+        2 Mbytes 4 Mbytes recommended
+Operating System
+        MSDOS or PCDOS 30 or higher
+        MS Windows 3031 or Windows NT
+Mouse
+        recommended but not needed
+Graphics
+        any compatible with MS Windows
+Ethernet Card
+
+Network Software Needed
+        TCPIP
+        DECnet
+Disk Space
+        7 Mbytes 10 Mbytes recommended
+Features
+        runs MS Windows applications alongside X clients
+        cut and paste between X clients and MS Windows
+                applications using the Windows clipboard
+        full support of X11R4 features including the Shape extension
+        offloads graphics processing from host computers
+        runs in both standard and enhanced modes of MS Windows
+        manages X clients with a standard remote window manager or
+                with MS Windows
+        full X11 fonts provided including fonts for Sun Open Windows
+                and DECWindows
+        Windowsbased compiler that converts Bitmap Description Format
+                BDF fonts to MS Windows formatFON fonts
+        Windowsbased file transfer program
+        prints files from a remote host on your local printer
+        builtin client starter
+        Windowsbased installation and configuration
+        DDL support for network interfaces
+        easy installation procedures
+        X Display Manager Control ProtocolXDMCP support
+        support for multiple TCPIP network packages
+        comprehensive and well organized Users guide
+        Graphics Cut  Paste
+        Virtual Screen support
+        support the XRemote protocol developed by NCD
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+VistaeXceed
+
+Vendor
+        Control Data Corporation
+        Vista Distributing Computing
+        9315 Largo Drive West
+        Suite 250
+        Landover MD 20785
+        TEL 3018084270
+Price
+        VistaeXceedW
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        2 Mbytes for MS Windows server
+Operating System
+        DOS 30 or higher
+        MS Windows 30
+Mouse
+        2 or 3 button MS compatible mouse
+        MS Windows supported mouse
+Graphics
+        EGA VGA or SVGA
+        any supported by MS Windows
+Ethernet Card
+        any supported by TCPIP transports listed below
+Network Software
+        PCTCP Network Software for DOS by FTP Software Inc
+        PCNFS by Sun Microsystems Inc
+        WINTCP for DOS by The Wallongong Group Inc
+        Pathway Access for DOS by The Wallongong Group Inc
+        LAN WorkPlace TCPIP Transport System by NovellExcelan
+        3Open TCP by 3COM Corporation
+        HP ARPA Services by Hewlett Packard Corporation
+        NetOne TCP BNSPC by UngermannBass Inc
+        BWNFS or Telnet Package by Beame  Whiteside Software Ltd
+Disk Space
+        hard disk
+Features
+        can may up to 16 Mbytes available for client processing
+        emulates a 3button mouse with a 2button mouse
+        full interactive support for X font names and alias schemes
+        locally modify keyboard mapping
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+X11AT
+
+Vendor
+        Intergrated Inference Machines Inc
+        Computer Products Division
+        1468 East Katella Avenue
+        Anaheim CA 928059806
+        TEL 7149786201 and 7149786776
+        FAX 7149390746
+Price
+
+Latest Version
+
+CPU
+        286 386 486
+Memory
+        640 Kbytes base memory
+        2 Mbytes extended memory
+Operating System
+        MSDOS 31 or later
+        MS Windows 30 or later
+Mouse
+
+Graphics
+        any graphics card and that supports MS Windows  EGA or VGA resolution
+                or better are recommended
+        CGA Color Graphics Adapter
+        COMPAQ Portable III or Portable 386 plasma display
+        EGA with highresolution color display
+        EGA whith lowresolution color display
+        Hercules with highresolution monochrome display
+        IBM 8514A display
+        Olivetti monochrome or PVC display
+        Olivetti OEC display
+        WYSE high resolution monochrome
+        Moniterm Viking monochrome
+        VGA Video Graphics Array
+Ethernet Card
+        also compatible with Excelan 3COM Ungermann Bass Western Digital
+        Tiara IIMs XPAC and others
+Network Software
+           Either Excelans TCPIP Driver Set or FTP Inc PCTCP Driver Set
+                   not included with X11AT
+Disk Space
+        at least 25 Mbytes of storage capacity available for X11AT software
+        excluding optional X fonts to use all X fonts supplied with X11AT
+        a total of 55 Mbytes is required
+Features
+        Concurrent MSDOS  X Windows operation
+        Concurrent X Windows  Telnet operation
+        Cut  Paste utility FTP utility
+        Font compiler for userdeveloped fonts
+        Telnet and FTP utilities included
+        compatible with the following FTP software programs when not operated
+                under MS Windows
+                ftp the file transfer protocol client
+                ftpsev the file transfer protocol server
+                interdrive the network file system NFS
+                ping a network test
+                tnvt the telnet virtual terminal client
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+XOne
+
+Vendor
+        Grafpoint
+        1485 Saratoga Avenue
+        San Jose CA 95129
+        TEL 8004262230 730500 PST 4084661919
+        FAX 4084460666
+        uunetgrafpntsales
+Price
+        free demo copies
+Latest Version
+
+CPU
+        386 486
+Memory
+        2 Mbytes
+Operating System
+        DOS 31 or higher
+        MS Windows
+Mouse
+        2 or 3 button mouse
+Graphics
+        VGA
+        Super VGA
+        8514A
+        TIGA
+        VGA boards with S3 chip set
+Ethernet Card
+
+Network Software
+        Grafpoints TCPIP included
+Disk Space
+
+Features
+        X11R4
+        onscreen setup
+        builtin TCPIP
+        supports local clients such as telnetvt100 window a setup window
+                an rsh window a local window manager
+        DOS and Windows versions in one product
+        hot key to DOS
+        90 days of telephone technical support
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+XVision
+
+Vendor
+        VisionWare Limited            White Pine is rebadging XVision as
+        57 Cardigan Lane                      eXodus for Windows
+        Leeds LS4 2LE                         40 Simon Street Suite 201
+        United Kingdom                        Nashua HN 030603043
+        TEL 0532 788858                    TEL 6038869050
+                44 532 788858                FAX 6038869051
+        FAX 0532 304676                    sdarlingwpinecom
+                44 532 304676                AppleLink WHITEPINE
+        vwarevisionwarecouk        
+Price
+          44900  1 users         910000 30 users
+         180000  5 users        1185000 40 users
+         360000 10 users        1460000 50 users
+         635000 20 users        educational discounts available
+        adding a user where at least 10 are installed  27500
+        XRemote support per PC  bundled  9500        upgrade  15000
+        full documentation  6000        evaluation copy  6000
+Latest Version
+        41
+CPU
+        286 386 486
+Memory
+        2 Mbytes 4 Mbytes recommended
+Operating System
+        DOS 30 or later
+        MS Windows 30 or later
+Mouse
+        recommended but not required
+Graphics
+        MS Windows compatible graphics
+Ethernet Card
+
+Network Software
+        FTP PCTCP
+        Excelan LAN Workplace for DOS
+        Locus TCPIP for DOS
+        Ungermann Bass NETONE TCPPC
+        Wollongong WINTCP for DOS
+        Beame  Whiteside TCPIP
+        Sun PCNFS
+        HP LAN Manager ARPA Services for DOS
+        3Com 3 Open
+Disk Space
+        514inch highdensity or 312inch highdensity
+Features
+        copy and paste between X and MS Windows
+        use a host window manager or allow MS Windows to control X clients
+        support for all color classes StaticGray GrayScale StaticColor
+                PseudoColor TrueColor and DirectColor
+        several user options for performance enhancement
+        X11 Release 5 server
+        fonts and server extensions including XDMCP
+        ICCCM compliant
+        X clients may also use MS Windows fonts
+        easy configuration of the system via dialog boxes
+        provides the functionality of a threebutton mouse
+        support for all international keyboards supported by Windows
+        host access control
+        networkaware setup and online help
+        iconic control panel for configuring XVision
+        Dynamic Server Optimizations XVision runs tests on the PC at install
+                time to see how best to draw to the display
+        support for  NCD XRemote DECnet SHAPE extension 24bit color
+                MS Windows font managers all color classes rsh rexec
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+XoftWare
+
+Vendor
+        AGE Logic Inc
+        9985 Pacific Heights Blvd
+        San Diego CA 92121
+        TEL 6194558600 6195657373
+        FAX 6195976030
+        email salesagecom
+
+        Bert Shure
+        TEL 6194558600ext104
+        email bertagecom agebertucsdedu
+Price
+        49500
+        with TCPIP  59500
+Latest Version
+
+CPU
+        386 486
+Memory
+        2 Mbytes extended
+Operating System
+        DOS 31 or higher
+        Windows 30 or higher
+Mouse
+        MS Windows compatible mouse
+Graphics
+        card with MS Windows driver
+Ethernet Card
+
+Network Software
+        Beame  Whiteside TCPIP 22 or higher
+        ftp PCTCP 205 of higher
+        DEC Pathworks 40 or higher
+        HP ARPA Services 21 or higher
+        Novell LAN WorkPlace 401 or higher
+        Sun PCNFS 35 or higher
+        UngermannBass NetOne TCP 165 or higher
+        Wollongong Pathway Access 411 or higher
+        Wollongong WINTCP 11 or higher
+        3Com 3 Open TCP 12 or higher
+Disk Space
+        2 Mbytes
+        514 12 Mbyte or 312 144 Mbyte floppy needed
+Features
+        MIT compliant with AGE extensions
+        Context Sensitive online help system
+        Cut and paste between X and MS Windows
+        Start X applications with MS Windows icons
+        Single and multiple window modes
+        MS Window manager used with X applications
+        Virtual screen up to 32767 by 32767
+        Passive telnet rsh rexec and XDMCP startup modes
+        Backing store and save unders
+        Motif OpenLook and DECWindows support
+        Full font library in FON format
+        BDF to MS Windows FON font compiler
+        Log file optionally saves system messages
+        Tutorial on the X Window System
+MicrosoftWindowsMicrosoftWindowsMicrosoftWindowsMicrosoftWindows
+
+OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2
+IBM XWindows for OS2
+
+Vendor
+        IBM Solutions Center
+        Voice 1800IBMCALL
+        FAX   13034401639
+Price
+        150 plus 200 for IBM TCPIP for OS2 required
+Latest Version
+        Version 121
+        Part Number 02G6980 XWindows
+                    02G6968 TCPIP
+CPU
+        386SX or higher
+Memory
+        6 Mbytes recommended 4 minimum
+Operating System
+        IBM OS2 20 or higher
+Mouse
+        OS2 compatible pointing device
+Graphics
+        EGA VGA Super VGA 8514A XGA or other OS2 supported card
+Ethernet Card
+        compatible with OS2 NDIS
+Network Software
+        IBM TCPIP required
+Disk Space
+        80 Mbyte hard drive
+Features
+        incorporates X into the OS2 advanced PC operating system
+        provides full X11R4 server X font library X font compiler
+                X client utilities
+        runs as another object on the WorkPlace Shell WPS desktop
+        cut and paste between OS2 DOS and Windows applications running under
+                OS2 full TCPIP implementation including ftp telnet lamail
+                ping finger SLIP rsh remote printing BOOTP VT100220 and
+                many more
+        other modules available including NFS Programmers Toolkit includes
+              Kerberos RPC DPI NCS ftp API sockets API Resolver API
+              and more
+OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2OS2
+
+MacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintosh
+eXodus
+
+Vendor
+        White Pine Software Inc
+        40 Simon Street Suite 201
+        Nashua HN 030603043
+        TEL 6038869050
+        FAX 6038869051
+        email sdarlingwpinecom
+        AppleLink WHITEPINE
+Price
+        295
+Latest Version
+        30
+CPU
+        all Macintosh computers
+        eXodus II runs on Macintosh computers with a 68020 or 68030 processor
+                and a floating point coprocessor
+Memory
+        2 Mbytes
+Operating System
+        version 60 or later
+        version 603 or later if you plan to use Communications Toolbox for
+                network connections
+Mouse
+
+Graphics
+
+Ethernet Card
+
+Network Software
+        TCPIP  MacTCP by Apple Computer Inc part of CommSolutions
+        TCPIP  TCPortLAN Workplace by Novell Inc formerly TCPortHost
+                Access
+        DECnet  TSSnet by Thursby Software Systems Inc a special version
+                is distributed as part of CommSolutions
+        DECnet  CommUnityMac distributed by Everex Inc
+        DECnet  DECnet for Macintosh part of PATHWORKS by Digital Equipment
+                Corporation
+        ADSP  PATHWORKS distributed by Digital Equipment Corporation
+        AppleTalk
+Disk Space
+
+Features
+        supports MultiFinder
+        under AUX clients and server run on the Macintosh
+        under Macintosh Operating System clients run on another computer
+        conforms to the Macintosh Human Interface Guidelines
+        user standard Macintosh pulldown menus
+        functions as a Macintosh program under the Macintosh Operating System
+        handles Macintosh events
+        can use normal Macintosh environment
+MacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintosh
+
+MacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintosh
+MacX
+
+Vendor
+        Apple Computer Inc
+        Cupertino CA 95014
+        TEL 4089961010
+        TLX 171576
+        or any Apple dealer BusinessLandMicroAGE etc
+Price
+        MacX                        Order No M0108LLC   
+        MacX Manual Set             Order No M0602LLB   
+        MacX 117 Update Product   Order No M1197LLA   
+        Mac X and X11 Site License  Order No M0749LLC   
+Latest Version
+        12
+CPU
+        any Macintosh
+Memory
+        2 Mbytes
+Operating System
+        system software 605 or later
+Mouse
+
+Graphics
+        1bit and 8bit graphics
+Ethernet Card
+
+Network Software
+        LocalTalk Ethernet
+Disk Space
+        at least two floppy disks for 605 or later
+        35 Mbytes hard disk tor 70
+Features
+        X11 release 4 server
+        ICCCMcompatible cut and paste of text AND graphics between the
+                Macintosh and X11
+        SHAPE extension including SHAPED windows on the Macintosh desktop
+        optional builtin ICCCMcompliant window manager
+        builtin BDF font compiler
+        builtin standard colormaps
+        builtin window managers
+        support for system software version 70
+        support for multiple monitors
+        copy and paste text and graphics
+MacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintoshMacintosh
+
+AmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmiga
+UNKNOWN
+
+Vendor
+
+Price
+
+Latest Version
+
+CPU
+
+Memory
+
+Operating System
+
+Mouse
+
+Graphics
+
+Ethernet Card
+
+Network Software
+
+Disk Space
+
+Features
+        Amiga 3000 machines offer an X server and OPEN LOOK tools and libraries
+                on a full SVR4 implementation
+AmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmiga
+
+AmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmiga
+X Window System Version 11 Release for the Amiga Computer
+
+Vendor
+        GfxBase Inc
+        Dale Luck
+        1881 Ellwell Drive
+        Milpitas CA 95035
+        TEL 4082621469
+        FAX 4082628276
+        Usenet boingdale
+        Bix duck
+        amigaboingdalebloombeaconmitedu
+Price
+     39500 9000 yearly maintenance fee
+Latest Version
+        41
+CPU
+        AmigaDos computer
+                A1000
+                A2000
+                A2500
+                A3000
+                A3000T
+                A4000
+                A500
+                A600
+Memory
+        1 Mbyte for Server and 640x400 2color display
+        more RAM required for local clients
+Operating System
+        AmigaDOS Operating System V13 or later
+Mouse
+        Amiga 2 button mouse or optical 3 button mouse tablet trackball
+                or International keyboard
+Graphics
+        NTSC to 1440x48260hz PAL1440x568 50 hz
+        Overscan genlock and interlace supported
+        A2024Viking 1 1024x800060hz 1024x102450hz
+        Super Screens to 2560x2560 scrollable on smaller display
+        Productivity screen  640x480 60hz noninterlaced 640x960 interlaces
+        Two colors out of a palette of 4096 can be selected  Cursor has two
+                separately controlled colors
+        Color server 2481632 colors from 4096  A2024Viking 1  4 gray
+                scales  Some resolutions restricted
+        GDA1 640x480 800x600 1024x800 noninterlaced 25616M
+        Ameristar 1600GX 1280x1024 1600x1280 noninterlaced 25616M
+Ethernet Card
+        Commodore A2065
+Network Software
+        Commodore TCPIP or Syndesis DECnet for ethernet and serial
+                connections SANA for local
+Disk Space
+        714 Mbytes
+Features
+        contains X11R4 clients fonts etc
+        Amiga Xpr uses the standard Amiga printer device technology which
+                supports more that 50 different types of printers  Black and
+                White of Color
+        Xamiga R4 monochrome and color servers
+        optional programmers toolkit includes the header files libraries
+                and sample programs
+        Optional mwm window manager
+        Optional toolkitswidgets Motif XView HP
+AmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmigaAmiga
+
+AtariAtariAtariAtariAtariAtariAtariAtariAtariAtariAtariAtariAtari
+XTOSwindowserver and XTOSwindowservercolor
+
+Vendor
+        Xsoftware Michael Gehret
+        XTOS division
+        Marktstrasse 8
+        W8944 Groenenbach
+        Germany
+        TEL 49 8334 1411
+        FAX 49 8334 6245
+        email xtosinfoxsoftuucp
+Price
+        XTOSwindowserver for all TOS computers         DM 109800
+        XTOSwindowservercolor for all TOS computers   DM 149800
+        option 030 for 68030 or 68040 processors only     DM    9800
+        XTOSwindowservercolor option 030 and option PEX TBA
+        overseas order handling                             DM   10000
+        noneEC European order handling                     DM    5000
+Latest Version
+        502
+CPU
+        Atari Mega ST STE TT
+        68000 to 68040
+Memory
+        2 Mbytes 4 Mbytes recommended
+Operating System
+        TOS 14 or higher
+Mouse
+        Atari mouse
+Graphics
+        XTOSwindowserver
+                monochrome 640x400x1
+                monochrome 1280x960x1 TT SM194
+        XTOSwindowservercolor
+                monochrome 640x400x1
+                monochrome 1280x960x1 TT SM194
+                color 320x200x4
+                color 640x200x2
+                color 640x480x4
+                color 320x480x8
+Ethernet Card
+        Atari Card Mega or VME bus
+        RieblWacker Mega or VME bus
+ End Enclosure 
+
+ Peter J McKinney                     pm860605longsLANCEColoStateEdu 
+ Electrohydrodynamic Laboratory                                           
+ Fluid Mechanics and Wind Engineering Program                             
+ Civil Engineering Department                                             
+ Colorado State University                                                
+

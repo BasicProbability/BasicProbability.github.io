@@ -1,0 +1,30 @@
+From billwestmsicom Bill Poitras
+Subject Re Automated X testing
+
+Mark D Collier marktridentdatasysswriedu wrote
+ Does anyone know what is available in terms of automated testing
+ of XMotif applications I am thinking of a system which I could
+ program or which could record eventsoutput with our verification
+ test procedures and then runrerun each time we do regression
+ testing I am interested in a product like this for our UNIX
+ projects and for a separate project which will be using OpenVMS
+
+A question like this is answered in the FAQ about sharing X windows
+One of the answers is XTrap a record and playback extenstion to X  You
+can find it at exportlcsmiteducontribXTrapV33X11R5tarZ
+
+Does anyone know of a program which doesnt require an X extension  Most
+the the X servers we have at work have vendor extensions which we cant
+modify so XTrap doesnt help up  There is X conferencing software at
+mit but I dont know how easy it would be to modify it to do record and
+playback
+
+Any help would be appreciated
+
+
+ Bill Poitras       Molecular Simulations Inc  Tel 4085229229      
+ billmsicom       Sunnyvale CA 940863522    FAX 4087320831      
+
+FTP Mail           mail ftpmaildecwrldeccom  Offersftp via email   
+                   SubjectCRhelpCRquit                            
+

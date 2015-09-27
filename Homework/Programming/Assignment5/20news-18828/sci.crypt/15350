@@ -1,0 +1,16 @@
+From C445585mizzou1missouriedu John Kelsey
+Subject Clipper chip and key exchange methods
+
+   I was wanting to ask the same question Dan Bernstein askedhow does the
+Clipper chip exchange keys  If the public key is only 80 or 160 bits long
+does anyone know of any publickey schemes that are secure with that key
+size  DiffieHellman or maybe El Gamal with p set to a constant value
+   Presumably the real scheme is something like
+ 
+   1  Exchangeverify public keys
+   2  Send encrypted randomlygenerated session key
+   3  Encrypt  Decrypt voice trafic with some sort of fast stream cipher
+ 
+   Can anyone elaborate on this or show me what Im missing here
+ 
+   John Kelsey c445585mizzou1missouriedu

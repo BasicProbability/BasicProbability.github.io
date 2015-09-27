@@ -1,0 +1,25 @@
+Subject Re Pgp PEM and RFCs Was Cryptography Patents
+From arubindsg4dsebeckmancom Arthur Rubin
+
+In C5LJ0tK52blazecsjhuedu eifrigbeanworldcsjhuedu Jonathan Eifrig writes
+
+FACT  It is unlawful to distribute code implementing RSA without a license
+to do so from PKP whether or not one is charging for it  Furthermore
+any use of RSA other than for research purposes allowed under US patent
+law is similarly unlawful  Therefore the average citizen cannot use
+RSA to encrypt message traffic in the US without a license from PKP
+
+WRONG  I dont think even PKP claims this one  It is not unlawful to
+distribute code implementing RSA  It appears to be unlawful to use it so
+I agree with your last sentence
+
+FACT  There are no restrictions yet on the use of cryptography under
+US law although this is beginning to look like it will change  The only
+impediments to widespread use of RSA cryptography in the US are PKPs
+patents
+
+Yes thats correct
+
+Arthur L Rubin arubindsg4dsebeckmancom work Beckman InstrumentsBrea
+2165888mcimailcom 70707453compuservecom arthurpnet01ctscom personal
+My opinions are my own and do not represent those of my employer

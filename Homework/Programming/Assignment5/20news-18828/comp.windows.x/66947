@@ -1,0 +1,24 @@
+Subject Re Trouble compiling X11R5 on SunOS413
+From nemoaguirrediafiupmes Francisco J Ballesteros
+
+In article 1993Apr22124055213headcfaharvardedu dmmheadcfaharvardedu David Meleedy writes
+
+   	   Ive been trying to compile X11R5 patchlevel 23 on a Sun Sparc
+      IPX using SunOS413 and gcc 233
+   
+   	   The problem occurs during the initial make World  When
+      it gets up to compiling the standard X clients it cant seem to find
+      some of the libraries  Right now we highly suspect the program ld
+      which was updated for 413
+   
+
+    Yip we had the same problem the only fix we found was to link static
+some of the clients  btw we used cc 
+
+
+
+Francisco J Ballesteros aka Nemo     email nemoclipdiafiupmes
+org  Computer Science CLIP lab          phone 34 1 3367448         
+      Campus Montegancedo sn UPM                              
+      Boadilla del Monte Madrid Spain         o          
+      

@@ -1,0 +1,36 @@
+From karenbwestfordccurcom Karen Bircsak
+Subject lost in TekHVC color space
+
+please respond via email
+
+Has anybody actually seen the Tek color space stuff working  Im not
+having any luck with either the xtici editor from exportlcsmitedu or with
+OReillys ftpable example xcms from ftpuunet
+
+The OReilly example fails for almost every set of inputs because
+XcmsTekHVCQueryMaxV returns a smaller value than XcmsTekHVCQueryMinV does
+which makes no sense to me
+
+The xtici editor fails in XcmsStoreColors apparently because the
+mathematical manipulations of the color specs results in invalid values  So
+you cant actually edit any colors
+
+We have X11 R5 patch level 22 8bit pseudoColor visual  Ive poked around 
+in the xcms code in Xlib but without some understanding of the theory I have 
+no idea whats going wrong  Can somebody confirm if either of the 
+abovementioned programs work on their systems or let me know if they fail 
+for you too  Please include what hardwaresoftwarepatch levels you have
+
+Any hints
+
+Please respond with email as I dont regularly read this group
+
+Thanks
+Karen
+
+
+Karen Bircsak
+Concurrent Computer Corporation
+
+karenbwestfordccurcom
+

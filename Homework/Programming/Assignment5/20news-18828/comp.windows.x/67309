@@ -1,0 +1,27 @@
+From roebervxcrnacernch Frederick Roeber
+Subject 24bit Static color will clients like it
+
+Im writing an X server for some videogeneration equipment  The
+hardware is truecolor in YUV space in X terms it has a 24bit
+static color visual  I would really like to have the server just
+present this static visual but Im not sure if this will be 
+acceptable to most X clients  The three problems I see are
+
+  1 The colormap though huge is static
+  2 All pixels would be 3 bytes wide
+  3 Because the hardware actually lives in YUV space the
+     translation RGBYUV will introduce some rounding error
+
+Being more of a server guy than a client guy I ask will these
+limitations thwart many X clients  Or will most of the X stuff
+floating around blithely accept what theyre given  I could write
+the server to also present a pseudocolor visual of eg 8 bits 
+but Id rather avoid this if not necessary
+
+I know there are no absolutes but Id appreciate hearing peoples
+opinions and suggestions  Thanks
+
+ 
+Frederick G M Roeber  CERN  European Center for Nuclear Research
+email roebercernch or roebercaltechedu  work 41 22 767 31 80
+rmail CERNPPE 1211 Geneva 23 Switzerland  home 33 50 20 82 99

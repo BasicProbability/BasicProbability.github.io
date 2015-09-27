@@ -1,0 +1,58 @@
+From ramakriscsgradcsvtedu SRamakrishnan
+Subject Mwm titledrag crashes X server SIGPIPE
+
+
+   Environment
+      macharch  sparcsun4  IPX
+      OS	 SunOS 413
+      X11	 X11R5 patchlevel 22
+      Motif	 122
+
+I bring up X server using startx and usrbinX11Xsun The following sequence
+of actions crashes the X server SIGPIPE errno32 xinit reports that connexion 
+to X server lost
+
+   1 xinit  Xsun
+   2 start mwm
+   3 start a client with a 100dpi75dpi font
+   4 move the window by dragging the title bar
+
+The server dumps core due to SIGPIPE One of the two messages is printed
+
+  Connection to X server lost
+
+or
+  
+  Connection broken errno32
+
+I believe the first is reported by a client and the second by the server itself
+
+Next I ran xdm in debug level  5 After the same set of actions xdm reports
+
+  select returns 1
+  Server for 0 terminated unexpectedly status 2560
+
+
+Note
+  The problem doesnt occur with other window managers twm or olwm 
+  I have not set LDLIBRARYPATH 
+  I am not running font server 
+  If I start the client with fixed width font I do not see this problem
+  My font path
+     usrlibX11fontsmiscusrlibX11fontsSpeedousrlibX11fonts75dpiusrlibX11fonts100dpi
+
+   I did mkfontdir in usrlibX11fonts100dpi usrlibX11fonts75dpi
+   usrlibX11fontsPEX usrlibX11fontsSpeedo
+   and in usrlibX11fontsmisc
+
+  This problem seems to occur only on IPX machines I do not see this 
+   problem on IPC workstations
+
+Questions
+  What the hell is goin on  
+  What does status 2560 mean of the server
+
+Id greatly appreciate any hints as to the cause of the problem
+
+
+S Ramakrishnan CS Dept McBryde Hall VaTech

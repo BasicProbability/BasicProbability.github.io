@@ -1,0 +1,16 @@
+From kobetxsun2actpickercom Harry J Kobetitsch
+Subject xwd
+
+I am trying to run xwd on a Sun SPARCstation IPX
+with SunOS 412 and Openwindows 30 I am using
+the Motif window manager I have been unsuccessful
+in using xwd under Motif I get the following when
+doing xwd out xwddmp
+
+X Error of failed request  BadDrawable invalid Pixmap or Window parameter
+  Major opcode of failed request  73 XGetImage
+  Resource id in failed request  0x500043
+  Serial number of failed request  213
+  Current serial number in output stream  213
+
+Does anyone have any insight to this 

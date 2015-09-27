@@ -1,0 +1,28 @@
+From LHWoodlutacuk
+Subject An 8051 simulator  is example code available
+
+Hello world
+ 
+Im attempting to write an 8051 simulator on an IBM PC for teaching
+purposes so that firstyear eleceng students can see the workings
+of the microcontroller as it performs operations  logical ands for
+example being shown on a bitbybit basis 1 AND 1  1 so that the
+students can see that its not really a mystical process but totally
+logical for example Every instruction should show some working
+and not just alter registermemoryport contents
+ 
+Does anyone know of any freelyavailable example simulation code
+in Pascal or Modula2 that would show me where Im going wrong
+in writing my simulator Im using Ayalas The 8051 Microcontroller
+as a reference  the simulator supplied with the package is overkill
+for simple teaching purposes I feel and theres no source code to help
+you roll your own
+ 
+Please email me if you can help or if you know of somewhere more 
+appropriate I should be posting this   I rarely scan these groups
+ 
+Thanks
+ 
+Lloyd Wood
+LHWoodlutacuk 
+

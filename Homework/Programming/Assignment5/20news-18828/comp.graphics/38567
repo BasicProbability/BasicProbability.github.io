@@ -1,0 +1,83 @@
+From amanniamunibech Stephan Amann
+Subject Re more on radiosity
+
+In article 66319yumaACNSColoStateEDU xz775327longsLANCEColoStateEdu Xia Zhao writes
+
+
+In article 1993Apr1913123911670aragornunibech you write
+
+
+ Lets be serious Im working on a radiosity package written in C
+ I would like to make it public domain  Ill announce it in cg the minute
+ I finished it
+
+ That were the good news The bad news Itll take another 2 months at least
+ to finish it
+
+
+ Are you using the traditional radiosity method progressive refinement or
+  something else in your package
+
+
+My package is based on several articles about nonstandard radiosity and
+some unpublished methods
+
+The main articles are
+
+  Cohen Chen Wallace Greenberg  
+    A Progressive Refinement Approach to fast Radiosity Image Generation
+     Computer Graphics SIGGRAPH V 22No 4 pp 7584 August 1988
+
+  Silion Puech
+    A General TwoPass Method Integrating Specular and Diffuse Reflection
+    Computer Graphics SIGGRAPH V23No 3 pp335344 July 1989 
+
+ If you need to project patches on the hemicube surfaces what technique are
+  you using  Do you have hardware to facilitate the projection
+
+
+I do not use hemicubes I have no special hardware SUN SPARCstation
+
+
+
+ In the meantime you may have a look at the file
+   RadiositycodetarZ
+ located at
+   compute1ccncsuedu
+
+
+  What are the guest username and password for this ftp site
+
+
+Use anonymous as username and your email address as password
+
+
+
+ there are some other locations have a look at archie to get the nearest
+
+ Hope thatll help
+
+ Yours
+
+ Stephan
+
+
+
+   Thanks Stephan
+
+
+    Josephine
+
+
+Stephan
+
+
+
+
+ Stephan Amann     SIG Computer Graphics University of Berne Switzerland
+           amanniamunibech
+	   Tel 41 31 65 46 79	   Fax 41 31 65 39 65
+
+ Projects Radiosity Raytracing Computer Graphics
+
+

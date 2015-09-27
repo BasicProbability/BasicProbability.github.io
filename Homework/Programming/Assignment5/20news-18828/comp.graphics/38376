@@ -1,0 +1,1528 @@
+From nfotisntuagr Nick C Fotis
+Subject 17 Apr 93 Computer Graphics Resource Listing  WEEKLY part 33
+
+Archivename graphicsresourceslistpart3
+Lastmodified 19930417
+
+
+Computer Graphics Resource Listing  WEEKLY POSTING  PART 33 
+
+Last Change  17 April 1993
+
+
+11 Scene generatorsgeographical dataMapsData files
+
+
+DEMs Digital Elevation Models
+
+  DEMs Digital Elevation Models as well as other cartographic data
+  huge is available from spectrumxeroxcom 1927022578 pubmap
+
+  Contact
+  Lee Moore  Webster Research Center Xerox Corp 
+  Voice 1 716 422 2496
+  Arpa Internet  MooreWbst128XeroxCom
+ Check also on ncgiaucsbedu 128111254105 pubdems  nfotis 
+
+  Many of these files are also available on CDROM selled by USGS
+  12000000 scale  Digital Line Graph DLG Data Contains datas
+  for all 50 states Price is about 28 call to or visit in offices
+  in Menlo Park in Reston Virginia 800USAMAPS
+
+  The Data User Services Division of the Bureau of the Census also has
+  data on CDROM TSO standard format that is derived from USGS
+  1100000 map data Call 301 7634100 for more info or they have
+  a BBS at 301 7631568
+
+ From DrDobbs 198 March 1993 
+
+      The US Defense Mapping Agency in cooperation with their counterpart
+agencies in CANADA the UK and Australia have released the Digital Chart
+of the World DCW This chart consists of over 15 gigabytes of reasonable
+quality vector data distributed on four CDROMS  includes coastlines
+rivers roads railrays airportscities towns spot elevations and depths
+and over 100000 place names
+
+It is ISO9660 compatible and only 20000 available from
+
+US Geological Survey
+PO Box 25286
+Denver Federal Center
+Denver CO 80225
+
+Digital Distribution Services
+Energy Mines and Resources Canada
+615 Booth Street
+Ottawa ON
+K1A 0E9 Canada
+
+Director General of Military Survey
+Survey 3
+Elmwood Avenue
+Feltham Middlesex
+TW13 7AH United Kingdom
+
+Director of Survey Australian Army
+Department of Defense
+Campbell Park Offices CP2424
+Campbell ACT 2601 Australia
+
+
+Fractal Landscape Generators
+
+
+Public Domain
+
+  Many people have written fractal landscape generators for example
+  for the Mac some of these generators were written by
+  pdbourkeccu1aukuniacnz Paul D Bourke
+  Many of the programs are available from the FTP sites and mail
+  archive servers Check with Archie
+
+Commercial
+
+  Vista Pro 30 for the Amiga from Virtual Reality Labs  list price
+  is about 100 Their address is
+	VRL
+	2341 Ganador court
+	San Luis Obispo
+	CA 93401
+	Telephone or FAX 805 5458515
+
+  Scenery Animator also for the Amiga is of the same caliber with Vista Pro 2
+  Check with
+	Natural Graphics
+	PO Box 1963
+	Raklin CA 95677
+	Phone 916 6241436
+
+  Dont forget to ask about companion programs and data diskstapes
+
+  Vista Pro 3 has been ported to the PCs
+
+
+CIA World Map II
+
+  NOTE this database is quite out of date and not topologically structured
+  If you need a standard for world cartographic data wait for the
+  Digital Chart of the World This 11M database has been produced from
+  the Defense Mapping Agencys ONCs and will be available together with
+  searching and viewing software on a number of CDROMs later this summer 
+
+  Check into HANAUMASTANFORDEDU and UCSDEDU see ftp list above
+  The CIA database consists of coastlines rivers and political boundaries
+  in the form of line strokes Also on hanaumastanfordedu is a 720x360
+  array of elevation data containing one ieee floating point number for
+  every half degree longitude and latitude
+ 
+  A program for decoding the database mfil can be found on the machine
+  pi1arcumnedu 1376613011
+  Theres another program which reads a compressed CIA Data Bank file and
+  builds a PHIGS hierachical structure It uses a PHIGS extension known as
+  polyline sets for performance but you can use regular polylines Ask
+  Joe Stewart joeslpiliantcom
+  The raw data at Stanford require the vplot package to be able to view it
+  was posted in compsourcesunix To be more exact youll have to
+  compile just the libvplot routines not the whole package
+
+NCAR data
+
+  NCAR National Center for Atmospheric Research has many types of
+  terrain  data ranging from elevation datasets at
+  various resolutions to information about soil types vegetation etc
+  This data is not free  they charge from 40 to 90 or more depending
+  on the data volume and media exabyte tape 3480 cartridge 9track tape
+  IBM PC floppy and FTP transfer are all available  Their data archive
+  is mostly research oriented not hobbyist oriented  For more information
+  email to ilanancarucaredu
+
+UNC data tapes with voxel data
+
+  There are 2 public domain tapes with data for the comparison and
+  testing of various volume rendering algorithms mainly MRI and CT
+  scans These tapes are distributed by the SoftLab of UNC  Chapel Hill
+  softlabcsuncedu
+
+  The data sets volume I and II are also available via anonymous FTP from
+  omicroncsuncedu 128109136159 in pubsoftlabCHVRTD
+
+NASA
+
+  Many US agencies such as NASA publish CDROMs with many altimetry data
+  from various space missions eg Viking for Mars Magellan for Venus
+  etc Especially for NASA I would suggest to call the following
+  address for more info
+
+     National Space Science Date Center
+     Goddard Space Flight Center
+     Greenbelt Maryland 20771
+     Telephone 301 2866695
+     Email address  requestnssdcagsfcnasagov
+
+  The data catalog not the data itself is available online
+  Internet users can telnet to nssdcagsfcnasagov 128183104 and log
+  in as NODIS no password
+
+  You can also dial in at 3012869000 300 1200 or 2400 baud 8 bits
+  no parity one stop At the Enter Number prompt enter MD and
+  carriage return When the system responds Call Complete enter a few
+  more carriage returns to get the Username and log in as NODIS no
+  password
+
+  NSSDCA is also an anonymous FTP site but no comprehensive list of
+  whats there is available at present
+
+Earth Sciences Data
+
+
+  Theres a listing of anonymous FTP sites for earth science data including
+  imagery This listing is called Earth Sciences Resources on Internet
+  and you can get it via anonymous FTP from csnorg 12813821321
+  in the directory COGS under the name internetresourcesearthsci
+
+  Some sites include
+  aureliesoesthawaiiedu 128171151121 pubavhrrimages  AVHRR images
+  amesarcnasagov 128102183 pubSPACECDROM   images from
+        Magellan and Viking missions etc
+        pubSPACEIndex contains a listing of files available in the whole
+        archive the index is about 200K by itself Theres also an
+        email server for the people without Internet access send a letter
+        to archiveserveramesarcnasagov or amesarchiveserver In the
+        subject of your letter or in the body use commands like
+
+        send SPACE Index
+        send SPACE SHUTTLEss012391
+
+        Capitalization is important Only text files are handled by the
+        email server at present
+
+  vab02larcnasagov 1281552347 pubgifsmisclandsat 
+	Landsat photos in GIF and JPEG format
+ It was shut down  nfotis anyone has a copy of this archive 
+
+Others
+
+  Daily values of river discharge streamflow and daily weather data is
+  available from EarthInfo 5541 Central Ave Boulder CO  80301  These
+  disks are expensive around 500 but there are quantity discounts
+  303 9381788
+
+  Check vmdcsouiucedu 128174598 the wx directory carries
+  data regarding surface analysis weather radar and sat view pics in
+  GIF format updated hourly
+
+  pioneerunmedu 129249217 is the Space and Planetary Image Facility
+  located on the University of New Mexico campus FTP server It provides
+  Anonymous FTP access to 150 CDROMS  with dataimages
+
+  A disk with earthquake data topography gravity geopolitical info
+  is available from NGDC National Geophysical Data Center 325 Broadway
+  Boulder CO  80303  303 4976958
+
+  EOSAT at least in the US now sells Landsat MSS data older than two years
+  old for 200 per scene and they have been talking about a similar deal
+  for Landsat TM data The MSS data are 4 bands 80 meter resolution
+
+  Check out anonymous FTP to ftpncsauiucedu in
+  UNIXPolyViewalphashape for a tool that creates convex hulls
+  alphashapes a generalization of the convex hull from 3D point sets
+
+  The GRIPS II Gov Raster Image Processing Software CDROM
+  is available from CDROM Inc at 18008215245 for 49
+  Code for viewing ADRG Arc Digitised Raster Graphics files is
+  available on the GRIPS II CDROM The US Army Engineer 
+  Topographic Labs Juan Perez code is also available via FTP
+   adrgzip archive in  spectrumxeroxcom 
+
+NRCC range data
+
+  Rioux M Cournoyer L The NRCC ThreeDimensional Image Data Files
+  Tech Report CNRC 29077 National Research Council Canada
+  Ottawa Canada 1988
+   From what I understand these data are from a laser range finder
+   and you can a copy for research purposes 
+
+
+
+12 3D scanners  Digitized 3D Data
+
+
+a Cyberware Labs Monterey CA manufactures a 3D color laser digitizer
+  which can be used to model parts of or a complete human body
+  They run a service bureau also so they can digitize models for you
+
+  Address
+    Cyberware Labs Inc
+    8 Harris Ct Suite 3D
+    Monterey CA 93940
+  Phone 4083731441 Fax 4083733582
+
+b Polhemus makes a 6D input device actually a couple of models
+  that senses position 3D and orientation 3D based on electromagnetic
+  field interference  This equipment is also incorporated in the
+  VPL Dataglove
+  This hardware is also called ISOTRACK from Keiser Aerospace
+
+Ascension Technology makes a similar 3D input device
+There is a company Applied Sciences that makes a 3D input
+device position only based on speed of sound triangulation
+
+c A company that specializes in digitizing is Viewpoint You can ask
+   for Viewpoints free 100 page catalog full of ready to 
+   ship datasets from categories such as cars anatomy aircraftsports
+   boats trains animals and others Though these objects are
+   quite expensive the cataloge is nevertheless of interest for it
+   has pictures of all the available objects in wireframe  polygon mesh
+
+  Contact
+
+  Viewpoint
+  870 West Center
+  Orem Utah 84057
+  ph 8012242222
+  fax 8012242272
+  1800DATASET
+
+
+
+  Some addresses for companies that make digitizers
+
+  Ascension Technology
+  Bird Flock of Birds Big Bird 6d trackers
+  PO Box 527
+  Burlington VT 05402
+  Phone 802 6557879 Fax 802 6555904
+
+  Polhemus Incorporated
+  Digitizer 6d trackers
+  PO Box 560 Hercules Dr
+  Colchester Vt 05446
+  Tel 802 6553159
+
+  Logitech Inc
+  Red Baron ultrasonic 6D mouse
+  6506 Kaiser Dr
+  Freemont CA 94555
+  Tel 415 7958500w
+
+  Shooting Star Technology
+  Mechanical Headtracker
+  1921 Holdom Ave
+  Burnaby BC Canada V5B 3W4
+  Tel 604 2988574
+  Fax 604 2988580
+
+  Spaceball Technologies Inc
+  Spaceball 6d stationary input device
+  600 Suffolk Street
+  Lowell MA 01854
+  Tel 508 9700330 
+  Fax 508 9700199
+  Tel in Mountain View 415 9668123 
+
+  Transfinite Systems 
+  Gold Brick PowerGlove for Macintosh
+  PO Box N
+  MIT Branch Post Office
+  Cambridge MA 021390903
+  Tel 617 9699570
+  email D2002AppleLinkApplecom
+
+  VPL Research Inc
+  EyePhone headmounted display
+  DataGlove glovehand input device
+  VPL Research Inc
+  950 Tower Lane
+  14th Floor
+  Foster City CA 94404
+  Tel 415 3120200
+  Fax 415 3129356
+
+  SimGraphics Engineering
+  Flying Mouse 6d input device
+  1137 Huntington Rd Suite A1
+  South Pasadena CA 910304563
+  213 2550900
+
+
+
+13 Background imagerytexturesdatafiles
+
+
+ First check in the FTP places that are mentioned in the FAQ or in the FTP
+list above
+
+24bit scanning
+
+  Get a good 24bit scanner like Epsons Suggested is an SCSI port for
+  speed Eric Haines had a suggestion in RT News Volume 4 3 
+  scan textures for wallpapers and floor coverings etc from doll
+  house supplies
+  So you have a rather cheap way to scan patterns that dont have
+  scaling troubles associated with real materials and scanning area
+
+Books with textures
+
+  Find some housesbooksmagazines that carry photographic material
+  Educorp 16195369999 sells CDROMS with various imagery  also
+  a wide variety of stock art is available
+  Stock art from bigname stock art houses such as Comstock
+  UNIPHOTO and Metro Image Base is available
+
+  In Italy theres a company called Belvedere that makes such books
+  for the purpose of clipping their pages for inclusion in your
+  graphics work Their address is
+	Edition Belvedere Co Ltd
+	00196 Rome Italy
+	Piazzale Flaminio 19
+	Tel 06 3604488 Fax 06  3602960
+
+Texture Libraries
+
+a Mannikin Sceptre Graphics announced TexTiles a set of 256x256 24bit
+   textures Initial shipments in 24bit IFF for Amigas soon in 24bit
+   TIFF format Algorithmically built for tiled surfaces SRP is 40  volume
+   each volume  40 images  10 disks Demo disks for 5 are available
+
+   Contact
+   Mannikin Sceptre Graphics
+   1600 Indiana Ave
+   Winter Park FL 32789
+   Phone 407 3849484
+   FAX 407 6477242
+
+b ESSENCE is a library of 65 sixtyfive new algoritmic textures for Imagine
+   by Impulse Inc These textures are FULLY compatible with the floating point
+   versions of Imagine 20 Imagine 11 and even Turbo Silver
+   Written by Steve Worley
+
+   For more info contact
+   Essence Info
+   Apex Software Publishing
+   405 El Camino Real Suite 121
+   Menlo Park CA 94025 USA
+
+ What about Texture City  
+
+
+
+14 Introduction to rendering algorithms
+
+
+a RayTracing
+
+
+  I assume you have a general understanding of Computer Graphics No Then read
+  some of the books that the FAQ contains For RayTracing I would
+  suggest
+   An Introduction to Ray Tracing Andrew Glassner ed Academic Press
+     1989 ISBN 0122861604
+  Note that I have not read the book but I feel that you cant be wrong
+  using his book An errata list was posted in compgraphics by Eric Haines
+  ericheyecom
+
+Theres a more concise reference also
+
+  Roman Kuchkuda  UNC  Chapel Hill An Introduction to Ray Tracing in
+  Theoretical Foundations for Computer Graphics and CAD ed RAEEarnshaw
+  NATO AS Vol F40 pp 10391060 Printed by SpringerVerlag 1988
+
+It contains code for a small but fundamentally complete raytracer
+
+b Zbuffer depthbuffer
+
+
+A good reference is
+
+        Procedural Elements for Computer Graphics David F Rogers
+        McGrawHill New York 1985 pages 265272 and 280284
+
+c Others
+
+
+ More info is needed  nfotis 
+
+
+
+15 Where can I find the geometric data for the
+
+
+a Teapot 
+
+
+Displays on Display column of IEEE CGA Jan 87 has the whole
+story about origin of the Martin Newells teapot The article also has
+the bezier patch model and a Pascal program to display the wireframe
+model of the teapot
+
+IEEE CGA Sep 87 in Jim Blinns column Jim Blinns Corner describes
+an another way to model the teapot Bezier curves with rotations for
+example are used
+
+The OFF and SPD packages have these objects so youre advised to get
+them to avoid typing the data yourself  The OFF data is triangles at
+a specific resolution around 8x8x4 triangles meshing per patch
+The SPD package provides the spline patch descriptions and performs a
+tessellation at any specified resolution
+
+b Space Shuttle 
+
+
+Tolis Lerios tolisnovastanfordedu has built a list of Space Shuttle
+datafiles Heres a summary From his scispace list
+
+model1
+A modified version of the newsgroup model model2
+
+406 vertices 296 useful ie referred to in the polygon descriptions
+389 polygons 233 3vertex 146 4vertex 7 5vertex 3 6vertex
+Payload doors nonexistent
+Units unknown
+
+Simon Marshall SMarshallsequentcchullacuk has a copy He
+said there is no proprietary information associated with it
+
+model2
+The newsgroup model in OFF format You can find it in
+
+gondwanaecrmuozau  file puboffobjectsshuttlegeo
+hanaumastanfordedu   pubgraphicsCompgraphicsobjectsshuttledata
+
+model3
+The triangles model
+
+This model is stored in several files each defining portions of the model
+
+Greg Henderson hendersinfonodeingrcom has a copy  He did
+not mention any restriction on the models distribution
+
+model4
+The NASA model
+
+The file starts off with a header line containing three real numbers
+defining the offsets used by Lockheed in their simulations
+
+x offset y offset z offset
+
+From then on the file consists of a sequence of polygon descriptions
+
+3473 vertices
+2748 polygons 407 3vertex 2268 4vertex 33 5vertex 14 6vertex
+ 10 7vertex 8 8vertex 8 12vertex 2 13vertex 2 15vertex
+ 17 16vertex 2 17vertex 2 18vertex 3 19vertex 8 24vertex
+Payload doors closed
+Units inches
+
+Jon Berndt jonl14h11jscnasagov seems to be responsible for the model
+Proprietary info unknown
+
+model5
+The old shuttle model
+
+The file consists of a sequence of polygon descriptions
+
+104 vertices
+452 polygons 11 3vertex 41 4vertex
+Payload doors open
+Units meters
+
+We have been using this model at STAR Labs Stanford University for
+some years now Contact me tolisnovastanfordedu or my supervisor
+Scott Williams scottstar5stanfordedu if you want a copy
+
+
+
+16 Image annotation software
+
+
+a Touchup runs in Sunview and is pretty good  It reads in
+  rasterfiles but even if your image isnt normally stored
+  in rasterfile format you could use screendump to make it a
+  rasterfile
+
+b Idraw part of Stanfords InterViews distribution can handle some
+  image formats in addition to being a MacDraw like tool  Im not
+  sure exactly what they are
+  You can ftp the idraws binary from interviewsstanfordedu
+
+c Tgif is another MacDraw like tool that can handle X11 bitmap xbm
+  and X11 pixmap xpm formats  If the image you have is in formats
+  other than xbm or xpm you can get the pbmplus toolkit to convert
+  things like gif or even some Macintosh formats to xpm
+  Tgifs sources are available in the pub directory on csuclaedu
+  Version 212 of tgif at patchlevel 7 plus patch8 and patch9
+
+d Use the editimage facility of KHOROS see below
+  This is just one utility in the overall system you can essentially do all
+  your image processing and macdrawtype graphics using this package
+
+e You might be able to get by with PBMPlus  pbmtext gives you text output
+  bitmaps which can be overlaid on top of your image
+
+f ice requires Sun hardware running OpenWindows 3Its a PostScriptbased
+  graphical editorand its available for anonymous ftp from Internet host
+  eosoesthawaiiedu 12817115112 Requires Sun C 20 and
+  two other locally developed packages the LXT library an Xlibbased
+  toolkit and a small C class library All files pubicetarZ
+  publxttarZ and publdgoctarZ are available in compressed
+  tar format pubicetarZ contains a README that gives installation
+  instructions as well as an extensive man page ice1
+  A staticallylinked compressed executable pubicesun4Z for
+  SPARC systems is also available for ftp
+
+  All software is the property of Columbia University and may not
+  be redistributed without permission
+
+  ice means Image Composition Environment and its an imaging tool that
+  allows raster images to be combined with a wide variety of
+  PostScript annotations in WYSIWYG fashion via X11 imaging
+  routines and NeWS PostScript rasterizing
+
+g Use ImageMagick to annotate an image from your X server  Pick the 
+  position of your text with the cursor and choose your font and pen 
+  color from a pulldown menu  ImageMagick can read and write many
+  of the more popular image formats  ImageMagick is available as
+  exportlcsmitedu contribImageMagicktarZ or at your nearest
+  X11 archive
+
+
+
+17 Scientific visualization stuff
+
+
+X Data Slice xds
+
+  Bundled with the X11 distribution from MIT
+  in the contrib directory Available at ftpncsauiucedu 1411422050
+  either as a source or binaries for various platforms
+
+National Center for Supercomputing Applications NCSA Tool Suite
+
+
+Platforms Unix Workstations DEC IBM SGI Sun
+           Apple MacIntosh
+           Cray supercomputers
+
+Availability Now available  Source code in the public domain
+              FTP from ftpncsauiucedu
+
+Contact National Center for Supercomputing Applications
+         Computing Applications Building
+         605 E Springfield Ave
+         Champaign IL 61820
+
+Cost Free zero dollars
+
+The suite includes tools for 2D image and 3D scene analysis and visualization
+The code is actively maintained and updated
+
+Spyglass
+
+  They sell commercial versions of the NCSA tools Examples are
+
+	Spyglass Dicer 3D volumetric data analysis package
+		Platform Mac
+
+	Spyglass Transform 2D data analysis package
+		Platforms Mac SGI Sun DEC HP IBM
+
+  Contact
+  Spyglass Inc
+  PO Box 6388
+  Champaign IL  61826
+  217 3556000
+
+KHOROS 10 Patch 5
+
+  Available via anonymous ftp at pprgeeceunmedu 129242410
+  cd to pubkhoros to see what is available It is HUGE  100 MB but good
+  Needs Unix and X11R4 Freely copied NOT PD complete with sources
+  and docs Very extensive and at its heart is visual programming
+  Khoros components include a visual programming language code
+  generators for extending the visual language and adding new application
+  packages to the system an interactive user interface editor an
+  interactive image display package an extensive library of image and
+  signal processing routines and 2D3D plotting packages
+
+  See compsoftsyskhoros on Usenet and the relative FAQ for more info
+
+  Contact
+
+  The Khoros Group
+  Room 110 EECE Dept
+  University of New Mexico
+  Albuquerque NM 87131
+
+  Email khorosrequestchamaeeceunmedu
+
+
+MacPhase
+
+  Analysis  Visualization Application for the Macintosh
+  Operates on 1D and 2D data arrays ImportExport several different file
+  formats  Several different plotting options such as gray scale
+  color raster 3D Wire frame 3D surface contour vector line and
+  combinations  FFTs filtering and other math functions color look up
+  editor array calculator etc Shareware available via anonymous ftp from
+  sumexaimstanfordedu in the infomacapp directory
+  For other information contact Doug Norton email 74017461compuservecom
+
+
+IRIS Explorer
+
+  Its an application creation system developed by Silicon
+  Graphics that provides visualisation and analysis functionality for
+  computational scientists engineers and other scientists The Explorer
+  GUI allows users to build custom applications without having to write
+  any or a minimal amount of traditonal code Also existing code can
+  be easily integrated into the Explorer environment Explorer currently
+  is available now on SGI and Cray machines but will become available on
+  other platforms in time  Bundled with every new SGI machine as far as
+  I know
+
+  See compgraphicsexplorer or compsyssgi for discussion of the package
+
+  There are also two FTP servers for related stuff modules etc
+
+  ftpepccedacuk 1292155629
+  swedishcheflercnasagov 139885433  mirror of the UK site
+
+apE
+
+  Back in the old good days you could get apE for nearly free
+  Now has gone commercial and the following vendor supplies it
+
+  TaraVisual Corporation
+  929 Harrison Avenue
+  Columbus Ohio 43215
+  Tel 18004588731 and 614 2912912
+  Fax 614 2912867
+
+        Cost
+  895 plus tax runtime version with a sitelicense for a single user
+  at a time no limit on the number of machines in a cluster
+  895 includes supportmaintenance and upgrades
+  Source code more  Additional user licenses 360
+
+  The name of the package has become apE III TM
+  Khoros is very similar to apE on philosophy as are AVS and Explorer
+
+AVS
+
+See also
+        compgraphicsavs
+
+Platforms CONVEX CRAY DEC Evans  Sutherland HP IBM Kubota
+Set Technologies SGI Stardent SUN Wavetracer
+Availability AVS4 available on all the above
+  For all UNIX workstations
+
+Contact
+  Advanced Visual Systems Inc
+  300 Fifth Ave
+  Waltham MA    02154
+
+  6178904300   Telephone
+  6178908287   Fax
+  avsavscom      Email
+
+  Advanced Visual Systems Inc for CRAY HP IBM SGI Stardent SUN
+  CONVEX for CONVEX
+  Advanced Visual Systems Inc or CRAY for CRAY
+  DEC for DEC
+  Evans  Sutherland for Evans  Sutherland
+  Advanced Visual Systems Inc or IBM for IBM
+  Kubota Pacific Inc for Kubota
+  Set Technologies for Set Technologies
+  Wavetracer for Wavetracer
+
+  FTP Site for modules data sets other info
+	avsncscorg 12810917823
+
+WIT
+
+  In a nutshell its a package of the same genre as AVSExploreretc
+  It seems more a image processing system than a generic SciVi system IMHO
+  Major elements are
+
+   a visual programming language which automatically exploits the inherent
+        parallelism
+   a code generator which converts the graph to a standalone program
+
+  Iconified libraries present a rich set of point filter io transform
+  morphological segmentation and measurement operations
+  A flow library allows graphs to employ broadcast merge
+  synchronization conditional and sequencing control strategies
+
+  WIT delivers an objectoriented distributed visual programming
+  environment which allows users to rapidly design solutions to their
+  imaging problems Users can consolidate both software and hardware
+  developments within a complete CADlike workspace by adding their
+  own operators C functions objects data structures and servers
+  specialized hardware WIT runs on Sun HP90007xx SGI and supports
+  Datacube MV20200 hardware allowing you to run your graphs in realtime
+
+  For a free WIT demo disk call FAX or email pooneeubcca
+  us stating your complete name address voice FAX email info
+  and desired platform
+
+  Pricing WIT for Sparc one yr free upgrades 30 days
+  technical support5000 US
+
+  Academic institutions discounts available
+
+
+  Contact
+  Logical Vision Ltd
+  Suite 1083700 Gilmore Way
+  Burnaby BC CANADA
+  V5G 4M1
+  Tel 6044352587
+  Fax 6044358840
+
+  Terry Arden pooneeubcca
+
+VIS5D
+
+  A system for visually exploring the output of 5D gridded data sets
+  such as those made by weather models Platforms
+
+    SGI IRIS with VGX GTX TG or G graphics
+    SGI Crimson or Indigo R4000 Elan graphics suggested IRIX 40x
+    IBM RS6000 with GL graphics AIX version 3 or later
+    Stardent GS1000 and GS2000 with TrueColor display
+
+  In any case 32 or more MB of RAM are suggested
+
+  You can get it freely thanks to NASA support via anonymous ftp
+
+ ftp irisssecwiscedu  or ftp 1449210863 then
+
+  ftp cd pubvis5d
+  ftp ascii
+  ftp get README
+  ftp bye
+
+ NOTE You can find the package also on wuarchivewustledu in the
+ graphicsgraphicspackages directory
+
+  Read section 2 of the README file for full instructions
+  on how to get and install VIS5D
+
+  Contact
+  Bill Hibbard whibbardvmsmaccwiscedu
+  Brian Paul bpaulvmsmaccwiscedu
+
+DATAexplorer IBM
+
+  Platforms  IBM Risc System 6000 IBM POWER Visualization Server
+        SIMD mesh 32 i860s 40 MHz
+
+  Working on announced  SGI HP Sun
+
+  Contact
+  Your local IBM Rep  For a trial package ask your rep to contact 
+
+  David Kilgore
+  Data Explorer Product Marketing
+  YKTVMHKILCORE 708 9814510
+
+Wavefront
+
+  Data Visualizer Personal Visualizer Advanced Visualizer
+  Platforms SGI SUN IBM RS6000 HP DEC
+
+  Availability
+    Available on all the above platforms from Wavefront
+    Technologies  Educational programs and site licenses are
+    available
+
+  Contacts
+    Mike Wilson mikewticom
+
+    Wavefront Technologies Inc
+    530 East Montecito Street
+    Santa Barbara CA 93103
+    8059628117
+    FAX 8059630410
+
+    Wavefront Europe
+    Guldenspoorstraat 2123
+    B9000 Gent Belgium
+    3291254555
+    FAX 3291234456
+
+    Wavefront Technologies Japan
+    17F Shinjukusumitomo Bldg
+    261  Nishishinjuku ShunjukuKu
+    Tokyo 168 Japan
+    81333427330
+   FAX 81333427353
+
+
+PLOT3D and FAST from NASA Ames
+
+  These packages are distributed from COSMIC at least
+  for FAST ask Pat Elson pelsonnasnasagov for
+  distribution information In general these codes are for US
+  citizens only 
+
+XGRAPH
+
+  On the contrib tape of X11R5 Its specialty is display of up
+  to 64 data sets 2D
+
+NCAR
+
+  National Center for Atmospheric Research One of the original graphics
+  packages Runs on Sun RS6000 SGI VAX Cray YMP DecStations and more
+
+  Contact
+	Graphics Information
+	NCAR Scientific Computing Division
+	PO Box 3000
+	Boulder CO   803073000
+	3034971201
+	scdinfoncarucaredu
+
+  Cost
+	edu
+	750 Unlimited users
+
+	gov
+	750 1 user
+	1500 5 users
+	3000 25 users
+
+	com users multiply gov  20
+
+IDL
+
+  An environment for scientific computing and visualization
+  Based on an array oriented language IDL includes 2D and 3D
+  graphics matrix manupulation signal and image processing
+  basic statistics gridding mapping and a widget based system
+  for building GUI for IDL applications Open Look Motif or
+  MSWindows
+
+  Environments  DEC VMS and Ultrix HP IBM RS6000 SGI Sun
+          Microsoft Windows  Mac version in progress
+  Cost  1500 to 3750 Educational and quantity discounts
+          available
+  See also   complangidlpvwave the IDLPVWAVE bundle
+  Contact    Research Systems Inc
+              777 29th Street Suite 302
+              Boulder CO  80303
+              Phone  3037869900
+              FAX    3037869909
+              Email inforsinccom
+  Demo available via FTP  Call or Email for details
+
+IDLSIPS
+
+  A lot of people are using IDL with a package called SIPS This was
+  developed at the University of Colorado Boulder by some people working
+  for Alex Goetz  You might try contacting them if you already have IDL
+  or would be willing to buy it  Its a few thousand dollars American I
+  expect for IDL and the other should be free  Those are the general
+  purpose packages Ive heard of besides what TerraMar has
+  SIPS was written for AVIRIS imagery  Im not sure how general purpose
+  it is  You would have to contact Goetz or one of his people and ask  I
+  have another piece of software PCW that does PC and Walsh
+  transformations with pseudocoloring and clustering and limited image
+  modification you can compute an image using selected components  Ive
+  used it on 70 megabyte AVIRIS images without problems but for the best
+  speed you need an external DSP card  It will work without it but large
+  images take quite a while 5070 times as long to process  Thats a
+  freebie if you want it
+
+  My  favorite is IDL Interactive Data Language from Research Systems
+  Inc  IDL is in my opinion much better and infinitely easier Its
+  programming language is very strong and easy  very Pascallike It
+  handles the numbercrunching very well also Personally I like doing
+  the numbercrunching with IDL on the VAX or Mathematica Igor or even
+  Excel on the Mac if its not too hairy then bringing it over to NIH
+  Image for the imaging part I have yet to encounter any situation which
+  that combination couldnt handle and the speed and ease of use
+  compared to IRAF was incredible By the way its mostly astronomical
+  image processing which Ive been doing This means image enhancement
+  cleaning up bad linespixels and some other traditional image
+  processing routines Then for example taking a graph of intensity
+  versus position along a line I choose with the mouse then doing a curve
+  fit to that line which I might do like in KaleidaGraph 
+
+ For IDL call Research Systems  for PVWAVE call Precision Visuals and
+ for SIPS call University of Colorado  Boulder  From what I can
+ understand you can get packaged programs from Research Systems though
+  nfotis 
+
+Visual3
+
+  contact Robert Haimes MIT
+
+FieldView
+
+ An interactive program designed to assist an engineer in
+ investigating fluid dynamics data sets          
+
+ Platforms  SGI IBM HP SUN Xterminals
+
+ Availability  Currently available on all of the above
+       platforms  Educational programs and volume 
+       discounts are available
+
+ Contact
+
+ Intelligent Light 
+ PO Box 65
+ Fair Lawn NJ 07410
+ 2017947550
+        
+ Steve Kramer kramerilightcom
+
+
+SciAn
+
+  SciAn is primarily intended to do 3D visualizations of data in an 
+  interactive environment with the ability to generate animations using
+  frameaccurate video recording devices  A user manual online help and
+  technical notes will help you use the program
+
+  Cost  0 Free source code provided via ftp
+  Platforms  SGI 4D machines and IBM RS6000 with the GL card  Zbuffer
+
+  Where to find it
+  ftpscrifsuedu 14417412834  pubSciAn
+	A mirror is monu1ccmonasheduau 1301941101  pubSciAn
+
+SCRY
+
+ From the README  
+
+      Scry is a distributed image handling system  that  pro
+ vides image transport and compression on local and wide area
+ networks image viewing on workstations recording on  video
+ equipment  and  storage on disk  The system can be distri
+ buted among workstations between supercomputers and  works
+ tations  and between supercomputers workstations and video
+ animation controllers  The system is most commonly used  to
+ produce  video based movie displays of images resulting from
+ visualization of time dependent data complex 3D data  sets
+ and  image  processing  operations   Both  the  clients and
+ servers run on a variety of systems that provide UNIXlike C
+ runtime environments and 4BSD sockets
+ 
+ The source is available for anonymous ftp
+ 
+ csamlblgov 12832546  pubscrytarZ
+ 
+ Contact
+ 
+ Bill Johnston wejohnstonlblgov ucbvaxcsamlblgovjohnston
+
+       or
+
+ David Robertson dwrobertsonlblgov ucbvaxcsamlblgovdavidr
+ 
+ Imaging Technologies Group
+ MS 50B2239
+ Lawrence Berkeley Laboratory
+ 1 Cyclotron Road
+ Berkeley CA  94720
+
+
+SVLIB  FVS
+
+  SVLIB is an XWindows widget set based on the OSF Open Software 
+  Foundation Motif widget set SVLIB widgets are macrowidgets 
+  comprising lower level Motif widgets such as buttons scrollbars 
+  menus and drawing areas It is designed to address the reusability 
+  of 2D visualization routines and each widget in the library is an 
+  encapsulation of a specific visualization technique such as colormap 
+  manipulation image display and contour plotting It is targetted
+  to run on UNIX workstations supporting OSFMotif Currently only 
+  color monitors are supported Since SVLIB is a collection of widgets 
+  developed in the same spirit as the OSFMotif user interface widget 
+  set it integrates seamlessly with the Motif widgets Programmers 
+  using SVLIB widgets see the same interface and design as other 
+  Motif widgets
+
+  FVS is a visualization software for Computational Fluid Dynamics CFD 
+  simulations  FVS is designed to accept data generated from these
+  simulations and apply various visualization techniques to present these
+  data graphically 
+  FVS accepts threedimensional multiblock data recorded in NCSA HDF format
+
+ itigovsg 192122132130  pubsvlib Scientific Visualization
+      pufvs These directories contain demo binaries for Sun4SGI
+
+  Cost  US200 for academic and US300 for nonacademic institutions
+  For each of the above items Youre getting the source for the licence
+
+  Contact
+  
+  Miss Quek Lee Hian
+  Member of Technical Staff
+  Information Technology Institute
+  National Computer Board
+  NCB Building
+  71 Sicence Park Drive
+  Singapore 0511
+  Republic of Singapore
+  Tel  657720435
+  Fax  657795966
+  Email  leehianitigovsg
+
+
+
+GVLware Distribution
+        Bob   An interactive volume renderer for the SGI
+        Raz   A disk based movie player for the SGI
+        Icol  Motif color editor
+
+
+The Army High Performance Computing Research Center AHPCRC has been
+developing a set of tools to work with large time dependent 2D and 3D
+data sets  In the Graphics and Visualization Lab GVL we are using
+these tools along side standard packages such as SGI Explorer and the
+Utah Raster Toolkit to render 3D volumes and create digital movies
+A couple of the more general purpose programs have been bundled into a
+package called GVLware
+
+GVLware currently consisting of Bob Raz and Icol is now available
+via ftp  The most interesting program is probably Bob an interactive
+volume renderer for the SGI  Raz streams raster images from disk to
+an SGI screen enabling movies larger than memory to be played  Icol
+is a color map editor that works with Bob and Raz  Source and
+prebuilt binaries for IRIX 405 are included
+
+To acquire GVLware anonymous ftp to
+        machine  ftparcumnedu
+        file     pubgvltarZ
+
+To use GVLware
+        mkdir gvl  cd gvl
+        zcat gvltarZ  tar xvf 
+        more README
+
+Some Bob features
+        Motif interface SGI GL rendering
+        Renders 64 cubed data set in 01 to 10 seconds on a VGX
+        Alpha Compositing and Maximum Value rendering in perspective
+            only Maximum Value rendering on Personal Iris
+        Data must be a Brick of Bytes on a regularly spaced grid
+        Animation subvolumes subsampling stereo
+
+Some Raz features
+        Motif interface SGI GL rendering
+        Loads files to a raw disk partition then streams to screen
+            requires an empty disk partition to be set aside
+        Script interface available for movie sequences
+        Can stream from memory like NCSA XImage
+        
+Some Icol features
+        Motif interface
+        Easy to create interpolated color maps between key points
+        RGB HSV and YUV color spaces multiple file formats
+        Communicates changes automatically to Bob and Raz
+        Has been tested on SGI Sun DEC and Cray systems
+
+BTW    Bob   Brick of Bytes
+        Icol  Interpolated Color
+        Raz    just a name
+
+Please send any comments to
+        gvlwareahpcrcumnedu
+
+This software collection is supported by the Army Research Office
+contract number DAALO389C0038 with the University of Minnesota Army
+High Performance Computing Research Center
+
+
+IAP
+
+  Imaging Applications Platform is a commercial package for medical and
+  scientific visualization It does volume rendering binary surface
+  rendering multiplanar reformating image manipulation cine sequencing
+  intermixes geometry and text with images and provides measurement and
+  coordinate transform abilities
+
+  It can provide hardcopy on most medical film printers image database
+  functionality and interconnection to most medical CTMRIetc scanners
+
+  It is clientserver based and provides an object oriented interface It
+  runs on most high performance workstations and takes full advantage of
+  parallelism where it is available It is robust efficient and
+  will be submitted for FDA approval for use in medical applications
+
+  Cost 20K for OEM developer 10K for educational developer
+  and run times starting at 8900 and going down based on quantity
+
+  The developer packages include two days training for two people in Toronto
+
+  Available from
+
+  ISG Technologies
+  6509 Airport Road
+  Mississauga Ontario
+  Canada L4V1S7
+
+  416 6722100
+  email Rod Gilchrist rodisgteccom
+
+
+
+18 Molecular visualization stuff
+
+
+ Based on a list from cristydupontcom  Cristy   which asked for
+ systems for displaying Molecular Dynamics MD for short 
+
+Flex
+
+  It is a public domain package written by Michael Pique at The Scripps
+  Research Institute La Jolla CA Flex is stored as a compressed
+  tared archive about 34MB at perutzscrippsedu 13713115227 in
+  pubflex It displays molecular models and MD trajectories
+
+MacMolecule
+
+  for Macintosh I searched with Archie and the most
+  promising place is sumexaimstanfordedu infomacapp and
+  infomacartqt for a demo
+
+MDDISPLAY
+
+  Runs on SGI machines Call Terry Lybrand lybrandmiltonuwashingtonedu
+
+XtalView
+
+  It is a crystallography package that does visualize molecules and much more
+  It uses the XView toolkit
+  Call Duncan McRee demscrippsedu
+
+landmanhalphysicswayneedu
+
+  I am writing my own visualization code right now  I look at MD output
+  a specific format easy to alter for the subroutine on PCs  My
+  program has hooks into GKS  If your friend has access to Phigs for X
+  PEX and fortran bindings I would be happy to share my evolving code
+  free of charge  Right now it can display supercells of up to 65
+  atoms easy to change and up to 100 time steps drawing nearest
+  neighbor bonds between 2 defining nn radii  It works acceptably fast
+  on a 10Mhz 286
+
+icsg0001caesarcsmontanaedu
+
+  I did a project on Molecular Visualization for my Masters Thesis using
+  UNIXX11Motif which generates a simple point and spacefilling model
+
+KGNGRAF
+
+
+KGNGRAF is part of MOTECC91 Look on malenacrs4it 156148712
+in pubmotecc
+
+moteccinfotxt          Information about MOTECC91 in plain ascii format
+
+moteccinfotroff        Information about MOTECC91 in troff format
+moteccformtroff        MOTECC91 order form in troff format
+motecclicensetroff     MOTECC91 license agreement in troff format
+
+moteccinfops           Information about MOTECC91 in PostScript format
+moteccformps           MOTECC91 order form in PostScript format
+motecclicenseps        MOTECC91 license agreement in PostScript format
+
+
+ditollaitnsg1cinecait
+
+  Im working on molecular dynamic too  A friend of mine and I have
+
+  developed a program to display an MD run dynamically on Silicon
+  Graphics  We are working to improve it but it doesnt work under X
+  we are using the graphi lib of the Silicon Gr because they are much
+  faster then X  When well end it well post on the news info about
+  where to get it with ftp Will be free software
+
+XBall V20
+
+  Written by David Nedde Call davenmaxinewpiedu
+
+XMol
+
+  An X Window System program that uses OSFMotif  for  the
+  display and  analysis  of  molecular  model data  Data from several
+  common file formats can be read and written current formats include
+  Alchemy CHEMLABII Gaussian MOLSIM MOPAC PDB and MSCIs XYZ
+  format which has been designed  for  simplicity  in  translating to
+  and from other formats XMol also allows for conversion between
+  several of these formats
+  Xmol is available at ftpmscedu Read pubxmolREADME for
+  further details
+
+INSIGHT II
+
+  from BIOSYM Technologies Inc
+
+SCARECROW
+
+  The program has been published in J Molecular Graphics 10
+  1992 33 The program can analyze and display CHARMM DISCOVER YASP
+  and MUMOD trajectories The program package contains also software for
+  the generation of probe surfaces proton affinity
+  surfaces and molecular orbitals from an extended Huckel program
+  It works on Silicon Graphics machines
+  Contact Leif Laaksonen LeifLaaksonencscfi or laaksonecscfi
+
+MULTI
+
+nsniehsnihgov 1579888  pub  MULTI 30 MultiProcess
+		Molecular Modeling Suite
+
+MindTool
+
+  It runs under SunView and requires a fortran compiler and Suns CGI
+  libraries MindTool is a tool  provided  for  the  interactive  graphic
+  manipulation  of  molecules  and  atoms Currently up to 10000
+  atoms may be input
+  Available via anonymous FTP at ranichemyaleedu directory
+  pubMindTool  Check with Archie for other  sites if thats too far 
+
+ I would also suggest looking at least in SGIs Applications Directory
+ It contains many more packages  nfotis 
+
+
+
+19 GIS Geographical Information Systems software
+
+
+GRASS
+
+  Geographic Resource Analysis Support System of the US Army
+  Construction Engineering Research Lab CERL It is a popular geographic and
+  remote sensing image processing package Many may think of GRASS as a
+  Geographic Information System rather than an Image Processing package
+  although it is reported to have significant image processing
+  capabilities
+
+  Feature Descriptions
+
+  I use GRASS  because its public domain and can be obtained through the
+  internet for free  GRASS runs in Unix and is written in C  The source
+  code can be obtained through an anonymous ftp from the Office of Grass
+  Integration  You then compile the source code for your machine using
+  scripts provided with GRASS  I would recommend GRASS for someone who
+  already has a workstation and is on a limited budget GRASS is not very
+  userfriendly compared to Macintosh software A first review  of
+  overview documentation indicates that it looks useful and has some pixel
+  resampling functions not in other packages plus good general purpose
+  image enhancement routines fft Kelly Maurice at Vexcel Corp in
+  Boulder CO is a primary user of GRASS   This gentleman has used the
+  GRASS software and developed multispectral 238 bands  volumetric
+  rendering full color on Suns and Stardents It was a really effective
+  interface  Vexcel Corp currently has a contract to map part of Venus
+  and convert the Magellan radar data into contour maps You can call them
+  at 303 4440094 or email care of gregvexcelcom 192929068
+
+  Host Configuration Requirements
+
+  If you are willing to run AUX you could install GRASS   on a Macintosh
+  which has significant image analysis and import capabilities for
+  satellite data GRASS  is publicdomain and can run on a highend PC
+  under UNIX It is rasterbased has some imageprocessing capability
+  and can display vector data but analysis must be done in the raster
+  environment I have used GRASS V3 on a SUN workstation and found it
+  easy to use It is best of course for data that are well represented
+  in raster gridcell form
+
+  Availability
+
+  CERLs Office of Grass Integration OGI  maintains an ftp server
+  mooncecerarmymil 12922920254
+
+  Mail regarding this site should be addressed to
+  grassftpadminmooncecerarmymil
+
+  This location will be the new canonical source for GRASS software as
+  well as bug fixes contributed sources documentation and other files
+  This FTP server also supports dynamic compression and uncompression and
+  tar archiving of files  A feature attraction of the server is John
+  Parks GRASS tutorial  Because the manual is still in betatest stage
+  John requests that people only acquire it if they are willing to review
+  it and mail him commentscorrections The OGI is not currently
+  maintaining this document so all correspondence about it should be
+  directed to grassxtanguarkedu
+
+  Support
+
+  Listserv mailing lists
+
+  grassulistambercecerarmymil for GRASS users applicationlevel
+  questions support concerns miscellaneous questions etc Send
+  subscribe commands to grassurequestambercecerarmymil
+
+  grassplistambercecerarmymil for GRASS programmers systemlevel
+  questions and tips tricks and techniques of design and implementation
+  of GRASS applications Send subscribe commands to
+  grassprequestambercecerarmymil
+
+  Both lists are maintained by the Office of Grass Integration subset of
+  the Army Corps of Engineers Construction Engineering Research Lab in
+  Champaign IL The OGI is providing the lists as a service to the
+  community while OGI and CERL employees will participate in the lists
+  we can make no claim as to content or veracity of messages that pass
+  through the list  If you have questions problems or comments send
+  Email to listsownerambercecerarmymil and a human will respond
+
+Microstation Imager
+
+  Intergraph based in Huntsville Alabama sells a wide range of GIS
+  softwarehardware Microstation is a base  graphics package that Imager
+  sits on top of Imager is basically an  image processing package with a
+  heavy GISremote sensing flavor
+
+  Feature Description
+
+  Basic geometry manipulations flip mirror rotate generalized affine
+  Rectification Affine 2nd 3rd 4th and 5th order models as well as a
+  projective model warp an image to a vector map or to another image
+  RGB to IHS and IHS to RGB conversion  Principal component analysis
+  Classification Kmeans and isodata  Fourier Xforms Forward filtering
+  and reverse  Filters High pass low pass edge enhancing median
+  generic  Complex HistogramContrast control  Layer Controller manages
+  up to 64 images at a time  user can extract single bands from a 3 band
+  image or create color images by combining various individual bands etc
+
+  The package is designed for a remote sensing application it can handle
+  VERY LARGE images and there is all kinds of other software available
+  for GIS applications
+  Host Configuration Requirements
+
+  It runs on Intergraph Workstations a Unix machine similar to a Sun
+  though there  were rumors there are always rumors that the software
+  would be  ported to PC and possibly a Sun environment
+
+PCI
+
+  A company called PCI Inc out of Richmond Hill Ontario Canada makes
+  an array of software utilities for processing manipulation and use of
+  remote sensing data in eight or ten different industry standard
+  formats LGSOWG BSQ LANDSAT and a couple of others whose titles I
+  forget  The software is available in versions for MSDOS Unix
+  workstations among them HP Sun and IBM and VMS and quite possibly
+  other platforms by now  I use the VMS version
+
+  The PCI software consists of several classesgroupspackages of
+  utilities grouped by function but all operating on a common PCI
+  database disk file  The Tape IO package is a set of utility
+  programs which read from the various remotesensing industry tape
+  formats INTO or write those formats out FROM the PCI database file
+  this is the only package I use or know much about  Other packages can
+  display data from the PCI database to one or another of several
+  PCIsupported thirdparty color displays output numeric or bitmap
+  representation of image data to an attached printer eg an Epsontype
+  dotmatrix graphics printer  You might be more spe cifically
+  interested in the mathematical operations package histo gram and
+  Fourier analysis equalization userspecified operations eg
+  multiply channel 1 by 3 add channel 2 and store as channel 5 and
+  God only knows what all else  theres a LOT  I dont have and dont
+  use these so cant say much about them you only buy the packages your
+  particular applicationinterest calls for
+
+  Each utility is controlled by from one to eight parameters read from
+  a common parameter file which must be in VMS anyway in your default
+  directory  Some utilities will share parameters and use the same
+  parameter for a different purpose so it can get a bit confusing setting
+  up a series of operations  The standard PCI environment contains a
+  scripting language very similar to IBMPC BASIC but which allows you to
+  automate the process of setting up parameters for a common complicated
+  lengthy or difficult series of utility executions  In VMS I can also
+  invoke utilities independently from a DCL command procedure  Theres
+  also an optional programming library which allows you to write compiled
+  language programs which can interface with read fromwrite to the PCI
+  data structures database file parameter file
+
+  The PCI software is designed specifically for remotesensing images but
+  requires such a level of operator expertise that once you reach the
+  level where you can handle rs images you can figure out ways to handle
+  a few other things as well  For instance the Tape IO package offers a
+  utility for reading headerless multiband what Adobe PhotoShop on the
+  Macintosh calls raw data from tape in a number of different
+  interleave orders This turns out to be ideal for manipulating the
+  graphicarts industrys CT2T format would probably I havent tried
+  handle Targa and so on Above all however you HAVE TO KNOW WHAT
+  YOURE DOING or you can screw up to the Nth degree and have to start
+  over  Its worth noting that the PCI database file is designed to
+  contain not only raster image data but vectors for overlaying map
+  information entered via digitizing table landuse and all manner of
+  other information I observe that a remotesensing image tape often
+  contains all manner of information about the spectral bands latitude
+  longitude time date etc of the original satellite pass all of this
+  can go into the PCI database
+
+  I believe that on workstations the builtin display is used  On VAX
+  systems OTHER than workstations PCI supports only a couple of specific
+  thirdparty display systems the name GouldDeanza seems to come to
+  mind  One of MY personal workarounds was a display program which would
+  display directly from a PCI database file to a Peritek VCTQ Qbus
+  24bit DirectColor display subsystem  PCI software COULD be overkill
+  in your case it seems designed for the very high end
+  applicationsusers ie those for whom a MacPC largely doesnt suffice
+  although as you know the gap is getting smaller all the time  Its
+  probably no coincidence that PCI is located in Canada a country which
+  does a LOT of its landresource management via remote sensing I believe
+  the Canadian government uses PCI software for some of its work in these
+  areas
+
+SPAM Spectral Analysis Manager
+
+  Back in 1985 JPL developed something called SPAM Spectral Analysis
+  Manager which got a fair amount of use at the time  That was designed
+  for Airborne Imaging Spectrometer imagery byte data  256 pixels
+  across by  512 lines by  256 bands a modified version has since
+  been developed for AVIRIS Airborne VIsual and InfraRed Imaging
+  Spectrometer which uses much larger images
+
+  Spam does none of these things rectification classification PC and
+  IHS transformations filtering contrast enhancement overlays
+  Actually it does limited filtering and contrast enhancement
+  stretching  Spam is aimed at spectral identification and clustering
+
+  The original Spam uses X or SunView to display  The AVIRIS version may
+  require VICAR an executive based on TAE and may also require a frame
+  buffer  I can refer you to people if youre interested  PCW requires X
+  for display
+
+MAP II
+
+  Among the Mac GIS systems MAP II is distributed by John Wiley
+
+CLRview
+
+  CLRview is a 3dimensional visualization program designed to exploit
+  the realtime capabilities of Silicon Graphics IRIS computers
+
+  This program is designed to provide a core set of tools to aid in the
+  visualization of information from CAD and GIS sources  It supports
+  the integration of many common but disperate data sources such as DXF
+  TIN DEM Lattices and ArcInfo Coverages among others
+
+  CLRview can be obtained from explorerdgputorontoca 1281001129 
+  in the directory pubsgiclrview
+
+  Contact
+  Rodney Hoinkes
+  Head of Design Applications
+  Centre for Landscape Research
+  University of Toronto
+  Tel   416 9787197
+  Email rodneydgputorontoca
+
+
+
+End of Resource Listing
+ 
+Nick Nikolaos Fotis         National Technical Univ of Athens Greece
+HOME 16 Esperidon St       InterNet  nfotistheseasntuagr
+      Halandri GR  152 32   UUCP    mcsunariadnetheseasnfotis
+      Athens GREECE          FAX 30 1 77 84 578

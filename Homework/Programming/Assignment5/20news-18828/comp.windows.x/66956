@@ -1,0 +1,19 @@
+From mousethundermcrcimmcgilledu der Mouse
+Subject Re XWindows always opaque
+
+ Distribution comp
+
+Please dont misuse newsgroup hierarchy names as distributions
+
+In article hess734959172swt1 hessswt1informatikunihamburgde Hauke Hess writes
+
+ I wonder if it is possible for a parent window to paint over the area
+ of its childs
+
+Yes but its not an attribute of the window its an attribute of the
+GC used to do the drawing  Set the subwindowmode to IncludeInferiors
+rather than the default ClipByChildren
+
+					der Mouse
+
+				mousemcrcimmcgilledu

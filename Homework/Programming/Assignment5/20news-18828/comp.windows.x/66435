@@ -1,0 +1,72 @@
+From beckirzr17inftudresdende Andre Beck
+Subject Re Cute X clients
+
+
+Try this
+
+include stdioh
+include X11Xlibh
+include X11Xutilh
+
+Display dpy
+int	screen
+XColor	xclrsxclrp
+XID	cmap
+int	cellsijredgreenbluegot
+
+
+
+main
+
+ dpy  XOpenDisplayNULL
+ screen  DefaultScreendpy
+ cells  DisplayCellsdpyscreen
+
+ cmap  XCreateColormapdpyRootWindowdpyscreenDefaultVisualdpyscreen1
+
+ xclrs  XColor malloccells  sizeofxclrs
+
+
+ xclrp  xclrs 
+ for i0 icells i  xclrppixel  i xclrpflags  7 xclrp 
+
+ XQueryColorsdpyDefaultColormapdpyscreenxclrscells
+ XStoreColorsdpycmapxclrscells
+ XInstallColormapdpycmap
+ got  1
+
+ whilegot 
+  xclrp  xclrs
+  got  0
+  fori0 icells i  
+   ifxclrpred  65000 xclrpred  256 got  1
+   ifxclrpgreen  65000 xclrpgreen 256 got1
+   ifxclrpblue  65000 xclrpblue 256 got1
+   xclrp 
+  
+  XStoreColorsdpycmapxclrscells
+  XInstallColormapdpycmap 
+ 
+ got  1
+ whilegot 
+  xclrp  xclrs
+  got  0
+  fori0 icells i  
+   ifxclrpred  256 xclrpred  256 got  1
+   ifxclrpgreen  256 xclrpgreen 256 got1
+   ifxclrpblue  256 xclrpblue 256 got1
+   xclrp 
+  
+  XStoreColorsdpycmapxclrscells
+  XInstallColormapdpycmap 
+ 
+
+
+It will work on any PseudoColor XServer hopefully 
+
+
+oo
+ o                   Brain Inside                         o 
+ o                                                 o 
+ o  Andre Beck ABPSoft mehl AndreBeckIRSInfTUDresdende  o 
+oo

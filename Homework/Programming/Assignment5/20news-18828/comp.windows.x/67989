@@ -1,0 +1,36 @@
+From raistlinunipaderbornde Markus Koch
+Subject X and Motif configfile for HPUX 80 
+
+
+Hello everybody out there 
+
+Im trying to compile X11R5pl23 and Motif 121 on a HP running
+HPUX 805 But it seems to be not very succesful because 
+I have only hpcf configfiles for HPUX 70 
+
+I tried standard cc and X was compiled with a lot of warnings
+The motif applications are compiled quite well but they wont run
+I receive the XKeysymDB error which is reported in FAQ but
+I cannot fix it The XKeysymDBfile is at the right location and it
+works fine under SunOS
+Probably I have started the compilation Prozess only with a wrong
+configfile
+
+Please help me 
+  
+Thanx in advance 
+  Markus
+
+
+ Markus Koch                           UniversitaetGH Paderborn 
+ Email  raistlinunipaderbornde     Rechnerbetreuung
+ Phone  49 5251 60 3322              Warburger Str 100
+         49 5251 60 3318              W4790 Paderborn Germany
+ 
+
+
+
+ Markus Koch                           UniversitaetGH Paderborn 
+ Email  raistlinunipaderbornde     Warburger Str 100
+ Phone  49 5251 60 3322              W4790 Paderborn Germany
+

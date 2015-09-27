@@ -1,0 +1,87 @@
+From baalkekelvinjplnasagov Ron Baalke
+Subject Galileo Update  042293
+
+Forwarded from Neal Ausman Galileo Mission Director
+
+                                 GALILEO
+                     MISSION DIRECTOR STATUS REPORT
+                               POSTLAUNCH
+                           April 16  22 1993
+
+
+SPACECRAFT
+
+1  On April 19 cruise science Memory Readouts MROs were performed for the
+Extreme Ultraviolet Spectrometer EUV Dust Detector DDS and Magnetometer
+MAG instruments  Preliminary analysis indicates the data was received
+properly
+
+2  On April 19 a Command Detector Unit SignaltoNoise Ratio CDUSNR test
+and a Radio Frequency Subsystem Automatic Gain Control RFSAGC test were
+performed using the LGA1 Low Gain Antenna 1 over DSS63 Madrid 70 meter
+antenna and DSS61 Madrid 34 meter antenna respectively  Data analysis
+is in process  These tests are periodically performed to provide detailed
+information relative to the telecom command hardware integrity
+
+3  On April 19 a NOOP command was sent to reset the command loss timer to
+264 hours its planned value during this mission phase
+
+4  On April 21 the first of two suppressed carrierDSN Deep Space Network
+advanced receiver characterization tests was performed over DSS14 Goldstone
+70 meter antenna  The spacecraft modulation index was varied from 43 degrees
+to 90 degrees for a range of ground receiver bandwidth settings
+
+5  The AC bus imbalance measurement has not exhibited significant change
+greater than 25 DN throughout this period but the DC bus imbalance
+measurement has  The AC measurement reads 20 DN 45 volts  The DC
+measurement has ranged from 43 DN 46 volts to 138 DN 162 volts and
+currently reads 138 DN 162 volts  These measurements are consistent with
+the model developed by the ACDC special anomaly team
+
+6  The Spacecraft status as of April 22 1993 is as follows
+
+       a  System Power Margin   68 watts
+       b  Spin Configuration  DualSpin
+       c  Spin RateSensor  315rpmStar Scanner
+       d  Spacecraft Attitude is approximately 21 degrees
+           offsun lagging and 5 degrees offearth leading
+       e  Downlink telemetry rateantenna 40bpscodedLGA1
+       f  General Thermal Control  all temperatures within
+           acceptable range
+       g  RPM Tank Pressures  all within acceptable range
+       h  Orbiter Science Instruments powered on are the PWS
+           EUV UVS EPD MAG HIC and DDS
+       i  ProbeRRH  powered off temperatures within
+           acceptable range
+       j  CMD Loss Timer Setting  264 hours
+           Time To Initiation  184 hours
+
+
+TRAJECTORY
+
+     As of noon Thursday April 22 1993 the Galileo Spacecraft trajectory
+status was as follows
+
+	Distance from Earth         169747800 km 114 AU
+	Distance from Sun           286967900 km 192 AU
+	Heliocentric Speed          91200 km per hour
+	Distance from Jupiter       532735900 km
+	Round Trip Light Time       18 minutes 58 seconds
+
+
+SPECIAL TOPIC
+
+1  As of April 22 1993 a total of 70185 realtime commands have been
+transmitted to Galileo since Launch  Of these 65077  were initiated in the
+sequence design process and 5108 initiated in the realtime command process
+In the past week one real time command was transmitted one was initiated in
+the sequence design process and none initiated in the real time command
+process The only command activity was a command to reset the command loss
+timer
+              
+                Ron Baalke          baalkekelvinjplnasagov
+                   Jet Propulsion Lab 
+             MS 5253684 Telos  The aweto from New Zealand
+            Pasadena CA 91109  is part caterpillar and
+                               part vegetable
+

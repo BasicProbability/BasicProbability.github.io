@@ -1,0 +1,28 @@
+From linnigm2000dsegticom Mike Linnig
+Subject Re booksinfo on audio DSP 
+
+In article C52DsD7pBcompsciliverpoolacuk scst83csclivacuk Chris Smith writes
+
+ Im looking to build a DSP for guitar processing Hence lots of background
+ information would be really useful 
+ 
+ If anyones got any info could they email
+
+Well Im not sure Id use this to process a guitar but there was a audio
+filter DSP construction article in the Sept 92 issue of QST magazine Ham Radio
+oriented  The DSP is available in kit form for about 120
+
+This particular DSP filter was targetted toward processing audio to remove
+noise static  I built it and it really works well  The source code is
+available too  It makes a noisy audio signal much easier to hear  Note that
+this is for communication applications and is not high fidelity
+
+
+
+
+                                    
+Mike Linnig Texas Instruments Inc  9743 of all statistics are made 
+Phone 214 5753597  CALL N5QAW   up most of them 836 percent   
+Internet mikelinnigdsegticom    are wrong                        
+                                    
+

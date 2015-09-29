@@ -34,12 +34,40 @@ small and allows you to check your algorithms performance on unseen data while d
 is the final criterion of success. In a research paper you report your results on the test set. It is meant
 to represent new, unseen data. This means that you should not run you algorithm on it till the very end.
 
-You can find the training data here and the dev set here. The test set will only be made available next week
+You can find the training data \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/20news-18828.zip}{here} and the dev set 
+\href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/dev-set.zip}{here}. The test set will only be made available next week
 to simulate a situation in which you really do not know the data on which you are going to apply your 
 algorithm.
 
 \paragraph{Implementation} When implementing na\"ive Bayes, we have to take care of two things:
 \begin{enumerate}
 \item Most documents in the test and development sets will contain words that our classifier has never
-seen before. Hence, the maximum likelihood estimate for 
+seen before. Hence, the maximum likelihood estimate for such words will be $ \theta_{word} = 0 $. This
+means the entire document will have probability 0. This is obviously not what we want. Therefore we apply
+the following trick: after having counted the words in the entire training set, we remove the words that
+have only have a count of 1, add up their counts and assign them to the unknown word \texttt{\_\_UNK\_\_}. In
+the prediction step, whenever we encounter a word that we have not seen before, we just pretend it is
+\texttt{\_\_UNK\_\_}. This way we can assign probabilities to all word.
+\item The probabilities of each document will be rather low, so low in fact that they might get zeroed out.
+For this reason we will work with logprobs instead. Notice that this turns all multiplications into addtions.
 \end{enumerate}
+
+\section{Grading}
+The grading is going to be based on the performance of your classifier rather than on your code alone.
+Please do not stress out about this. Try to work together and test your methods frequently (e.g. write
+your onw unit tests).
+
+\begin{itemize}
+\item[8 points] if the classifier achieves an accuracy of \textbf{TBD}\% on the test set. You should
+use the dev set accuracy as an indicator for your classifier's performance. The classifier should
+achieve \textbf{TBD}\% accuracy on the dev set.
+\item[2 point] if you add a command line option that allows to modify the threshold on the word count
+that determines what words get mapped to the unknown word.
+\item[3 extra points] if you manage to improve the performance of your classifier on the test set. This
+can achieved by incorporating more features. For example, you may want to estimate the probability of 
+upper case letters or include pairs of words (so-called bigrams) as features. Notice that if you
+include bigrams you also want to include the unknown bigram, that fulfills the same function as the
+unknown word.
+\end{itemize}
+
+\end{document}

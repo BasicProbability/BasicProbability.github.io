@@ -34,13 +34,15 @@ small and allows you to check your algorithms performance on unseen data while d
 is the final criterion of success. In a research paper you report your results on the test set. It is meant
 to represent new, unseen data. This means that you should not run you algorithm on it till the very end.
 
-You can find the training data here and the dev set here. The test set will only be made available next week
+You can find the training data \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/20news-18828.zip}{here} and the dev set \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/20news-18828.zip}{here}. The correct labels for the dev set are supplied \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/correct_dev_labels.txt}{here}.
+The test set will only be made available next week
 to simulate a situation in which you really do not know the data on which you are going to apply your 
 algorithm.
 
-\paragraph{The model} The model you need to implement is a na\"ive Bayes model. Recall that this is a model
+\paragraph{The model} The model you need to implement is a na\"ive Bayes model. Recall that for some value $ y $and $ n $ i.i.d. observations
+of $ x_{1}^{n} $ this is a model
 of the form
-$$ P(Y=y|X=x) \propto P(X=x|Y=y) \times P(Y=y) \ . $$
+$$ P(Y=y|X_{1}^{n}=x_{1}^{n}) \propto \underset{i=1}{\overset{n}{\prod}} P(X_{i}=x_{i}|Y=y) \times  P(Y=y) \ . $$
 In our case the random variable $ Y $ will range over labels and $ X $ will range over \textbf{features} (observations).
 The labels are the names of the news groups and the features are the words in the texts. The goal of the classifier is
 to learn the $ \theta $ parameters the distributions using maximum likelihood (when you calculate the probabilities
@@ -73,9 +75,9 @@ The grading is going to be based on the performance of your classifier rather
 than on your code alone. Please do not stress out about this. Try to work
 together and test your methods frequently (e.g. write your onw unit tests).
 \begin{itemize}
-\item[8 points] if the classifier achieves an accuracy of TBD% on the test set. You
+\item[8 points] if the classifier achieves an accuracy of TBD\% on the test set. You
 should use the dev set accuracy as an indicator for your classifier’s
-performance. The classifier should achieve TBD% accuracy on the
+performance. The classifier should achieve TBD\% accuracy on the
 dev set.
 \item[2 points] if you add a command line option that allows to modify the threshold
 on the word count that determines what words get mapped to the
@@ -88,8 +90,14 @@ you include bigrams you also want to include the unknown bigram,
 that fulfills the same function as the unknown word. Furthermore, you may want to introduce
 a third random variable $ Z $ over the additional features. This way, you will keep the 
 distributions over words and your additional features separate. The model then becomes
-$$ P(Y=y|X=x,Z=z) = P(Y=y)P(X=x|Y=y)P(Z=z|Y=y) $$ where we assume conditional independence between
+\begin{align*}
+&P(Y=y|X_{1}^{n}=x_{1}^{n},Z_{1}^{m}=z_{1}^{m}) \propto \\ &P(Y=y)\underset{i=1}{\overset{n}{\prod}} P(X_{i}=x_{i}|Y=y)\underset{j=1}{\overset{m}{\prod}}P(Z_{j}=z_{j}|Y=y)
+\end{align*}
+where we assume conditional independence between
 all $ X $ and $ Z $.
 \end{itemize}
+
+Both for development and grading purposes, we will soon provide a script that checks the accurracy
+of your output.
 
 \end{document}

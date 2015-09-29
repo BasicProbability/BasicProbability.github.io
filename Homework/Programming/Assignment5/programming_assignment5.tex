@@ -19,7 +19,7 @@
 
 This week you will achieve two of the big goals of this course. You will implement your first machine 
 learning algorithm and run it on a real data set. The algorithm will be na\"ive Bayes. You will have to 
-implement parameter learning by maximum likelihood estimation and prediction. 
+implement parameter learning by maximum likelihood estimation and prediction.
 
 \paragraph{Data set} The data set is the 20 new groups data set. It consists of roughly 1000 post for each
 of 20 newsgroups. The posts are of varying length but usually do not exceed the size of an e-mail. The
@@ -34,40 +34,70 @@ small and allows you to check your algorithms performance on unseen data while d
 is the final criterion of success. In a research paper you report your results on the test set. It is meant
 to represent new, unseen data. This means that you should not run you algorithm on it till the very end.
 
-You can find the training data \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/20news-18828.zip}{here} and the dev set 
-\href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/dev-set.zip}{here}. The test set will only be made available next week
+
+You can find the training data \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/20news-18828.zip}{here} and the dev set \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/20news-18828.zip}{here}. The correct labels for the dev set are supplied \href{https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/correct_dev_labels.txt}{here}.
+The test set will only be made available next week
 to simulate a situation in which you really do not know the data on which you are going to apply your 
 algorithm.
 
+\paragraph{The model} The model you need to implement is a na\"ive Bayes model. Recall that for some value $ y $and $ n $ i.i.d. observations
+of $ x_{1}^{n} $ this is a model
+of the form
+$$ P(Y=y|X_{1}^{n}=x_{1}^{n}) \propto \underset{i=1}{\overset{n}{\prod}} P(X_{i}=x_{i}|Y=y) \times  P(Y=y) \ . $$
+In our case the random variable $ Y $ will range over labels and $ X $ will range over \textbf{features} (observations).
+The labels are the names of the news groups and the features are the words in the texts. The goal of the classifier is
+to learn the $ \theta $ parameters the distributions using maximum likelihood (when you calculate the probabilities
+in the prediction step, you can neglect the multinomial constant since we are only looking for a proportional
+quantity anyway). We assume that all distributions are multinomials. The MLE for $ \theta_{i} $ is the $ \frac{\#o_{i}}{n} $,
+where $ \#o_{i} $ is the count of the associated outcome (a label for $ Y $ and a word for $ X $) and $ n $ is the total
+number of observations (the number of documents for $ Y $ and the number of words in all documents that carry the same
+label for $ X $). 
+
 \paragraph{Implementation} When implementing na\"ive Bayes, we have to take care of two things:
 \begin{enumerate}
-\item Most documents in the test and development sets will contain words that our classifier has never
-seen before. Hence, the maximum likelihood estimate for such words will be $ \theta_{word} = 0 $. This
-means the entire document will have probability 0. This is obviously not what we want. Therefore we apply
-the following trick: after having counted the words in the entire training set, we remove the words that
-have only have a count of 1, add up their counts and assign them to the unknown word \texttt{\_\_UNK\_\_}. In
-the prediction step, whenever we encounter a word that we have not seen before, we just pretend it is
-\texttt{\_\_UNK\_\_}. This way we can assign probabilities to all word.
-\item The probabilities of each document will be rather low, so low in fact that they might get zeroed out.
-For this reason we will work with logprobs instead. Notice that this turns all multiplications into addtions.
+\item Most documents in the test and development sets will contain words
+that our classifier has never seen before. Hence, the maximum likeli-
+hood estimate for such words will be θ word = 0. This means the entire
+document will have probability 0. This is obviously not what we want.
+Therefore we apply the following trick: after having counted the words
+in the entire training set, we remove the words that have only have a
+count of 1, add up their counts and assign them to the unknown word
+\texttt{\_\_UNK\_\_}. In the prediction step, whenever we encounter a word that we
+have not seen before, we just pretend it is \texttt{\_\_UNK\_\_}. This way we can
+assign probabilities to all word.
+\item The probabilities of each document will be rather low, so low in fact
+that they might get zeroed out. For this reason we will work with log-
+probs instead. Notice that this turns all multiplications into addtions.
 \end{enumerate}
 
-\section{Grading}
-The grading is going to be based on the performance of your classifier rather than on your code alone.
-Please do not stress out about this. Try to work together and test your methods frequently (e.g. write
-your onw unit tests).
 
+\section{Grading}
+The grading is going to be based on the performance of your classifier rather
+than on your code alone. Please do not stress out about this. Try to work
+together and test your methods frequently (e.g. write your onw unit tests).
 \begin{itemize}
-\item[8 points] if the classifier achieves an accuracy of \textbf{TBD}\% on the test set. You should
-use the dev set accuracy as an indicator for your classifier's performance. The classifier should
-achieve \textbf{TBD}\% accuracy on the dev set.
-\item[2 point] if you add a command line option that allows to modify the threshold on the word count
-that determines what words get mapped to the unknown word.
-\item[3 extra points] if you manage to improve the performance of your classifier on the test set. This
-can achieved by incorporating more features. For example, you may want to estimate the probability of 
-upper case letters or include pairs of words (so-called bigrams) as features. Notice that if you
-include bigrams you also want to include the unknown bigram, that fulfills the same function as the
+\item[8 points] if the classifier achieves an accuracy of TBD\% on the test set. You
+should use the dev set accuracy as an indicator for your classifier’s
+performance. The classifier should achieve TBD\% accuracy on the
+dev set.
+\item[2 points] if you add a command line option that allows to modify the threshold
+on the word count that determines what words get mapped to the
 unknown word.
+\item[3 extra points] if you manage to improve the performance of your classifier on the test
+set. This can achieved by incorporating more features. For example,
+you may want to estimate the probability of upper case letters or
+include pairs of words (so-called bigrams) as features. Notice that if
+you include bigrams you also want to include the unknown bigram,
+that fulfills the same function as the unknown word. Furthermore, you may want to introduce
+a third random variable $ Z $ over the additional features. This way, you will keep the 
+distributions over words and your additional features separate. The model then becomes
+\begin{align*}
+&P(Y=y|X_{1}^{n}=x_{1}^{n},Z_{1}^{m}=z_{1}^{m}) \propto \\ &P(Y=y)\underset{i=1}{\overset{n}{\prod}} P(X_{i}=x_{i}|Y=y)\underset{j=1}{\overset{m}{\prod}}P(Z_{j}=z_{j}|Y=y)
+\end{align*}
+where we assume conditional independence between
+all $ X $ and $ Z $.
 \end{itemize}
 
+Both for development and grading purposes, we will soon provide a script that checks the accuracy
+of your output.
 \end{document}

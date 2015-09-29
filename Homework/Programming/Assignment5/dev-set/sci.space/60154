@@ -1,0 +1,46 @@
+From dchienhougenseasuclaedu David H Chien
+Subject Orbit data  help needed
+
+I have the osculating elements at perigee of an orbit which I need
+to convert to something useful preferably distance from the earth
+in evenly spaced time intervals A GSM coordinate system is preferable
+but I convert from other systems C pascal or fortran code or
+if you can point me to a book or something thatd be great
+
+heres the first few lines of the file
+
+0  
+1  2X A3 7X A30
+2  2X I5 2X A3 2X E2418
+3  4X A3 7X E2418
+1  SMA       SEMIMAJOR AXIS
+1  ECC       ECCENTRICITY
+1  INC       INCLINATION
+1  OMG       RA OF ASCENDING NODE
+1  POM       ARGUMENT OF PERICENTRE
+1  TRA       TRUE ANOMALY
+1  HAP       APOCENTRE HEIGHT
+1  HPE       PERICENTRE HEIGHT
+2      3  BEG  0167290000000000000E05
+3    SMA       0829159999999995925E05
+3    ECC       0692307999999998591E00
+3    INC       0899999999999999858E02
+3    OMG       0184369999999999994E03
+3    POM       0336549999999999955E03
+3    TRA       0359999999999999943E03
+3    HAP       0133941270127999174E06
+3    HPE       0191344498719999910E05
+2      1  REF  0167317532658774153E05
+3    SMA       0829125167527418671E05
+3    ECC       0691472268118590319E00
+3    INC       0899596754214342091E02
+3    OMG       0184377521828175002E03
+3    POM       0336683788851850579E03
+3    TRA       0153847166458030088E05
+3    HAP       0133866082767180880E06
+3    HPE       0192026707383028306E05
+
+Thanks in advance
+
+larry kepko
+lkepkoigppuclaedu

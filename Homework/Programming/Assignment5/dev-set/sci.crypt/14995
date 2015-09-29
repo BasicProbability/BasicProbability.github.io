@@ -1,0 +1,26 @@
+From bontchevfbihhinformatikunihamburgde Vesselin Bontchev
+Subject Re disk safety measure
+
+cuffellspotColoradoEDU Tim Cuffel writes
+
+ There is no guarantee that the deleted space would be overwritten during
+ optimization  Likely but no guarantee  A quicker and more secure method
+ would be a batch file that overwrote all of your free space  For example
+ fillbat
+ 	echo 1  out
+ 	fillbat
+ This is off the top of my head  include stddisclaimerh
+
+It is MUCH easier faster and probably even more secure to use Norton
+Utilties 60 Im talking IBM PC here and to tell WipeInfo to a
+clean the free disk space and b clean the slack space at the end of
+the files Use to Government standard option for more careful
+overwriting
+
+Regards
+Vesselin
+ 
+Vesselin Vladimirov Bontchev          Virus Test Center University of Hamburg
+Tel494054715224 Fax 494054715226      Fachbereich Informatik  AGN
+ PGP 22 public key available on request  VogtKoellnStrasse 30 rm 107 C
+email bontchevfbihhinformatikunihamburgde    D2000 Hamburg 54 Germany

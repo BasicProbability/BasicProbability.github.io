@@ -1,0 +1,40 @@
+Subject ACCESS BUS was I2C bus
+From srgxnbsgracecrinz
+
+From	MXAndyMacraeCorpSunCOM  6APR1993 06483496
+To	SRGXNBS
+CC	
+Subj	Re I2C bus and long haul serial also Axlo
+
+ReturnPath AndyMacraeCorpSunCOM
+Received from SunCOM by GRVGRACECRINZ MX V31C with SMTP Tue 06 Apr
+          1993 064829 1300
+Received from CorpSunCOM lemayCorpSunCOM by SunCOM 41SMI41 id
+          AA24280 Mon 5 Apr 93 114808 PDT
+Received from grendalCorpSunCOM by CorpSunCOM 41elliemay corpmail1
+          inbound id AA25933 Mon 5 Apr 93 114807 PDT
+Received by grendalCorpSunCOM 41SMI41 id AA05710 Mon 5 Apr 93
+          114728 PDT
+Date Mon 5 Apr 93 114728 PDT
+From AndyMacraeCorpSunCOM Andrew MacRae
+MessageID 9304051847AA05710grendalCorpSunCOM
+To srgxnbsgracecrinz
+Subject Re I2C bus and long haul serial also Axlo
+CC AndyMacraeCorpSunCOM
+contentlength 693
+
+In article 1pii04INNk6tzephyrgracecrinz you write
+ Whats required to get onto the ACCESS bus The nice thing about the
+ i2c is that most io requires one 8  16 pin DIL chip ie its cheap
+ and easy Anyone can design a bus trouble is most buses require a
+ host of interface chips and often onboard intelligence
+
+Bruce
+	For the latest information on AccessBus call the AccessBus
+Industry Group at 408 9913517  Also Sun will be hosting the next
+meeting of the group on April 19th here in Mountain View  For some reason
+I am not able to post to any newsgroups today so please feel free to pass
+this information on yourself as you see fit
+
+						Andrew MacRae
+

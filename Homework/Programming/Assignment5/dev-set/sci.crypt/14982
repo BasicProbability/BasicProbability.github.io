@@ -1,0 +1,15 @@
+From JimMillersuitecom
+Subject Certifying Authority question answered
+
+If you have access to FTP try FTPing to rsacom login as anonymous
+There are several documents there including a frequently asked questions
+about todays cryptography document  It has FAQ in its name
+I believe this document explains the idea behind the certifying authorities
+
+Good luck
+
+John Kelsey c445585mizzou1missouriedu
+
+Thanks  Ive ftped the FAQ file and it is just what I was looking for
+
+JimMillersuitecom

@@ -1,0 +1,893 @@
+From dblvisualcom David B Lewis
+Subject compwindowsx Frequently Asked Questions FAQ 55
+
+Archivename xfaqpart5
+Lastmodified 19930404
+
+
+Subject 119  Im writing a widget and cant use a float as a resource value
+
+Float resources are not portable the size of the value may be larger than
+the size of an XtPointer Try using a pointer to a float instead the Xaw
+Scrollbar float resources are handled in this way 
+
+
+Subject 120  Is this a memory leak in the X11R4 XtDestroyWidget
+
+Yes This is the unofficial fix19 for the X11R4 Destroyc
+
+ Destroyc137	Thu Jul 11 154125 1991
+ libXtDestroyc	Thu Jul 11 154223 1991
+
+ 14 
+ 15 
+   XConsortium Destroycv 137 900928 102132 swick Exp  
+  Plus unofficial patches in revisions 140 and 141 
+  
+  
+  Copyright 1987 1988 by Digital Equipment Corporation Maynard Massachusetts
+
+ 221239 
+       
+  
+      int i  0
+     DestroyRec dr  appdestroylist
+      while i  appdestroycount 
+  	if drdispatchlevel  dispatchlevel  
+  	    Widget w  drwidget
+  	    if appdestroycount
+  		bcopy chardr1 chardr
+ 		       appdestroycountsizeofDestroyRec
+  		      
+  	    XtPhase2Destroyw
+  	
+  	else 
+  	    i
+ 	    dr
+  	
+      
+  
+ 222245 
+       
+  
+      int i  0
+     DestroyRec dr
+      while i  appdestroycount 
+ 
+ 	 XtPhase2Destroy can result in calls to XtDestroyWidget
+ 	  and these could cause appdestroylist to be reallocated
+ 	 
+ 
+ 	dr  appdestroylist  i
+  	if drdispatchlevel  dispatchlevel  
+  	    Widget w  drwidget
+  	    if appdestroycount
+  		bcopy chardr1 chardr
+ 		       appdestroycount  i  sizeofDestroyRec
+  		      
+  	    XtPhase2Destroyw
+  	
+  	else 
+  	    i
+  	
+      
+  
+
+from Donna Converse converseexpolcsmitEDU
+
+
+Subject 121  Are callbacks guaranteed to be called in the order registered
+
+	Although some books demonstrate that the current implementation of Xt
+happens to call callback procedures in the order in which they are registered 
+the specification does not guarantee such a sequence and supplemental 
+authoritative documents ie the AsenteSwick volume do say that the order is
+undefined  Because the callback list can be manipulated by both the widget and
+the application Xt cannot guarantee the order of execution
+	In general the callback procedures should be thought of as operating 
+independently of one another and should not depend on sideeffects of other
+callbacks operating if a seqence is needed then the single callback to be 
+registered can explicitly call other functions necessary
+
+492 thanks to converseexpolcsmitedu
+
+
+Subject 122  Why doesnt XtDestroyWidget actually destroy the widget
+
+	XtDestroyWidget operates in two passes in order to avoid leaving
+dangling data structures the functioncall marks the widget which is not 
+actually destroyed until your program returns to its eventloop 
+
+
+Subject 123  How do I query the user synchronously using Xt
+	
+	It is possible to have code which looks like this trivial callback
+which has a clear flow of control The calls to AskUser block until answer
+is set to one of the valid values If it is not a yes answer the code drops
+out of the callback and back to an eventprocessing loop 
+
+	void quitWidget w XtPointer client XtPointer call
+	
+		int             answer
+		answer  AskUserw Really Quit
+		if RETYES  answer
+			
+			answer  AskUserw Are You Really Positive
+			if RETYES  answer
+				exit0
+                
+	
+
+	A more realistic example might ask whether to create a file or whether 
+to overwrite it
+	This is accomplished by entering a second eventprocessing loop and
+waiting until the user answers the question the answer is returned to the
+calling function That function AskUser looks something like this where the 
+Motif can be replaced with widgetsetspecific code to create some sort of 
+dialogbox displaying the question string and buttons for OK Cancel and 
+Help or equivalents
+
+  int AskUserw string
+        Widget          w
+        char           string
+  
+        int             answerRETNONE	 some notused marker 
+        Widget          dialog			 could cachecarry but 
+        Arg             args3
+        int             n  0
+        XtAppContext    context
+
+        n0
+        XtSetArgargsn XmNmessageString XmStringCreateLtoRstring
+                XmSTRINGDEFAULTCHARSET n
+        XtSetArgargsn XmNdialogStyle XmDIALOGAPPLICATIONMODAL n
+        dialog  XmCreateQuestionDialogXtParentw string args n
+        XtAddCallbackdialog XmNokCallback response answer
+        XtAddCallbackdialog XmNcancelCallback response answer
+        XtAddCallbackdialog XmNhelpCallback response answer
+        XtManageChilddialog
+
+        context  XtWidgetToApplicationContext w
+        while answer  RETNONE  XtAppPendingcontext 
+                XtAppProcessEvent context XtIMAll
+        
+        XtDestroyWidgetdialog   blow away the dialog box and shell 
+        return answer
+  
+
+	The dialog supports three buttons which are set to call the same 
+function when tickled by the user  The variable answer is set when the user 
+finally selects one of those choices
+
+  void responsew client call
+        Widget          w
+        XtPointer client
+        XtPointer call
+  
+  int answer  int  client
+  XmAnyCallbackStruct reason  XmAnyCallbackStruct  call
+        switch reasonreason 
+        case XmCROK
+                answer  RETYES	 some define value 
+                break
+        case XmCRCANCEL
+                answer  RETNO 
+		break
+        case XmCRHELP
+                answer  RETHELP
+                break
+        default
+                return
+        
+
+
+and the code unwraps back to the point at which an answer was needed and
+continues from there
+
+Thanks to Dan Heller argvsuncom further code is in Dans R3contrib
+WidgetWrap library 291
+
+
+Subject 124  How do I determine the name of an existing widget
+I have a widget ID and need to know what the name of that widget is
+
+	Users of R4 and later are best off using the XtName function which 
+will work on both widgets and nonwidget objects
+
+	If you are still using R3 you can use this simple bit of code to do 
+what you want Note that it depends on the widgets internal data structures 
+and is not necessarily portable to future versions of Xt including R4
+
+	include X11CorePh
+	include X11Xresourceh
+	String XtName widget
+	Widget widget	 WILL work with nonwidget objects 
+	
+	return XrmNameToStringwidgetcorexrmname
+	
+
+790 modified with suggestion by Larry Rogers larryboriswebodgcom 991
+
+
+Subject 125  Why do I get a BadDrawable error drawing to XtWindowwidget
+Im doing this in order to get a window into which I can do Xlib graphics
+within my Xtbased program
+
+ canvas  XtCreateManagedWidget  widgetClass  drawing area 
+ 
+ window  XtWindowcanvas	 get the window associated with the widget 
+ 
+ XDrawLine window	 produces error 
+
+	The window associated with the widget is created as a part of the 
+realization of the widget  Using a window id of NULL no window could 
+create the error that you describe  It is necessary to call XtRealizeWidget 
+before attempting to use the window associated with a widget 
+	Note that the window will be created after the XtRealizeWidget call 
+but that the server may not have actually mapped it yet so you should also 
+wait for an Expose event on the window before drawing into it
+
+
+Subject 126  Why do I get a BadMatch error when calling XGetImage
+
+The BadMatch error can occur if the specified rectangle goes off the edge of 
+the screen If you dont want to catch the error and deal with it you can take
+the following steps to avoid the error
+
+1 Make a pixmap the same size as the rectangle you want to capture
+2 Clear the pixmap to background using XFillRectangle
+3 Use XCopyArea to copy the window to the pixmap
+4 If you get a NoExpose event the copy was clean Use XGetImage to grab the
+image from the pixmap
+5 If you get one or more GraphicsExpose events the copy wasnt clean and 
+the xywidthheight members of the GraphicsExpose event structures tell you 
+the parts of the pixmap which arent good
+6 Get rid of the pixmap it probably takes a lot of memory
+
+1092 thanks to Oliver Jones ojpictelcom
+
+
+Subject 127  How can my application tell if it is being run under X
+
+	A number of programs offer X modes but otherwise run in a straight
+characteronly mode The easiest way for an application to determine that it is
+running on an X display is to attempt to open a connection to the X server
+	
+	display  XOpenDisplaydisplayname
+	if display
+		 do X stuff 
+	else
+		 do curses or something else 
+where displayname is either the string specified on the commandline following
+display by convention or otherwise is charNULL in which case 
+XOpenDisplay uses the value of DISPLAY if set
+
+This is superior to simply checking for the existence a display commandline 
+argument or checking for DISPLAY set in the environment neither of which is 
+adequate 591
+
+
+Subject 128  How do I make a busy cursor while my application is computing
+Is it necessary to call XDefineCursor for every window in my application
+
+	The easiest thing to do is to create a single InputOnly window that is 
+as large as the largest possible screen make it a child of your toplevel 
+window and it will be clipped to that window so it wont affect any other 
+application It needs to be as big as the largest possible screen in case the 
+user enlarges the window while it is busy or moves elsewhere within a virtual 
+desktop Substitute toplevel with your topmost widget here similar code 
+should work for Xlibonly applications just use your top Window
+
+     unsigned long valuemask
+     XSetWindowAttributes attributes
+
+      Ignore device events while the busy cursor is displayed 
+     valuemask  CWDontPropagate  CWCursor
+     attributesdonotpropagatemask   KeyPressMask  KeyReleaseMask 
+         ButtonPressMask  ButtonReleaseMask  PointerMotionMask
+     attributescursor  XCreateFontCursorXtDisplaytoplevel XCwatch
+
+      The window will be as big as the display screen and clipped by
+        its own parent window so we never have to worry about resizing 
+     XCreateWindowXtDisplaytoplevel XtWindowtoplevel 0 0
+         65535 65535 unsigned int 0 0 InputOnly
+         CopyFromParent valuemask attributes
+
+where the maximum size above could be replaced by the real size of the screen
+particularly to avoid servers which have problems with windows larger than
+32767
+
+When you want to use this busy cursor map and raise this window to go back to
+normal unmap it This will automatically keep you from getting extra mouse
+events depending on precisely how the window manager works it may or may not
+have a similar effect on keystrokes as well
+
+In addition note also that most of the Xaw widgets support an XtNcursor 
+resource which can be temporarily reset should you merely wish to change the
+cursor without blocking pointer events
+
+thanks to Andrew Wason awcellarbaebellcorecom Dan Heller 
+argvsuncom and mouselarrymcrcimmcgilledu 1190591
+
+
+Subject 129  How do I fork without hanging my parent X program
+
+	An Xbased application which spawns off other Unix processes which 
+continue to run after it is closed typically does not vanish until all of its 
+children are terminated the children inherit from the parent the open X 
+connection to the display 
+	What you need to do is fork then immediately in the child process 
+		close ConnectionNumberXtDisplaywidget
+to close the filedescriptor in the display information After this do your 
+exec You will then be able to exit the parent
+	Alternatively before execing make this call which causes the file 
+descriptor to be closed on exec
+		void fcntlConnectionNumberXDisplay FSETFD 1
+
+Thanks to Janet Anstett anstettjtrampColoradoEDU Gordon Freedman 
+gjf00dutscccamdahlcom 291 Greg Holmberg holmbergframecom 393
+
+
+Subject 130  Can I make Xt or Xlib calls from a signal handler
+
+	No Xlib and Xt have no mutual exclusion for protecting critical 
+sections If your signal handler makes such a call at the wrong time which 
+might be while the function you are calling is already executing it can leave
+the library in an inconsistent state Note that the ANSI C standard points
+out that behavior of a signal handler is undefined if the signal handler calls
+any function other than signal itself so this is not a problem specific to
+Xlib and Xt the POSIX specification mentions other functions which may be
+called safely but it may not be assumed that these functions are called by 
+Xlib or Xt functions
+	You can work around the problem by setting a flag in the interrupt
+handler and later checking it with a work procedure or a timer event which
+has previously been added
+
+	Note the article in The X Journal 14 and the example in OReilly 
+Volume 6 are in error
+
+Thanks to Pete Ware warecisohiostateedu and Donna Converse 
+converseexpolcsmitEDU 592
+
+
+Subject 131  What are these Xlib sequence lost errors
+
+	You may see these errors if you issue Xlib requests from an Xlib error 
+handler or more likely if you make calls which generate X requests to Xt or 
+Xlib from a signal handler which you shouldnt be doing in any case 
+
+
+Subject 132  How can my Xt program handle socket pipe or file input
+
+	Its very common to need to write an Xt program that can accept input 
+both from a user via the X connection and from some other file descriptor but 
+which operates efficiently and without blocking on either the X connection or 
+the other file descriptor
+	A solution is use XtAppAddInput After you open your file descriptor
+use XtAppAddInput to register an input handler The input handler will be 
+called every time there is something on the file descriptor requiring your 
+programs attention Write the input handler like you would any other Xt 
+callback so it does its work quickly and returns  It is important to use only
+nonblocking IO system calls in your input handlers
+	Most input handlers read the file descriptor although you can have an 
+input handler write or handle exception conditions if you wish
+	Be careful when you register an input handler to read from a disk file
+You will find that the function is called even when there isnt input pending
+XtAppAddInput is actually working as it is supposed to The input handler is 
+called whenever the file descriptor is READY to be read not only when there is
+new data to be read A disk file unlike a pipe or socket is almost always 
+ready to be read however if only because you can spin back to the beginning
+and read data youve read before  The result is that your function will almost
+always be called every time around XtAppMainLoop There is a way to get the 
+type of interaction you are expecting add this line to the beginning of your 
+function to test whether there is new data
+	     if ioctlfd FIONREAD n  1  n  0 return
+But because this is called frequently your application is effectively in a 
+busywait you may be better off not using XtAppAddInput and instead setting 
+a timer and in the timer procedure checking the file for input
+
+courtesy Dan Heller argvoracom 890 mouselarrymcrcimmcgilledu 591
+Ollie Jones ojpictelcom 692
+
+
+Subject 133  How do I simulate a button pressrelease event for a widget
+
+	You can do this using XSendEvent its likely that youre not setting
+the window field in the event which Xt needs in order to match to the widget
+which should receive the event
+	 If youre sending events to your own application then you can use 
+XtDispatchEvent instead This is more efficient than XSendEvent in that you
+avoid a roundtrip to the server
+	Depending on how well the widget was written you may be able to call
+its action procedures in order to get the effects you want
+
+courtesy Mark A Horstman mh2620sareksbccom 1190
+
+
+Subject 134  Why doesnt anything appear when I run this simple program
+
+ 
+ thewindow  XCreateSimpleWindowthedisplay
+      rootwindowsizehintsxsizehintsy
+      sizehintswidthsizehintsheightBORDERWIDTH
+      BlackPixelthedisplaythescreen
+      WhitePixelthedisplaythescreen
+ 
+ XSelectInputthedisplaythewindowExposureMaskButtonPressMask
+ 	ButtonReleaseMask
+ XMapWindowthedisplaythewindow
+ 
+ XDrawLinethedisplaythewindowtheGC55100100
+ 
+
+	You are right to map the window before drawing into it However the 
+window is not ready to be drawn into until it actually appears on the screen 
+until your application receives an Expose event Drawing done before that will 
+generally not appear Youll see code like this in many programs this code 
+would appear after window was created and mapped
+  while done
+    
+      XNextEventthedisplaytheevent
+      switch theeventtype 
+	case Expose	  On expose events redraw 
+		XDrawLinethedisplaythewindowtheGC55100100
+		break
+	
+	
+    
+
+	Note that there is a second problem some Xlib implementations dont 
+set up the default graphics context to have correct foregroundbackground 
+colors so this program could previously include this code
+  
+  theGCvaluesforegroundBlackPixelthedisplaythescreen	 eg 
+  theGCvaluesbackgroundWhitePixelthedisplaythescreen	 eg 
+  theGC  XCreateGCthedisplaythewindow
+                GCForegroundGCBackgroundtheGCvalues
+  
+ 
+Note the code uses BlackPixel and WhitePixel to avoid assuming that 1 is 
+black and 0 is white or viceversa  The relationship between pixels 0 and 1 
+and the colors black and white is implementationdependent  They may be 
+reversed or they may not even correspond to black and white at all
+
+Also note that actually using BlackPixel and WhitePixel is usually the wrong 
+thing to do in a finished program as it ignores the users preference for 
+foreground and background
+
+And also note that you can run into the same situation in an Xtbased program
+if you draw into the XtWindoww right after it has been realized it may
+not yet have appeared
+
+
+Subject 135  What is the difference between a Screen and a screen
+
+	The Screen is an Xlib structure which includes the information about
+one of the monitors or virtual monitors which a single X display supports A 
+server can support several independent screens They are numbered unix00
+unix01 unix02 etc the screen or screennumber is the second digit 
+the 0 1 2 which can be thought of as an index into the array of available 
+Screens on this particular Display connection
+	The macros which you can use to obtain information about the particular
+Screen on which your application is running typically have two forms  one
+which takes a Screen and one with takes both the Display and the screennumber
+	In Xtbased programs you typically use XtScreenwidget to determine 
+the Screen on which your application is running if it uses a single screen
+	Part of the confusion may arise from the fact that some of the macros
+which return characteristics of the Screen have Display in the names  
+XDisplayWidth XDisplayHeight etc
+	
+
+Subject 136  Can I use C with X11 Motif XView
+	
+	The X11R45 header files are compatible with C The Motif 11 header 
+files are usable as is inside extern C  However the definition of
+String in Intrinsich can conflict with the libg or other String class and
+needs to be worked around
+
+	Some other projects which can help
+	WWL a set of C classes by JeanDaniel Fekete to wrap X Toolkit 
+widgets available via anonymous FTP from exportlcsmitedu as 
+contribWWL12tarZ 792 or lrilrifr 129175151 as pubWWL12tarZ
+It works by building a set of C classes in parallel to the class tree of the 
+widgets
+	The C InterViews toolkit is obtainable via anonymous FTP from 
+interviewsstanfordedu InterViews uses a boxglue model similar to that of 
+TeX for constructing user interfaces and supports multiple looks on the user 
+interfaces Some of its sample applications include a WYSIWIG document editor 
+doc a MacDrawlike drawing program idraw and an interface builder 
+ibuild
+	THINGS  a class library written at the Rome Air Force Base by the 
+Strategic Air Command available as freeware on archive sites
+
+	Motif is a publicdomain library that defines C class wrappers for
+Motif 11 it adds an application class for eg initializing X and also
+integrates WCL and the Xbae widget set This work was developed by Ronald van 
+Loon rvlooncvruunl based on X a set of bindings done by the University 
+of Lowell Graphics Research Laboratory The current sources are available from 
+decuacdeccom 19252141 as pubX11motif21jul92tarZ
+	
+	The source code examples for Doug Youngs ObjectOriented Programming 
+with C and OSFMotif ISBN 0136302521 do not include widget wrappers 
+but do include a set of classes that encapsulates higherlevel facilities 
+commonly needed by Motif or other Xtbased applications check export in
+ftpcontribyoungctarZ
+	Rogue Wave offers Viewh for C programmers using Motif info
+18004873217 or 1 503 754 2311
+	A product called Commonview by Glockenspiel Ltd Ireland  
+apparently is a Cbased toolkit for multiple window systems including PM
+Windows and XMotif
+	Xv is sold by Qualix 4155720200 fax 1300 it implements an 
+interface from the GIL files that Suns OpenWindows Developers Guide 30 
+produces to Xview wrapper classes in C
+
+	UIT is a set of C classes embedding the XView toolkit it is intended
+for use with Suns OpenWindows Developers Guide 30 builder tool Sources are 
+on exportmiteduau as UITtarZ Version 2 was released 52892
+	
+	Also of likely use is ObjectCenter SaberC And a reasonable
+alternative to all of the above is ParcPlaces formerly Solbournes Object 
+Interface
+
+Thanks to Douglas S Rand dsrandmitreorg and George Wu gwutcscom291
+
+
+Subject 137  Where can I obtain alternate language bindings to X
+
+	Versions of the CLX Lisp bindings are part of the X11 core source 
+distributions A version of CLX is on the R5 tape 1091 version 502 992
+is on exportlcsmitedu in contribCLXR502tarZ
+
+	The SAIC AdaX11 bindings are through anonymous ftp in pub from
+starsrosslynunisyscom 1281261642 
+	There is an XAda study team sponsored by NASA JSC which apparently is
+working out bindings Information xadaghghoutxus
+	GNU SmallTalk has a beta native SmallTalk binding to X called STIX by
+StevenByrneEngSunCOM It is still in its beginning stages and 
+documentation is sparse outside the SmallTalk code itself The sources are 
+available as pubgnusmalltalk111tarZ on prepaimitedu 1871038 or 
+ugleunitno 129241197
+	Prolog bindings called XWIP written by Ted Kim at UCLA while
+supported in part by DARPA are available by anonymous FTP from
+exportlcsmiteducontribxwiptarZ or ftpcsuclaedupubxwiptarZ
+These prolog language bindings depend on having a Quintustype foreign function
+interface in your prolog The developer has gotten it to work with Quintus and 
+SICStus prolog Inquiries should go to xwipcsuclaedu 390
+	Scheme bindings to Xlib OSFMotif and Xaw are part of the Elk
+distribution version 15a on export obsoletes the version on the R5 contrib
+tape 
+	xscm a bolton accessory for Aubrey Jaffers scm Scheme interpreter
+that provides an interface to Xlib Motif and OpenLook is now available via 
+FTP from altdorfaimiteduarchivescmxscm105tarZ and 
+nexusyorkucapubschemenewxscm105tarZ
+
+	Ada bindings to Motif explicitly will eventually be made available by
+the Jet Propulsion Laboratories probably through the normal electronic
+means  Advance information can be obtained from dsoulelesdsfvaxjplnasagov
+who may respond as time permits
+	AdaMotif is a complete binding to X and Motif for the Ada language for
+many common systems it is based in part upon the SAICUnisys bindings and also
+includes a UIL to Ada translator Info Systems Engineering Research 
+Corporation 1800AdaSERC wellsercapplecom
+
+	Also the MIT Consortium although not involved in producing Ada
+bindings for X maintains a partial listing of people involved in X and Ada
+information is available from Donna Converse converseexpolcsmitedu
+
+
+Subject 138  Can XGetWindowAttributes get a windows background pixelpixmap
+
+	No  Once set the background pixel or pixmap of a window cannot be 
+reread by clients  The reason for this is that a client can create a pixmap
+set it to be the background pixmap of a window and then free the pixmap The 
+window keeps this background but the pixmap itself is destroyed  If youre 
+sure a window has a background pixel not a pixmap you can use XClearArea 
+to clear a region to the background color and then use XGetImage to read 
+back that pixel  However this action alters the contents of the window and 
+it suffers from race conditions with exposures courtesy Dave Lemke of NCD 
+and Stuart Marks of Sun
+
+	Note that the same applies to the border pixelpixmap This is a 
+misfeature of the protocol which allows the server is free to manipulate the
+pixelpixmap however it wants  By not requiring the server to keep the 
+original pixel or pixmap some potentially a lot of space can be saved 
+courtesy Jim Fulton MIT X Consortium
+
+
+Subject 139  How do I create a transparent window
+	
+	A completely transparent window is easy to get  use an InputOnly
+window In order to create a window which is mostly transparent you have
+several choices
+	 the SHAPE extension first released with X11R4 offers an easy way to
+make nonrectangular windows so you can set the shape of the window to fit the
+areas where the window should be nontransparent however not all servers 
+support the extension
+	 a machinespecific method of implementing transparent windows for
+particular servers is to use an overlay plane supported by the hardware  Note 
+that there is no X notion of a transparent color index
+	 a generally portable solution is to use a large number of tiny 
+windows but this makes operating on the application as a unit difficult
+	 a final answer is to consider whether you really need a transparent
+window or if you would be satisfied with being able to overlay your application
+window with information if so you can draw into separate bitplanes in colors
+that will appear properly
+
+thanks to der Mouse mouselightningMcRCIMMcGillEDU 392 see also
+The X Journal 14 for a more complete answer including code samples for this
+last option
+
+
+Subject 140  Why doesnt GXxor produce mathematicallycorrect color values
+
+	When using GXxor you may expect that drawing with a value of black on a
+background of black for example should produce white However the drawing
+operation does not work on RGB values but on colormap indices The color that
+the resulting colormap index actually points to is undefined and visually
+random unless you have actually filled it in yourself On many X servers Black
+and White often 01 or 10 programs taking advantage of this mathematical
+coincidence will break
+	If you want to be combining colors with GXxor then you should be 
+allocating a number of your own color cells and filling them with your chosen
+precomputed values
+	If you want to use GXxor simply to switch between two colors then you 
+can take the shortcut of setting the background color in the GC graphics 
+context to 0 and the foreground color to a value such that when it draws over 
+red say the result is blue and when it draws over blue the result is red 
+This foreground value is itself the XOR of the colormap indices of red and 
+blue
+
+Thanks to Chris Flatters cflatterziaaocnraoEDU and Ken Whaley 
+whaleyspectrepadeccom 291
+
+
+Subject 141  Why does every color I allocate show up as black
+
+	Make sure youre using 16 bits and not 8  The red green and blue 
+fields of an XColor structure are scaled so that 0 is nothing and 65535 is 
+fullblast If you forget to scale using for example 0255 for each color 
+the XAllocColor function will perform correctly but the resulting color is 
+usually black 
+
+Thanks to Paul Asente asenteadobecom 791
+
+
+Subject 142  Why cant my program get a standard colormap
+I have an imageprocessing program which uses XGetRGBColormap to get the 
+standard colormap but it doesnt work 
+
+	XGetRGBColormap when used with the property XARGBDEFAULTMAP does 
+not create a standard colormap  it just returns one if one already exists
+Use xstdcmap or do what it does in order to create the standard colormap first
+
+191 from der Mouse mouselarrymcrcimmcgilledu
+
+
+Subject 143  Why does the pixmap I copy to the screen show up as garbage 
+
+	The initial contents of pixmaps are undefined  This means that most
+servers will allocate the memory and leave around whatever happens to be there 
+ which is usually garbage  You probably want to clear the pixmap first using
+XFillRectangle with a function of GXcopy and a foreground pixel of whatever 
+color you want as your background or 0L if you are using the pixmap as a 
+mask courtesy Dave Lemke of NCD and Stuart Marks of Sun
+
+
+Subject 144  How do I check whether a window ID is valid
+My program has the ID of a window on a remote display I want to check whether
+the window exists before doing anything with it
+
+	Because X is asynchronous there isnt a guarantee that the window 
+would still exist between the time that you got the ID and the time you sent an
+event to the window or otherwise manipulated it What you should do is send the
+event without checking but install an error handler to catch any BadWindow 
+errors which would indicate that the window no longer exists This scheme will
+work except on the rare occasion that the original window has been destroyed 
+and its ID reallocated to another window
+
+courtesy Ken Lee kleesynopticscom 490
+
+
+Subject 145  Can I have two applications draw to the same window
+
+	Yes The X server assigns IDs to windows and other resources actually
+the server assigns some bits the client others and any application that 
+knows the ID can manipulate the resource almost any X server resource except
+for GCs and private color cells can be shared
+	The problem you face is how to disseminate the window ID to multiple 
+applications A simple way to handle this and which solves the problem of the
+applications running on different machines is in the first application to 
+create a speciallynamed property on the rootwindow and put the window ID into
+it The second application then retrieves the property whose name it also
+knows and then can draw whatever it wants into the window
+	Note this scheme works iff there is only one instance of the first
+application running and the scheme is subject to the limitations mentioned
+in the Question about using window IDs on remote displays
+	Note also that you will still need to coordinate any higherlevel 
+cooperation among your applications 
+	Note also that two processes can share a window but should not try to 
+use the same server connection If one process is a child of the other it 
+should close down the connection to the server and open its own connection
+
+mostly courtesy Phil Karlton karltonwpdsgicom 690
+
+
+Subject 146  Why cant my program work with tvtwm or swm
+
+	A number of applications including xwd xwininfo and xsetroot do not
+handle the virtual root window which tvtwm and swm use they typically return 
+the wrong child of root A general solution is to add this code or to use it in
+your own application where you would normally use RootWindowdpyscreen
+
+ Function Name GetVRoot
+  Description Gets the root window even if its a virtual root
+  Arguments the display and the screen
+  Returns the root window for the client
+ 
+include X11Xatomh
+Window GetVRootdpy scr
+Display        dpy
+int             scr
+
+Window          rootReturn parentReturn children
+unsigned int    numChildren
+Window          root  RootWindowdpy scr
+Atom            SWMVROOT  None
+int             i
+
+  SWMVROOT  XInternAtomdpy SWMVROOT False
+  XQueryTreedpy root rootReturn parentReturn children numChildren
+  for i  0 i  numChildren i 
+	Atom            actualtype
+	int             actualformat
+	long            nitems bytesafter
+	Window         newRoot  NULL
+
+	if XGetWindowPropertydpy childreni SWMVROOT 0 1
+	    False XAWINDOW actualtype actualformat nitems
+            bytesafter unsigned char  newRoot  Success  newRoot 
+			root  newRoot
+			break
+		
+	
+
+	return root
+
+
+courtesy David Elliott dcesmscsonycom Similar code is in ssetroot a
+version of xsetroot distributed with tvtwm 291
+
+A header file by Andreas Stolcke of ICSI on exportlcsmiteducontribvrooth 
+functions similarly by providing macros for RootWindow and DefaultRootWindow
+code can include this header file first to run properly in the presence of a
+virtual desktop
+	
+
+Subject 147  How do I keep a window from being resized by the user
+
+	Resizing the window is done through the window manager window managers
+can pay attention to the size hints your application places on the window but 
+there is no guarantee that the window manager will listen You can try setting 
+the minimum and maximum size hints to your target size and hope for the best 
+191
+
+
+Subject 148  How do I keep a window in the foreground at all times
+
+	Its rather antisocial for an application to constantly raise itself
+eg by tracking VisibilityNotify events so that it isnt overlapped  
+imagine the conflict between two such programs running  
+	The only sure way to have your window appear on the top of the stack
+is to make the window overrideredirect this means that you are temporarily
+assuming windowmanagement duties while the window is up so you want to do 
+this infrequently and then only for short periods of time eg for popup 
+menus or other short parametersetting windows
+
+thanks to der Mouse mouselarrymcrcimmcgilledu 792
+
+
+Subject 149  How do I make text and bitmaps blink in X
+
+	There is no easy way  Unless youre willing to depend on some sort of
+extension as yet nonexistent you have to arrange for the blinking yourself
+either by redrawing the contents periodically or if possible by playing games
+with the colormap and changing the color of the contents
+
+Thanks to mouselarrymcrcimmcgilledu der Mouse 791
+
+
+Subject 150 How do I get a doubleclick in Xlib
+
+	Users of Xt have the support of the translation manager to help 
+get notification of doubleclicking
+	There is no good way to get only a doubleclick in Xlib because the 
+protocol does not provide enough support to do doubleclicks  You have to do 
+clientside timeouts unless the singleclick action is such that you can defer
+actually taking it until you next see an event from the server  Thus you 
+have to do timeouts which means systemdependent code  On most UNIXish 
+implementations you can use XConnectionNumber to get the file descriptor of 
+the X connection and then use select or something similar on that
+	Note that many userinterface references suggest that a doubleclick
+be used to extend the action indicated by a singleclick if this is the case
+in your interface then you can execute the first action and as a compromise
+check the timestamp on the second event to determine whether it too should
+be the singleclick action or the doubleclick action
+
+Thanks to mouselarrymcrcimmcgilledu der Mouse 493
+
+
+Subject 151 How do I render rotated text
+	
+	Xlib intentionally does not provide such sophisticated graphics 
+capabilities leaving them up to serverextensions or clientsside graphics
+libraries
+	Your only choice if you want to stay within the core X protocol is to
+render the text into a pixmap read it back via XGetImage rotate it by 
+hand with whatever matrices you want and put it back to the server via 
+XPutImage more specifically
+	1 create a bitmap B and write your text to it
+	2 create an XYBitmap image I from B via XGetImage
+	3 create an XYBitmap Image I2 big enough to handle the transformation
+	4 for each xy in I2 I2xy  Iab where 
+		a  x  costheta  y  sintheta
+		b  x  sintheta  y  costheta
+	5 render I2
+	Note that you should be careful how you implement this not to lose
+bits an algorithm based on shear transformations may in fact be better
+	The highlevel serverextensions and graphics packages available for X 
+also permit rendering of rotated text Display PostScript PEX PHiGS and GKS
+although most are not capable of arbitrary rotation and probably do not use the
+same fonts that would be found on a printer
+	In addition if you have enough access to the server to install a font
+on it you can create a font which consists of letters rotated at some
+predefined angle Your application can then itself figure out placement of each
+glyph
+
+courtesy der Mouse mouselarrymcrcimmcgilledu Eric Taylor 
+etaylorwilkinsbmctmcedu and Ken Lee kleesynopticscom 1190
+Liam Quin leesqcom 1290
+
+	InterViews C UI toolkit in the X contrib software has support for
+rendering rotated fonts in X  It could be one source of example code
+Brian R Smith brsmithcsumnedu 391
+	Another possibility is to use the Hershey Fonts they are 
+strokerendered and can be used by X by converting them into XDrawLine 
+requests ericpencomcom 1091
+
+	The xrotfont program by Alan Richardson mppa3symasussexacuk 
+posted to compsourcesx July 14 1992 paints a rotated font by implementing 
+the method above and by using an outline Hershey font
+	The xvertext package by Alan Richardson mppa3symasussexacuk is a 
+set of functions to facilitate the writing of text at any angle  Version 30 
+was recently released to altsources and compsourcesmisc 393 it is also 
+on export as contribxvertext30sharZ 
+
+	OReillys X Resource Volume 3 includes information from HP about
+modifications to the X fonts server which provide for rotated and scaled text
+
+
+Subject 152  What is the X Registry How do I reserve names
+
+	There are places in the X Toolkit in applications and in the X
+protocol that define and use string names The context is such that conflicts
+are possible if different components use the same name for different things
+	The MIT X Consortium maintains a registry of names in these domains
+orgainization names selection names selection targets resource types
+application classes and class extension record types and several others
+	The list as of 791 is in the directory mitdocRegistry on the R5 
+tape it is also available by sending send docs registry to the xstuff mail
+server
+	To register names first come first served or to ask questions send 
+to xregistryexpolcsmitedu be sure to include a postal address for
+confirmation
+
+1190 condensed from AsenteSwick Appendix H
+
+
+
+David B Lewis 					faqcraftuunetuunet
+
+		Just the FAQs maam  Joe Friday 
+ 
+David B Lewis		Temporarily at but not speaking for Visual Inc
+day dblvisualcom	evening davidcraftuunetuunet

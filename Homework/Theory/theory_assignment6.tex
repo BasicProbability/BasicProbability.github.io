@@ -51,6 +51,12 @@ If you have any question about the homework or if you need help, do not hesitate
 \begin{enumerate}
 	\item Show that relative entropy does not satisfy (i) symmetry nor (ii) triangle inequality. That is, it needs not hold that $D(X\parallel Y) \neq  D(Y \parallel X)$ nor $D(X\parallel Y) + D(Y\parallel Z) \geq D(X \parallel Z)$.
 	\item Prove that the entropy of $n$ independent RVs is the sum of the entropy of the individual RVs, i.e. that  $H(X_1, ..., X_n)$ is additive if $P(\bigcap_{i = 1}^{n} X_i=x) = \Pi_{i = 1}^n P(X_i=x)$.
+	\item You 5 sequences of 5 coin tosses. Thus, your data set is  [3, 5, 1, 2, 2]  where each number
+	is the amount of times that heads appeared in a sequence. Assume that two coins could have generated
+	each of those sequences. The first coin has parameter $ \theta = 0.6 $ and the second coin has 
+	parameter $ \theta = 0.4 $. Assume that a priori both coins are equally probable to have generated 
+	each sequence. Perform two iterations of EM by hand and report the posterior probability for
+	each coin (i) on the entire data set and (ii) per sequence after the second iteration of EM.
 	\item[*] Show that $D(X\parallel Y) \geq 0$.
 
 \end{enumerate}

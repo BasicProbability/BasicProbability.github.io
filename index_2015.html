@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Basic Probability, Computing and Statistics</title>
+</head>
+
+<body>
+<header>
+    <div class="inner">
+        <h1>Basic Probability, Computing and Statistics</h1>
+
+        <h2>course website within the <a href="https://www.illc.uva.nl/MScLogic/">Master of Logic</a> at <a href="http://www.uva.nl/" span style="color:#000000;">University of Amsterdam</a></h2>
+        <a href="https://github.com/BasicProbability" class="button">
+            <small>Follow me on</small>
+            GitHub</a>
+    </div>
+</header>
+
+<div id="content-wrapper">
+    <div class="inner clearfix">
+        <section id="main-content">
+            <h3>People</h3>
+            <div id="lecturer">
+                Responsible: <a href="https://staff.fnwi.uva.nl/k.simaan/" target="_blank">Khalil Sima'an</a><br>
+		Course Design and Script: Philip Schulz<br>
+                Lecturers: <a href="http://homepages.cwi.nl/%7Eschaffne" target="_blank">Christian Schaffner</a> and
+                <a href="http://www.uva.nl/over-de-uva/organisatie/medewerkers/content/s/c/p.schulz/p.schulz.html" target="_blank">Philip Schulz</a><br>
+		Programming Labs: Philip Schulz<br>
+		Teaching assistant: <a href='http://brochhagen.github.io' target='_blank'>Thomas Brochhagen</a><br>
+            </div>
+
+<!--            <h3 id="signup">Questionnaire</h3>
+	    We are currently trying to figure out how much time students invest in this course on average. It would greatly help us, for this and future iterations, if you could fill in the questionnaire below. The questionnaire is anonymous, so we will not be able to see who filled it in. <b>You will find the questionnaire <a href='https://docs.google.com/forms/d/1_PTGkiemXR3K3figDo-7hgh4Uedn9xlgIag8jci-6uA/viewform' target='_blank'>here</a></b>.-->
+
+	    <h3 id="miniseminar">Mini Seminar</h3>
+	    <h4>Presentation of MoL courses using basic probability: (in G2.02)</h4>
+            9:00-9:05: Introduction<br>
+            9:05-9:20: <a href="http://studiegids.uva.nl/xmlpages/page/2015-2016-en/search-course/course/15297">Kolmogorov Complexity by Leen Torenvliet</a><br>
+            9:20-9:35: <a href="http://studiegids.uva.nl/xmlpages/page/2015-2016-en/search-course/course/21587">Natural Language Processing 1</a> by Ivan Titov<br>
+            9:35-9:50: <a href="http://studiegids.uva.nl/xmlpages/page/2015-2016-en/search-course/course/17798">Natural Language Processing 2</a> by Khalil Sima'an and Wilker Aziz<br>
+            9:50-10:05: BREAK<br>
+            10:05-10:20: <a href="http://studiegids.uva.nl/xmlpages/page/2015-2016-en/search-course/course/15239">Combinatorics with Computer Science Applications by Ronald de Wolf</a><br>
+	    10:20-10:35: <a href="http://homepages.cwi.nl/%7Erdewolf/qcnotes.pdf">Quantum Computing</a> by Ronald de Wolf<br>
+	    10:35-10:50: <a href="http://studiegids.uva.nl/xmlpages/page/2015-2016-en/search-course/course/22496">Foundations of Neuro-Cognitive Modeling</a> by Jelle Zuidema<br>
+	    10:50-11:05: BREAK (and change of room to A1.04)<br>
+	    11:05-11:20: <a href="http://studiegids.uva.nl/xmlpages/page/2015-2016-en/search-course/course/17897">Information Theory</a> by Christian Schaffner<br>
+	    11:20-11:35: <a href="http://homepages.cwi.nl/~schaffne/courses/crypto/">Introduction to Modern Cryptography</a> by Christian Schaffner<br>
+
+            <h3 id="leerdoel">Intended Learning Outcomes</h3>
+
+            <p>This course is designed to provide students with the background in discrete probability theory and
+                programming that is necessary to follow other more advanced master-level courses in areas such as
+                linguistics, natural language processing, machine learning, complexity theory, cryptography, information
+                theory, quantum computing, combinatorics, etc. The goal is to make students that have had no prior
+                exposure to probability theory and/or programming feel comfortable in these areas. To achieve this goal
+                we will try to illustrate the theoretical concepts with real-life examples that relate to topics in,
+                e.g., computer science, gambling, and the like. Moreover, we will make sure that there is a close tie
+                between the theoretical and practical part of the course, thus enabling students to apply their newly
+                acquired theoretical knowledge to real problems.</p>
+
+            <p>The course is designed to equip the students with an understanding of probability theory and programming
+                skills that will be necessary for more advanced courses. At the end of the course, students will be able
+                to:</p>
+
+            <p>Theory:</p>
+            <ul class="bullets-outside">
+                <li>apply basic combinatorics in simple scenarios,</li>
+                <li>do calculations with discrete probabilities,</li>
+                <li>understand and use the main results in basic probability theory,</li>
+                <li>use random variables to group outcomes in a way that is adequate for solving probabilistic
+                    problems,
+                </li>
+                <li>formulate generative probability models and derive under independence assumptions the model
+                    parameters,
+                </li>
+                <li>build simple probabilistic models to explain real-world data,</li>
+                <li>use simple estimation techniques to infer the parameters of distributions from data</li>
+                <li>understand and use concepts in Information Theory like entropy and perplexity as means for
+                    quantifying uncertainty in predicting data relative to a given model,
+                </li>
+                <li>get acquainted with the principles of empirical research including goals and methods of
+                    experimentation.
+                </li>
+            </ul>
+            <p>Programming:</p>
+            <ul class="bullets-outside">
+                <li>use an IDE to structure their programs in understandable hierarchies,</li>
+                <li>use the Python programming language,</li>
+                <li>use certain Python libraries designed specifically for mathematical operations (e.g., numpy),</li>
+                <li>implement some of the concepts acquired in the theory part of the course.</li>
+            </ul>
+
+            <h3 id="schedule">Content Schedule</h3>
+
+            <p>The course will largely focus on discrete probability theory. It will roughly follow this structure (with
+                the possibility that the contents of certain weeks may be exchanged). Depending on the progress of the
+                course, we may choose to only cover the topics from weeks 1 to 6 and spread them out more:</p>
+
+            <p>Week 1: Theory: Introduction to combinatorics &nbsp; <a href="slides/BasicProb_L1.pdf">slides #1</a>,
+            <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Theory/theory_assignment1.pdf">Theory homework #1</a><br>
+            Programming: Introduction IDE for programming and simple Python statements <br>
+            <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment1/programming_assignment1.pdf">Programming homework #1</a>,
+            <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Guidelines/ProgrammingGuidelines.pdf">Guidelines to programming exercises</a></br>
+            <a href=https://github.com/BasicProbability/PythonCode_Fall2015/blob/master/src/week1_BasicProgrammingConstructs/first_steps.py>Code from first lab</a> Notice that we added explanations
+            on len(), list concatenation and on how to obtain system information</p>
+
+            <p>Week 2: Theory: Probability spaces, joint probability, conditional probability, Inclusion-Exclusion principle
+            	<a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Theory/theory_assignment2.pdf">Theory homework #2</a><br>
+                Programming: Git and Github, Basic Python data structures, iterations and loops 
+            <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment2/programming_assignment2.pdf">Programming homework #2</a><br>
+            <a href="https://github.com/BasicProbability/PythonCode_Fall2015/blob/master/src/week2_loops_data_strcutures_and_files/loops_and_data_structures.py">Code from second lab</a> with a short intro
+            to list sorting added at the beginning<br>
+            <a href="https://github.com/BasicProbability/PythonCode_Fall2015/blob/master/src/week2_loops_data_strcutures_and_files/mostFrequentWordsGenerator.py">Reference solution for assignment</a><br>
+            <a href="https://github.com/BasicProbability/PythonCode_Fall2015/blob/master/src/week2_loops_data_strcutures_and_files/list_comparator.py">List comparison tool</a>
+	    </p>
+
+            <p>Week 3: Theory: Random Variables, marginal probability, expectation and variance, probability distributions, probability mass
+                functions, cumulative distribution functions, binomial and multinomial distributions
+		<a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Theory/theory_assignment3.pdf">Theory homework #3</a>
+		<br>Programming: functions, classes and
+                inheritance, the main method <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment3/programming_assignment3.pdf">Programming homework #3</a><br>
+                <a href="https://github.com/BasicProbability/PythonCode_Fall2015/tree/master/src/week3_FunctionsAndClasses">Code from third lab</a>
+	    </p>
+
+            <p>Week 4: Theory: Chain rule, Bayes' rule, Naive Bayes model
+            <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Theory/theory_assignment4.pdf">Theory homework #4</a>
+            <br>Programming: Using the debugger, unit tests, exception handling, tail recursion, writing to files<br>
+	    <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment4/programming_assignment4.pdf">Programming homework #4</a><br>
+	    Code from the lab is <a href="https://github.com/BasicProbability/PythonCode_Fall2015/blob/master/src/week4_debugging_and_testing/lose_ends.py">here</a> and
+	    <a href="https://github.com/BasicProbability/PythonCode_Fall2015/blob/master/test2/week4_debugging_and_testing/sample_test.py">here</a>
+	    </p>
+
+            <p>Week 5: Theory: Basic of statistics: Motivation, sample means, weak law of large numbers, maximum likelihood estimation, maximum a posteriori estmiation
+	    <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Theory/theory_assignment5.pdf">Theory homework #5</a>   
+	    <br>Programming:Implementing Naive Bayes, anonymous functions
+	    <a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment5/programming_assignment5.pdf">Programming homework #5</a>
+	    </p>
+	    
+
+            <p>Week 6: Theory: Basics of Information Theory, expectation
+                maximization
+		<a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Theory/theory_assignment6.pdf">Theory homework #6</a><br>
+                Programming: Familiarization with Numpy, use of provided probabilty distributions, implementing EM
+		<a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Assignment6/programming_assignment6.pdf">Programming homework #6</a></p>
+
+            <p>Week 7, 12 Oct 2015: <a href="#miniseminar">Presentation of MoL courses</a> using basic probability: (in G2.02)<br>
+            Programming: Assistance with final project, Q/A</p>
+
+	    <h3 id='sessions'>Lectures and Exercise sessions</h3>
+
+	    <p>please check <a href='https://datanose.nl/#course[44381]' target='_blank'>Datanose</a> for the definite times and locations.</p>
+
+
+            <h3 id="aanbevolenVoorkennis">Prerequisites</h3>
+
+            <p>We pre-suppose very basic prior exposure to set theory (essentially at the level of basic set operations
+                like union, intersection and set difference). Other than that, the course will be entirely
+                self-contained. In particular, no prior programming knowledge is required. We expect a high level of
+                interest and engagement from the students.</p>
+
+            <h3 id="onderwijsvorm">Course Design</h3>
+
+            <p>This course has a theoretical and a practical component, both of which are of equal importance. The
+                course will consist of lectures and programming labs. The goal is to work interactively with the
+                students. We therefore expect a high level of engagement from the students. In order to involve the
+                students, the lectures will be interspersed with small in-class exercises.</p>
+
+            <h3 id="material">Material</h3>
+
+            <p><a href="https://github.com/BasicProbability/LectureNotes/blob/master/fullscript/BasicProbabilityAndStatistics.pdf">A lecture script</a> that is closely aligned 
+		with the content of the lectures will be provided. The code
+                produced during the programming labs will be cleaned, commented out, and be made available online. In
+                addition, students may use <a href="http://www.greenteapress.com/thinkpython/" target="_blank">Think Python</a>, which is freely available online, as a reference.</p>
+
+	    <p>All material for this course is provided on the <a href="https://github.com/BasicProbability/">github.com</a> platform. This platform is commonly used for open-source software development and 
+	    you are encouraged to get familiar with it. In particular, you are encouraged to <b>help us</b> with improving the lecture notes and websites. You can earn up to one extra point per week (for your weekly programming assignment) by
+	    getting a <a href="https://help.github.com/articles/using-pull-requests/">pull request</a> accepted by us. In order to do that, you will have to <a href="https://help.github.com/articles/signing-up-for-a-new-github-account/">get yourself (for free) an account on github</a>, 
+	    <a href="https://help.github.com/articles/fork-a-repo/">fork</a> one of <a href="https://github.com/BasicProbability/BasicProbability.github.io">our</a> <a href="https://github.com/BasicProbability/LectureNotes">repositories</a>, <a href="https://help.github.com/articles/cloning-a-repository">clone</a> the fork onto your machine, correct the typo or error you have found, <a href="http://git-scm.com/docs/git-commit">commit</a> it to your fork, and submit a <a href="https://help.github.com/articles/using-pull-requests/">pull request</a>.
+	    Once we have checked and accepted your changes, you will get the extra point.</p>
+            <h3 id="aantalDeelnemers">Number of participants</h3>
+
+            <p>30</p>
+
+            <h3 id="toetsvorm">Examination</h3>
+
+            <p>There will be weekly theoretical and programming homework which will be weighed equally. In addition,
+                there may be a small final programming project. While the theoretical homework will be graded by the
+                lecturers, the programming homework will be graded through peer assessment.</p>
+            <p><b>Cooperation among students for both theory and programming exercises is strongly encouraged.</b> However, after this discussion phase, every student writes down and submits his/her own individual solution.</p>
+            <p><a href="https://github.com/BasicProbability/BasicProbability.github.io/blob/master/Homework/Programming/Guidelines/ProgrammingGuidelines.pdf">Guidelines to programming exercises</a></p>
+
+
+        </section>
+
+        <aside id="sidebar">
+	
+            <h3><a href="#signup">Sign up!</a></h3>
+	    <h3><a href="https://github.com/BasicProbability/LectureNotes/blob/master/fullscript/BasicProbabilityAndStatistics.pdf">Lecture script</a></h3>
+            <h3><a href="#schedule">Content Schedule</a></h3>
+            <h3><a href="#material">Material</a></h3>
+	    <h3><a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">Git cheat sheet</a></h3>
+            <p>This page was originally generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme
+                by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+    </div>
+</div>
+
+
+</body>
+</html>

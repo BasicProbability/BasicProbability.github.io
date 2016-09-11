@@ -151,7 +151,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{amssymb}
+\usepackage{amsmath,amssymb}
 \usepackage[empty]{fullpage}
 \usepackage{comment}
 
@@ -173,33 +173,39 @@
 	\excludecomment{mycomment}
 \fi
 
+\newcommand\generalheader{
+	{\sffamily\flushleft\color{gray}
+		\textsc{\bfseries basic probability: theory}\\
+		Master of Logic, University of Amsterdam, 2016\\
+		\textsc{teachers} Christian Schaffner and Philip Schulz 
+		\textsc{ta} Bas Cornelissen%
+	}
+}
+
 % Practice problems
 \newcommand\practiceproblems{%
-	{\sffamily\bfseries\flushleft%
-	\textsc{\Large Master of Logic 2016, University of Amsterdam\\
-          Basic Probability: Theory}\\%
-        {Teachers: Christian Schaffner, Philip Schulz, TA: Bas Cornelissen}\\[1em]%
-	\huge Practice problem set \problemset\\[1em]%
-	}
+	\generalheader
+	{\sffamily\flushleft\huge\bfseries
+		Practice problem set \problemset
+	}\\[1em]%
 }
 
 % Homework problems
 \newcommand\homeworkproblems{%
-	{\sffamily\bfseries\flushleft%
-	\textsc{\Large Master of Logic 2016, University of Amsterdam\\
-          Basic Probability: Theory}\\%
-        {Teachers: Christian Schaffner, Philip Schulz, TA: Bas Cornelissen}\\
-	\huge Homework problem set \problemset\\[1em]%
-	}
+	\generalheader
+	{\sffamily\flushleft\huge\bfseries
+		Homework problem set \problemset
+	}\\[1em]%
 }
 
 % Solutions
 \newcommand\solutions{%
-	{\sffamily\bfseries\flushleft%
-	\textsc{\Large master of logic, uva --- basic probability: theory 2016}\\%
-	\huge Solutions problem set \problemset\\[1em]%
-	}
+	\generalheader
+	{\sffamily\flushleft\huge\bfseries
+		Solutions problem set \problemset
+	}\\[1em]%
 }
+
 \endinput
 
 

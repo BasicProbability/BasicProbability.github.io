@@ -30,7 +30,7 @@ Compute the pmf of the number of tails for 7 subsequent coin tosses.
 \end{exercise}
 
 \begin{exercise}[]
-	Calculate the variance of a loaded 6-sided die that has a probability of $\frac 1 6$ for all odd numbered sides and $P(\{2\} - P(\{4\}) =0.1$ and $P(\{6\} = 0.3$.
+	Calculate the variance of a loaded 6-sided die that has a probability of $\frac 1 6$ for all odd numbered sides and $P(\{2\}) = P(\{4\}) =0.1$ and $P(\{6\}) = 0.3$.
 \end{exercise}
 
 %\begin{exercise}[]
@@ -40,16 +40,16 @@ Compute the pmf of the number of tails for 7 subsequent coin tosses.
 \begin{exercise}[Independence]
 Three events $A$, $B$, and $C$ are pairwise independent if each pair is independent. They are mutually independent if they are pairwise independent and in addition
 	\begin{align}\label{eq:pairwise-indep}
-		P(A \cap B \cap C) = P(A) P(B) P(C)
+		P(A \cap B \cap C) = P(A) P(B) P(C) \, .
 	\end{align}
 	\begin{subex}
-	Suppose we roll two 6-sided die. Consider the events:
+	Suppose we roll two 6-sided dice. Consider the events:
 	\[
-		A = \text{`odd on die 1'} \quad
-		B = \text{`odd on die 2'} \quad
-		C = \text{`odd sum'}
+		D = \text{`odd on die 1'} \quad
+		E = \text{`odd on die 2'} \quad
+		F = \text{`odd sum'}
 	\]
-	Are $A$, $B$, and $C$ pairwise independent? Are they mutually independent?	
+	Are $D$, $E$, and $F$ pairwise independent? Are they mutually independent?	
 	\end{subex}
 	
 	\begin{subex}
@@ -65,7 +65,7 @@ Three events $A$, $B$, and $C$ are pairwise independent if each pair is independ
 
 \begin{figure}\centering
 	\includegraphics[width=.2\textwidth]{media/03-venn}	
-	\caption{Venn diagram for problem 1\label{fig:venn}}
+	\caption{Venn diagram for problem 4 (b)\label{fig:venn}}
 \end{figure}
 
 
@@ -75,7 +75,9 @@ There are $8$ cards in a hat:
 	\[
 		\{1\heartsuit, 1\spadesuit, 1\diamondsuit, 1\clubsuit, 2\heartsuit, 2\spadesuit, 2\diamondsuit, 2\clubsuit\}.
 	\]
-You draw one card at random. If its rank is 1 you draw one more card; if its rank is two you draw two more cards. Let $X$ be the sum of the ranks on the 2 or 3 cards. Find $E(X)$.
+You draw one card at random. If its rank is 1 you draw one more card;
+if its rank is two you draw two more cards. Let $X$ be the sum of the
+ranks on all the cards you have drawn. Find $E(X)$.
 	
 \end{exercise}
 
@@ -96,7 +98,7 @@ You draw one card at random. If its rank is 1 you draw one more card; if its ran
 %\end{exercise}
 
 
-\begin{exercise}[Negative binomial distribution (3pt)]
+\begin{exercise}[Negative binomial distribution]
  Assume that a number of independent trials, each with a probability of success of $p$, $0 < p < 1$, are performed until $q$ successes are registered. Let $X$ be equal to the number of trials required, then
 	$$P(X = n) = {{n-1} \choose {q-1}} p^{q} (1 - p)^{n-q} \qquad \qquad n = q, q+1, ...$$
 

@@ -1,0 +1,96 @@
+\documentclass[a4paper,10pt,landscape,twocolumn]{scrartcl}
+
+%% Settings
+\newcommand\problemset{4}
+\newcommand\deadline{Wednesday September 28th, 21:00h}
+\newif\ifcomments
+\commentsfalse % hide comments
+%\commentstrue % show comments
+
+% Packages
+\usepackage[english]{exercises}
+\usepackage{wasysym,hyperref}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Cor}{Cor}
+\DeclareMathOperator{\Var}{Var}
+
+\begin{document}
+
+\homeworkproblems
+
+{\sffamily\noindent
+%This week's exercises deal with sets, counting and uniform probabilities.
+Your homework must be handed in \textbf{electronically via Moodle before \deadline}.  This deadline is strict and late submissions are graded with a 0. At the end of the course, the lowest of your 7 weekly homework grades will be dropped. You are strongly encouraged to work together on the exercises, including the homework. However, after this discussion phase, you have to write down and submit your own individual solution. Numbers alone are never sufficient, always motivate your answers.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{exercise}[1pt]
+Bob has to decide whether to spend his holidays at the beach or in the city. In general, he likes the beach 3 times as much as the city. His friends know that Bob's going to the beach is a indicator of good weather. In fact, when Bob goes to the beach, the weather is twice as likely to be good rather than bad. However, when Bob stays in the city no information can be gained about the weather. It is equally likely to be good as it is to be bad. When we do not know where Bob is going, what is the probability of good weather?	
+\end{exercise}
+
+
+\begin{exercise}[4pt]
+	Consider a vase with 3 red balls, 2 white balls and 5 blue balls. You draw 5 balls uniformly at random without replacement. Let $X$ be the number of red balls and $Y$ be the number of white balls.
+	
+	\begin{subex}[1pt]
+		Let $C(x,y)$ be 	number of outcomes in which $X=x$ and $Y=y$. Draw a table with all values $C$ can take. How can you find $P_{X,Y}(x,y)$ from $C$?
+	\end{subex}
+	
+	\begin{subex}[1pt]
+		Draw a table of the cdf $F_{XY}(x,y) = P((X,Y) \le (x,y))$. (You might want to keep things simple and use $C$.)	
+	\end{subex}
+	
+	\begin{subex}[1pt]
+		Let $A$ be the event that you have drawn 1, 2 or 3 red balls and at most 1 white ball. Calculate $P_{XY}(A)$ using $F_{XY}$.
+	\end{subex}
+	
+	\begin{subex}[0.5pt]
+	Find the marginal distributions $P_X$ and $P_Y$.	
+	\end{subex}
+	
+	\begin{subex}[0.5pt]
+	Are $X$ and $Y$ independent?	
+	\end{subex}
+\end{exercise}
+
+\begin{exercise}[3pt]
+Consider the random variables $X \sim \text{Binomial}(2, 0.5)$ and $Y \sim \text{Bernoulli}(0.4)$. Their joint distribution satisfies $P_{XY}(2,0) = P_{XY}(0,1) = 0$ and $P_{XY}(1,1) = c$ for some $c\in \mathbb R$.
+
+	\begin{subex}[1pt]
+	Find the joint distribution of $X$ and $Y$ and calculate $\Cov(X,Y)$.
+	\end{subex}
+	
+	\begin{subex}[1pt]
+	Calculate $\Cor(X,Y)$.	
+	\end{subex}
+	
+	\begin{subex}[1pt]
+	Can we choose $c$ in such a way that $X$ and $Y$ become independent?	
+	\end{subex}
+\end{exercise}
+
+
+
+
+\begin{exercise}[Deterministic random variables (3pt)]
+A (discrete) random variable $Y$ is called \emph{degenerate} of \emph{deterministic} if there is exists an outcome $a$ such that $P_X(a) = 1$. Let $Y$ be such a random variable.
+
+	\begin{subex}[1pt]
+		Show that $X$ is deterministic if and only if $\Var[X] = 0$.	
+	\end{subex}
+	
+	\begin{subex}[1pt]
+		Let $X$ be a non-deterministic random variable. For which value of $c$ are $X$ and $Z := X - cY$ uncorrelated, i.e. do we have $\Cov(X, Z) = 0$?
+	\end{subex}
+	
+	\begin{subex}[1pt]
+		Again, let $Y$ be deterministic and $X$ not and further suppose that $E[X]$ is finite. Show that $\Cov(X,Y) = 0$.	
+	\end{subex}
+\end{exercise}
+
+
+%\vfill\noindent
+%\small{\color{gray}Some of these questions are derived rom}
+
+\end{document}

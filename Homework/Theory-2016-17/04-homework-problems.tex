@@ -34,26 +34,26 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 	The spam filter's inaccuracy can be decreased in such a way that all actual spam will still be intercepted. To what value should $\alpha$ at least be decreased if the company wants to be at least 99.9\% sure that an email labelled as spam is actually junk mail?
 \end{exercise}
 
-\begin{exercise}[4pt]
+\begin{exercise}[A joint probability vase (4pt)]
 	Consider a vase with 3 red balls, 2 white balls and 5 blue balls. You draw 5 balls uniformly at random without replacement and ignore their order. Let $X$ be the number of red balls and $Y$ be the number of white balls.
 	
 	\begin{subex}[1pt]
 		Let $C(x,y)$ be 	number of outcomes in which $X=x$ and $Y=y$. Fill in the following table with all values $C$ can take. 
 		
-			\[\small{
-	\begin{tabular}{c|c|c|c}
-	$C(X,Y)$&$Y=0$	&$Y=1$	&$Y=2$\\\hline
-	$X=0$	&		&		&\\\hline
-	$X=1$	&		&		&\\\hline
-	$X=2$	&		&		&\\\hline
-	$X=3$	&		&		&\\\hline
-	\end{tabular}}
-	\]
-	Justify that $P_{X,Y}(x,y) = {10 \choose 5}^{-1} C(x,y)$?
+		\[\small{
+		\begin{tabular}{c|c|c|c}
+		$C(X,Y)$&$Y=0$	&$Y=1$ &$Y=2$\\\hline
+		$X=0$	&		&  		&\\\hline
+		$X=1$	&		&		&\\\hline
+		$X=2$	&		&		&\\\hline
+		$X=3$	&		&		&\\\hline		
+		\end{tabular}}
+		\]
+		Justify that $P_{X,Y}(x,y) = {10 \choose 5}^{-1} C(x,y)$.
 	\end{subex}
 	
 	\begin{subex}[1pt]
-		Provide a table of the cdf $F_{XY}(x,y) = P((X,Y) \le (x,y))$. (You might want to keep things simple and use $C$.)	
+		Provide a table of the cdf $F_{XY}(x,y) = P((X,Y) \le (x,y))$. (You might want to keep things simple and use $C$ in some way.)	
 	\end{subex}
 	
 	\begin{subex}[0.5pt]
@@ -75,7 +75,7 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 \end{exercise}
 
 \begin{exercise}[3pt]
-Let $P_{XY}$ be the joint distribution of $X$ and $Y$ whose marginal distributions are $X \sim \text{Binomial}(2, 0.5)$ and $Y \sim \text{Bernoulli}(0.4)$. The joint distribution satisfies $P_{XY}(2,0) = P_{XY}(0,1) = 0$ and $P_{XY}(1,1) = c$ for $c\in \mathbb R$.
+Let $P_{XY}$ be the joint distribution of $X$ and $Y$ whose marginal distributions are $X \sim \text{Binomial}(2, 0.5)$ and $Y \sim \text{Bernoulli}(0.8)$. The joint distribution satisfies $P_{XY}(2,0) = 0$ and $P_{XY}(1,1) = c$ for $c\in \mathbb R$.
 
 	\begin{subex}[1pt]
 	Find the joint distribution of $X$ and $Y$ and calculate $\Cov(X,Y)$.
@@ -86,13 +86,13 @@ Let $P_{XY}$ be the joint distribution of $X$ and $Y$ whose marginal distributio
 	\end{subex}
 	
 	\begin{subex}[1pt]
-	Can we choose $c$ in such a way that $X$ and $Y$ become independent?	
+	Can we choose $c$ in such a way that $X$ and $Y$ become independent?	 Give $c$ if it exists or otherwise show it cannot exist.
 	\end{subex}
 \end{exercise}
 
 
 \begin{exercise}[Deterministic random variables (2pt)]
-A (discrete) random variable $Y$ is called \emph{constant, degenerate} or \emph{deterministic} if there is exists an outcome $a$ such that $P_X(a) = 1$. Let $Y$ be such a random variable.
+A (discrete) random variable $Y$ is called \emph{constant, degenerate} or \emph{deterministic} if there exists an outcome $a$ such that $P_X(a) = 1$. Let $Y$ be such a random variable.
 
 	\begin{subex}[1pt]
 		Show that $X$ is constant if and only if $\Var[X] = 0$.	

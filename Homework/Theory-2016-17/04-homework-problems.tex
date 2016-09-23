@@ -25,25 +25,45 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{exercise}[1pt]
-Bob has to decide whether to spend his holidays at the beach or in the city. In general, he likes the beach 3 times as much as the city. His friends know that Bob's going to the beach is a indicator of good weather. In fact, when Bob goes to the beach, the weather is twice as likely to be good rather than bad. However, when Bob stays in the city no information can be gained about the weather. It is equally likely to be good as it is to be bad. When we do not know where Bob is going, what is the probability of good weather?	
+%Ill 1 in 100
+%Healthy: 99 in 100
+
+\begin{exercise}[Spam filters (1pt)]
+	Suppose that 20\% of the incoming emails are junk mail (in fact, it's more). A company is developing a spam filter that already manages to correctly label all junk mail as spam. But in doing so, it also wrongly labels some innocent emails as spam. Let's call the probability of wrongly labelling an innocent email as spam the \emph{inaccuracy} $\alpha$. 
+%	
+	The spam filter's inaccuracy can be decreased in such a way that all actual spam will still be intercepted. To what value should $\alpha$ at least be decreased if the company wants to be at least 99.9\% sure that an email labelled as spam is actually junk mail?
 \end{exercise}
 
-
 \begin{exercise}[4pt]
-	Consider a vase with 3 red balls, 2 white balls and 5 blue balls. You draw 5 balls uniformly at random without replacement. Let $X$ be the number of red balls and $Y$ be the number of white balls.
+	Consider a vase with 3 red balls, 2 white balls and 5 blue balls. You draw 5 balls uniformly at random without replacement and ignore their order. Let $X$ be the number of red balls and $Y$ be the number of white balls.
 	
 	\begin{subex}[1pt]
-		Let $C(x,y)$ be 	number of outcomes in which $X=x$ and $Y=y$. Draw a table with all values $C$ can take. How can you find $P_{X,Y}(x,y)$ from $C$?
+		Let $C(x,y)$ be 	number of outcomes in which $X=x$ and $Y=y$. Fill in the following table with all values $C$ can take. 
+		
+			\[\small{
+	\begin{tabular}{c|c|c|c}
+	$C(X,Y)$&$Y=0$	&$Y=1$	&$Y=2$\\\hline
+	$X=0$	&		&		&\\\hline
+	$X=1$	&		&		&\\\hline
+	$X=2$	&		&		&\\\hline
+	$X=3$	&		&		&\\\hline
+	\end{tabular}}
+	\]
+	Justify that $P_{X,Y}(x,y) = {10 \choose 5}^{-1} C(x,y)$?
 	\end{subex}
 	
 	\begin{subex}[1pt]
-		Draw a table of the cdf $F_{XY}(x,y) = P((X,Y) \le (x,y))$. (You might want to keep things simple and use $C$.)	
+		Provide a table of the cdf $F_{XY}(x,y) = P((X,Y) \le (x,y))$. (You might want to keep things simple and use $C$.)	
 	\end{subex}
 	
-	\begin{subex}[1pt]
-		Let $A$ be the event that you have drawn 1, 2 or 3 red balls and at most 1 white ball. Calculate $P_{XY}(A)$ using $F_{XY}$.
+	\begin{subex}[0.5pt]
+		Let $A$ be the event that you have drawn 1, 2 or 3 red balls and at most 1 white ball. Calculate $P_{XY}(A)$ from the table.
 	\end{subex}
+	
+	\begin{subex}[0.5pt]
+	Calculate $P_{XY}(A)$ again, and indicate how you use $F_{XY}$	
+	\end{subex}
+
 	
 	\begin{subex}[0.5pt]
 	Find the marginal distributions $P_X$ and $P_Y$.	
@@ -55,7 +75,7 @@ Bob has to decide whether to spend his holidays at the beach or in the city. In 
 \end{exercise}
 
 \begin{exercise}[3pt]
-Consider the random variables $X \sim \text{Binomial}(2, 0.5)$ and $Y \sim \text{Bernoulli}(0.4)$. Their joint distribution satisfies $P_{XY}(2,0) = P_{XY}(0,1) = 0$ and $P_{XY}(1,1) = c$ for some $c\in \mathbb R$.
+Let $P_{XY}$ be the joint distribution of $X$ and $Y$ whose marginal distributions are $X \sim \text{Binomial}(2, 0.5)$ and $Y \sim \text{Bernoulli}(0.4)$. The joint distribution satisfies $P_{XY}(2,0) = P_{XY}(0,1) = 0$ and $P_{XY}(1,1) = c$ for $c\in \mathbb R$.
 
 	\begin{subex}[1pt]
 	Find the joint distribution of $X$ and $Y$ and calculate $\Cov(X,Y)$.
@@ -71,21 +91,15 @@ Consider the random variables $X \sim \text{Binomial}(2, 0.5)$ and $Y \sim \text
 \end{exercise}
 
 
-
-
-\begin{exercise}[Deterministic random variables (3pt)]
-A (discrete) random variable $Y$ is called \emph{degenerate} of \emph{deterministic} if there is exists an outcome $a$ such that $P_X(a) = 1$. Let $Y$ be such a random variable.
+\begin{exercise}[Deterministic random variables (2pt)]
+A (discrete) random variable $Y$ is called \emph{constant, degenerate} or \emph{deterministic} if there is exists an outcome $a$ such that $P_X(a) = 1$. Let $Y$ be such a random variable.
 
 	\begin{subex}[1pt]
-		Show that $X$ is deterministic if and only if $\Var[X] = 0$.	
+		Show that $X$ is constant if and only if $\Var[X] = 0$.	
 	\end{subex}
 	
 	\begin{subex}[1pt]
-		Let $X$ be a non-deterministic random variable. For which value of $c$ are $X$ and $Z := X - cY$ uncorrelated, i.e. do we have $\Cov(X, Z) = 0$?
-	\end{subex}
-	
-	\begin{subex}[1pt]
-		Again, let $Y$ be deterministic and $X$ not and further suppose that $E[X]$ is finite. Show that $\Cov(X,Y) = 0$.	
+		Again, let $Y$ be constant and $X$ not and further suppose that $E[X]$ is finite. Show that $\Cov(X,Y) = 0$.	
 	\end{subex}
 \end{exercise}
 

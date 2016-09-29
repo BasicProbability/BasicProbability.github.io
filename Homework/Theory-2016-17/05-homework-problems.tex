@@ -9,10 +9,13 @@
 
 % Packages
 \usepackage[english]{exercises}
-\usepackage{wasysym,hyperref,graphicx}
+\usepackage{wasysym,hyperref,graphicx,color}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
 \DeclareMathOperator{\Cov}{Cov}
 \DeclareMathOperator{\Cor}{Cor}
 \DeclareMathOperator{\Var}{Var}
+
+\newcommand{\philip}[1]{\textcolor{red}{#1}}
 
 \begin{document}
 
@@ -35,7 +38,7 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 
 
 \begin{exercise}[Poisson distribution (3pt)]
-	The \emph{Poisson distribution} 	models the number of time some event happens in a given period of time. It's probability mass function is given by
+	The \emph{Poisson distribution} 	models \philip{how often} some event happens in a given period of time. It's probability mass function is given by
 	\[
 	P(X = k) = {\frac {\lambda ^{k}e^{-\lambda }}{k!}}, \qquad \lambda \in \mathbb{R}_{>0}, \quad k=0,1,2,\dots
 	\]
@@ -43,7 +46,7 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 	Let $X_1, \dots, X_N$ be $n$ independent, identically distributed (i.i.d.) random variables following a $\text{Poisson}(\lambda)$ distribution.
 		
 	\begin{subex}[1pt]
-	Let $T(X_1, \dots, X_N) = \sum_{i=1}^N X_i$ be a statistic. Show that $T$ is a sufficient statistic for the Poisson distribution. \emph{Hint: use the Factorization Theorem (5.13).}
+	\philip{Show that $T(X_1, \dots, X_N) = \sum_{i=1}^N X_i$ is a sufficient statistic} for the Poisson distribution. \emph{Hint: use the Factorization Theorem (5.13).}
 	\end{subex}
 
 	\begin{subex}[0.5pt]
@@ -55,15 +58,16 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 	\end{subex}
 	
 	\begin{subex}[1pt]
-		Show that the maximum likelihood estimator for $\lambda$ is
+		Show that the maximum likelihood estimat\philip{e} for $\lambda$ is
 		\[
-			\lambda_\textsc{ml} = \text{argmax}_\lambda P(X_1, \dots, X_N \mid \lambda) = \frac{1}{N}\sum_{i=1}^N X_i.
+			\lambda_\textsc{ml} = \text{argmax}_\lambda P(x_1, \dots, x_N \mid \lambda) = \frac{1}{N}\sum_{i=1}^N x_i.
 		\]
 	\end{subex}
 	
 \end{exercise}
 
 \begin{exercise}[Multiple binomials (2pt)]
+	\philip{In accordance with our notation, I lowercased all RVs that are arguments to a pmf.}
 	Let $X_1, \dots, X_N$ be i.i.d.\ $\text{Binom}(n, \theta)$ random variables. 
 %	Show that the maximum likelihood estimator for $\lambda$ is:
 %	\[
@@ -73,17 +77,17 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 	(Be careful not to confuse $n$ and $N$).
 	
 	\begin{subex}[0.5pt]
-	Find the log-likelihood $\ln P(X_1, \dots, X_N \mid n, \theta)$ of the data.
+	Find the log-likelihood $\ln P(x_1, \dots, x_N \mid n, \theta)$ of the data.
 	\end{subex}
 	
 	\begin{subex}[0.5pt]
-		Find the derivative $\frac{\partial}{\partial \theta} \ln P(X_1, \dots, X_N \mid n, \theta)$.
+		Find the derivative $\frac{\partial}{\partial \theta} \ln P(x_1, \dots, x_N \mid n, \theta)$.
 	\end{subex}
 	
 	\begin{subex}[1pt]
 		Show that the maximum likelihood estimator for $\theta$ is (keeping $n$ fixed):
 		\[
-			\theta_\textsc{mle} = \text{argmax}_\theta P(X_1, \dots, X_N \mid n, \theta) = \frac{\sum_{i=1}^N X_i}{n \cdot N}.
+			\theta_\textsc{mle} = \text{argmax}_\theta P(x_1, \dots, x_N \mid n, \theta) = \frac{\sum_{i=1}^N x_i}{n \cdot N}.
 		\] 
 	\end{subex}
 	
@@ -122,7 +126,7 @@ Once upon a time, three data enthusiasts, Alice, Bob and Charlie, were asked to 
 	\end{subex}
 	
 	\begin{subex}[0.5pt]
-		The differences between their models are of course much larger than their expectations suggest. This becomes clear when the client sends some more observations:
+		The differences between their models are of course much larger than their expectations suggest \philip{I do not understand this sentence. What do the expectations suggest concretely?}. This becomes clear when the client sends some more observations:
 		\[
 			\mathcal D' = \mathcal D \cup \{ 0, 4, 5 \}
 		\]
@@ -130,7 +134,8 @@ Once upon a time, three data enthusiasts, Alice, Bob and Charlie, were asked to 
 	\end{subex}
 	
 	\begin{subex}[1pt]
-	Let's call the parameter of the one remaining model	$\gamma_\textsc{ml}$. It's inventor actually had a competing hypothesis for the parameter: $\gamma_\textsc{ml}' = 1.25 \times \gamma_\textsc{ml}$, which s/he deemed slightly less likely: $P(\gamma_\textsc{ml}') = 0.4$ while $P(\gamma_\textsc{ml}) = 0.6$. Which of these two parameter should s/he prefer after observing the new data $\{ 0, 4, 5 \}$? Answer that question by calculating the posterior $P(\gamma \mid \{0, 4, 5\})$.
+	Let's call the parameter of the one remaining model	$\gamma_\textsc{ml}$. It's inventor actually had a competing hypothesis for the parameter: $\gamma_\textsc{ml}' = 1.25 \times \gamma_\textsc{ml}$, which s/he deemed slightly less likely: $P(\gamma_\textsc{ml}') = 0.4$ while $P(\gamma_\textsc{ml}) = 0.6$. Which of these two parameter should s/he prefer after observing the new data $\{ 0, 4, 5 \}$? Answer that question by calculating the posterior $P(\gamma \mid \{0, 4, 5\})$. \philip{This exercise
+	as formulated does not make sense. If you want to compute the posterior, you should do it over the entire data set, i.e. $ \mathcal D \cup \{ 0, 4, 5 \} $.}
 	\end{subex}
 	
 	\bigbreak\noindent

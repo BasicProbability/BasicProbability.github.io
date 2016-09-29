@@ -122,7 +122,8 @@ Once upon a time, three data enthusiasts, Alice, Bob and Charlie, were asked to 
 	\end{subex}
 	
 	\begin{subex}[1pt]
-		Alice, Bob and Charlie wonder how their models differ. Show that all models have the same expectation $\overline x := \frac{1}{N} \sum_{j=1}^N x_j$, where $x_j$ is an observations. However, they have different variances: show that $\Var(B_i) < \Var(C_i) \le \Var(A_i)$ if $\overline x \ge 2$.
+		Alice, Bob and Charlie wonder how their models differ. Show that all models have the same expectation \philip{when parametrised with their MLE parameters.} \philip{Observe that this expectation is equal to the sample mean $\overline x := \frac{1}{N} \sum_{j=1}^N x_j$, where $x_j$ is an observations. However, the models} have different variances: show that $\Var(B_i) < \Var(C_i) \le \Var(A_i)$ if $\overline x \ge 2$. \philip{I think it is $ Var(C_{i}) \leq Var(B_{i}) $ because
+		the MLE parameters are $ 0.5 $ for both the binomial and geometric and 2 for the Poisson. Thus $ \frac{1}{\sqrt{2}} < 4\times 0.25 $.}
 	\end{subex}
 	
 	\begin{subex}[0.5pt]

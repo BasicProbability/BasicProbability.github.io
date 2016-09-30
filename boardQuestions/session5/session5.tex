@@ -1,0 +1,34 @@
+\documentclass[14pt]{beamer}
+
+\begin{document}
+
+\begin{frame}{Geometric MLE}
+For an i.i.d. data set $ x = x_{1}^{n} $ find the MLE for the geometric distribution:
+$$ P(X=x) = (1-\theta)^{x}\theta $$
+\end{frame}
+
+\begin{frame}{Geometric MLE}
+The likelihood function is
+$$ L_{x}(\theta) = \prod_{i=1}^{n} \theta(1-\theta)^{x_{i}} = \theta^{n} (1-\theta)^{\sum_{i=1}^{n}x_{i}} $$
+and thus the log-likelihood is
+$$ \mathcal{L}_{x}(\theta) = n\log(\theta) + \sum_{i=1}^{n}x_{i}\log(1-\theta) \ . $$
+\end{frame}
+
+\begin{frame}{Geometric MLE}
+\begin{align*}
+\frac{d}{d\theta}\mathcal{L}_{x}(\theta) &= \frac{d}{d\theta}n\log(\theta) + \frac{d}{d\theta}\sum_{i=1}^{n}x_{i}\log(1-\theta) \\
+&= \frac{n}{\theta} - \frac{\sum_{i=1}^{n}x_{i}}{1-\theta}
+\end{align*}
+\end{frame}
+
+\begin{frame}{Geometric MLE}
+Setting this to 0 gives
+\begin{align*}
+0 &= \frac{n}{\theta} - \frac{\sum_{i=1}^{n}x_{i}}{1-\theta} &\Leftrightarrow \\
+\frac{n}{\theta} &= \frac{\sum_{i=1}^{n}x_{i}}{1-\theta} &\Leftrightarrow \\
+n - n\theta &= \theta \sum_{i=1}^{n}x_{i} &\Leftrightarrow \\
+\theta &= \frac{n}{n + \sum_{i=1}^{n}x_{i}}&
+\end{align*}
+\end{frame}
+
+\end{document}

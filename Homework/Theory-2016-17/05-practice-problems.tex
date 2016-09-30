@@ -44,13 +44,9 @@ This week's exercises deal with joint distributions, covariance and correlation.
 \begin{exercise}[Maximum a posteriori estimates]
 	The \emph{Beta distribution} is a continuous probability distribution over $[0,1]$. You don't need to know anything about continuous distributions for this exercise. The important thing is that if you sample from a Beta distribution, you will get a real number $\theta$ in the interval $[0, 1]$, with probability
 	\[
-		P(\Theta = \theta) = \frac{1}{B(\alpha, \beta)} \theta^{\alpha} (1-\theta)^{\beta},
+		P(\Theta = \theta|\alpha, \beta) = \frac{1}{B(\alpha, \beta)} \theta^{\alpha-1} (1-\theta)^{\beta-1},
 	\] 
 	Where $\alpha > -1$ and $\beta > -1$ are the two parameters of the distribution and $B(\alpha, \beta)$ is a normalizing constant that does not depend on $\theta$.
-	
-	\begin{mycomment}
-		Is this correctly parametrized? Normally you use $\alpha, \beta>0$ and $\alpha-1, \beta-1$ in the exponent, right?
-	\end{mycomment}
 
 	Let $\Theta \sim \text{Beta}(\alpha, \beta)$. Since $\Theta$ takes values in $[0,1]$ we use $\Theta$ as the parameter for a Bernoulli distribution. Let $X_1, \dots, X_N \sim \text{Bern}(\Theta)$ be i.i.d. random variables --- we use the beta distribution as a \emph{prior} for the Bernoulli.
 	
@@ -64,7 +60,7 @@ This week's exercises deal with joint distributions, covariance and correlation.
 	\begin{subex}
 		Find the unnormalized posterior log-probability 
 		\[
-			\mathcal P(\theta) = \ln \bigl[ P(X_1, \dots, X_N \mid \Theta=\theta) \cdot P(\Theta = \theta)\bigr]
+			\mathcal P(\theta) := \ln \bigl[ P(X_1=x_1, \dots, X_N=x_n \mid \Theta=\theta) \cdot P(\Theta = \theta| \alpha, \beta)\bigr]
 		\]
 	\end{subex}
 

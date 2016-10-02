@@ -71,4 +71,39 @@ n - n\theta &= \theta \sum_{i=1}^{n}x_{i} &\Leftrightarrow \\
 \end{align*}
 \end{frame}
 
+\begin{frame}{Geometric MLE, variant 2}
+For an i.i.d. data set $ x = x_{1}^{n} $ find the MLE for the geometric distribution:
+$$ P(X=x) = (1-\theta)^{x-1}\theta $$
+\end{frame}
+
+\begin{frame}{Geometric MLE, variant 2}
+The likelihood function is
+$$ L_{x}(\theta) = \prod_{i=1}^{n} \theta(1-\theta)^{x_{i}-1} =
+\theta^{n} (1-\theta)^{(\sum_{i=1}^{n}x_{i}) - n} $$
+and thus the log-likelihood is
+$$ \mathcal{L}_{x}(\theta) = n\log(\theta) + \left(\left(\sum_{i=1}^{n}x_{i}\right) - n\right)
+\log(1-\theta) \ . $$
+\end{frame}
+
+\begin{frame}{Geometric MLE, variant 2}
+In the next step we compute the score function.
+\begin{align*}
+\frac{d}{d\theta}\mathcal{L}_{x}(\theta) &=
+                                           \frac{d}{d\theta}n\log(\theta)
+                                           + \frac{d}{d\theta}
+                                            \left((\sum_{i=1}^{n}x_{i}) - n\right)\log(1-\theta) \\
+&= \frac{n}{\theta} - \frac{\left(\sum_{i=1}^{n}x_{i}\right) - n}{1-\theta}
+\end{align*}
+\end{frame}
+
+\begin{frame}{Geometric MLE, variant 2}
+Setting this to 0 gives
+\begin{align*}
+0 &= \frac{n}{\theta} - \frac{((\sum_{i=1}^{n}x_{i}) - n)}{1-\theta} &\Leftrightarrow \\
+\frac{n}{\theta} &= \frac{((\sum_{i=1}^{n}x_{i}) - n)}{1-\theta} &\Leftrightarrow \\
+n - n\theta &= (\theta \sum_{i=1}^{n}x_{i}) - n \theta &\Leftrightarrow \\
+\theta &= \frac{n}{\sum_{i=1}^{n}x_{i}}&
+\end{align*}
+\end{frame}
+
 \end{document}

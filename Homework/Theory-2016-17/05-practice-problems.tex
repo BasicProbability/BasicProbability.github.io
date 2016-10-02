@@ -87,6 +87,33 @@ This week's exercises deal with joint distributions, covariance and correlation.
 	\end{subex}
 
 
+\begin{exercise}[Multiple binomials]
+	Let $X_1, \dots, X_N$ be i.i.d.\ $\text{Binom}(n, \theta)$ random variables. 
+	Show that the maximum likelihood estimator for $\lambda$ is:
+	\[
+		\theta_\textsc{mle} = \text{argmax}_\lambda P(X_1, \dots, X_N \mid \lambda) = \frac{\sum_{i=1}^N x_i}{n \cdot N}.
+	\] 
+	Note that this differs from the script since we now have $N$ rather than 1 random variable. 
+	(Be careful not to confuse $n$ and $N$).
+	
+	\begin{subex}
+	Find the log-likelihood $\ln P(X_1^N=x_1^N \mid n, \theta)$ of the data.
+	\end{subex}
+	
+	\begin{subex}
+		Find the derivative $\frac{\partial}{\partial \theta} \ln P(X_1^N=x_1^N \mid n, \theta)$.
+	\end{subex}
+	
+	\begin{subex}
+		Show that the maximum likelihood estimator for $\theta$ is (keeping $n$ fixed):
+		\[
+			\theta_\textsc{mle} = \text{argmax}_\theta P(X_1^N=x_1^N \mid n, \theta) = \frac{\sum_{i=1}^N x_i}{n \cdot N}.
+		\] 
+	\end{subex}
+	
+\end{exercise}
+
+
 
 %	 which is the parameter space for the
 %Bernoulli distribution. The Beta distribution is a continuous distribution which we have not discussed in class. For the present exercise this is immaterial, however. The functional form of the

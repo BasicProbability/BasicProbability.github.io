@@ -4,6 +4,24 @@
 
 \begin{document}
 
+\begin{frame}{Sufficient statistics}
+You are given a data set $ x=x_{1}^{n} $ of $ n $ i.i.d. geometrically distributed observations.
+Show that $ \sum_{i=1}^{n} $ is a sufficient statistic for the geometric distribution.
+\end{frame}
+
+\begin{frame}{Sufficient statistics}
+\small
+We will use the factorisation theorem for this exercise.
+\begin{align*}
+P(X_{1}^{n}|\Theta=\theta) = \prod_{i=1}^{n}P(X_{i}=x_{i}|\Theta=\theta)
+= \theta^{n} (1-\theta)^{\sum_{i=1}^{n}x_{i}}
+\end{align*}
+By letting $ g(\theta, \sum_{i=1}^{n}x_{i}) = \theta^{n} (1-\theta)^{\sum_{i=1}^{n}x_{i}} $ 
+and $ h(x,\sum_{i=1}^{n}x_{i}) = \frac{1}{c} $ the result follows from
+the factorisation theorem. Here, $ c $ is the number of sequences of $ n $ geometric draws whose
+sum is equal to $ \sum_{i=1}^{n}x_{i} $.
+\end{frame}
+
 \begin{frame}{Coin Tosses}
 \small
 A coin is taken from a box containing three coins, which give heads
@@ -39,6 +57,50 @@ Thus the maximum likelihood is achieved under $ p = \nicefrac{2}{3} $.
 $ \frac{k}{n} $ where $ k $ is the number of successes and $ n $ is the total number of Bernoulli trials.
 Thus we get $$ p^{*}=\frac{49}{80} = 0.6125 $$ as the MLE in the present example.
 \end{enumerate}
+\end{frame}
+
+\begin{frame}{Dice}
+There are five fair dice each with a different number of sides: 4,6,8,12,20.
+Jon picks one of them uniformly at random rolls it and reports a 13.
+\begin{enumerate}[a)]
+\item Compute the posterior probability for each die to have generated this outcome.
+\item Compute the posterior probabilities if the result had been a 5 instead. \textit{Hint: Drawing a table
+may help here. And please do use a calculator!}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Dice}
+\begin{enumerate}[a)]
+\item For all but the 20-sided die the likelihood and hence the posterior probability is 0. By Bayes' rule
+this means that the posterior probability of the 20-sided die is 1. The numerator and the denominator
+in Bayes' rule take on the same value in this example.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Dice}
+\small
+We use a table to display the solution. We identify the dice by their number of sides.
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Die	&	P(Die)		&	P(5|Die)			&	P(5|Die)	P(Die) & P(Die|5) \\
+\hline
+\hline
+4	&$ \nicefrac{1}{5} $	&		0			&	0				&	0		\\
+\hline
+6	&$ \nicefrac{1}{5} $	&$ \nicefrac{1}{6} $		&$ \nicefrac{1}{30} $	&$ 0.392 $	\\
+\hline
+8	&$ \nicefrac{1}{5} $	&$ \nicefrac{1}{8} $		&$ \nicefrac{1}{40} $	&$ 0.294 $	\\
+\hline
+12	&$ \nicefrac{1}{5} $	&$ \nicefrac{1}{12} $	&$ \nicefrac{1}{60} $	&$ 0.196 $	\\
+\hline
+20	&$ \nicefrac{1}{5} $	&$ \nicefrac{1}{20} $	&$ \nicefrac{1}{100} $	&$ 0.118 $	\\
+\hline
+\hline
+total&	1			&				&	0.085			&		1	\\
+\hline
+\end{tabular}
+\end{table}
 \end{frame}
 
 \begin{frame}{Geometric MLE}

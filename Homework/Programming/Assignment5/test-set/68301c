@@ -1,0 +1,26 @@
+From brownftmsUUCP Vidiot
+Subject Re Compiling ghostview under Sun OpenWindows 3
+
+In article C75z4A8r7curiauccie pflynncuriauccie Peter Flynn writes
+Due it seems to Suns crapulous organisation of the X libraries and includes
+most standard GNU and other software wont compile out of the box well tar
+file 
+
+Right now Im trying to make ghostview It complains it cant find X11XaW
+so I just linked ln s the files from usropenwinshareincludeX11 and 
+now the ghoddam thing still complains it cant find them
+
+I still havent been able to compile xdvi not no way
+
+Has anyone ever managed to get anything normal to compile on a Sun
+SunOS 413 and OpenWindows 3 Whats the trick Im missing Ive even 
+tried hard copying all the relevant files into the right places and
+every time theres some bit missing or it refuses to find it
+
+Sounds like you didnt load the support for those libraries when OW30 was
+loaded  The Xaw support was missing from OW20 but added in 30
+ 
+harvard
+  ucbvaxuwvaxastroatcftmsbrown  or  uu2psicomftmsbrown
+rutgers
+INTERNET brownwiextrelcom  or  ftmsbrownastroatcUUCPcswiscedu

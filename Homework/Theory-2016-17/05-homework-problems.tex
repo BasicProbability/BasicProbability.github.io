@@ -72,32 +72,32 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 	
 \end{exercise}
 
-\begin{exercise}[Multiple binomials (2pt)]
-%	\philip{In accordance with our notation, I lowercased all RVs that are arguments to a pmf.}
-	Let $X_1, \dots, X_N$ be i.i.d.\ $\text{Binom}(n, \theta)$ random variables. 
-%	Show that the maximum likelihood estimator for $\lambda$ is:
-%	\[
-%		\theta_\textsc{mle} = \text{argmax}_\lambda P(X_1, \dots, X_N \mid \lambda) = \frac{\sum_{i=1}^N x_i}{n \cdot N}.
-%	\] 
-%	Note that this differs from the script since we now have $N$ rather than 1 random variable. 
-	(Be careful not to confuse $n$ and $N$).
-	
-	\begin{subex}[0.5pt]
-	Find the log-likelihood $\ln P(X_1^N=x_1^N \mid n, \theta)$ of the data.
-	\end{subex}
-	
-	\begin{subex}[0.5pt]
-		Find the derivative $\frac{\partial}{\partial \theta} \ln P(X_1^N=x_1^N \mid n, \theta)$.
-	\end{subex}
-	
-	\begin{subex}[1pt]
-		Show that the maximum likelihood estimator for $\theta$ is (keeping $n$ fixed):
-		\[
-			\theta_\textsc{mle} = \text{argmax}_\theta P(X_1^N=x_1^N \mid n, \theta) = \frac{\sum_{i=1}^N x_i}{n \cdot N}.
-		\] 
-	\end{subex}
-	
-\end{exercise}
+%\begin{exercise}[Multiple binomials (2pt)]
+%%	\philip{In accordance with our notation, I lowercased all RVs that are arguments to a pmf.}
+%	Let $X_1, \dots, X_N$ be i.i.d.\ $\text{Binom}(n, \theta)$ random variables. 
+%%	Show that the maximum likelihood estimator for $\lambda$ is:
+%%	\[
+%%		\theta_\textsc{mle} = \text{argmax}_\lambda P(X_1, \dots, X_N \mid \lambda) = \frac{\sum_{i=1}^N x_i}{n \cdot N}.
+%%	\] 
+%%	Note that this differs from the script since we now have $N$ rather than 1 random variable. 
+%	(Be careful not to confuse $n$ and $N$).
+%	
+%	\begin{subex}[0.5pt]
+%	Find the log-likelihood $\ln P(X_1^N=x_1^N \mid n, \theta)$ of the data.
+%	\end{subex}
+%	
+%	\begin{subex}[0.5pt]
+%		Find the derivative $\frac{\partial}{\partial \theta} \ln P(X_1^N=x_1^N \mid n, \theta)$.
+%	\end{subex}
+%	
+%	\begin{subex}[1pt]
+%		Show that the maximum likelihood estimator for $\theta$ is (keeping $n$ fixed):
+%		\[
+%			\theta_\textsc{mle} = \text{argmax}_\theta P(X_1^N=x_1^N \mid n, \theta) = \frac{\sum_{i=1}^N x_i}{n \cdot N}.
+%		\] 
+%	\end{subex}
+%	
+%\end{exercise}
 
 \begin{figure}
 	\includegraphics[width=.5\textwidth]{media/05-distributions}
@@ -128,12 +128,11 @@ Once upon a time, three data enthusiasts, Alice, Bob and Charlie, were asked to 
 	\end{subex}
 	
 	\begin{subex}[1pt]
-		Alice, Bob and Charlie wonder how their models differ. Show that all models have the same expectation \philip{when parametrised with their MLE parameters.} \philip{Observe that this expectation is equal to the sample mean $\overline x := \frac{1}{N} \sum_{j=1}^N x_j$, where $x_j$ is an observations. However, the models} have different variances: show that $\Var(B_i) < \Var(C_i) \le \Var(A_i)$ if $\overline x \ge 2$. \philip{I think it is $ Var(C_{i}) \leq Var(B_{i}) $ because
-		the MLE parameters are $ 0.5 $ for both the binomial and geometric and 2 for the Poisson. Thus $ \frac{1}{\sqrt{2}} < 4\times 0.25 $.}
-	\end{subex}
+		Alice, Bob and Charlie wonder how their models differ. Show that all models have the same expectation when parametrised with their respective MLE parameters. Observe that this expectation is equal to the sample mean $\overline x := \frac{1}{N} \sum_{j=1}^N x_j$, where $x_j$ is an observations. However, the models have different variances: show that $\Var(C_i) < \Var(B_i) \le \Var(A_i)$ if $\overline x \ge 2$. 	\end{subex}
 	
 	\begin{subex}[0.5pt]
-		The differences between their models are of course much larger than their expectations suggest \philip{I do not understand this sentence. What do the expectations suggest concretely?}. This becomes clear when the client sends some more observations:
+		In order to better decide which model is the best, the client provides some more data. The full
+		data set now is:
 		\[
 			\mathcal D' = \mathcal D \cup \{ 0, 4, 5 \}
 		\]
@@ -141,8 +140,7 @@ Once upon a time, three data enthusiasts, Alice, Bob and Charlie, were asked to 
 	\end{subex}
 	
 	\begin{subex}[1pt]
-	Let's call the parameter of the one remaining model	$\gamma_\textsc{ml}$. It's inventor actually had a competing hypothesis for the parameter: $\gamma_\textsc{ml}' = 1.25 \times \gamma_\textsc{ml}$, which s/he deemed slightly less likely: $P(\gamma_\textsc{ml}') = 0.4$ while $P(\gamma_\textsc{ml}) = 0.6$. Which of these two parameter should s/he prefer after observing the new data $\{ 0, 4, 5 \}$? Answer that question by calculating the posterior $P(\gamma \mid \{0, 4, 5\})$. \philip{This exercise
-	as formulated does not make sense. If you want to compute the posterior, you should do it over the entire data set, i.e. $ \mathcal D \cup \{ 0, 4, 5 \} $.}
+	Let's call the parameter of the one remaining model	$\gamma_\textsc{ml}$. It's inventor actually had a competing hypothesis for the parameter: $\gamma_\textsc{ml}' = 1.25 \times \gamma_\textsc{ml}$, which s/he deemed slightly less likely: $P(\gamma_\textsc{ml}') = 0.4$ while $P(\gamma_\textsc{ml}) = 0.6$. Which of these two parameter should s/he prefer after observing the full data set $\mathcal{D'}$? Answer that question by calculating the posterior $P(\gamma \mid \mathcal{D'})$.
 	\end{subex}
 	
 	\bigbreak\noindent

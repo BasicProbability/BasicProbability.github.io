@@ -1,0 +1,22 @@
+From goyalutdallasedu MOHIT K GOYAL
+Subject Datatransferrate of the new 2100 series FS2 Micropolis hds
+
+I have a question for yall
+
+Im looking at an ad for the new 35 FAST SCSI2 drives from Micropolis
+in the June 1993 MacWorld I have seen similar ads for the IDE versions
+in IBM PC magazines
+
+Well the ad says that all three drives have a FAST SCSI2 interface
+but then it says that the DTR rate for each drive is 5 megabytessecond
+max
+
+How can this be  I thought that if a drive was to be FAST SCSI2 it
+had to have a DTR of 10megs a second
+
+I am assuming the 5megssec claim by Micropolis is from the 512k cache
+I admit that I would be very impressed if the drive can readwrite data
+at 5megs a second
+
+Thank you
+

@@ -1,6 +1,45 @@
 \documentclass[14pt]{beamer}
 
+\usepackage{nicefrac, enumerate}
+
 \begin{document}
+
+\begin{frame}{Coin Tosses}
+\small
+A coin is taken from a box containing three coins, which give heads
+with probability $ p = \nicefrac{1}{3} , \nicefrac{1}{2} $, and $ \nicefrac{2}{3}$. The mystery coin is 
+tossed 80 times, resulting in 49 heads and 31 tails.
+\begin{enumerate}[a)]
+\item What is the likelihood of this data for each type on coin? Which
+coin gives the maximum likelihood?
+\item Now suppose that we have a single coin with unknown probability
+p of landing heads. Find the likelihood and log likelihood functions
+given the same data. What is the maximum likelihood estimate for p?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Coin Tosses}
+\small
+\begin{enumerate}[a)]
+\item The data $ x $ is 49 heads in 80 tosses.
+We have three hypotheses: the coin has probability
+$ p = \nicefrac{1}{3}, p = \nicefrac{1}{2}, p = \nicefrac{2}{3} $. So the likelihood function $ L_{x} : p \mapsto P(X=x|P=p) $ takes 3 values:
+\begin{align*}
+L_{x}(\frac{1}{3}) &= \binom{80}{49}\left(\frac{1}{3}\right)^{49}\left(\frac{2}{3}\right)^{31} = 6.24 \cdot 10^{-7} \\
+L_{x}(\frac{1}{2}) &= \binom{80}{49}\left(\frac{1}{2}\right)^{49}\left(\frac{1}{2}\right)^{31} = 0.024 \\
+L_{x}(\frac{2}{3}) &= \binom{80}{49}\left(\frac{2}{3}\right)^{49}\left(\frac{1}{3}\right)^{31} = 0.082
+\end{align*}
+Thus the maximum likelihood is achieved under $ p = \nicefrac{2}{3} $.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Coin Tosses}
+\begin{enumerate}[b)]
+\item We already know that the MLE for the Bernoulli (and binomial) distribution is 
+$ \frac{k}{n} $ where $ k $ is the number of successes and $ n $ is the total number of Bernoulli trials.
+Thus we get $$ p^{*}=\frac{49}{80} = 0.6125 $$ as the MLE in the present example.
+\end{enumerate}
+\end{frame}
 
 \begin{frame}{Geometric MLE}
 For an i.i.d. data set $ x = x_{1}^{n} $ find the MLE for the geometric distribution:
@@ -15,6 +54,7 @@ $$ \mathcal{L}_{x}(\theta) = n\log(\theta) + \sum_{i=1}^{n}x_{i}\log(1-\theta) \
 \end{frame}
 
 \begin{frame}{Geometric MLE}
+In the next step we compute the score function.
 \begin{align*}
 \frac{d}{d\theta}\mathcal{L}_{x}(\theta) &= \frac{d}{d\theta}n\log(\theta) + \frac{d}{d\theta}\sum_{i=1}^{n}x_{i}\log(1-\theta) \\
 &= \frac{n}{\theta} - \frac{\sum_{i=1}^{n}x_{i}}{1-\theta}

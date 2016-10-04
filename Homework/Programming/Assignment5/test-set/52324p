@@ -1,0 +1,21 @@
+From averygestaltStanfordEDU Avery Wang
+Subject Re Can Mac Superdrives read Unix disks
+
+In article 1993Apr2415315813756newsyaleedu Warren DeLano  
+warrenlaplacebiologyyaleedu writes
+ 
+ Does anyone know of a program or utility that will
+ enable the Mac to read Unix ie NeXT 35 in disks
+ 
+ Thanks
+ Warren
+ warrenlaplacebiologyyaleedu
+
+I dont know the answer to your direct question but if the Mac Superdrive can  
+read MSDOS disks can it then you can transfer files between the NeXT and  
+a Mac by using MSDOS formatted disks since the NeXT can readwrite that  
+format  And if youre interested in transferring files you can also do it  
+over the serial port using kermit
+
+cheers
+Avery

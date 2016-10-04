@@ -1,0 +1,21 @@
+From bdrcbnewsgcbattcom briandreed
+Subject Terminal woes
+
+I have a 48633 VLB machine with a Wang 9624 faxmodem
+When using the windows terminal application the only way
+I can get it to see the modem is to change it to COM2
+then go back and change it to COM4  Then it works fine
+I have it set to COM4 as the port to use  I dont have
+anything plugged into COM2 and Ive looked over the manual
+for all its worth but what am I missing  The modem is 
+jumpered for COM4IRQ3 which I understand means I cant
+use the second serial port and the modem at the same time
+but Im not using the second serial port anyway
+Also when using Procomm  for DOS it always sees the modem
+and dials but doesnt always connect me when the other end
+answers  Dont know if that helps any
+
+Thanks
+
+ Brian D Reed    bdrcbnewsgcbattcom   
+

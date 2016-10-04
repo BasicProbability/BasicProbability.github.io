@@ -1,0 +1,28 @@
+From swhcapellacuphpcom Steve Harrold
+Subject Quantum LPS240A hard disk phantom seeks
+
+Quantum LPS240A hard disk phantom seeks
+
+I just purchased and installed a 240MB Quantum 35 hard drive model
+LPS240A and have a concern about its behavior
+
+Although the disk drive itself seems to behave properly with respect to
+file IO it performs what I call phantom seeks
+
+When the PC is absolutely idle I can hear a spurt of activity in the
+drive every 3040 seconds lasting 12 seconds This activity seems to
+be initiated strictly within the drive itself since the disk LED never
+comes on The disk LED is attached to the disk controller card not
+the drive
+
+My other hard disk a Seagate ST3283A does not have this kind
+behavior
+
+Can anyone comment on this strange phenomenon
+
+
+
+Steve Harrold			swhcuphpcom
+				HPG20011
+				408 4475580
+

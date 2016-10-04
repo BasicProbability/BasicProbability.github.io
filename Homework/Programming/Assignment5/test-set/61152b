@@ -1,0 +1,12 @@
+From morgandl5000bcedu Morgan Stair
+Subject Writing EMM driver
+
+Im writing a driver that needs to remap some IO ports  This means
+virtual mode  Unfortunately virtual mode means it wont get along
+with expanded memory managers so I need make it an EMM driver too
+
+Does anyone out there have EMM code  Can any point me to an EMM code source
+
+Thanks Morgan
+
+morganDL5000bcedu

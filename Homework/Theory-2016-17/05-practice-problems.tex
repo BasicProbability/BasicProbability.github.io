@@ -46,7 +46,7 @@ This week's exercises deal with joint distributions, covariance and correlation.
 	\[
 		P(\Theta = \theta|\alpha, \beta) = \frac{1}{B(\alpha, \beta)} \theta^{\alpha-1} (1-\theta)^{\beta-1},
 	\] 
-	Where $\alpha > -1$ and $\beta > -1$ are the two parameters of the distribution and $B(\alpha, \beta)$ is a normalizing constant that does not depend on $\theta$.
+	Where $\alpha > 0$ and $\beta > 0$ are the two parameters of the distribution and $B(\alpha, \beta)$ is a normalizing constant that does not depend on $\theta$.
 
 	Let $\Theta \sim \text{Beta}(\alpha, \beta)$. Since $\Theta$ takes values in $[0,1]$ we use $\Theta$ as the parameter for a Bernoulli distribution. Let $X_1, \dots, X_N \sim \text{Bern}(\Theta)$ be i.i.d. random variables --- we use the beta distribution as a \emph{prior} for the Bernoulli.
 	

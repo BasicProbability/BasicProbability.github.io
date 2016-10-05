@@ -1,0 +1,32 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{amsmath, amssymb, enumerate}
+
+\title{Sugggestions for HW6}
+
+\begin{document}
+
+Please use the Poisson in the homework and the geometric in the exercises sheet. I think they need to see more Poissons.
+
+\section{Poisson EM}
+
+You observe the data set $ x = \{3, 6, 8, 3, 5, 4, 7, 2, 2, 8\} $. You decide to model with a mixture model with 5 components $ c_{1}, c_{2}, c_{3}, c_{4}, c_{5} $ which
+are linked to Poisson distributions with parameters $ \lambda_{c_{1}} = 0.5, \lambda_{c_{2}} = 1, \lambda_{c_{3}} = 1.5, \lambda_{c_{4}} = 2, \lambda_{c_{5}} = 3 $. 
+Initially you assume that all the mixture components are equally likely. You
+also assume independence between the mixture components. Thus, your model is
+\begin{equation*}
+P(X_{1}^{10}=x_{1}^{10},Y_{1}^{10}=y_{1}^{10}|\Lambda=\lambda) = \prod_{i=1}^{10}P(Y_{i}=y_{i})P(X_{i}=x_{i}|Y_{i}=y_{i},\Lambda=\lambda)
+\end{equation*}
+where the $ x_{i} $ are observed and the $ y_{i} $ are latent. Each $ Y_{i} $ can take on values in $ \{ c_{1}, c_{2}, c_{3}, c_{4}, c_{5} \} $.
+
+\begin{enumerate}[a)]
+\item Compute the marginal log-likelihood of $ x $ under the initial parameter settings.
+\item Perform the E-step on the data. Compute the posterior probabilities for the mixture components per data point.
+\item Report the expected sufficient statistics $ \mathbb{E}[c=c_{i}|\lambda] $ for each $ 1 \leq i \leq 5 $. 
+\item Report the expected sufficient statistics $ \mathbb{E}[x=v|c_{i},\lambda] $ for $ v \in \{2,3,4,5,6,7,8\} $. Use a table for this exercise!
+\item Perform the M-step. Report the new parameters of the distributions $ P_{Y} $ and $ P_{X|Y_{i}} $ for  $ 1 \leq i \leq 5 $.
+\item Compute the marginal log-likelihood of of $ x $ under the new parameter settings. \textbf{Hint:} If you have done everything correctly, this value should
+be higher then what you got under the initial parameter settings.
+\end{enumerate}
+
+\end{document}

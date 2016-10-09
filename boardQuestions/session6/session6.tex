@@ -63,7 +63,7 @@
 \begin{frame}{Geometric EM}
 \small
 You are given a mixture model with mixture components $ c_{1},c_{2} $ which are linked to geometric
-distributions with parameters $ \theta_{c_{1}} = 0.2, \theta_{c_{2}} = 0.6 $. You
+distributions with parameters $ \theta^{(0)}_{c_{1}} = 0.2, \theta^{(0)}_{c_{2}} = 0.6 $. You
 observe the data set
 \begin{align*}
 \{0, 2, 2, 3\} \ .
@@ -83,7 +83,7 @@ should be higher than the one computed in the beginning.
 \small
 \begin{enumerate}[a)]
 \item \begin{align*}
-&\log(0.2\cdot 0.2\cdot 0.8^{0} + 0.8 \cdot 0.6 \cdot 0.4^{}) \\
+&\log(0.2\cdot 0.2\cdot 0.8^{0} + 0.8 \cdot 0.6 \cdot 0.4^{0}) \\
 &+ 2\cdot \log(0.2\cdot 0.2 \cdot 0.8^{2} + 0.8\cdot 0.6 \cdot 0.4^{2}) \\
 &+ \log(0.2\cdot 0.2 \cdot 0.8^{3} + 0.8\cdot 0.6 \cdot 0.4^{3})
 = \ensuremath{-8.1836793}
@@ -132,7 +132,7 @@ new parameter of $ c_{2} $ : $ \dfrac{3.0230769}{4.8 + 3.0230769} = 0.3864307 $
 \begin{enumerate}[d)]
 \item \begin{align*}
 &\log(0.3231552\cdot 0.3075061\cdot 0.6924939^{0}  \\
-&+ 0.6768448 \cdot 0.3864307 \cdot 0.6135693^{}) \\
+&+ 0.6768448 \cdot 0.3864307 \cdot 0.6135693^{0}) \\
 &+ 2\cdot \log(0.3231552\cdot 0.3075061 \cdot 0.6924939^{2} \\
 &+ 0.6768448\cdot 0.3864307 \cdot 0.6135693^{2}) \\
 &+ \log(0.3231552\cdot 0.3075061 \cdot 0.6924939^{3} \\

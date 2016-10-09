@@ -80,6 +80,7 @@ should be higher than the one computed in the beginning.
 \end{frame}
 
 \begin{frame}{Geometric EM}
+\small
 \begin{enumerate}[a)]
 \item \begin{align*}
 &\log(0.2\cdot 0.2\cdot 0.8^{0} + 0.8 \cdot 0.6 \cdot 0.4^{}) \\
@@ -87,9 +88,11 @@ should be higher than the one computed in the beginning.
 &+ \log(0.2\cdot 0.2 \cdot 0.8^{3} + 0.8\cdot 0.6 \cdot 0.4^{3})
 = \ensuremath{-8.1836793}
 \end{align*}
-\item $ P(Y = c_{1}|X=0) = \dfrac{0.2\cdot 0.2\cdot 0.8^{0}}{0.2\cdot 0.2\cdot 0.8^{0} + 0.8 \cdot 0.6 \cdot 0.4^{0}} = 0.0769231 $
-$ P(Y = c_{1}|X=2) = \dfrac{0.2\cdot 0.2\cdot 0.8^{2}}{0.2\cdot 0.2\cdot 0.8^{2} + 0.8 \cdot 0.6 \cdot 0.4^{2}} = 0.25 $
-$ P(Y = c_{1}|X=3) = \dfrac{0.2\cdot 0.2\cdot 0.8^{3}}{0.2\cdot 0.2\cdot 0.8^{3} + 0.8 \cdot 0.6 \cdot 0.4^{3}} = 0.4 $
+\item $ P(Y = c_{1}|X=0, \Theta=\theta^{(0)}) = \dfrac{0.2\cdot 0.2\cdot 0.8^{0}}{0.2\cdot 0.2\cdot 0.8^{0} + 0.8 \cdot 0.6 \cdot 0.4^{0}} = 0.0769231 $
+\\ \vspace{.4cm}
+$ P(Y = c_{1}|X=2, \Theta=\theta^{(0)}) = \dfrac{0.2\cdot 0.2\cdot 0.8^{2}}{0.2\cdot 0.2\cdot 0.8^{2} + 0.8 \cdot 0.6 \cdot 0.4^{2}} = 0.25 $
+\\ \vspace{.4cm}
+$ P(Y = c_{1}|X=3, \Theta=\theta^{(0)}) = \dfrac{0.2\cdot 0.2\cdot 0.8^{3}}{0.2\cdot 0.2\cdot 0.8^{3} + 0.8 \cdot 0.6 \cdot 0.4^{3}} = 0.4 $
 \end{enumerate}
 \end{frame}
 
@@ -97,14 +100,14 @@ $ P(Y = c_{1}|X=3) = \dfrac{0.2\cdot 0.2\cdot 0.8^{3}}{0.2\cdot 0.2\cdot 0.8^{3}
 \small
 \begin{enumerate}[c)]
 \item \textbf{E-step}\begin{align*}
-&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = 0.0769231 + 
+&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta^{(0)}] = 0.0769231 + 
 2\cdot 0.25 + 0.4 \\
 &= 0.9769231 \\
-&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta] = 4 - 0.9769231 = 3.0230769 \\
-&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = 0.0769231 \cdot 0 + 
+&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta^{(0)}] = 4 - 0.9769231 = 3.0230769 \\
+&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta^{(0)}] = 0.0769231 \cdot 0 + 
 2\cdot 0.25 \cdot 2 + 0.4 \cdot 3\\
 &= 2.2 \\
-&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta] = 0.9230769 \cdot 0 + 
+&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta^{(0)}] = 0.9230769 \cdot 0 + 
 2\cdot 0.75 \cdot 2 + 0.6 \cdot 3\\
 &= 4.8
 \end{align*}

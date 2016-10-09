@@ -50,6 +50,7 @@ should be higher than the one computed in the beginning.
 \end{frame}
 
 \begin{frame}{Geometric EM}
+\small
 \begin{enumerate}[a)]
 \item \begin{align*}
 &\log(\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[1]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[0]}}) \\
@@ -57,9 +58,11 @@ should be higher than the one computed in the beginning.
 &+ \log(\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]} \cdot \Sexpr{1- geomparams[1]}^{3} + \Sexpr{geomweights[2]}\cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1- geomparams[2]}^{3})
 = \Sexpr{geomLik}
 \end{align*}
-\item $ P(Y = c_{1}|X=\Sexpr{data[1]}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[1]}}}{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[1]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[1]}}} = \Sexpr{posteriors[1]} $
-$ P(Y = c_{1}|X=\Sexpr{data[2]}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[2]}}}{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[2]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[2]}}} = \Sexpr{posteriors[2]} $
-$ P(Y = c_{1}|X=\Sexpr{data[4]}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[4]}}}{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[4]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[4]}}} = \Sexpr{posteriors[4]} $
+\item $ P(Y = c_{1}|X=\Sexpr{data[1]}, \Theta=\theta^{(0)}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[1]}}}{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[1]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[1]}}} = \Sexpr{posteriors[1]} $
+\\ \vspace{.4cm}
+$ P(Y = c_{1}|X=\Sexpr{data[2]}, \Theta=\theta^{(0)}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[2]}}}{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[2]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[2]}}} = \Sexpr{posteriors[2]} $
+\\ \vspace{.4cm}
+$ P(Y = c_{1}|X=\Sexpr{data[4]}, \Theta=\theta^{(0)}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[4]}}}{\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[4]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[4]}}} = \Sexpr{posteriors[4]} $
 \end{enumerate}
 \end{frame}
 
@@ -67,14 +70,14 @@ $ P(Y = c_{1}|X=\Sexpr{data[4]}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geo
 \small
 \begin{enumerate}[c)]
 \item \textbf{E-step}\begin{align*}
-&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = \Sexpr{posteriors[1]} + 
+&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta^{(0)}] = \Sexpr{posteriors[1]} + 
 2\cdot \Sexpr{posteriors[2]} + \Sexpr{posteriors[4]} \\
 &= \Sexpr{sum(posteriors)} \\
-&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta] = \Sexpr{datasize} - \Sexpr{sum(posteriors)} = \Sexpr{datasize-sum(posteriors)} \\
-&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = \Sexpr{posteriors[1]} \cdot \Sexpr{data[1]} + 
+&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta^{(0)}] = \Sexpr{datasize} - \Sexpr{sum(posteriors)} = \Sexpr{datasize-sum(posteriors)} \\
+&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta^{(0)}] = \Sexpr{posteriors[1]} \cdot \Sexpr{data[1]} + 
 2\cdot \Sexpr{posteriors[2]} \cdot \Sexpr{data[2]} + \Sexpr{posteriors[4]} \cdot \Sexpr{data[4]}\\
 &= \Sexpr{expectedSum} \\
-&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta] = \Sexpr{1-posteriors[1]} \cdot \Sexpr{data[1]} + 
+&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta^{(0)}] = \Sexpr{1-posteriors[1]} \cdot \Sexpr{data[1]} + 
 2\cdot \Sexpr{1-posteriors[2]} \cdot \Sexpr{data[2]} + \Sexpr{1-posteriors[4]} \cdot \Sexpr{data[4]}\\
 &= \Sexpr{sum(data) - expectedSum}
 \end{align*}

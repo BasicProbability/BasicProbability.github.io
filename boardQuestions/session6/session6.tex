@@ -1,24 +1,141 @@
-\documentclass{beamer}
-\usepackage{amsmath, amssymb, enumerate}
+\documentclass{beamer}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage{amsmath, amssymb, enumerate, bbm}
+
+\newcommand{\id}[1]{\mathbbm{1}\left(#1\right)}
 
 \title{Board Questions Session 6}
 \date{October 10th}
 
+
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-\begin{frame}{Mixture Model}
+\begin{frame}{Geometric EM}
 \small
-You are given a mixture model with mixture components $ c_{1},c_{2},c_{3} $ which are linked to geometric
-distributions with parameters $ \theta_{c_{1}} = 0.2, \theta_{c_{2}} = 0.4, \theta_{c_{3}} = 0.6 $. You
+You are given a mixture model with mixture components $ c_{1},c_{2} $ which are linked to geometric
+distributions with parameters $ \theta_{c_{1}} = 0.2, \theta_{c_{2}} = 0.6 $. You
 observe the data set
 \begin{align*}
-\{0, 5, 2, 2, 4, 3\} \ .
+\{0, 2, 2, 3\} \ .
 \end{align*}
-
-Assume that the mixture components are i.i.d. per observation.
+Assume that the latent variables are i.i.d. and that that $ P(Y=c_{1}|\Theta=\theta) = 0.2 $.
 \begin{enumerate}[a)]
-\item What is the (marginal) likelihood of this data set under the model?
+\item What is the (marginal) log-likelihood of this data set under the model? Feel free to use
+calculators.
 \item Find the most likely mixture component for each data point.
+\item Perform one EM iteration.
+\item Compute the marginal log-likelihood of the data with the updated parameters. The new value
+should be higher than the one computed in the beginning.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Geometric EM}
+\begin{enumerate}[a)]
+\item \begin{align*}
+&\log(0.2\cdot 0.2\cdot 0.8^{0} + 0.8 \cdot 0.6 \cdot 0.4^{}) \\
+&+ 2\cdot \log(0.2\cdot 0.2 \cdot 0.8^{2} + 0.8\cdot 0.6 \cdot 0.4^{2}) \\
+&+ \log(0.2\cdot 0.2 \cdot 0.8^{3} + 0.8\cdot 0.6 \cdot 0.4^{3})
+= \ensuremath{-8.1836793}
+\end{align*}
+\item $ P(Y = c_{1}|X=0) = \dfrac{0.2\cdot 0.2\cdot 0.8^{0}}{0.2\cdot 0.2\cdot 0.8^{0} + 0.8 \cdot 0.6 \cdot 0.4^{0}} = 0.0769231 $
+$ P(Y = c_{1}|X=2) = \dfrac{0.2\cdot 0.2\cdot 0.8^{2}}{0.2\cdot 0.2\cdot 0.8^{2} + 0.8 \cdot 0.6 \cdot 0.4^{2}} = 0.25 $
+$ P(Y = c_{1}|X=3) = \dfrac{0.2\cdot 0.2\cdot 0.8^{3}}{0.2\cdot 0.2\cdot 0.8^{3} + 0.8 \cdot 0.6 \cdot 0.4^{3}} = 0.4 $
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Geometric EM}
+\small
+\begin{enumerate}[c)]
+\item \textbf{E-step}\begin{align*}
+&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = 0.0769231 + 
+2\cdot 0.25 + 0.4 \\
+&= 0.9769231 \\
+&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = 4 - 0.9769231 = 3.0230769 \\
+&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = 0.0769231 \cdot 0 + 
+2\cdot 0.25 \cdot 2 + 0.4 \cdot 3\\
+&= 2.2 \\
+&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = 0.9230769 \cdot 0 + 
+2\cdot 0.75 \cdot 2 + 0.6 \cdot 3\\
+&= 4.8
+\end{align*}
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}{Geometric EM}
+\textbf{M-step}
+\begin{align*}
+&P(Y=c_{1}\mid \Theta = \theta^{(1)}) = \frac{0.9769231}{0.9769231 + 3.0230769} = 0.3231552 \\
+&P(Y=c_{1}\mid \Theta = \theta^{(1)}) = 1 - 0.3231552
+= 0.6768448 
+\end{align*}
+new parameters of $ c_{1} $ : $ \dfrac{0.9769231}{2.2 + 0.9769231} = 0.3075061 $\vspace{.5cm}
+
+new parameters of $ c_{2} $ : $ \dfrac{3.0230769}{4.8 + 3.0230769} = 0.3864307 $
+\end{frame}
+
+\begin{frame}{Geometric EM}
+\begin{enumerate}[d)]
+\item \begin{align*}
+&\log(0.3231552\cdot 0.3075061\cdot 0.6924939^{0}  \\
+&+ 0.6768448 \cdot 0.3864307 \cdot 0.6135693^{}) \\
+&+ 2\cdot \log(0.3231552\cdot 0.3075061 \cdot 0.6924939^{2} \\
+&+ 0.6768448\cdot 0.3864307 \cdot 0.6135693^{2}) \\
+&+ \log(0.3231552\cdot 0.3075061 \cdot 0.6924939^{3} \\
+&+ 0.6768448\cdot 0.3864307 \cdot 0.6135693^{3})
+= \ensuremath{-7.2364299} 
+\end{align*}
 \end{enumerate}
 \end{frame}
 

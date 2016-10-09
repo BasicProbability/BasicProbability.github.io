@@ -38,7 +38,7 @@ observe the data set
 \begin{align*}
 \{\Sexpr{data}\} \ .
 \end{align*}
-Assume that the latent variables are i.i.d. and that that $ P(Y=c_{1}|\Theta=\theta^{(0)}) = 0.2 $.
+Assume that the latent variables are i.i.d. and that $ P(Y=c_{1}|\Theta=\theta^{(0)}) = 0.2 $.
 \begin{enumerate}[a)]
 \item What is the (marginal) log-likelihood of this data set under the model? Feel free to use
 calculators.
@@ -53,7 +53,7 @@ should be higher than the one computed in the beginning.
 \small
 \begin{enumerate}[a)]
 \item \begin{align*}
-&\log(\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[1]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[0]}}) \\
+&\log(\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]}\cdot \Sexpr{1-geomparams[1]}^{\Sexpr{data[1]}} + \Sexpr{geomweights[2]} \cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1-geomparams[2]}^{\Sexpr{data[1]}}) \\
 &+ 2\cdot \log(\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]} \cdot \Sexpr{1- geomparams[1]}^{2} + \Sexpr{geomweights[2]}\cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1- geomparams[2]}^{2}) \\
 &+ \log(\Sexpr{geomweights[1]}\cdot \Sexpr{geomparams[1]} \cdot \Sexpr{1- geomparams[1]}^{3} + \Sexpr{geomweights[2]}\cdot \Sexpr{geomparams[2]} \cdot \Sexpr{1- geomparams[2]}^{3})
 = \Sexpr{geomLik}
@@ -85,7 +85,7 @@ $ P(Y = c_{1}|X=\Sexpr{data[4]}, \Theta=\theta^{(0)}) = \dfrac{\Sexpr{geomweight
 \end{frame}
 
 <<update, echo=F>>=
-new_weights = c(sum(posteriors) / (datasize - sum(posteriors)), 1 - sum(posteriors) / (datasize - sum(posteriors)))
+new_weights = c(sum(posteriors) / (datasize), 1 - sum(posteriors) / (datasize))
 new_params = c(sum(posteriors) /(expectedSum + sum(posteriors)), (datasize - sum(posteriors)) /((sum(data) - expectedSum) + (datasize - sum(posteriors))))
 
 newLik = 0
@@ -110,7 +110,7 @@ new parameter of $ c_{2} $ : $ \dfrac{\Sexpr{datasize - sum(posteriors)}}{\Sexpr
 \begin{enumerate}[d)]
 \item \begin{align*}
 &\log(\Sexpr{new_weights[1]}\cdot \Sexpr{new_params[1]}\cdot \Sexpr{1-new_params[1]}^{\Sexpr{data[1]}}  \\
-&+ \Sexpr{new_weights[2]} \cdot \Sexpr{new_params[2]} \cdot \Sexpr{1-new_params[2]}^{\Sexpr{data[0]}}) \\
+&+ \Sexpr{new_weights[2]} \cdot \Sexpr{new_params[2]} \cdot \Sexpr{1-new_params[2]}^{\Sexpr{data[1]}}) \\
 &+ 2\cdot \log(\Sexpr{new_weights[1]}\cdot \Sexpr{new_params[1]} \cdot \Sexpr{1- new_params[1]}^{2} \\
 &+ \Sexpr{new_weights[2]}\cdot \Sexpr{new_params[2]} \cdot \Sexpr{1- new_params[2]}^{2}) \\
 &+ \log(\Sexpr{new_weights[1]}\cdot \Sexpr{new_params[1]} \cdot \Sexpr{1- new_params[1]}^{3} \\

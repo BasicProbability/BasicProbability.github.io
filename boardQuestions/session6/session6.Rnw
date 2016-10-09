@@ -38,7 +38,7 @@ observe the data set
 \begin{align*}
 \{\Sexpr{data}\} \ .
 \end{align*}
-Assume that the latent variables are i.i.d. and that that $ P(Y=c_{1}|\Theta=\theta) = 0.2 $.
+Assume that the latent variables are i.i.d. and that that $ P(Y=c_{1}|\Theta=\theta^{(0)}) = 0.2 $.
 \begin{enumerate}[a)]
 \item What is the (marginal) log-likelihood of this data set under the model? Feel free to use
 calculators.
@@ -70,11 +70,11 @@ $ P(Y = c_{1}|X=\Sexpr{data[4]}) = \dfrac{\Sexpr{geomweights[1]}\cdot \Sexpr{geo
 &\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = \Sexpr{posteriors[1]} + 
 2\cdot \Sexpr{posteriors[2]} + \Sexpr{posteriors[4]} \\
 &= \Sexpr{sum(posteriors)} \\
-&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = \Sexpr{datasize} - \Sexpr{sum(posteriors)} = \Sexpr{datasize-sum(posteriors)} \\
+&\mathbb{E}[\sum_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta] = \Sexpr{datasize} - \Sexpr{sum(posteriors)} = \Sexpr{datasize-sum(posteriors)} \\
 &\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = \Sexpr{posteriors[1]} \cdot \Sexpr{data[1]} + 
 2\cdot \Sexpr{posteriors[2]} \cdot \Sexpr{data[2]} + \Sexpr{posteriors[4]} \cdot \Sexpr{data[4]}\\
 &= \Sexpr{expectedSum} \\
-&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{1}}\mid X=x, \Theta=\theta] = \Sexpr{1-posteriors[1]} \cdot \Sexpr{data[1]} + 
+&\mathbb{E}[\sum_{i}x_{i}\id{Y_{i}=c_{2}}\mid X=x, \Theta=\theta] = \Sexpr{1-posteriors[1]} \cdot \Sexpr{data[1]} + 
 2\cdot \Sexpr{1-posteriors[2]} \cdot \Sexpr{data[2]} + \Sexpr{1-posteriors[4]} \cdot \Sexpr{data[4]}\\
 &= \Sexpr{sum(data) - expectedSum}
 \end{align*}
@@ -95,12 +95,12 @@ for (i in 1:datasize) {
 \textbf{M-step}
 \begin{align*}
 &P(Y=c_{1}\mid \Theta = \theta^{(1)}) = \frac{\Sexpr{sum(posteriors)}}{\Sexpr{sum(posteriors)} + \Sexpr{datasize - sum(posteriors)}} = \Sexpr{new_weights[1]} \\
-&P(Y=c_{1}\mid \Theta = \theta^{(1)}) = 1 - \Sexpr{sum(posteriors) / (datasize - sum(posteriors))}
+&P(Y=c_{2}\mid \Theta = \theta^{(1)}) = 1 - \Sexpr{sum(posteriors) / (datasize - sum(posteriors))}
 = \Sexpr{new_weights[2]} 
 \end{align*}
-new parameters of $ c_{1} $ : $ \dfrac{\Sexpr{sum(posteriors)}}{\Sexpr{expectedSum} + \Sexpr{sum(posteriors)}} = \Sexpr{new_params[1]} $\vspace{.5cm}
+new parameter of $ c_{1} $ : $ \dfrac{\Sexpr{sum(posteriors)}}{\Sexpr{expectedSum} + \Sexpr{sum(posteriors)}} = \Sexpr{new_params[1]} $\vspace{.5cm}
 
-new parameters of $ c_{2} $ : $ \dfrac{\Sexpr{datasize - sum(posteriors)}}{\Sexpr{sum(data) - expectedSum} + \Sexpr{datasize - sum(posteriors)}} = \Sexpr{new_params[2]} $
+new parameter of $ c_{2} $ : $ \dfrac{\Sexpr{datasize - sum(posteriors)}}{\Sexpr{sum(data) - expectedSum} + \Sexpr{datasize - sum(posteriors)}} = \Sexpr{new_params[2]} $
 \end{frame}
 
 \begin{frame}{Geometric EM}

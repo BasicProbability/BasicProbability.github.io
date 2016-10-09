@@ -33,7 +33,7 @@ for (i in 1:datasize) {
 \begin{frame}{Geometric EM}
 \small
 You are given a mixture model with mixture components $ c_{1},c_{2} $ which are linked to geometric
-distributions with parameters $ \theta_{c_{1}} = \Sexpr{geomparams[1]}, \theta_{c_{2}} = \Sexpr{geomparams[2]} $. You
+distributions with parameters $ \theta^{(0)}_{c_{1}} = \Sexpr{geomparams[1]}, \theta^{(0)}_{c_{2}} = \Sexpr{geomparams[2]} $. You
 observe the data set
 \begin{align*}
 \{\Sexpr{data}\} \ .

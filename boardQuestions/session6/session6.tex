@@ -64,7 +64,7 @@
 \begin{frame}{Geometric EM}
 \small
 You are given a mixture model with mixture components $ c_{1},c_{2} $ which are linked to geometric
-distributions with parameters $ \theta_{c_{1}} = 0.2, \theta_{c_{2}} = 0.6 $. You
+distributions with parameters $ \theta^{(0)}_{c_{1}} = 0.2, \theta^{(0)}_{c_{2}} = 0.6 $. You
 observe the data set
 \begin{align*}
 \{0, 2, 2, 3\} \ .
@@ -132,6 +132,7 @@ new parameter of $ c_{2} $ : $ \dfrac{3.0230769}{4.8 + 3.0230769} = 0.3864307 $
 \begin{frame}{Geometric EM}
 \begin{enumerate}[d)]
 \item \begin{align*}
+<<<<<<< HEAD
 &\log(0.2442308\cdot 0.3075061\cdot 0.6924939^{0}  \\
 &+ 0.7557692 \cdot 0.3864307 \cdot 0.6135693^{0}) \\
 &+ 2\cdot \log(0.2442308\cdot 0.3075061 \cdot 0.6924939^{2} \\
@@ -139,6 +140,15 @@ new parameter of $ c_{2} $ : $ \dfrac{3.0230769}{4.8 + 3.0230769} = 0.3864307 $
 &+ \log(0.2442308\cdot 0.3075061 \cdot 0.6924939^{3} \\
 &+ 0.7557692\cdot 0.3864307 \cdot 0.6135693^{3})
 = \ensuremath{-7.2323861} 
+=======
+&\log(0.3231552\cdot 0.3075061\cdot 0.6924939^{0}  \\
+&+ 0.6768448 \cdot 0.3864307 \cdot 0.6135693^{0}) \\
+&+ 2\cdot \log(0.3231552\cdot 0.3075061 \cdot 0.6924939^{2} \\
+&+ 0.6768448\cdot 0.3864307 \cdot 0.6135693^{2}) \\
+&+ \log(0.3231552\cdot 0.3075061 \cdot 0.6924939^{3} \\
+&+ 0.6768448\cdot 0.3864307 \cdot 0.6135693^{3})
+= \ensuremath{-7.2364299} 
+>>>>>>> origin/master
 \end{align*}
 \end{enumerate}
 \end{frame}

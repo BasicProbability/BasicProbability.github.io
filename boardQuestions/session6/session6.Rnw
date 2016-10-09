@@ -98,7 +98,7 @@ for (i in 1:datasize) {
 \textbf{M-step}
 \begin{align*}
 &P(Y=c_{1}\mid \Theta = \theta^{(1)}) = \frac{\Sexpr{sum(posteriors)}}{\Sexpr{sum(posteriors)} + \Sexpr{datasize - sum(posteriors)}} = \Sexpr{new_weights[1]} \\
-&P(Y=c_{2}\mid \Theta = \theta^{(1)}) = 1 - \Sexpr{sum(posteriors) / (datasize - sum(posteriors))}
+&P(Y=c_{2}\mid \Theta = \theta^{(1)}) = 1 - \Sexpr{new_weights[1]}
 = \Sexpr{new_weights[2]} 
 \end{align*}
 new parameter of $ c_{1} $ : $ \dfrac{\Sexpr{sum(posteriors)}}{\Sexpr{expectedSum} + \Sexpr{sum(posteriors)}} = \Sexpr{new_params[1]} $\vspace{.5cm}

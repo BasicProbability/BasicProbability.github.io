@@ -9,7 +9,7 @@
 
 % Packages
 \usepackage[english]{exercises}
-\usepackage{wasysym,hyperref,graphicx,color}
+\usepackage{wasysym,hyperref,graphicx,color,bbm}
 \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
 \DeclareMathOperator{\Cov}{Cov}
 \DeclareMathOperator{\Cor}{Cor}
@@ -17,7 +17,7 @@
 
 \newcommand{\philip}[1]{\textcolor{red}{[Phil: #1]}}
 \newcommand{\chris}[1]{\textcolor{blue}{[Chris: #1]}}
-
+\newcommand{\Ind}[1]{\mathbbm{1}(#1)}
 \begin{document}
 
 \homeworkproblems
@@ -28,13 +28,13 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{exercise}[]
-	Let $Y$ be a categorical random variable over $n$ components:
-	\[
-		Y \sim \text{Cat}(w_1, \dots, w_n),
-	\]
-	where of course $\sum_i w_i = 1$. 
-\end{exercise}
+%\begin{exercise}[]
+%	Let $Y$ be a categorical random variable over $n$ components:
+%	\[
+%		Y \sim \text{Cat}(w_1, \dots, w_n),
+%	\]
+%	where of course $\sum_i w_i = 1$. 
+%\end{exercise}
 
 
 \begin{exercise}[EM in a mixture of Poissons]
@@ -79,16 +79,22 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 	\end{subex}
 	
 	\begin{subex}
-		With the posterior probabilities in place, we can perform the E-step.
-	Report the expected sufficient statistics $\mathbb{E}[c=c_j \mid w^{(0)}] $ for each $ 1 \leq i \leq 3$. 	
+		With the posterior probabilities in place, we can perform the E-step. Note that $\sum_{i=1}^N \Ind{Y_i = c_j}$ counts the number of $Y_i$ in $Y_1, \dots, Y_N$ such that $Y_i = c_j$. Report the expected sufficient statistics for the categorical distributions, that is, compute the expected counts
+		\[
+			E\Bigl[ \; \sum_{i=1}^N \Ind{Y_i = c_j} \; \mid X_1^N = x_1^n, \Theta = \theta^{(0)} \Bigr]
+		\]
+		for $j = 1, 2, 3$.
 	\end{subex}
 
 	\begin{subex}
-	Report the expected sufficient statistics $ \mathbb{E}[x=v|c_{i},\lambda] $ for $ v \in \{2,3,4,5,6,7,8\} $. Use a table for this exercise!
+	Compute the expected sufficient statistics for the Poisson distributions, i.e. compute 
+	\[
+		E\Bigl[\;\sum_{i=1}^N \Ind{X_i = v} \;\mid Y_i = c_j,\Theta=\theta^{(0)}\Bigr]
+	\] for $ v \in \{1,2,5,7\} $ and $j\in \{1, 2, 3\}$. Use a table for this exercise!
 	\end{subex}
 	
 	\begin{subex}
-	Perform the M-step. Report the new parameters of the distributions $ P_{Y} $ and $ P_{X|Y_{i}} $ for  $ 1 \leq i \leq 5 $.	
+	Perform the M-step and report the new parameters $\theta^{(1)}$. You can give the new $\lambda$'s for Poissons $P(X_i \mid Y_i)$ and the $w$'s for the categorical $ P(Y_i) $ separaterly.
 	\end{subex}
 	
 	\begin{subex}

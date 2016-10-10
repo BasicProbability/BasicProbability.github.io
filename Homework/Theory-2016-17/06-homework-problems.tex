@@ -44,7 +44,7 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 	\] 
 	You decide to model the data with a mixture model with 3 unobserved components, whose weights you will have to estimate in this exercise using Expectation Maximization. (As for notation; we have $N=10$ datapoints $x_1, \dots, x_N$ which will be indexed by $i$ and we have $M=3$ mixture components $c_1, c_2, c_3$ indexed by $j$.) 
 	
-	Our model assumes that for every datapoint $X_i$, there is a unobserved categorical variable $Y_i$ that takes as its value one of the three components $c_1, c_2, c_3$ with (unknown) probabilities $w_1, w_2$ and $w_3$ respectively. So $p(Y_i = c_j) = w_j$. For every component there then exists a Poisson distribution where the observed $x_i$ is then drawn from. The three Poisson distributions have (unknown) parameters $\lambda_{c_{1}}, \lambda_{c_{2}}$ and $\lambda_{c_{3}}$. We will collect all parameters in $\theta = (w_1, w_2, w_3, \lambda_{c_1}, \lambda_{c_2}, \lambda_{c_3})$, so we can concisely summarize all this as
+	Our model assumes that for every datapoint $X_i$, there is a unobserved categorical variable $Y_i$ that takes as its value one of the three components $c_1, c_2, c_3$ with (unknown) probabilities $w_1, w_2$ and $w_3$ respectively. So $P(Y_i = c_j) = w_j$. For every component there exists a Poisson distribution where the observed $x_i$ is then drawn from. The three Poisson distributions have (unknown) parameters $\lambda_{c_{1}}, \lambda_{c_{2}}$ and $\lambda_{c_{3}}$. We will collect all parameters in $\theta = (\lambda_{c_1}, \lambda_{c_2}, \lambda_{c_3},w_1, w_2, w_3)$, so we can concisely summarize all this as
 	\begin{align*}
 		X_i \mid Y_i = c_1, \Theta=\theta \; &\sim \; \text{Poisson}(\lambda_{c_1})\\
 		X_i \mid Y_i = c_2, \Theta=\theta \; &\sim \; \text{Poisson}(\lambda_{c_2})\\
@@ -52,18 +52,19 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 		Y_i \mid \Theta=\theta \; &\sim \; \text{Categorical}(w_1, w_2, w_3).
 	\end{align*}
 
-	Furthermore, we assume independence between the mixture components. Thus, your model is
+	Furthermore, we assume independence between the mixture components. Thus, the model is
 	\begin{align*}
-	&P(X_1^N=x_1^N, Y_1^N=y_1^N\mid w) \\
-		&\qquad= \prod_{i=1}^N P(Y_{i}=y_{i}) \cdot P(X_{i}=x_{i}\mid Y_{i}=y_{i}, w).
+	&P(X_1^N=x_1^N, \;Y_1^N=y_1^N\mid \Theta=\theta) \\
+		&\qquad= \prod_{i=1}^N P(Y_{i}=y_{i} \mid \Theta=\theta) \cdot P(X_{i}=x_{i}\mid Y_{i}=y_{i}, \Theta=\theta).
 	\end{align*}
 	Again, the $X_i$ are observed Poisson variables, with natural numbers as outcomes and the $Y_i$ are unobserved categorical random variables that take values $y_i \in \{c_1, c_2, c_3\}$.
 	
 	Expectation-Maximization starts from some initial guesses $\theta^{(0)}$ of the model parameters $\theta$. We use the following:
 	\begin{align*}
-	w_1^{(0)} = w_2^{(0)} = w_3^{(0)} = \frac{1}{3}, \quad \lambda_{c_1} = 0.5, \quad \lambda_{c_2} = 1, \quad \lambda_{c_3} = 1.5,
+	 \lambda_{c_1}  = 0.5, \quad \lambda_{c_2} = 1, \quad
+          \lambda_{c_3} = 1.5, \quad w_1^{(0)} = w_2^{(0)} = w_3^{(0)} = \frac{1}{3}
 	\end{align*}
-	or equivalently $\theta^{(0)} = \bigl(\frac{1}{3},\; \frac 1 3,\; \frac 1 3,\; .5,\; 1,\; 1.5\bigr)$.
+	or equivalently $\theta^{(0)} = \bigl(0.5,\; 1,\; 1.5, \; \frac{1}{3},\; \frac 1 3,\; \frac 1 3 \bigr)$.
 
 	
 	

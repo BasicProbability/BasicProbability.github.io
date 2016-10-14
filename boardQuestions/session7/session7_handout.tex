@@ -1,0 +1,108 @@
+\documentclass[11p,a4paper]{article}
+
+\usepackage{amsmath,amssymb,amsthm,enumerate,dsfont,mathpazo,xcolor}
+\usepackage{hyperref,fullpage}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}
+
+\title{Board Questions}
+\date{Seventh Session, Oct 17, 2016}
+
+\begin{document}
+\maketitle
+
+\section{Chain Rule for Entropy}
+Prove the chain rule for entropy, namely that $H(X,Y)=H(X|Y)+H(Y)$.
+
+\section{Codes} \label{sec:codes}
+The following are three (binary symbol) codes $C,D,E$ for the random variable $X$, with ${\cal X} = \{a,b,c,d\}$:
+\[
+\begin{array}{c | c | l | l | l}
+x & P(X=x) & C(x) & D(x) & E(x)\\
+\hline
+a & 1/2 & 0   & 0   & 0   \\
+\hline
+b & 1/4 & 10  & 010 & 01  \\
+\hline
+c & 1/8 & 110 & 01  & 011 \\
+\hline
+d & 1/8 & 111 & 10  & 111
+\end{array}
+\]
+
+These codes can be used to encode strings of symbols by concatenation . For instance,
+The encoding of string ``adba'' under code $E$ is
+\[
+E(adba) = E(a) E(d) E(b) E(a) = 0 \; 111 \; 01 \; 0 = 0111010
+\]
+
+\begin{enumerate}
+\item What is the encoding of $adba$ under codes $C$ and $D$?
+\item What is the decoding of $0100100$ under code $D$? Is it unique?
+\item What is the decoding of $001111$ under code $E$? Is it unique?
+  What happens if you learn that the next bit is $1$ (so you have to decode
+  $0011111$ under $E$)?
+\item Can you prove that arbitrary concatenations of codewords of $C$
+  are uniquely decodable? What about concatenations of codewords of
+  $E$?
+\item Which of the above codes is the most convenient to work with? Why?
+\end{enumerate}
+
+\section{Code Length}
+\newcommand{\len}{\ell}
+ The \emph{average code length} of a binary symbol code is defined as follows.
+Let $\len(s)$ denote the length of a string $s \in \{0,1\}^*$. The (average) length of a code $C$ for a source $X$ is defined as
+\[
+\len_C(X) := \mathbb{E}[\len(C(X))] = \sum_{x \in \mathrm{supp}(X)} P(X=x) \len(C(x)) \, .
+\]
+\begin{enumerate}
+\item Compute $\len_C(X)$, $\len_D(X)$, $\len_E(X)$ for the codes of the previous section.
+\item Compute the entropy $H(X)$ for the distribution $P_X$ above and compare both the obtained values
+  and the way you have obtained them.
+\end{enumerate}
+
+In the Information Theory course, we will prove Shannon's
+source-coding theorem:
+\begin{theorem}
+Let $P_X$ be a distribution and $\ell_{\min}(X) := \min_C \len_C(X)$
+the minimal average codeword length among all uniquely decodable
+codes. Then,
+\[
+H(X) \leq \ell_{\min}(X) \leq H(X)+1 \, .
+\]
+\end{theorem}
+In other words, the Shannon entropy pretty much determines the optimal
+average codeword length.
+
+\section{Optimal Codes}
+\begin{enumerate}
+\item Show that code $C$ from Section~\ref{sec:codes} is optimal in
+  terms of average coding length.
+\item Construct an optimal symbol code for the following
+  distribution:
+\[
+\begin{array}{c | c | c | c | c | c | c | c}
+y & a & b & c & d & e & f & g\\
+\hline
+P(Y=y) & 1/4 & 1/4   & 1/8   & 1/8 & 1/8 & 1/16 & 1/16 \\
+\end{array}
+\]
+{\bf Hint:} Should symbols with high probability to occur receive long or short codewords?
+\item Prove that the code you found is optimal!
+\item Look up on the internet what
+  \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding}
+  is and use it to find an optimal binary symbol code for the following distribution:
+\[
+\begin{array}{c | c | c | c | c | c}
+z & a & b & c & d & e\\
+\hline
+P(Z=z) & 0.25 & 0.25   & 0.2   & 0.15 & 0.15 \\
+\end{array}
+\]
+
+
+
+\end{enumerate}
+
+\end{document}

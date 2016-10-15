@@ -43,14 +43,13 @@ a female person is not tall,
 a tall person is female.
 \end{subex}
 
-\end{enumerate}
 \end{exercise}
 
 \begin{exercise}[entropy of sum of two dice (2pt)]
 Let $X$ encode the sum of the roll of two fair dice. Compute $H(X)$.
 \end{exercise}
 
-\begin{exercise}[calculation of differential entropy (2pt)]
+\begin{exercise}[calculation of relative entropy (2pt)]
 Let $X \sim Bernoulli(p)$ and $Y \sim Bernoulli(q)$. Compute $D(P_X || P_Y)$ and $D(P_Y || P_X)$ for 
 
 \begin{subex}
@@ -77,7 +76,7 @@ before, look up the corresponding sections in the script for a formal definition
 \end{subex}
 
 \begin{subex}
-Prove that the entropy of $n$ independent RVs is the sum of the entropy of the individual RVs, i.e. that  $H(X_1, ..., X_n)$ is additive if $P(X_1^n=x_1^n) = \prod_{i = 1}^n P(X_i=x_i)$.
+Prove that the entropy of $n$ independent RVs is the sum of the entropy of the individual RVs, i.e. that  $H(X_1, ..., X_n) = \sum_{i=1}^{n} H(X_{i}) $ if $P(X_1^n=x_1^n) = \prod_{i = 1}^n P(X_i=x_i)$.
 \end{subex}
 
 \begin{subex}

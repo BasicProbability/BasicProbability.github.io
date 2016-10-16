@@ -68,21 +68,21 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 
 	
 	
-	\begin{subex}
+	\begin{subex}[1pt]
 		Compute the marginal log-likelihood of the data under the initial parameter settings, i.e. compute 
 		\[
 		\ln P(X_1^N = x_1^N \mid \Theta = \theta^{(0)}).
 		\]
 	\end{subex}
 	
-	\begin{subex}
+	\begin{subex}[2pt]
 		Compute the posterior log-probabilities for the mixture components per data point, i.e, compute
 		\[
 			\ln P\bigl(Y_i = c_j \mid X_i = x_i, \Theta = \theta^{(0)}\bigr) \quad \text{for $j=1,2,3$}
 		\]
 	\end{subex}
 	
-	\begin{subex}
+	\begin{subex}[2pt]
 		With the posterior probabilities in place, we can perform the E-step. Note that $\sum_{i=1}^N \Ind{Y_i = c_j}$ counts the number of $Y_i$ in $Y_1, \dots, Y_N$ such that $Y_i = c_j$. Report the expected sufficient statistics for the categorical distributions, that is, compute the expected counts
 		\[
 			\mathbb E\Bigl[ \; \sum_{i=1}^N \Ind{Y_i = c_j} \; \mid X_1^N = x_1^n, \Theta = \theta^{(0)} \Bigr]
@@ -90,18 +90,18 @@ Your homework must be handed in \textbf{electronically via Moodle before \deadli
 		for $j = 1, 2, 3$.
 	\end{subex}
 
-	\begin{subex}
+	\begin{subex}[2pt]
 	Compute the expected sufficient statistics for the Poisson distributions, i.e. compute 
 	\[
 		\mathbb E\Bigl[\;\sum_{i=1}^N \bigl(x_i \cdot \Ind{Y_i = c_j}\bigr) \;\mid X_1^N = x_1^N, \Theta=\theta^{(0)}\Bigr]
 	\] for  $j\in \{1, 2, 3\}$. Use a table for this exercise!
 	\end{subex}
 	
-	\begin{subex}
+	\begin{subex}[2pt]
 	Perform the M-step and report the new parameters $\theta^{(1)}$. You can give the new $\lambda_j^{(1)}$'s for Poissons $P(X_i \mid Y_i)$ and the $w_j^{(1)}$'s for the categorical $ P(Y_i) $ separately.
 	\end{subex}
 	
-	\begin{subex}
+	\begin{subex}[1pt]
 		Compute the marginal log-likelihood of $ x_1^N $ under the new parameter settings $\theta^{(1)}$. 
 	\end{subex}
 

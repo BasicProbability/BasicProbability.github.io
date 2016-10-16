@@ -24,7 +24,8 @@ categorical random variable $X$ with distribution $P_X$. A typical
 sequence of symbols from this source could look like this: $bababcdbbaabadbaaaa$.
 Our task is to \emph{compress} such sequences as much as
 possible. Formally, we would like to map every source symbol to a
-binary string such that the average code length is minimal.
+binary string such that (i) we can recover the original source symbol
+again and (ii) the average encoding length is minimal.
 
 
 \subsection{Codes} \label{sec:codes}
@@ -51,7 +52,7 @@ E(adba) = E(a) E(d) E(b) E(a) = 0 \; 111 \; 01 \; 0 = 0111010
 \]
 
 \begin{enumerate}
-\item What is the encoding of $adba$ under codes $C$, $D$ and $F$?
+\item What is the encoding of $adba$ under codes $D$ and $F$?
 \item What is the decoding of $001001110$ under code $C$?
 % note that there is some extra symbol at the end that cannot be decoded yet
 \item What is the decoding of $0100100$ under code $D$? Is it unique?
@@ -80,7 +81,8 @@ Let $\len(s)$ denote the length of a string $s \in \{0,1\}^*$. The (average) len
 \]
 \begin{enumerate}
 \item Compute $\len_C(X)$, $\len_D(X)$, $\len_E(X), \len_F(X)$ for the codes of the previous section.
-\item Compute the entropy $H(X)$ for the distribution $P_X$ above and compare both the obtained values and the way you have obtained them.
+\item Compute the entropy $H(X)$ for the distribution $P_X$ above.
+  Compare the obtained values $H(X)$ and $\len_C(X)$ and the way you have computed them.
 % observe that the computations are very similar, and sometimes you
 % actually up computing the entropy. In particular, if the length of a
 % symbol corresponds to its surprisal value in bits.

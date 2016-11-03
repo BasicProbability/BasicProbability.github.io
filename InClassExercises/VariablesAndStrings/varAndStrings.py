@@ -12,7 +12,7 @@ The Heart-ache, and the thousand Natural shocks
 That Flesh is heir to? 'Tis a consummation
 Devoutly to be wished. To die, to sleep,'''
 
-solution = hamlet.split(" ")
+solution = ""
 
 
 print solution == "To be Or to take Arms and to sleep No more"
@@ -20,7 +20,7 @@ print solution == "To be Or to take Arms and to sleep No more"
 #2 The following list of numbers has been jumbled up. Please bring them into their natural order using indexing,
 #  slicing and list concatenation.
 
-numbers = [4, 12, 2, 17, 20, 8, 16, 18, 3, 7, 9, 11, 15, 19, 10, 1, 14, 5, 6, 13]
+numbers = [12, 2, 16, 17, 18, 19, 20, 8, 3, 7, 9, 10, 11, 15, 1, 14, 4, 5, 6, 13]
 print numbers
 
 #3 Accept any user input and print it back to the user --> check online how to do this

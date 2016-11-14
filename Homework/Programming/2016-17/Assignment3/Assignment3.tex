@@ -1,0 +1,104 @@
+\documentclass[11pt, leqno, a4paper]{article}
+\usepackage{hyperref, amsmath, amssymb, qtree}
+\hypersetup{colorlinks=true, urlcolor=blue, breaklinks=true}
+
+\title{Programming Assignment 3 -- Basic Probability, Computing and Statistics 2016 \\[2mm]
+\large{Fall 2016, Master of Logic, University of Amsterdam}}
+\author{Instructors: Philip Schulz, Christian Schaffner and Bas Cornellisen}
+\date{Submission deadline: Wednesday, November 23rd, 8 p.m.}
+
+\begin{document}
+\maketitle
+
+\paragraph{Note:} if the assignment is unclear to you or if you get stuck, do not hesitate to contact \href{mailto:P.Schulz@uva.nl}{Philip}.
+
+\section{Assignment}
+
+This week focuses on functions and we will actually implement some useful functions that we are going to use again later in this course. This is 
+the first part of the assignment. In the second part, we draw an arc to information theory. Recall that a good code should be a) uniquely decodable
+and b) use as few bits as possible on average. An algorithm that constructs such a code for us is \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding}.
+We will implement as part of this assignment.
+
+\subsection{Log-addition}
+
+When we start to implement probabilistic machine learning models later in this course, we will run into a practical problem. Recall that we often make 
+independence assumptions to simplify our models. This means that our calculations are going to involve potentially large products of probabilities. Since
+probabilities are usually smaller than 1, these products can be very, very small. In fact, they become so small that our computers won't be able to 
+represent them in memory and just turn them into 0.
+
+The standard way to avoid this problem is to work with logarithms of probabilities (logprobs) instead. You should always use logprobs when performing
+probabilistic computations! Multiplication and division of probabilities is then straightforward because for numbers $ a,b > 0 $ it holds that
+\begin{align*}
+\log(a \cdot b) &= log(a) + log(b) \\
+\log\left( \frac{a}{b} \right) &= log(a) + log(b) \\
+\log\left( a^{b} \right) &= \log(a) \cdot b
+\end{align*}
+
+But what about addition and subtraction? Let $ c = \log(a) $ and $ d = \log(b) $. The na\"ive way to do addition would be through simple exponentiation.
+\begin{equation*}
+\log(\exp(c) + \exp(d)) = \log(a + b)
+\end{equation*}
+This is inefficient, however, since we need to compute two exponentials and one logarithm. Computers are slow at that. Instead, we choose to exploit the
+following equivalence which is often called the log-sum-exp trick. Without loss of generality, we also assume that $ c > d $.
+\begin{align*}
+\log(\exp(c) + \exp(d)) &= \log(\exp(c) \cdot (1 + \exp(d-c)))  \\
+&= c + \log(1 + \exp(d-c)) 
+\end{align*}
+
+There are several advantages to using this trick. First, we only compute one exponential and one logarithm. Second, the logarithm computation is already 
+implemented in many programming languages (including Python) as a function called \textit{log1p} (see \href{https://docs.python.org/3/library/math.html}{here} for documentation). The \texttt{log1p} function computes $ \log(1 + \exp(d-c)) $ very efficiently when the exponent is small. This is the reason that we want to subtract
+the bigger number ($ c $ according to our assumption). This way, we make sure that the exponent is small and thus \texttt{log1p} performs fast computation.
+
+You will implement log addition and subtraction. In computer programming, we usually represent $ \log(0) $ (which is undefined in mathematics) as 
+$ -\infty $. Make sure that when one of the arguments to your log addition function is $ -\infty $ it returns the value of the other argument.
+
+\subsection{Huffman Coding}
+
+Huffman coding is a coding strategy that ensures two things:
+\begin{itemize}
+\item Prefix freeness: no code word is the prefix of another code word. This property ensure that the code is uniquely decodable.
+\item Short codes: Assuming that all symbols in a message are drawn independently from some distribution $ P_{X} $, the average code word
+length $ \mathbb{E}\left[l(C)\right] $ is at most $ H(X) $ (where $ l(c) $ is the length of a code word $ c $ in bits).
+\end{itemize}
+
+Huffman coding is accomplished by constructing a binary-branching tree. The tree is constructed by first sorting all outcomes $ x $ in order of their
+probability $ P(x) $. Then nodes in the (growing) tree are combined such that the sum of their probabilities is the lowest. The probability of a node
+is the sum of the probabilities of its children. Because the outcomes are already ordered, we construct a new node by either joining
+the last two nodes or the two nodes before the last one.
+
+The code word are constructed iteratively. The first code word is the empty code word. The code word of a left child is its parent's code word
+padded with $ 0 $. The code word of a right child is its parent's code word padded with $ 1 $.
+The code 
+An example of a Huffman tree is given in Figure~\ref{fig:huffmanTree}. Notice that in the end only the code words at the leave nodes are used.
+\begin{figure}
+\Tree [.{$ \epsilon $:1} {0:0.5 \\ a} [.{1:0.5} [.{10:0.3}  {100:0.15 \\ b} {101:0.15 \\ c} ] [.{11:0.2}  {110:0.1 \\ d} {111:0.1 \\ e} ] ] ]
+\caption{Example of a Huffman tree. Roman letter are symbols in the message and binary sequences are code words. Each node in the tree is annotated
+with its probability. The empty code word is denoted by $ \epsilon $.}
+\label{fig:huffmanTree}
+\end{figure}
+
+Usually, we will have to estimate the probability of a message symbol from data. For this exercise, we assume that message symbols follow a categorical
+distribution. Recall that the MLE for categorical outcomes is
+\begin{equation}
+P(x|\theta_{MLE}) = \frac{c(x)}{N}
+\end{equation}
+where $ c(x) $ is the count of outcome $ x $ and $ N $ is the sample size.
+
+Your task is to write three functions:
+\begin{itemize}
+\item \texttt{construct\_code}: This function takes a path to a file as input and assigns a code word to each message symbol using Huffman coding. The
+probability of a message symbols is inferred using maximum likelihood estimation. Message symbols are all symbols that are separated by whitespace (\texttt{\textbackslash W} should
+be used as a separator when splitting the input.). This function should also return the average code word length.
+\item \texttt{encode}: Encodes a message using the constructed code.
+\item \texttt{decode}: Decodes a message that has been encoded with the constructed code.
+\end{itemize}
+
+
+\section{Grading}
+
+\begin{itemize}
+\item[1 point] All functions have docstrings according to \href{https://www.python.org/dev/peps/pep-0257/}{this specification}. Give 0 points if one or more
+functions are missing docstrings or do not follow the specification.
+\end{itemize}
+
+\end{document}

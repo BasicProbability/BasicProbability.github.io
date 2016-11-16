@@ -111,18 +111,24 @@ You are free to implement the \texttt{construct\_code} in any way you like. If y
 explanations on the internet.
 
 \section{Grading}
-This week, we ask you to submit two files: \texttt{logarithms.py} and \texttt{huffman.py}. Some pre-written code and data can be downloaded here.
+This week, we ask you to submit two files: \texttt{logarithms.py} and \texttt{huffman.py}. Some pre-written code and data can be downloaded \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment3/assignment3_prerequisites.zip}{here}.
+\textbf{Important:} You can use define all kinds of additional functions and use any data structures you like. We only require that you do not change the
+names of the functions already provided. You will be evaluated based on how well these functions work.
 
 \begin{itemize}
 \item[1 point] All functions have docstrings according to \href{https://www.python.org/dev/peps/pep-0257/}{this specification}. Give 0 points if one or more
-functions are missing docstrings or do not follow the specification.
-\item[2 point] Log addition works correctly and passes all test.
+functions are missing docstrings or do not follow the specification (or use the Pycharm template for functions). Test cases for \texttt{logarithms.py} will
+be provided during the evaluation period.
+\item[1 point] Log addition works correctly and passes all test.
 \item[1 point] Log addition on collections works correctly and passes all tests.
-\item[2 point] Log subtraction works correctly and passes all tests.
-\item[1 point] Log subtraction on collection works correctly and passes all tests.
-\item[2 point] The average code word length is correct.
-\item[2 point] The message is encoded correctly.
-\item[2 point] The message is decoded correclty.
+\item[1 point] Log subtraction works correctly and passes all tests.
+\item[1 point] Log subtraction on collections works correctly and passes all tests.
+\item[2 point] The average code word length is 4.569000365916435 (minor differences in the last 5 digits are acceptable since they may be due to computer
+architecture).
+\item[2 point] ``Hello World!" is encoded correctly.
+\item[2 point] The secret message is decoded correclty.
 \end{itemize}
+\paragraph{Hint} A good heuristic for testing whether \texttt{huffman.py} works correctly is to check whether \texttt{encode}(\texttt{decode}(\texttt{some\_string}))
+returns \texttt{some\_string}. This does not guarantee correctness but at least shows you when something's going wrong.
 
 \end{document}

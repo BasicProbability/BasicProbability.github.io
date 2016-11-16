@@ -71,7 +71,7 @@ padded with $ 0 $. The code word of a right child is its parent's code word padd
 An example of a Huffman tree is given in Figure~\ref{fig:huffmanTree}. Notice that in the end only the code words at the leave nodes are used.
 \begin{figure}
 \Tree [.{$ \epsilon $:1} {0:0.5 \\ a} [.{1:0.5} [.{10:0.3}  {100:0.15 \\ b} {101:0.15 \\ c} ] [.{11:0.2}  {110:0.1 \\ d} {111:0.1 \\ e} ] ] ]
-\caption{Example of a Huffman tree. Roman letter are symbols in the message and binary sequences are code words. Each node in the tree is annotated
+\caption{Example of a Huffman tree. Roman letters are symbols in the message and binary sequences are code words. Each node in the tree is annotated
 with a code word and its probability. The empty code word is denoted by $ \epsilon $.}
 \label{fig:huffmanTree}
 \end{figure}
@@ -126,9 +126,9 @@ be provided during the evaluation period.
 \item[2 point] The average code word length is 4.569000365916435 (minor differences in the last 5 digits are acceptable since they may be due to computer
 architecture).
 \item[2 point] ``Hello World!" is encoded correctly.
-\item[2 point] The secret message is decoded correclty.
+\item[2 point] The secret message is decoded correctly.
 \end{itemize}
-\paragraph{Hint} A good heuristic for testing whether \texttt{huffman.py} works correctly is to check whether \texttt{encode}(\texttt{decode}(\texttt{some\_string}))
+\paragraph{Hint} A good heuristic for testing whether \texttt{huffman.py} works correctly is to check whether \texttt{decode}(\texttt{encode}(\texttt{some\_string}))
 returns \texttt{some\_string}. This does not guarantee correctness but at least shows you when something's going wrong.
 
 \end{document}

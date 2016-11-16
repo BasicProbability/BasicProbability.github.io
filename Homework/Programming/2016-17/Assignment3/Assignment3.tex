@@ -17,7 +17,7 @@
 This week focuses on functions and we will actually implement some useful functions that we are going to use again later in this course. This is 
 the first part of the assignment. In the second part, we draw an arc to information theory. Recall that a good code should be a) uniquely decodable
 and b) use as few bits as possible on average. An algorithm that constructs such a code for us is \href{https://en.wikipedia.org/wiki/Huffman_coding}{Huffman coding}.
-We will implement as part of this assignment.
+We will implement it as part of this assignment. The data and code skeletons are provided here.
 
 \subsection{Log-addition}
 
@@ -27,10 +27,10 @@ probabilities are usually smaller than 1, these products can be very, very small
 represent them in memory and just turn them into 0.
 
 The standard way to avoid this problem is to work with logarithms of probabilities (logprobs) instead. You should always use logprobs when performing
-probabilistic computations! Multiplication and division of probabilities is then straightforward because for numbers $ a,b > 0 $ it holds that
+probabilistic computations! Multiplication and division of probabilities is then straightforward because for positive numbers $ a,b > 0 $ it holds that
 \begin{align*}
 \log(a \cdot b) &= log(a) + log(b) \\
-\log\left( \frac{a}{b} \right) &= log(a) + log(b) \\
+\log\left( \frac{a}{b} \right) &= log(a) - log(b) \\
 \log\left( a^{b} \right) &= \log(a) \cdot b
 \end{align*}
 
@@ -46,7 +46,7 @@ following equivalence which is often called the log-sum-exp trick. Without loss 
 \end{align*}
 
 There are several advantages to using this trick. First, we only compute one exponential and one logarithm. Second, the logarithm computation is already 
-implemented in many programming languages (including Python) as a function called \textit{log1p} (see \href{https://docs.python.org/3/library/math.html}{here} for documentation). The \texttt{log1p} function computes $ \log(1 + \exp(d-c)) $ very efficiently when the exponent is small. This is the reason that we want to subtract
+implemented in many programming languages (including Python) as a function called \texttt{log1p} (see \href{https://docs.python.org/3/library/math.html}{here} for documentation). The \texttt{log1p} function computes $ \log(1 + \exp(d-c)) $ very efficiently when the exponent is small. This is the reason that we want to subtract
 the bigger number ($ c $ according to our assumption). This way, we make sure that the exponent is small and thus \texttt{log1p} performs fast computation.
 
 You will implement log addition and subtraction. In computer programming, we usually represent $ \log(0) $ (which is undefined in mathematics) as 
@@ -58,47 +58,71 @@ Huffman coding is a coding strategy that ensures two things:
 \begin{itemize}
 \item Prefix freeness: no code word is the prefix of another code word. This property ensure that the code is uniquely decodable.
 \item Short codes: Assuming that all symbols in a message are drawn independently from some distribution $ P_{X} $, the average code word
-length $ \mathbb{E}\left[l(C)\right] $ is at most $ H(X) $ (where $ l(c) $ is the length of a code word $ c $ in bits).
+length $ \mathbb{E}\left[l(C)\right] $ is at most $ H(X) + 1 $ (where $ l(c) $ is the length of a code word $ c $ in bits).
 \end{itemize}
 
-Huffman coding is accomplished by constructing a binary-branching tree. The tree is constructed by first sorting all outcomes $ x $ in order of their
+Binary Huffman coding is accomplished by constructing a binary-branching tree. The tree is constructed by first sorting all outcomes $ x $ in order of their
 probability $ P(x) $. Then nodes in the (growing) tree are combined such that the sum of their probabilities is the lowest. The probability of a node
 is the sum of the probabilities of its children. Because the outcomes are already ordered, we construct a new node by either joining
 the last two nodes or the two nodes before the last one.
 
-The code word are constructed iteratively. The first code word is the empty code word. The code word of a left child is its parent's code word
+The code words are constructed iteratively in top-down fashion. The first code word is the empty code word. The code word of a left child is its parent's code word
 padded with $ 0 $. The code word of a right child is its parent's code word padded with $ 1 $.
-The code 
 An example of a Huffman tree is given in Figure~\ref{fig:huffmanTree}. Notice that in the end only the code words at the leave nodes are used.
 \begin{figure}
 \Tree [.{$ \epsilon $:1} {0:0.5 \\ a} [.{1:0.5} [.{10:0.3}  {100:0.15 \\ b} {101:0.15 \\ c} ] [.{11:0.2}  {110:0.1 \\ d} {111:0.1 \\ e} ] ] ]
 \caption{Example of a Huffman tree. Roman letter are symbols in the message and binary sequences are code words. Each node in the tree is annotated
-with its probability. The empty code word is denoted by $ \epsilon $.}
+with a code word and its probability. The empty code word is denoted by $ \epsilon $.}
 \label{fig:huffmanTree}
 \end{figure}
 
 Usually, we will have to estimate the probability of a message symbol from data. For this exercise, we assume that message symbols follow a categorical
 distribution. Recall that the MLE for categorical outcomes is
 \begin{equation}
-P(x|\theta_{MLE}) = \frac{c(x)}{N}
+P(x|\theta_{MLE}) = \frac{c(x)}{N} \label{eq:MLE}
 \end{equation}
 where $ c(x) $ is the count of outcome $ x $ and $ N $ is the sample size.
 
 Your task is to write three functions:
 \begin{itemize}
 \item \texttt{construct\_code}: This function takes a path to a file as input and assigns a code word to each message symbol using Huffman coding. The
-probability of a message symbols is inferred using maximum likelihood estimation. Message symbols are all symbols that are separated by whitespace (\texttt{\textbackslash W} should
-be used as a separator when splitting the input.). This function should also return the average code word length.
+probability of a message symbol is inferred using maximum likelihood estimation. Message symbols are all characters in the text (including non-printing
+ones such as \texttt{\textbackslash n}). This function should also compute the average code word length.
 \item \texttt{encode}: Encodes a message using the constructed code.
 \item \texttt{decode}: Decodes a message that has been encoded with the constructed code.
 \end{itemize}
 
+\paragraph{A Note on Sorting} Notice that in Equation~\eqref{eq:MLE}, the denominator is a constant. Thus, when ordering the message symbols according to
+their probability, you do not need to compute the MLE but can directly order them according to their counts. These are proportional to the MLE probabilities,
+afer all.
+
+\paragraph{A Note on Implementation} The description of Huffman trees given above can be converted into an algorithm for constructing them. However, Huffman trees can
+be constructed more elegantly using recursion. A recursive function \texttt{construct\_code} that takes an ordered list of (symbol, probability) pairs as input (and
+possibly other arguments) looks as follows:
+\begin{itemize}
+\item starting condition: The root node has an empty string as its label and probability 1.
+\item base case: If the list only has one item, encode the symbol contained in that item using the code word of the node.
+\item recursive step: Assume the code word at the current node is $ c $. Split the input list associated with the current node
+such that the first half has as much mass as the second or slightly more. Then call \texttt{construct\_code} on the first half. The code word
+at the root of that new tree is $ c0 $. Afterwards call \texttt{construct\_code} on the second half where the code word at the root of that tree is $ c1 $.
+\end{itemize} 
+
+You are free to implement the \texttt{construct\_code} in any way you like. If you are interested in using the recursive version, you will find lots of
+explanations on the internet.
 
 \section{Grading}
+This week, we ask you to submit two files: \texttt{logarithms.py} and \texttt{huffman.py}. Some pre-written code and data can be downloaded here.
 
 \begin{itemize}
 \item[1 point] All functions have docstrings according to \href{https://www.python.org/dev/peps/pep-0257/}{this specification}. Give 0 points if one or more
 functions are missing docstrings or do not follow the specification.
+\item[2 point] Log addition works correctly and passes all test.
+\item[1 point] Log addition on collections works correctly and passes all tests.
+\item[2 point] Log subtraction works correctly and passes all tests.
+\item[1 point] Log subtraction on collection works correctly and passes all tests.
+\item[2 point] The average code word length is correct.
+\item[2 point] The message is encoded correctly.
+\item[2 point] The message is decoded correclty.
 \end{itemize}
 
 \end{document}

@@ -9,7 +9,6 @@ the second argument should be the list from the student program.
 '''
 
 import sys
-from twisted.protocols.ftp import FileNotFoundError
 
 def main(args):
     

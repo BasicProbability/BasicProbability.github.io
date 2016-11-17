@@ -60,18 +60,14 @@ $ -\infty $. Make sure that when one of the arguments to your log addition funct
 
 Huffman coding is a coding strategy that ensures two things:
 \begin{itemize}
-\item Prefix freeness: no code word is the prefix of another code word. This property ensure that the code is uniquely decodable.
+\item Prefix freeness: no code word is the prefix of another code word. This property ensures that the code is uniquely decodable.
 \item Short codes: Assuming that all symbols in a message are drawn independently from some distribution $ P_{X} $, the average code word
 length $ \mathbb{E}\left[l(C)\right] $ is at most $ H(X) + 1 $ (where $ l(c) $ is the length of a code word $ c $ in bits).
 \end{itemize}
 
-Binary Huffman coding is accomplished by constructing a binary-branching tree. The tree is constructed by first sorting all outcomes $ x $ in order of their
-probability $ P(x) $. Then nodes in the (growing) tree are combined such that the sum of their probabilities is the lowest. The probability of a node
-is the sum of the probabilities of its children. Because the outcomes are already ordered, we construct a new node by either joining
-the last two nodes or the two nodes before the last one.
+Binary Huffman coding is accomplished by constructing a binary-branching tree. The tree is constructed by 
+following this simple strategy: Take two symbols with the least probability and assign codewords of equal length differing in the last digit only. Combine these two symbols into one and repeat.
 
-The code words are constructed iteratively in top-down fashion. The first code word is the empty code word. The code word of a left child is its parent's code word
-padded with $ 0 $. The code word of a right child is its parent's code word padded with $ 1 $.
 An example of a Huffman tree is given in Figure~\ref{fig:huffmanTree}. Notice that in the end only the code words at the leave nodes are used.
 \begin{figure}
 \Tree [.{$ \epsilon $:1} {0:0.5 \\ a} [.{1:0.5} [.{10:0.3}  {100:0.15 \\ b} {101:0.15 \\ c} ] [.{11:0.2}  {110:0.1 \\ d} {111:0.1 \\ e} ] ] ]
@@ -87,33 +83,34 @@ P(x|\theta_{MLE}) = \frac{c(x)}{N} \label{eq:MLE}
 \end{equation}
 where $ c(x) $ is the count of outcome $ x $ and $ N $ is the sample size.
 
-Your task is to write three functions:
+Your task is to implement three functions:
 \begin{itemize}
-\item \texttt{construct\_code}: This function takes a path to a file as input and assigns a code word to each message symbol using Huffman coding. The
-probability of a message symbol is inferred using maximum likelihood estimation. Message symbols are all characters in the text (including non-printing
-ones such as \texttt{\textbackslash n}). This function should also compute the average code word length.
+\item \texttt{average\_code\_word\_length}: Computes the average code word length of the constructed
+Huffman code. 
 \item \texttt{encode}: Encodes a message using the constructed code.
 \item \texttt{decode}: Decodes a message that has been encoded with the constructed code.
 \end{itemize}
+
+We have already provided an implementation of the \texttt{construct\_code} function for you. This
+function takes care of constructing the Huffman code.
 
 \paragraph{A Note on Sorting} Notice that in Equation~\eqref{eq:MLE}, the denominator is a constant. Thus, when ordering the message symbols according to
 their probability, you do not need to compute the MLE but can directly order them according to their counts. These are proportional to the MLE probabilities,
 after all.
 
-\paragraph{A Note on Implementation} The description of Huffman trees given above can be converted into an algorithm for constructing them. However, Huffman trees can
-be constructed more elegantly using recursion. A recursive function \texttt{construct\_code} that takes an ordered list of (symbol, probability) pairs as input (and
-possibly other arguments) looks as follows:
-\begin{itemize}
-\item starting condition: The root node has an empty string as its label and probability 1.
-\item base case: If the list only has one item, encode the symbol contained in that item using the code word of the node.
-\item recursive step: Assume the code word at the current node is $ c $. Split the input list associated with the current node
-such that the first half has as much mass as the second or slightly more. Then call \texttt{construct\_code} on the first half. The code word
-at the root of that new tree is $ c0 $. Afterwards call \texttt{construct\_code} on the second half where the code word at the root of that tree is $ c1 $.
-\end{itemize} 
+%\paragraph{A Note on Implementation} The description of Huffman trees given above can be converted into an algorithm for constructing them. However, Huffman trees can
+%be constructed more elegantly using recursion. A recursive function \texttt{construct\_code} that takes an ordered list of (symbol, probability) pairs as input (and
+%possibly other arguments) looks as follows:
+%\begin{itemize}
+%\item starting condition: The root node has an empty string as its label and probability 1.
+%\item base case: If the list only has one item, encode the symbol contained in that item using the code word of the node.
+%\item recursive step: Assume the code word at the current node is $ c $. Split the input list associated with the current node
+%such that the first half has as much mass as the second or slightly more. Then call \texttt{construct\_code} on the first half. The code word
+%at the root of that new tree is $ c0 $. Afterwards call \texttt{construct\_code} on the second half where the code word at the root of that tree is $ c1 $.
+%\end{itemize} 
 
-You are free to implement the \texttt{construct\_code} in any way you like. If you are interested in using the recursive version, you will find lots of
-explanations on the internet.
-
+%You are free to implement the \texttt{construct\_code} in any way you like. If you are interested in using the recursive version, you will find lots of
+%explanations on the internet.
 \section{Grading}
 This week, we ask you to submit two files: \texttt{logarithms.py} and \texttt{huffman.py}. Some pre-written code and data can be downloaded \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment3/assignment3_prerequisites.zip}{here}.
 \textbf{Important:} You can use define all kinds of additional
@@ -123,13 +120,13 @@ names of the functions already provided. You will be evaluated based on how well
 be provided during the evaluation period.
 
 \begin{itemize}
-\item[1 point] All functions have docstrings according to \href{https://www.python.org/dev/peps/pep-0257/}{this specification}. Give 0 points if one or more
-functions are missing docstrings or do not follow the specification (or use the Pycharm template for functions).
+\item[1 point] All functions have docstrings according to \href{https://www.python.org/dev/peps/pep-0257/}{this specification} (or use the Pycharm template for docstrings of functions). Give 0 points if one or more
+functions are missing docstrings or do not follow the specification.
 \item[1 point] Log addition works correctly and passes all test.
 \item[1 point] Log addition on collections works correctly and passes all tests.
 \item[1 point] Log subtraction works correctly and passes all tests.
 \item[1 point] Log subtraction on collections works correctly and passes all tests.
-\item[2 point] The average code word length is 4.569000365916435 (minor differences in the last 5 digits are acceptable since they may be due to computer
+\item[2 point] The average code word length is 4.519484740044282 (minor differences in the last 5 digits are acceptable since they may be due to computer
 architecture).
 \item[2 point] ``Hello World!" is encoded correctly.
 \item[2 point] The secret message is decoded correctly.

@@ -18,10 +18,21 @@ stuck, do not hesitate to ask in the
 
 This week we will implement a Na\"ive Bayes (NB) classifier for text data. If you do not remember what a 
 NB classifier is, check \href{https://github.com/BasicProbability/LectureNotes/blob/master/chapter4/chapter4.pdf}{here}. 
-We will call the variable whose value we try to infer ($ Y $ in the script) the class, label or
-category (all three are equivalent). The data point $ x_{i} $ are generally called \textbf{features}.
-Here, we take our features to be words.
 We will first train the classifier using MLE and then make predictions based on our estimates.
+
+\subsection{Na\"ive Bayes Terminology}
+
+In NB training we assume i.i.d. data points $ (x_{i},y_{i}) $ ($ 1 \leq i \leq n $) where $ x_{i} $ is a $ k $-dimensional vector and
+$ y $ is 1-dimensional. The entries of $ x $ are called \textbf{features}. When have to make predictions we are presented with vectors
+$ x_{t} $ ($ t > n $) which have no accompanying $ y $-values. Our task is to infer these $ y $-values. The posterior probability of a particular value
+for $ Y_{t} $ according the the Na\"ive Bayes assumption is
+\begin{equation}
+P(Y_{y} = y_{t}|X_{t} = x_{t}) = P(Y_{t} = y_{t}) \prod_{j=1}^{k}P(X_{tj} = x_{tj}|Y_{t} = y_{t}) \ .
+\end{equation}
+
+By convention, we call the $ Y $-variables \textbf{labels}, \textbf{classes} or \textbf{categories}. We will use these terms interchangeably to get you used
+to them. A Naive classifier thus performs inference based on $ k $ features (where $ k $ may differ across data points). For the purpose of this exercise, we take the 
+features to be words and the labels to be names of news groups.
 
 \subsection{Data}
 
@@ -77,8 +88,17 @@ you then have to enter the following for \texttt{naive\_Bayes\_classifier.py}
 \texttt{--training-corpus-dir <Path to 20news-18828> --test-set-directory <Path to dev-set>}
 \end{center}
 (Note: the line break was inserted by \LaTeX and is not needed in Pycharm.)
-The output will be a file called \texttt{predictions.txt}. You can check your performance using the
-accuracy checker. For that, you will have to pass argument to \texttt{accuracy\_checker.py}, as well. These
+You can optionally add
+\begin{center}
+\texttt{--keys <Path to dev\_key.txt>}
+\end{center}
+in which case the script will also run an evaluation of your output. For this to work you have to assign
+a string containing your Python command (either \texttt{python} or \texttt{python3} for most of you)
+to the variable \texttt{my\_python} at the top of the file.
+
+The output will be a file called \texttt{predictions.txt}. You can separately check your performance using the
+accuracy checker (which is the same script used if you provide the \texttt{--keys} argument above). 
+For that, you will have to pass argument to \texttt{accuracy\_checker.py}, as well. These
 are simply
 \begin{center}
 \texttt{<Path to predictions.txt> <Path to dev\_keys.txt>}

@@ -27,7 +27,7 @@ $ y $ is 1-dimensional. The entries of $ x $ are called \textbf{features}. When 
 $ x_{t} $ ($ t > n $) which have no accompanying $ y $-values. Our task is to infer these $ y $-values. The posterior probability of a particular value
 for $ Y_{t} $ according the the Na\"ive Bayes assumption is
 \begin{equation}
-P(Y_{y} = y_{t}|X_{t} = x_{t}) = P(Y_{t} = y_{t}) \prod_{j=1}^{k}P(X_{tj} = x_{tj}|Y_{t} = y_{t}) \ .
+P(Y_{y} = y_{t}|X_{t} = x_{t}) \propto P(Y_{t} = y_{t}) \prod_{j=1}^{k}P(X_{tj} = x_{tj}|Y_{t} = y_{t}) \ .
 \end{equation}
 
 By convention, we call the $ Y $-variables \textbf{labels}, \textbf{classes} or \textbf{categories}. We will use these terms interchangeably to get you used
@@ -72,7 +72,8 @@ instead. Make sure to transform your MLEs to log-probs before doing any predicti
 
 \subsection{Your Task}
 We have implemented a commandline interface and a skeleton of the Naive Bayes class for you. Both can be 
-found \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment4/prerequisites.zip}{here}. Please do not manipulate \texttt{naive\_Bayes\_classifier.py}. Only work on 
+found \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment4/prerequisites.zip}{here}. Please do not manipulate \texttt{naive\_Bayes\_classifier.py}. Please implement the methods that are marked with a TODO. For prediction, please output the 
+a posteriori most likely label. Only work on 
 \texttt{Naive\_Bayes.py}. Feel free to add any methods and data structures that you deem necessary.
 
 \paragraph{Challenge yourself} On the development set, which we provide together with the code, you

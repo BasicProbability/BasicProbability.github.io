@@ -49,12 +49,15 @@ class LogarithmsTest(unittest.TestCase):
         self.assertEqual(second_num, log_add(-float("inf"), second_num))
 
     def test_log_add_list(self):
+        '''
+        Test if log_add_list works for list of log_probs
+        '''
         for _ in range(10000):
             random_numbers = [self.random_generator.random() for _ in range(self.random_generator.randint(1,100))]
             random_log_numbers = [log(number) for number in random_numbers]
             result = sum(random_numbers)
 
-            self.assertAlmostEqual(result, log_add_list(random_log_numbers), delta = self.tolerance)
+            self.assertAlmostEqual(result, exp(log_add_list(random_log_numbers)), delta = self.tolerance)
 
     def test_log_difference(self):
         '''

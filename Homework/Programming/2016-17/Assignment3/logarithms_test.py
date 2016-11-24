@@ -50,7 +50,7 @@ class LogarithmsTest(unittest.TestCase):
 
     def test_log_add_list(self):
         for _ in range(10000):
-            random_numbers = [self.random_generator.random() for _ in range(self.random_generator.random(1,100))]
+            random_numbers = [self.random_generator.random() for _ in range(self.random_generator.randint(1,100))]
             random_log_numbers = [log(number) for number in random_numbers]
             result = sum(random_numbers)
 

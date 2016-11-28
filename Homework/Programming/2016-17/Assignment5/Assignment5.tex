@@ -19,7 +19,10 @@ stuck, do not hesitate to ask in the
 This week we are finally going to implement the expectation maximisation algorithm (EM). You can look up explanations of the algorithm 
 \href{https://github.com/BasicProbability/LectureNotes/blob/master/chapter6/chapter6.pdf}{here} and 
 \href{}{here}. Our data (download \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment5/geometric_data.txt}{here}) have been generated from a mixture model. The mixture components are geometric distributions. Your tasks is to find
-the mixture weights and parameters of the mixture components. Recall that EM is sensitive to the starting point. During peer review, we will
+the mixture weights and parameters of the mixture components. The data were generated from 5 mixture components, so this is the number of components
+that you should use as well.
+
+Recall that EM is sensitive to the starting point. During peer review, we will
 provide you with a starting point whose resulting parameter estimates we have already computed. You will be assessed according to how well your
 algorithm does on this particular starting point. This implies that you will have to provide a place in your code (ideally at the beginning) where
 the reviewers can plug in that fixed starting point.

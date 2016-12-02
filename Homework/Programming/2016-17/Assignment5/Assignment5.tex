@@ -28,9 +28,14 @@ the reviewers can plug in that fixed starting point.
 
 \section{Implementation}
 
-We do not provide skeleton code this time. However, you can use \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment5/distributions.py}{our implementation of the geometric distribution} if you like. You will have to write all functions (and classes if you want to work with those) from scratch. You are encouraged
-to discuss your implementation in the forum. While you should not post any code, asking questions like \textit{Do you think that this is the right data structure
-to use?} are is perfectly fine. 
+%We do not provide skeleton code this time. However, you can use \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment5/distributions.py}{our implementation of the geometric distribution} if you like. You will have to write all functions (and classes if you want to work with those) from scratch. You are encouraged
+%to discuss your implementation in the forum. While you should not post any code, asking questions like \textit{Do you think that this is the right data structure
+%to use?} are is perfectly fine. 
+
+We have provided a partial implementation for you \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment5/expectation_maximisation.py}{here}. 
+You have to implement the E-step and the M-step. The positions where you have to fill in your code are marked with TODO. Before you start implementing anything,
+make yourself familiar with the code and ensure that you understand all the data structures it uses. You can also discuss the basic code on the forum. As usual, feel
+free to add any variables or functions/methods that you deem necessary. If you want to remove any of the data structures or methods that we provide, that's also fine.
 
 Notice that we are again in a setting were we have to work with logprobs. In order to compute the log-likelihood (see next section), we have to add those logprobs.
 This is where the logarithm functions that we implemented in week 3 come in handy. Please use them whenever needed. We provide a correct implementation of
@@ -38,7 +43,7 @@ them \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/ma
 
 \section{Debugging}
 
-Recall that EM is guaranteed to always increase the log-likelihood of the data. Therefore, you should compute and print the log-likeihood after each iteration.
+Recall that EM is guaranteed to always increase the log-likelihood of the data. Therefore, the code prints the log-likeihood after each iteration.
 If it goes up after each iteration or stays unchanged, your implementations is probably correct (no guarantees, though). Please make sure to be very strict about
 this. Even if an EM implementation is wrong, the log-likelihood often still increases during the initial iterations. Pay close attention to later iterations. If they
 are volatile, you have a bug! EM usually does not need all too many iterations before it converges. Always run 20 iterations, which should be enough for 
@@ -62,15 +67,11 @@ mixture weights, one list for the component parameters) or, more elegantly, by a
 reads the initial parameter settings.
 
 \begin{itemize}
-\item[1 point] All classes and functions/methods have docstrings. Award 0 points here if there are one or more classes/functions/methods that do not have a 
-docstring.
-\item[1 point] A starting point for EM can be provided to program.
-\item[1 point] If no starting point is provided, the parameters are initialised randomly.
-\item[1 point] The program prints the log-likelihood after each iteration. After iteration $ t $ it is fine to print the likelihood achieved with the parameter
-settings from  iteration $ t-1 $.
-\item[3 points] The log-likelihood increases monotonically when the algorithm is run. It's ok if after a couple of iterations the log-likelihood
+\item[1 point] All additional classes and functions/methods have docstrings. Award 0 points here if there are one or more classes/functions/methods that do not have a 
+docstring. If the student didn't add any classes or functions, award 1 point by default.
+\item[4 points] The log-likelihood increases monotonically when the algorithm is run. It's ok if after a couple of iterations the log-likelihood
 does not change anymore, as long as it does not go down. (Be strict here!)
-\item[3 points] Your parameter estimate after 20 iterations for the fixed initial parameter settings is equal to the parameter estimate that we will provide during the 
+\item[4 points] Your parameter estimate after 20 iterations for the fixed initial parameter settings is equal to the parameter estimate that we will provide during the 
 peer review period.
 \end{itemize}
 

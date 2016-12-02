@@ -2,10 +2,10 @@
 \usepackage{hyperref, amsmath, amssymb}
 \hypersetup{colorlinks=true, urlcolor=blue, breaklinks=true}
 
-\title{Programming Assignment 5 -- Basic Probability, Computing and Statistics 2016 \\[2mm]
+\title{Programming Assignment 5 -- Basic Probability: Programming 2016 \\[2mm]
 \large{Fall 2016, Master of Logic, University of Amsterdam}}
-\author{Instructors: Christian Schaffner and Bas Cornellisen}
-\date{Submission deadline: Wednesday, December 7th, 8 p.m.}
+\author{Instructors: Christian Schaffner and Bas Cornelissen}
+\date{Submission deadline: Friday, December 9th, 8 p.m.}
 
 \begin{document}
 \maketitle
@@ -17,11 +17,11 @@ stuck, do not hesitate to ask in the
 \section{Assignment}
 
 This week we are finally going to implement the expectation maximisation algorithm (EM). You can look up explanations of the algorithm 
-\href{https://github.com/BasicProbability/LectureNotes/blob/master/chapter6/chapter6.pdf}{here}. Our data (download \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment5/geometric_data.txt}{here}) have been generated from a mixture model. The mixture components are geometric distributions. Your tasks is to find
+\href{https://github.com/BasicProbability/LectureNotes/blob/master/chapter6/chapter6.pdf}{here} and \href{https://www.moodle.ch/lms/mod/resource/view.php?id=1845}{see an example on these slides}. Our data (download \href{https://github.com/BasicProbability/BasicProbability.github.io/raw/master/Homework/Programming/2016-17/Assignment5/geometric_data.txt}{here}) have been generated from a mixture model. The mixture components are geometric distributions. Your tasks is to find
 the mixture weights and parameters of the mixture components. The data were generated from 3 mixture components, so this is the number of components
 that you should use as well.
 
-Recall that EM is sensitive to the starting point (i.e. the initial parameter estimate from which we start optimising). During peer review, we will
+Recall that EM is sensitive to the starting point (i.e.\ the initial parameter estimate from which we start optimising). During peer review, we will
 provide you with a starting point whose resulting parameter estimates we have already computed. You will be assessed according to how well your
 algorithm does on this particular starting point. This implies that you will have to provide a place in your code (ideally at the beginning) where
 the reviewers can plug in that fixed starting point.
@@ -69,10 +69,12 @@ reads the initial parameter settings.
 \begin{itemize}
 \item[1 point] All additional classes and functions/methods have docstrings. Award 0 points here if there are one or more classes/functions/methods that do not have a 
 docstring. If the student didn't add any classes or functions, award 1 point by default.
-\item[4 points] The log-likelihood increases monotonically when the algorithm is run. It's ok if after a couple of iterations the log-likelihood
+\item[2 points] If \texttt{initial\_mixture\_weights} and \texttt{initial\_geometric\_parameters} are provided, they are correctly taken into account in the first step. If these parameters are not provided, random initialisation values are used.
+\item[1 point] The e-step is correctly implemented. Inspect the code to check this.
+\item[1 point] The m-step is correctly implemented. Inspect the code to check this.
+\item[2 points] The log-likelihood increases monotonically when the algorithm is run. It's ok if after a couple of iterations the log-likelihood
 does not change anymore, as long as it does not go down. (Be strict here!)
-\item[4 points] Your parameter estimate after 20 iterations for the fixed initial parameter settings is equal to the parameter estimate that we will provide during the 
-peer review period.
+\item[2 points] Your parameter estimate after 20 iterations for the fixed initial parameter settings is equal to the parameter estimate that we will provide during the peer review period.
 \end{itemize}
 
 

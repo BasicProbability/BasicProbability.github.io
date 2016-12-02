@@ -66,6 +66,10 @@ class EM(object):
         :param initial_geometric_parameters: A list of initial component parameters (initialised randomly if no list is provided)
         '''
 
+        #TODO: the following code performs a random initialization of mixture weights and geometric parameters
+        #TODO: make sure that the input arguments initial_mixtures_weights and initial_geometric_parameters
+        #TODO: are used if they are actually provided.
+
         for component in range(self.num_components):
             self.mixture_weights.append(random.random())
             self.component_distributions.append(GeometricDistribution(random.random()))
@@ -119,7 +123,10 @@ class EM(object):
 
     def e_step(self, observation):
         '''Perform the E-step on a single obervation. That is, compute the posterior of mixture components
-        and add the expected occurrence of each component to the running total.
+        and add the expected occurrence of each component to the running totals
+        self.log_likelihood ,
+        self.expected_component_counts , and
+        self.expected_observation_counts
 
         :param observation: The observation
         '''
@@ -127,17 +134,21 @@ class EM(object):
         #TODO: Implement this. Make sure to update the log-likelihood during the E-step.
 
     def m_step(self):
-        '''Perform the M-step'''
+        '''Perform the M-step. This step updates
+        self.component_priors
+        self.component_distributions
+        '''
 
-        #TODO: Implement this. Make sure to reset the data structures you use for counting after you have
-        # updated all parameters.
+        # TODO: Implement this.
+        # TODO: Make sure to reset the data structures you use for counting after you have
+        # TODO: updated all parameters, namely self.expected_component_counts and self.expected_observation_counts
 
-def main(args):
-    file_path = args[0]
-    mixture_components = args[1]
 
-    learner = EM(int(mixture_components))
-    learner.train(file_path, 20)
+def main(data_path, number_mixture_components):
+
+    learner = EM(int(number_mixture_components))
+    learner.train(data_path, 20)
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    # TODO: make sure that the first argument points to the data that you have downloaded
+    main('geometric_data.txt', 3)

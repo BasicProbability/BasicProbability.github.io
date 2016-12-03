@@ -2,6 +2,8 @@ import random, sys
 from math import log, exp, factorial
 from logarithms import log_add, log_add_list
 
+### version 2, modified by Christian Schaffner on Saturday, 3 December 2016
+
 class GeometricDistribution(object):
     '''An implementation of the geometric distribution that whose support includes 0.'''
 
@@ -47,14 +49,15 @@ class EM(object):
         :param initial_geometric_parameters: A list of initial component parameters (initialised randomly if no list is provided)
         '''
 
+        # total number of mixture components
         self.num_components = num_components
-        # Map from components to their priors
+        # map from components to their mixture_weights (stored as logarithms)
         self.mixture_weights = list()
-        # Map from components to their distributions
+        # map from components to their distributions
         self.component_distributions = list()
-        # map from components to their expected number of occurrence
+        # map from components to their expected number of occurrence (stored as logarithms)
         self.expected_component_counts = dict()
-        # map from components to expected values of observations that they generate
+        # map from components to expected values of observations (stored as logarithms)
         self.expected_observation_counts = dict()
         self.log_likelihood = 0
         self.initialise(initial_mixture_weights, initial_geometric_parameters)
@@ -66,13 +69,14 @@ class EM(object):
         :param initial_geometric_parameters: A list of initial component parameters (initialised randomly if no list is provided)
         '''
 
-        #TODO: the following code performs a random initialization of mixture weights and geometric parameters
+        #TODO: the following code performs a random initialization of mixture weights and geometric distributions
         #TODO: make sure that the input arguments initial_mixtures_weights and initial_geometric_parameters
         #TODO: are used if they are actually provided.
 
         for component in range(self.num_components):
             self.mixture_weights.append(random.random())
             self.component_distributions.append(GeometricDistribution(random.random()))
+            # values that are stored as logarithms are initialized as -inf = log(0)
             self.expected_component_counts[component] = -float("inf")
             self.expected_observation_counts[component] = -float("inf")
 
@@ -91,21 +95,22 @@ class EM(object):
         '''
 
         for iter in range(iterations):
-            self.em(data_path)
-
             params = list()
             priors = list()
             for component in range(self.num_components):
                 params.append(self.component_distributions[component].get_param())
                 priors.append(exp(self.mixture_weights[component]))
 
-            print("Iteration {}".format(iter + 1))
-            print('log-likelihood: {}'.format(self.log_likelihood))
+            print("\nIteration {}".format(iter))
+            print("log-likelihood: {}".format(self.log_likelihood))
             print("Component priors: {}".format(priors))
             print("Component parameters: {}".format(params))
 
             # reset log-likelihood
             self.log_likelihood = 0
+
+            self.em(data_path)
+
 
 
     def em(self, data_path):
@@ -135,20 +140,27 @@ class EM(object):
 
     def m_step(self):
         '''Perform the M-step. This step updates
-        self.component_priors
+        self.mixture_weights
         self.component_distributions
         '''
+
+        # test if the sum of the summed expected_component_counts is roughly equal to the total amount of observations
+        sum_obs_counts = log_add_list(self.expected_component_counts.values())
+        print("Sum of expected component counts: {}".format(exp(sum_obs_counts)))
+
 
         # TODO: Implement this.
         # TODO: Make sure to reset the data structures you use for counting after you have
         # TODO: updated all parameters, namely self.expected_component_counts and self.expected_observation_counts
 
 
-def main(data_path, number_mixture_components):
-
-    learner = EM(int(number_mixture_components))
+def main(data_path, number_mixture_components, initial_mixture_weights=None, initial_geometric_parameters=None):
+    learner = EM(int(number_mixture_components), initial_mixture_weights, initial_geometric_parameters)
     learner.train(data_path, 20)
 
 if __name__ == "__main__":
     # TODO: make sure that the first argument points to the data that you have downloaded
-    main('geometric_data.txt', 3)
+    main('geometric_example_data.txt', 2, [0.2, 0.8], [0.2, 0.6])
+
+    # TODO: use the following call instead when the small example above is running properly
+    # main('geometric_data.txt', 3)

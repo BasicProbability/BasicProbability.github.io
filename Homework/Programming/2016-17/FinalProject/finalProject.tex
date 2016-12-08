@@ -27,7 +27,8 @@ will express what the weights learned by linear regression tell you about patter
 \section{Linear Regression}
 To familiarise yourself with linear regression and its implementation, watch the
 videos of Sections 2 and 4 of \href{https://www.youtube.com/watch?v=ylWBbxQHwFM&list=PLLH73N9cB21V_O2JqILVX557BST2cqJw4}{Andrew Ng's machine
-learning course}. His explanations are great, but he does not really touch on the math of linear regression.
+learning course}. You can also sign up for \href{https://www.coursera.org/learn/machine-learning/home}{it on coursera} to see them
+in higher resolution. His explanations are great, but he does not really touch on the math of linear regression.
 
 From a probabilistic view point, we assume that our data are independently distributed. This is a weaker
 assumption than we have made so far because we do not assume that the distributions of our data points
@@ -36,7 +37,7 @@ data point.
 
 In linear regression we assume that each data point $ x_{i},\ (1 \leq i \leq n) $ follows a 
 \href{https://en.wikipedia.org/wiki/Normal_distribution}{Gaussian or normal distribution}. The probability
-function of this distribution is
+density function of this distribution is
 \begin{equation}
 P(x|\mu, \sigma^{2}) = \frac{1}{\sqrt{2\pi}\sigma}\exp\left(\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^{2}\right) \ .
 \end{equation}
@@ -54,9 +55,10 @@ Each coefficient in $ w $ relates its predictor linearly to the output variable.
 
 \section{Your Task}
 
-Your task is to implement linear regression for the Boston housing data set. You will first implement
-a baseline regression model and report results on that. Thereafter, you will try to improve your 
-model and get better predictions. You will then write a report, detailing your improvements and 
+Your task is to implement linear regression for the Boston housing
+data set. Every group of students first implements
+a baseline regression model and report results on that. Thereafter, you try to improve your 
+model and get better predictions. You then write a report, detailing your improvements and 
 describing what you have learned about the data set by running linear regression.
 
 \section{Evaluating Linear Regression}
@@ -64,13 +66,13 @@ describing what you have learned about the data set by running linear regression
 Since linear regression makes continuous predictions, it cannot simply be evaluated on a wrong/correct
 basis. The error of linear regression is induced by the distances of the predictions to the true values.
 These distances are known as residuals. The sum of them is the residual error. Take a look at the
-plots produced during the in-class exercises of week 6. If the line was the output of a linear 
+\href{https://github.com/BasicProbability/InClassExercises2016/raw/master/numpy_and_matplotlib/plot.pdf}{plots produced during the in-class exercises of week 6}. If the line was the output of a linear 
 regression model, the residuals would be the vertical distances of the points to the line.
 
 Since the residual error grows as a function of the number of data points, it is not a meaningful
 way of evaluating a regression model. However, the residuals are again normally distributed. Standardly,
 it is assumed that $ \mu=0 $ for that distribution.\footnote{This assumption is made because
-residuals can be both positive and negative and their is no reason assume that residuals should
+residuals can be both positive and negative and there is no reason to assume that residuals should
 be ``more positive'' or ``more negative'' on average.} If the
 variance of their distribution is small, the regression line provides a tight approximation to the
 true values. If the variance of that distribution is large, the approximation is pretty shabby. 
@@ -78,12 +80,17 @@ true values. If the variance of that distribution is large, the approximation is
 The standard quantity for assessing linear regression models is the 
 \href{https://en.wikipedia.org/wiki/Coefficient_of_determination}{$ R^{2} $} which can be computed as
 \begin{equation}
-R^{2} = 1 - \sum_{i=1}^{n} \frac{\left(x_{i} - \sum_{i = 1}^{n}x_{i}\right)^{2}}
-{\left( x_{i} - w^{\top}h(x_{i}) \right)^{2}} \ .
+R^{2} = 1 - \frac{\sum_{i=1}^{n} \left( x_{i} - w^{\top}h(x_{i}) \right)^{2}}
+{\sum_{i=1}^{n} \left(x_{i} - \frac{1}{n}\sum_{j = 1}^{n}x_{j}\right)^{2}} \ .
 \end{equation}
-Notice that the numerator and denominator are the sample variances of the data and residuals, respectively.
+Notice that the numerator is the sum of the residual errors 
+and the denominator is the sample variances of the data.
 The $ R^{2} $ thus expresses what fraction of the observed variance in the data is captured by the model. The 
-$ R^{2} $ has the convenient property of being standardized, i.e. to be bounded by 0 and 1.
+$ R^{2} $ has the convenient property of being standardized, i.e.\ to
+be bounded by 0 and 1. The better the linear regression fits the data,
+the closer the value of $R^2$ is to 1.
+
+
 
 \section{Types of Features and interpretation}
 
@@ -105,7 +112,7 @@ with. Rather, it is the level\footnote{The values of categorical features are of
 \textit{female} that causes a change in the output.
 
 Whenever we are dealing with categorical features, we need to define a standard or default level. This
-level can be chosen arbitrarily (above it was chosen to be male). 
+level can be chosen arbitrarily (in the example above it was chosen to be male). 
 All coefficients of the other levels then have to be interpreted with
 respect to that default. To make this concrete, let us assume that we model football-playing ability and
 that our categorical features is \textit{nationality} with levels Holland, Germany and Switzerland.
@@ -128,9 +135,9 @@ something you may want to experiment with.
 a causal effect to predictors. This is not warranted by the model! In the football example above, being
 German goes hand in hand with having a higher football ability than being Dutch. This is simply an 
 observation, however. It does not mean that being German \textit{causes} you to be a better footballer.
-Rather, it means on average Germans are better footballers than Dutch people
-(for reasons that may or may not be related to nationality). You should thus be careful when describing
-your results.
+Rather, it means on average Germans are better footballers than Dutch
+(for reasons that may or may not be related to nationality). You
+should thus be careful when describing and interpreting your results.
 
 \section{Learning}
 
@@ -147,32 +154,60 @@ increase in $ R^{2} $.
 
 \section{Report}
 
-You will write a report of at most 4 pages + references. All reports must be created using the 
+Each group writes a report of at most 4 pages (not including the space
+taken up by references). All reports must be created using the 
 \href{http://eacl2017.org/images/site/eacl-2017-template.zip}{EACL-2017 \LaTeX \ template} and follow the instructions provided therein. Your report must
 contain the following sections:
 \begin{itemize}
+\item \textbf{Authors} Specify who contributed to the final project.
 \item \textbf{Abstract} A short summary of your work and your findings. Use the abstract environment!
 \item \textbf{Introduction:} Formally describe linear regression and set out the goal of your data
 analysis.
 \item \textbf{Improvements:} Give a description of the improvements that you made. You do not
-need to list everything you've tried here. Rather, focus on the things that worked and got you to
+need to list everything you have tried here. Rather, focus on the things that worked and got you to
 your final results.
 \item \textbf{Experiments:} Shortly describe the specifics of the data set and then report your results for the baseline model
 and possible extensions. Your results need to be supported by tables and/or graphs. If you made several
 extensions, it is good practice to report results as you add in extensions one by one. This way, one can
 better determine the contribution of each individual improvement.
-\item \textbf{Conclusion:} Describe what you learned from your analysis about the data set. Also
-state whether you think that your results are satisfactory/reliable.
+\item \textbf{Conclusion:} Describe what you have learned from your analysis about the data set. Also
+state whether you think that your results are satisfactory and reliable.
 \end{itemize}
 
 \section{Deliverables}
-
-In order to complete this project you need to submit a .zip file containing:
+In order to complete this project you need to submit a .zip file
+containing (possibly subfolders with) the following items:
 \begin{itemize}
-\item \textbf{Report:} A report described above.
+\item \textbf{Report:} A report as described above.
 \item \textbf{Code:} Any code that you have written. This code should be executable either from the command line or from Pycharm (or both).
 \item \textbf{Readme:} A text file describing the contents of the folder. This file should also contain a link to the data set which you used. Most importantly
 it should contain very detailed instructions on how to run your code!
 \end{itemize}
+
+\section{Assessment}
+We again have a peer-review phase (until January 8, 2017) where your group gets to assess the
+work of two other groups, as well as your own. Besides written
+feedback, you can suggest a final grade.
+
+The lecturers of the course determine the final grade for the project based on these
+self-/peer-assessments and their own judgement. Every student in a given group
+receives the same grade.
+
+For the assessment, take into account the following aspects:
+\begin{itemize}
+\item Editorial quality of the report: Are all required points addressed
+  properly? Is the report easy to read? Does it contain graphs and
+  tables? Are there proper references?
+\item Code quality: Is the code executable? Does the readme file
+  explain how to run it? Are there doc-strings in the code. Is it
+  sufficiently commented so that you can easily follow what happens?
+\item Scientific results: Is there a proper baseline implementation?
+  Is it clear which extra steps have been taken? Did they pay off? Are
+  these improvements properly explained? How do the obtained results compare to
+  your own?
+\item General comments
+\item Suggestion for a grade.
+\end{itemize}
+
 
 \end{document}

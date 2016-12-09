@@ -56,13 +56,16 @@ Each coefficient in $ w $ relates its predictor linearly to the output variable.
 
 \section{Your Task}
 
-Your task is to implement linear regression for the Boston housing data set. Every group of students first implements a baseline regression model and report results on that. A baseline of this study is the most basic implementation of the linear regression method on this dataset that makes sense to you. Thereafter, you try to improve your model and get better predictions. You then write a report, detailing your improvements and describing what you have learned about the data set by running linear regression.
+Your task is to implement linear regression for the Boston housing data set. Every group of students first implements a baseline regression model and report results on that. A baseline of this study is the most basic implementation of the linear regression method on this dataset (you have to justify your choice of 
+baseline!). Thereafter, you try to improve your model and get better predictions. You then write a report, detailing your improvements and describing what you have learned about the data set by running linear regression.
 
 \section{Evaluating Linear Regression}
 
 Since linear regression makes continuous predictions, it cannot simply be evaluated on a wrong/correct
 basis. The error of linear regression is induced by the distances of the predictions to the true values.
-These distances are known as residuals. The sum of them is the residual error. Take a look at the
+These distances are known as residuals. The sum of their squares is the (squared) error\footnote{Squaring
+is necessary here because the negative and positive residuals would cancel each other out otherwise.}. 
+Take a look at the
 \href{https://github.com/BasicProbability/InClassExercises2016/raw/master/numpy_and_matplotlib/plot.pdf}{plots produced during the in-class exercises of week 6}. If the line was the output of a linear 
 regression model, the residuals would be the vertical distances of the points to the line.
 
